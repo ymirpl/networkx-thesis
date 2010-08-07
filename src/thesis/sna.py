@@ -60,6 +60,30 @@ class Clusterer(object):
     classdocs
     '''
     graph = nx.Graph()
+    minWeight = 0
+    maxWeight = 0
+    weight_dist = {}
+
 
     def __init__(self, graph):
         self.graph = graph
+
+        # calulate min/max w
+        
+        minEdge = min(self.graph.edges(data=True), key=lambda node: node[2]['weight'])
+        self.minWeight = self.graph.get_edge_data(*minEdge[:2])['weight']
+        maxEdge = max(self.graph.edges(data=True), key=lambda node: node[2]['weight'])
+        self.maxWeight = self.graph.get_edge_data(*maxEdge[:2])['weight']
+        
+        logger.info("Weight: max " + repr(self.maxWeight) + " and min " + repr(self.minWeight))
+    
+    def sliceGraph(self, threshold):
+
+        def filter(edge):
+            if edge[2]['weight'] < threshold:
+                self.graph.remove_edge(*edge[:2])
+                
+        map(filter, self.graph.edges(data=True))
+        
+        logger.info("Data sliced with threshold " + repr(threshold) + ", edges " + repr(self.graph.number_of_edges()) + " \n")
+                
