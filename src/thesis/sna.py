@@ -88,6 +88,13 @@ class Cliquer(object):
                 
         map(filter, self.graph.edges(data=True))
         
+        # remove disconnected nodes
+        def filterNodes(node):
+            if self.graph.degree(node) == 0:
+                self.graph.remove_node(node)
+                
+        map(filterNodes, self.graph.nodes())
+        
         logger.info("Data sliced with threshold " + repr(threshold) + ", edges " + repr(self.graph.number_of_edges()))
   
     
@@ -96,33 +103,47 @@ class Cliquer(object):
         logger.info("Cliques found:")
         import pprint
         pprint.pprint(cliques)
+ 
+    def prettyPlotter(self, d=None, l=None, filename=None):
+        if d:
+            clusters = max(d.values())
+            nodeList = [None]*clusters
+            for k in d.keys():
+                if not nx.utils.is_list_of_ints(nodeList[d[k]]):
+                    nodeList[d[k]] = []
+                nodeList[d[k]].append(k)
+        else:
+            nodeList = l
+            
+        colorList = [0] * len(self.graph.nodes())
+        for nbunch in nodeList:
+            for n in nbunch:
+                colorList[self.graph.nodes().index(n)] = nodeList.index(nbunch)
+        import matplotlib.pyplot as plt
+        pos = nx.graphviz_layout(self.graph, prog='neato')
+        nx.draw(self.graph, pos, node_color=colorList, with_labels=False)
+        if filename:
+            plt.savefig(filename)
+        else:
+            plt.show()
+
+        
+        
+
+
     
     def blodelAlgorithm(self):
         from lib import blondel
         
-#        self.graph = nx.erdos_renyi_graph(30, 0.05)
         partition = blondel.best_partition(self.graph)
         # returns dict of nodes with cluster number values
         logger.info("Blondel partition done")
         
         import pprint
         pprint.pprint(partition)
+        
+        return partition
 
-        #drawing
-#        size = float(len(set(partition.values())))
-#        pos = nx.spring_layout(self.graph)
-#        count = 0.
-#        for com in set(partition.values()) :
-#            count = count + 1.
-#            list_nodes = [nodes for nodes in partition.keys()
-#                                        if partition[nodes] == com]
-#            nx.draw_networkx_nodes(self.graph, pos, list_nodes, node_size = 20,
-#                                        node_color = str(count / size))
-#        
-#        
-#        nx.draw_networkx_edges(self.graph,pos, alpha=0.5)
-#        plt.show()
-    
     def newmanAlgorithm(self):
         from lib import newman
         (Q, partition) = newman.detect_communities(self.graph)
@@ -131,7 +152,9 @@ class Cliquer(object):
         
         print "Q: ", Q  
         import pprint
-        pprint.pprint(partition)    
+        pprint.pprint(partition)   
+        
+        return partition 
     
     def aaronNewmanAlgorithm(self):
         from lib import aaron_newman
@@ -141,4 +164,6 @@ class Cliquer(object):
         logger.info("Aaron-Newman partition done")
         
         import pprint
-        pprint.pprint(partition)    
+        pprint.pprint(partition)
+        
+        return partition    
