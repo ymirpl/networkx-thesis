@@ -10,7 +10,67 @@ from thesis import logger
 class FileType:
     unknown = 0
     VOTING_RING = 1
+    
+class DataMaker:
+    '''
+    Provides methods for generating data containing voting rings
+    '''
+    path = ''
+    def __init__(self, path):
+        self.path = path
+        
+        
+    def generate(self, number = 1, size = 5, target_size = 5, legible_target_size = 20,VOTERS=5000, OBJECTS=1000):
+        # first generate  voting rings
+        
+        # TODO Sometimes generated data crashes partitioner, don't know why ;(
+        
+        # we assume 2000 voters an 200 objects
+        VOTERS = 5000
+        OBJECTS = 1000
+        
+        objects = [[] for i in xrange(OBJECTS)] # every object has a list of his voters
+        
+        import random
+        voting_rings = [[] for i in xrange(number)]
+        for i in xrange(number):
+            for j in xrange(size):
+                voter = str(random.randint(0, VOTERS))
+                while voting_rings[i].count(voter):
+                    voter = str(random.randint(0, VOTERS))
+                voting_rings[i].append(voter)
+                   
+        
+        # voting ringers vote for their objects
+        for i in xrange(number):
+            for j in xrange(target_size):
+                target = random.randint(0, OBJECTS-1)
+                objects[target].extend(voting_rings[i])
+                
+        for voter in xrange(VOTERS):
+            for i in xrange(random.randint(0, legible_target_size)):
+                target = random.randint(0, OBJECTS-1)
+                if not objects[target].count(str(voter)):
+                    objects[target].append(str(voter))
+                    
+        
+        
+        import pprint
+        print "Voting rings are:"
+        pprint.pprint(voting_rings)
+        
+        file = open(self.path, 'w')
+        o_number = 1
+        for o in objects:
+            file.write(str(o_number) + "\n")
+            file.write(" ".join(o))
+            file.write("\n")
+            o_number += 1
+        file.close()
+                
 
+        
+        
 class GraphMaker:
     '''
     Provides methods for reading/writing files
@@ -95,6 +155,16 @@ class Cliquer(object):
                 
         map(filterNodes, self.graph.nodes())
         
+        # we have to change weights to 1/weight, so that stronger connected nodes appears to be closer for cclustering algorithms
+        def invertWeight(edge):
+            try:
+                edge[2]['weight'] = 1/edge[2]['weight']
+            except:
+                edge[2]['weight'] = float('Inf')
+                logger.error("Exception in weight inverting, infinity set")
+        
+        map(invertWeight, self.graph.edges(data=True))
+        
         logger.info("Data sliced with threshold " + repr(threshold) + ", edges " + repr(self.graph.number_of_edges()))
   
     
@@ -126,6 +196,13 @@ class Cliquer(object):
             plt.savefig(filename)
         else:
             plt.show()
+            
+    def printSuspectedGroups(self, lists):
+        lists.sort(key=len)
+
+        import pprint
+        for i in xrange(2):
+            pprint.pprint(lists[i])
 
         
         
@@ -139,9 +216,9 @@ class Cliquer(object):
         # returns dict of nodes with cluster number values
         logger.info("Blondel partition done")
         
-        import pprint
-        pprint.pprint(partition)
-        
+#        import pprint
+#        pprint.pprint(partition)
+            
         return partition
 
     def newmanAlgorithm(self):
@@ -151,8 +228,9 @@ class Cliquer(object):
         logger.info("Newman partition done")
         
         print "Q: ", Q  
-        import pprint
-        pprint.pprint(partition)   
+#        import pprint
+#        pprint.pprint(partition)   
+        self.printSuspectedGroups(partition)    
         
         return partition 
     
@@ -163,7 +241,8 @@ class Cliquer(object):
         # returns list o lists (each list for community) as a second tuple member
         logger.info("Aaron-Newman partition done")
         
-        import pprint
-        pprint.pprint(partition)
+#        import pprint
+#        pprint.pprint(partition)   
+        self.printSuspectedGroups(partition)    
         
         return partition    

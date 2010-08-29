@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 '''
 Created on 02-08-2010
 
@@ -7,8 +9,12 @@ import networkx as nx
 from thesis import sna
 
 if __name__ == '__main__':
+    
 
-    gm = sna.GraphMaker("/home/ymir/eclipse/networkx-thesis/voting_ring.txt")
+    dm = sna.DataMaker("/home/ymir/eclipse/networkx-thesis/testing-ring.txt")
+    dm.generate()
+
+    gm = sna.GraphMaker("/home/ymir/eclipse/networkx-thesis/testing-ring.txt")
     gm.makeGraph()
     
     cl = sna.Cliquer(gm.graph)
