@@ -153,7 +153,7 @@ class Cliquer(object):
             if self.graph.degree(node) == 0:
                 self.graph.remove_node(node)
                 
-        map(filterNodes, self.graph.nodes())
+        map(filterNodes, self.graph.nodes_iter())
         
         # we have to change weights to 1/weight, so that stronger connected nodes appears to be closer for cclustering algorithms
         def invertWeight(edge):
@@ -185,7 +185,7 @@ class Cliquer(object):
         else:
             nodeList = l
             
-        colorList = [0] * len(self.graph.nodes())
+        colorList = [0] * self.graph.number_of_nodes()
         for nbunch in nodeList:
             for n in nbunch:
                 colorList[self.graph.nodes().index(n)] = nodeList.index(nbunch)
@@ -216,9 +216,6 @@ class Cliquer(object):
         # returns dict of nodes with cluster number values
         logger.info("Blondel partition done")
         
-#        import pprint
-#        pprint.pprint(partition)
-            
         return partition
 
     def newmanAlgorithm(self):
@@ -228,8 +225,6 @@ class Cliquer(object):
         logger.info("Newman partition done")
         
         print "Q: ", Q  
-#        import pprint
-#        pprint.pprint(partition)   
         self.printSuspectedGroups(partition)    
         
         return partition 
@@ -241,8 +236,7 @@ class Cliquer(object):
         # returns list o lists (each list for community) as a second tuple member
         logger.info("Aaron-Newman partition done")
         
-#        import pprint
-#        pprint.pprint(partition)   
+
         self.printSuspectedGroups(partition)    
         
         return partition    
