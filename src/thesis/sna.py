@@ -80,8 +80,9 @@ class GraphMaker:
     file_type = FileType.unknown
     graph = nx.Graph()
     
-    def __init__(self, path, file_type = FileType.VOTING_RING):
-        self.path = path
+    def __init__(self, path = None, file_type = FileType.VOTING_RING):
+        if path:
+            self.path = path
         self.file_type = file_type
     
     
@@ -153,12 +154,14 @@ class Cliquer(object):
             if self.graph.degree(node) == 0:
                 self.graph.remove_node(node)
                 
-        map(filterNodes, self.graph.nodes_iter())
+        map(filterNodes, self.graph.nodes())
         
         # we have to change weights to 1/weight, so that stronger connected nodes appears to be closer for cclustering algorithms
         def invertWeight(edge):
             try:
-                edge[2]['weight'] = 1/edge[2]['weight']
+                edge[2]['weight'] = 1.0/edge[2]['weight']
+#            print "%f to %f \n" % (edge[2]['weight'], (1.0/edge[2]['weight']))
+#                print "%f is my waga \n" % edge[2]['weight'] 
             except:
                 edge[2]['weight'] = float('Inf')
                 logger.error("Exception in weight inverting, infinity set")
@@ -169,6 +172,9 @@ class Cliquer(object):
   
     
     def nativeCliquer(self):
+        '''
+        honestly -- useless
+        '''
         cliques = list(nx.find_cliques(self.graph))
         logger.info("Cliques found:")
         import pprint
@@ -204,10 +210,6 @@ class Cliquer(object):
         for i in xrange(2):
             pprint.pprint(lists[i])
 
-        
-        
-
-
     
     def blodelAlgorithm(self):
         from lib import blondel
@@ -229,10 +231,10 @@ class Cliquer(object):
         
         return partition 
     
-    def aaronNewmanAlgorithm(self):
-        from lib import aaron_newman
+    def causetNewmanAlgorithm(self):
+        from lib import causet_newman
         
-        (maxQ, partition, tree, treeRoot) = aaron_newman.communityStructureNewman(self.graph)
+        (maxQ, partition, tree, treeRoot) = causet_newman.communityStructureNewman(self.graph)
         # returns list o lists (each list for community) as a second tuple member
         logger.info("Aaron-Newman partition done")
         
@@ -240,3 +242,31 @@ class Cliquer(object):
         self.printSuspectedGroups(partition)    
         
         return partition    
+    
+    def MCLAlgorithm(self, inflation=3.3):
+        '''
+        requires installed mcl in system bin path
+        '''
+        
+        nx.write_weighted_edgelist(self.graph, "/tmp/mcl-input", delimiter="\t")
+        import os
+        logger.info("Invoking mcl command ...")
+        os.system("mcl /tmp/mcl-input --abc -te 2 -I %f -o /tmp/mcl-output 2>&1 1>/dev/null" % inflation)
+        logger.info("MCL clustering done")
+        
+        out_file = open("/tmp/mcl-output", 'r')
+        lines = out_file.readlines()
+        
+        partition = list()
+        
+        import string
+        for line in lines:
+            partition.append(map(int, string.split(line)))
+        
+        return partition
+        
+        
+        
+        
+
+        
