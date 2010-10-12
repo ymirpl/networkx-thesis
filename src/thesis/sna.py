@@ -15,7 +15,7 @@ def timeit(method):
         result = method(*args, **kw)
         te = time.time()
 
-        logger.info('%r (%r, %r) %.3f sec' %  (method.__name__, args, kw, te-ts))
+        logger.debug('%r (%r, %r) %.3f sec' %  (method.__name__, args, kw, te-ts))
         return result
 
     return timed
@@ -47,27 +47,27 @@ class DataMaker:
         objects = [[] for i in xrange(OBJECTS)] # every object has a list of his voters
         
         import random
-        voting_rings = [[] for i in xrange(number)]
+        self.voting_rings = [[] for i in xrange(number)]
         for i in xrange(number):
             for j in xrange(size):
                 voter = str(random.randint(0, VOTERS))
-                while voting_rings[i].count(voter):
+                while voter in self.voting_rings[i]:
                     voter = str(random.randint(0, VOTERS))
-                voting_rings[i].append(voter)
+                self.voting_rings[i].append(voter)
                    
         
         # voting ringers vote for their objects
         for i in xrange(number):
             for j in xrange(target_size):
                 target = random.randint(0, OBJECTS-1)
-                objects[target].extend(voting_rings[i])
+                objects[target].extend(self.voting_rings[i])
                 
         for voter in xrange(VOTERS):
             
             done_voting = False
             
-            for ring in voting_rings:
-                if ring.count(str(voter)):
+            for ring in self.voting_rings:
+                if str(voter) in ring:
                     done_voting = True
                     break
 
@@ -81,12 +81,12 @@ class DataMaker:
                     
             for i in xrange(votes):
                 target = random.randint(0, OBJECTS-1)
-                if not objects[target].count(str(voter)):
+                if not str(voter) in objects[target]:
                     objects[target].append(str(voter))
         
         
-        logger.info("Voting rings are:")
-        logger.info(voting_rings)
+        logger.debug("Voting rings are:")
+        logger.debug(self.voting_rings)
         
         file = open(self.path, 'w')
         o_number = 1
@@ -130,6 +130,7 @@ class GraphMaker:
                     i += 1
             
             logger.info("Graph loaded, nodes: "  + repr(self.graph.number_of_nodes()) + ", edges: " + repr(self.graph.number_of_edges()))
+            return self.graph
     
     def addEdges(self, voters):
         edges = []
@@ -167,7 +168,7 @@ class Cliquer(object):
         maxEdge = max(self.graph.edges(data=True), key=lambda node: node[2]['weight'])
         self.maxWeight = self.graph.get_edge_data(*maxEdge[:2])['weight']
         
-        logger.info("Weight: max " + repr(self.maxWeight) + " and min " + repr(self.minWeight))
+        logger.debug("Weight: max " + repr(self.maxWeight) + " and min " + repr(self.minWeight))
 
     
     def sliceGraph(self, threshold):
@@ -199,7 +200,7 @@ class Cliquer(object):
         map(invertWeight, self.graph.edges(data=True))
 #        map(nullifyWeight, self.graph.edges(data=True))
         
-        logger.info("Data sliced with threshold " + repr(threshold) + ", edges " + repr(self.graph.number_of_edges()))
+        logger.debug("Data sliced with threshold " + repr(threshold) + ", edges " + repr(self.graph.number_of_edges()) + ", nodes " + repr(self.graph.number_of_nodes()))
   
     
     def nativeCliquer(self):
@@ -229,13 +230,19 @@ class Cliquer(object):
     def printSuspectedGroups(self, lists, noGroups=2):
         lists.sort(key=len)
 
-        import pprint
         for i in xrange(min(noGroups, len(lists))):
-            #logger.info(pprint.pprint(lists[i]))
             logger.info("Suspected group no %d:" % i)
             logger.info(lists[i])
-
-    @timeit
+    
+    def getFristNGroups(self, lists, noGroups=2):
+        lists.sort(key=len)
+        # return as one big lists
+        retList = []
+        for i in xrange(min(noGroups, len(lists))):
+            retList.extend(lists[i])
+        return retList
+    
+    #@timeit
     def blondelAlgorithm(self, verbose=False):
         from lib import blondel
         
@@ -310,7 +317,7 @@ class Cliquer(object):
         
         if verbose:
            self.printSuspectedGroups(partition, verbose['groups'])   
-        
+
         return partition
         
         
