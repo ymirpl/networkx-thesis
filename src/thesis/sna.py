@@ -3,6 +3,7 @@ Created on 03-08-2010
 
 @author: ymir
 '''
+from __future__ import division
 import networkx as nx
 from thesis import logger
 
@@ -35,7 +36,7 @@ class DataMaker:
         self.path = path
         
         
-    def generate(self, number = 1, size = 5, target_size = 5, legible_target_size = 10,VOTERS=1000, OBJECTS=200, bad_hideout=False, additional_votes=5):
+    def generate(self, number = 1, size = 5, target_size = 5, legible_target_size = 10,VOTERS=1000, OBJECTS=200, bad_hideout=False):
         '''
         @param number: no of voting rings
         @param size: size of voting rings
@@ -43,6 +44,9 @@ class DataMaker:
         ''' 
         # TODO Sometimes generated data crashes partitioner, don't know why ;(
         
+        additional_votes = legible_target_size - target_size
+        if additional_votes < 0:
+            additional_votes = 0
         
         objects = [[] for i in xrange(OBJECTS)] # every object has a list of his voters
         
@@ -61,7 +65,9 @@ class DataMaker:
             for j in xrange(target_size):
                 target = random.randint(0, OBJECTS-1)
                 objects[target].extend(self.voting_rings[i])
-                
+              
+              
+        nonVotingCntr = 0       
         for voter in xrange(VOTERS):
             
             done_voting = False
@@ -73,7 +79,8 @@ class DataMaker:
 
             if done_voting:
                 if bad_hideout:
-                    break
+                    nonVotingCntr += 1
+                    continue
                 else:
                     votes = int(random.gauss(additional_votes, additional_votes/4.0))
             else:
@@ -85,6 +92,7 @@ class DataMaker:
                     objects[target].append(str(voter))
         
         
+        logger.debug("Non voting cntr is %d" % nonVotingCntr)
         logger.debug("Voting rings are:")
         logger.debug(self.voting_rings)
         
@@ -234,12 +242,21 @@ class Cliquer(object):
             logger.info("Suspected group no %d:" % i)
             logger.info(lists[i])
     
-    def getFristNGroups(self, lists, noGroups=2):
+    def smartGetFristNGroups(self, lists, noGroups=2):
         lists.sort(key=len)
         # return as one big lists
         retList = []
         for i in xrange(min(noGroups, len(lists))):
             retList.extend(lists[i])
+        
+        while len(retList)/len(self.graph) < 0.1:
+            # if this still lower then 10% of population, get more groups
+            i += 1
+            try:
+                retList.extend(lists[i])
+            except:
+                logger.debug("This was last group! Population is now %f ." % (len(retList)/len(self.graph)))
+                
         return retList
     
     #@timeit

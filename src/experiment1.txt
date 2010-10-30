@@ -1,0 +1,4 @@
+Staramy sie wyznaczyc sensowny slice level, bedziemy probowac z hGn na 1, 2 oraz 3
+hGn  na 1 i iterujemy po slicelevelach
+
+
