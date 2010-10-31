@@ -38,29 +38,40 @@ class Experiment:
 
         
         sliceLevel = kwargs['slice_level']
+        logger.info("Slice is level: %d" % sliceLevel)
         del kwargs['slice_level']
+        
         matchRate = 0.0
         popRate = 0.0
+        suspectsRate = 0.0
+        
+        
+        near100Rate = 0.0 
   
         for run in xrange(runsNo):
             self.dm.generate(**kwargs)
             self.graph = self.gm.makeGraph()
             self.rings = sum(self.dm.voting_rings, []) # H-H-HHACKISH list flattening
-                          
-
-            logger.info("Slice level: %d" % sliceLevel)
             self.cq = sna.Cliquer(self.graph)
             self.cq.sliceGraph(sliceLevel)
             self.result = self.cq.blondelAlgorithm()
             tuple = self.rateQuality(hardGroupsNo)
+            
             matchRate += tuple[0]
-            popRate += tuple[1]                
-                    
+            popRate += tuple[1]
+            suspectsRate += tuple[2] 
+             
+            # fourth quality marker 
+            if matchRate > 0.9:
+                near100Rate += 1
+                             
+        logger.info("Done run %d of %d" % (run, runsNo))            
         
         # we have to aggregate tuple for runsNo
-        tuple = (float(matchRate / float(runsNo)), float(popRate / float(runsNo)))
+        tuple = (float(matchRate / float(runsNo)), float(popRate / float(runsNo)), float(suspectsRate / float(runsNo)), float(near100Rate / float(runsNo)))
         logger.info("After % d runs result is" % runsNo)
         logger.info(tuple)
+        logger.info(" ------------------- END --------------------")
     
         return tuple
     
@@ -68,8 +79,6 @@ class Experiment:
         '''
         @returns touple of matchRate and popRate if hardGroupsNo, for sake of plotting or smth
         '''
-        logger.info("###### QUALITY SUMMARY ######")
-        
         if hardGroupsNo:
             self.selectGroups = [hardGroupsNo]
         for i in self.selectGroups: # select first i groups
@@ -85,11 +94,12 @@ class Experiment:
             
             matchRate = matchCount/len(self.rings) * 100.0
             popRate = len(suspects)/len(self.graph) * 100.0
+            suspectsRate = matchCount/len(suspects) * 100.0
             
             logger.info("Taking first %d groups match rate is %f. These groups are %f  of users population." % (i, matchRate, popRate))
         
         if hardGroupsNo:
-            return (matchRate, popRate)
+            return (matchRate, popRate, suspectsRate)
             
             
     
@@ -102,44 +112,60 @@ class Experiment:
         
         matchRates = []
         popRates = []
+        suspectRates = []
+        near100Rates = []
+        xaxis = []
+        
         
         while kwargs[param] <= maxValue:
             logger.info("Will iterate over %s : now it's %d:" % (param, kwargs[param]))
             tuple = self.compute(hardGroupsNo = hardGroupsNo, **kwargs)
+            xaxis.append(kwargs[param]) 
             kwargs[param] += step
             
             if hardGroupsNo:
                 matchRates.append(tuple[0])
                 popRates.append(tuple[1])
+                suspectRates.append(tuple[2])
+                near100Rates.append(tuple[3])
             
             
         if hardGroupsNo:
-            return (matchRates, popRates)
+            return ((matchRates, popRates, suspectRates, near100Rates), xaxis)
         
-    def plotTuple(self, tuple, caption = "This is experiment", xlabel = "This is x label", ylabel = "This is y label", file_title = "chart", step = 1):
-        from numpy import arange
-        x = arange(0,len(tuple[0]),1)
+    def plotTuple(self, tuple, caption = "This is experiment", xlabel = "This is x label", ylabel = "This is y label", file_title = "chart", xaxis = [], step = 1):
+        
+        if not xaxis:
+            from numpy import arange
+            xaxis = arange(0,len(tuple[0]),1)
 
         print tuple[0]
         print tuple[1]
+        print tuple[2]
+        logger.info("############# Plotting tuples ################")
+        logger.info(tuple)
         
         import Gnuplot
         g = Gnuplot.Gnuplot()
-        suspects = Gnuplot.Data(x, tuple[0], title ='procent wykrycia', with_="points lt 1 lw 4 lc 1")
-        population = Gnuplot.Data(x, tuple[1], title='podejrzany procent populacji', with_="points lt 4 lw 4 lc 2")
+        suspects = Gnuplot.Data(xaxis, tuple[0], title ='procent wykrytych zlosliwych glosujacych', with_="points lt 1 lw 6 lc 1")
+        population = Gnuplot.Data(xaxis, tuple[1], title='podejrzany procent populacji', with_="points lt 4 lw 6 lc 3")
+        suspectsR = Gnuplot.Data(xaxis, tuple[2], title='procent zlosliwych glosujacych wsrod podejrzanych', with_="points lt 2 lw 6 lc 4")
+        near100 = Gnuplot.Data(xaxis, tuple[3], title='procent wykryc powyzej 90%', with_="points lt 3 lw 6 lc 5")
+        
         
         g.title(caption)
         g.xlabel(xlabel)
         g.ylabel(ylabel)
         g('set xtics ' + repr(step))
         g('set grid')
+        g('set size 0.7,0.7')
         
-        max = max(tuple[0])
-        if max(tuple[1]) > max:
-            max = max(tuple[1])
+        max_y = max(tuple[0])
+        if max(tuple[1]) > max_y:
+            max_y = max(tuple[1])
         
-        g('set yrange [ 0 : ' + repr(max+10) + ' ]')
-        g.plot(suspects, population)
+        g('set yrange [ 0 : ' + repr(max_y+10) + ' ]')
+        g.plot(suspects, population, suspectsR, near100)
         g.hardcopy(file_title + '.ps', enhanced=1, color=1)
         
 def karateClub():

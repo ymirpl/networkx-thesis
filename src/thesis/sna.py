@@ -265,7 +265,7 @@ class Cliquer(object):
         
         d = blondel.best_partition(self.graph)
         # returns dict of nodes with cluster number values
-        logger.info("Blondel partition done")
+        logger.debug("Blondel partition done")
 
         # change it to list of lists
         
