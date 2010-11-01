@@ -62,13 +62,13 @@ class Experiment:
             suspectsRate += tuple[2] 
              
             # fourth quality marker 
-            if matchRate > 0.9:
+            if tuple[0] > 0.9:
                 near100Rate += 1
-                             
+            
         logger.info("Done run %d of %d" % (run, runsNo))            
         
         # we have to aggregate tuple for runsNo
-        tuple = (float(matchRate / float(runsNo)), float(popRate / float(runsNo)), float(suspectsRate / float(runsNo)), float(near100Rate / float(runsNo)))
+        tuple = (float(matchRate / float(runsNo)), float(popRate / float(runsNo)), float(suspectsRate / float(runsNo)), float(near100Rate / float(runsNo))*100.0)
         logger.info("After % d runs result is" % runsNo)
         logger.info(tuple)
         logger.info(" ------------------- END --------------------")
@@ -139,9 +139,6 @@ class Experiment:
             from numpy import arange
             xaxis = arange(0,len(tuple[0]),1)
 
-        print tuple[0]
-        print tuple[1]
-        print tuple[2]
         logger.info("############# Plotting tuples ################")
         logger.info(tuple)
         
@@ -150,7 +147,7 @@ class Experiment:
         suspects = Gnuplot.Data(xaxis, tuple[0], title ='procent wykrytych zlosliwych glosujacych', with_="points lt 1 lw 6 lc 1")
         population = Gnuplot.Data(xaxis, tuple[1], title='podejrzany procent populacji', with_="points lt 4 lw 6 lc 3")
         suspectsR = Gnuplot.Data(xaxis, tuple[2], title='procent zlosliwych glosujacych wsrod podejrzanych', with_="points lt 2 lw 6 lc 4")
-        near100 = Gnuplot.Data(xaxis, tuple[3], title='procent wykryc powyzej 90%', with_="points lt 3 lw 6 lc 5")
+#        near100 = Gnuplot.Data(xaxis, tuple[3], title='procent wykryc powyzej 90%', with_="points lt 3 lw 6 lc 5")
         
         
         g.title(caption)
@@ -158,14 +155,18 @@ class Experiment:
         g.ylabel(ylabel)
         g('set xtics ' + repr(step))
         g('set grid')
-        g('set size 0.7,0.7')
+        g('set size 1.3,1.3')
         
-        max_y = max(tuple[0])
-        if max(tuple[1]) > max_y:
-            max_y = max(tuple[1])
+        maxs = []
+        maxs.append(max(tuple[0]))
+        maxs.append(max(tuple[1]))
+        maxs.append(max(tuple[2]))
+#        maxs.append(max(tuple[3]))
+        max_y = max(maxs)
         
         g('set yrange [ 0 : ' + repr(max_y+10) + ' ]')
-        g.plot(suspects, population, suspectsR, near100)
+#        g.plot(suspects, population, suspectsR, near100)
+        g.plot(suspects, population, suspectsR)
         g.hardcopy(file_title + '.ps', enhanced=1, color=1)
         
 def karateClub():
