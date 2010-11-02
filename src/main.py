@@ -29,12 +29,6 @@ def experimentOne():
 
     e.plotTuple(tuple, xaxis = xaxis, step = 5, caption = "Skutecznosc metody w zaleznosci  od wielkosci kliki", xlabel = "Wielkosc kliki", ylabel = "", file_title = "sizebhf")
 
-    (tuple, xaxis) = e.iterateParam(minValue = 10, maxValue = 40, param="size", hardGroupsNo=2, slice_level = 3, target_size = 10, step = 5, number = 1, \
-                   legible_target_size = 10, VOTERS=500, OBJECTS=100, bad_hideout=True, runsNo = 100)
-
-    e.plotTuple(tuple, xaxis = xaxis, step = 5, caption = "Skutecznosc metody w zaleznosci  od wielkosci kliki", xlabel = "Wielkosc kliki", ylabel = "", file_title = "sizebht")
-
-
     (tuple, xaxis) = e.iterateParam(minValue = 3, maxValue = 12, param="target_size", size = 25, slice_level = 3,  hardGroupsNo=2, step = 3, number = 1, \
                    legible_target_size = 10, VOTERS=500, OBJECTS=100, bad_hideout=False, runsNo = 100)
 
@@ -79,11 +73,23 @@ def experimentOne():
     e.plotTuple(tuple, xaxis = xaxis, step = 3,caption = "Skutecznosc metody w zaleznosci od liczby obiektow, na ktore glosuja uczciwi glosujacy ", xlabel = "Liczba obiektow", ylabel = "", file_title = "ltsht")
 
 
+def testTwo():
+    e = Experiment()
+    
+    (tuple, xaxis) = e.iterateParam(minValue = 10, maxValue = 40, param="size", hardGroupsNo=2, slice_level = 3, target_size = 10, step = 5, number = 1, \
+                   legible_target_size = 10, VOTERS=500, OBJECTS=100, bad_hideout=True, runsNo = 10)
+
+    e.plotTuple(tuple, xaxis = xaxis, step = 5, caption = "Skutecznosc metody w zaleznosci  od wielkosci kliki", xlabel = "Wielkosc kliki", ylabel = "", file_title = "sizebht")
+
+
 
 if __name__ == '__main__':
-    #experimentOne()
-    e = Experiment()
-    e.compute(hardGroupsNo = 2, runsNo = 100, slice_level = 3, number = 1, size = 25, target_size = 10, legible_target_size = 10, VOTERS=500, OBJECTS=100, bad_hideout=True)
+    experimentOne()
+    #testTwo()
+
+
+#    e = Experiment()
+#    e.compute(hardGroupsNo = 2, runsNo = 50, slice_level = 3, number = 1, size = 25, target_size = 10, legible_target_size = 10, VOTERS=500, OBJECTS=100, bad_hideout=True)
 
 #    experiment.karateClub()
 #    experiment.sixtyOne()

@@ -1,0 +1,16 @@
+2010-11-03 00:45:16,460: Will iterate over slice_level : now it's 1:
+2010-11-03 00:45:16,460: Will generate graph with params
+2010-11-03 00:45:16,460: {'bad_hideout': False, 'slice_level': 1, 'VOTERS': 500, 'legible_target_size': 10, 'number': 1, 'target_size': 10, 'OBJECTS': 100, 'size': 25}
+2010-11-03 00:45:16,460: Will do 100 runs
+2010-11-03 00:45:16,460: Slice is level: 1
+2010-11-03 00:45:17,210: Graph loaded, nodes: 500, edges: 71799
+2010-11-03 00:45:21,200: Taking first 2 groups match rate is 100.000000. These groups are 63.400000  of users population.
+2010-11-03 00:45:21,783: Graph loaded, nodes: 500, edges: 102426
+2010-11-03 00:45:27,978: Taking first 2 groups match rate is 0.000000. These groups are 30.400000  of users population.
+2010-11-03 00:45:28,575: Graph loaded, nodes: 500, edges: 115050
+2010-11-03 00:45:33,912: Taking first 2 groups match rate is 12.000000. These groups are 12.600000  of users population.
+2010-11-03 00:45:34,444: Graph loaded, nodes: 500, edges: 115941
+2010-11-03 00:45:43,156: Taking first 2 groups match rate is 32.000000. These groups are 21.000000  of users population.
+2010-11-03 00:45:43,664: Graph loaded, nodes: 500, edges: 119037
+2010-11-03 00:45:49,971: Taking first 2 groups match rate is 12.000000. These groups are 14.600000  of users population.
+2010-11-03 00:45:50,471: Graph loaded, nodes: 500, edges: 118855

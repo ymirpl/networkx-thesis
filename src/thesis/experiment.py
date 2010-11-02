@@ -53,9 +53,6 @@ class Experiment:
             self.graph = self.gm.makeGraph()
             self.rings = sum(self.dm.voting_rings, []) # H-H-HHACKISH list flattening
 
-            logger.debug("Voting rings are")
-            logger.debug(self.rings)
-            
             self.cq = sna.Cliquer(self.graph)
             self.cq.sliceGraph(sliceLevel)
             self.result = self.cq.blondelAlgorithm()
@@ -67,7 +64,7 @@ class Experiment:
             suspectsRate += tuple[2] 
              
             # fourth quality marker 
-            if tuple[0] > 0.9:
+            if tuple[0] > 90:
                 near100Rate += 1
             logger.debug(near100Rate)
             
@@ -155,7 +152,7 @@ class Experiment:
         suspects = Gnuplot.Data(xaxis, tuple[0], title ='procent wykrytych zlosliwych glosujacych', with_="points lt 1 lw 6 lc 1")
         population = Gnuplot.Data(xaxis, tuple[1], title='podejrzany procent populacji', with_="points lt 4 lw 6 lc 3")
         suspectsR = Gnuplot.Data(xaxis, tuple[2], title='procent zlosliwych glosujacych wsrod podejrzanych', with_="points lt 2 lw 6 lc 4")
-        near100 = Gnuplot.Data(xaxis, tuple[3], title='procent wykryc powyzej 90%', with_="points lt 3 lw 6 lc 5")
+        near100 = Gnuplot.Data(xaxis, tuple[3], title='procent wykryc powyzej 90%', with_="points lt 3 lw 6 lc 6")
         
         
         g.title(caption)
