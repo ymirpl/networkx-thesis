@@ -52,9 +52,14 @@ class Experiment:
             self.dm.generate(**kwargs)
             self.graph = self.gm.makeGraph()
             self.rings = sum(self.dm.voting_rings, []) # H-H-HHACKISH list flattening
+
+            logger.debug("Voting rings are")
+            logger.debug(self.rings)
+            
             self.cq = sna.Cliquer(self.graph)
             self.cq.sliceGraph(sliceLevel)
             self.result = self.cq.blondelAlgorithm()
+            
             tuple = self.rateQuality(hardGroupsNo)
             
             matchRate += tuple[0]
@@ -64,8 +69,11 @@ class Experiment:
             # fourth quality marker 
             if tuple[0] > 0.9:
                 near100Rate += 1
+            logger.debug(near100Rate)
             
-        logger.info("Done run %d of %d" % (run, runsNo))            
+        logger.info("Done run %d of %d" % (run, runsNo))     
+        logger.debug(near100Rate)       
+        logger.debug(float(near100Rate / float(runsNo))*100.0)
         
         # we have to aggregate tuple for runsNo
         tuple = (float(matchRate / float(runsNo)), float(popRate / float(runsNo)), float(suspectsRate / float(runsNo)), float(near100Rate / float(runsNo))*100.0)
@@ -83,7 +91,8 @@ class Experiment:
             self.selectGroups = [hardGroupsNo]
         for i in self.selectGroups: # select first i groups
             matchCount = 0
-            suspects = self.cq.smartGetFristNGroups(self.result, i)
+            # suspects = self.cq.smartGetFristNGroups(self.result, i)
+            suspects = self.cq.getSuspectedGroups(self.result, i)
             
             logger.debug("Suspects: ")
             logger.debug(suspects)
@@ -98,8 +107,7 @@ class Experiment:
             
             logger.info("Taking first %d groups match rate is %f. These groups are %f  of users population." % (i, matchRate, popRate))
         
-        if hardGroupsNo:
-            return (matchRate, popRate, suspectsRate)
+        return (matchRate, popRate, suspectsRate)
             
             
     
@@ -147,7 +155,7 @@ class Experiment:
         suspects = Gnuplot.Data(xaxis, tuple[0], title ='procent wykrytych zlosliwych glosujacych', with_="points lt 1 lw 6 lc 1")
         population = Gnuplot.Data(xaxis, tuple[1], title='podejrzany procent populacji', with_="points lt 4 lw 6 lc 3")
         suspectsR = Gnuplot.Data(xaxis, tuple[2], title='procent zlosliwych glosujacych wsrod podejrzanych', with_="points lt 2 lw 6 lc 4")
-#        near100 = Gnuplot.Data(xaxis, tuple[3], title='procent wykryc powyzej 90%', with_="points lt 3 lw 6 lc 5")
+        near100 = Gnuplot.Data(xaxis, tuple[3], title='procent wykryc powyzej 90%', with_="points lt 3 lw 6 lc 5")
         
         
         g.title(caption)
@@ -161,12 +169,12 @@ class Experiment:
         maxs.append(max(tuple[0]))
         maxs.append(max(tuple[1]))
         maxs.append(max(tuple[2]))
-#        maxs.append(max(tuple[3]))
+        maxs.append(max(tuple[3]))
         max_y = max(maxs)
         
         g('set yrange [ 0 : ' + repr(max_y+10) + ' ]')
-#        g.plot(suspects, population, suspectsR, near100)
-        g.plot(suspects, population, suspectsR)
+        g.plot(suspects, population, suspectsR, near100)
+        #g.plot(suspects, population, suspectsR)
         g.hardcopy(file_title + '.ps', enhanced=1, color=1)
         
 def karateClub():
@@ -217,7 +225,7 @@ def sixtyOne(sliceLevels = [3], plot=False):
 
 def generated(sliceLevels = [3], plot=False):
     dm = sna.DataMaker("/home/ymir/eclipse/networkx-thesis/testing-ring.txt")
-    dm.generate(number = 1, size = 25, target_size = 10, legible_target_size = 10, VOTERS=5000, OBJECTS=1000, bad_hideout=False)
+    dm.generate(number = 1, size = 25, target_size = 10, legible_target_size = 10, VOTERS=5000, OBJECTS=1000, bad_hideout=True)
     gm = sna.GraphMaker("/home/ymir/eclipse/networkx-thesis/testing-ring.txt")
     gm.makeGraph()
     

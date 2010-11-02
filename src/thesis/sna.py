@@ -235,12 +235,15 @@ class Cliquer(object):
         else:
             plt.show()
             
-    def printSuspectedGroups(self, lists, noGroups=2):
+    def getSuspectedGroups(self, lists, noGroups=2):
         lists.sort(key=len)
+        retList = []
 
         for i in xrange(min(noGroups, len(lists))):
-            logger.info("Suspected group no %d:" % i)
-            logger.info(lists[i])
+            retList.extend(lists[i])
+        
+        return retList
+        
     
     def smartGetFristNGroups(self, lists, noGroups=2):
         lists.sort(key=len)
