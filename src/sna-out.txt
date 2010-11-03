@@ -1,0 +1,2 @@
+2010-11-03 20:53:11,646: Graph loaded, edges: 911, nodes: 128
+2010-11-03 20:53:11,937: 'computeMeasures' ((<thesis.fb.Facebooker instance at 0x121f1b8>,), {}) 0.290 sec

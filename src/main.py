@@ -8,6 +8,7 @@ Created on 02-08-2010
 '''
 import networkx as nx
 from thesis.experiment import Experiment
+from thesis.fb import Facebooker
 
 
 def experimentOne():
@@ -84,15 +85,18 @@ def testTwo():
 
 
 if __name__ == '__main__':
-    experimentOne()
-    #testTwo()
-
-
-#    e = Experiment()
-#    e.compute(hardGroupsNo = 2, runsNo = 50, slice_level = 3, number = 1, size = 25, target_size = 10, legible_target_size = 10, VOTERS=500, OBJECTS=100, bad_hideout=True)
+#    experimentOne()
+#    testTwo()
 
 #    experiment.karateClub()
 #    experiment.sixtyOne()
 #    experiment.generated()
+    fb = Facebooker()
+    fb.loadGraph()
+    fb.computeMeasures()
+    print fb.centrality['degree']
+
+
+
 
 
