@@ -93,8 +93,7 @@ if __name__ == '__main__':
 #    experiment.generated()
     fb = Facebooker()
     fb.loadGraph()
-    fb.computeMeasures()
-    print fb.centrality['degree']
+    fb.partitionGraph()
 
 
 

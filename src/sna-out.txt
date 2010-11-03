@@ -1,2 +1,72 @@
 2010-11-03 20:53:11,646: Graph loaded, edges: 911, nodes: 128
 2010-11-03 20:53:11,937: 'computeMeasures' ((<thesis.fb.Facebooker instance at 0x121f1b8>,), {}) 0.290 sec
+2010-11-03 20:59:01,335: Graph loaded, edges: 911, nodes: 128
+2010-11-03 20:59:01,367: Blondel partition done
+2010-11-03 20:59:46,491: Graph loaded, edges: 911, nodes: 128
+2010-11-03 20:59:46,523: Blondel partition done
+2010-11-03 22:04:40,408: Graph loaded, edges: 911, nodes: 128
+2010-11-03 22:04:40,442: Blondel partition done
+2010-11-03 22:05:45,570: Graph loaded, edges: 911, nodes: 128
+2010-11-03 22:05:45,604: Blondel partition done
+2010-11-03 22:06:49,496: Graph loaded, edges: 911, nodes: 128
+2010-11-03 22:06:49,553: Blondel partition done
+2010-11-03 22:08:40,478: Graph loaded, edges: 911, nodes: 128
+2010-11-03 22:08:40,514: Blondel partition done
+2010-11-03 22:09:13,046: Graph loaded, edges: 911, nodes: 128
+2010-11-03 22:09:13,078: Blondel partition done
+2010-11-03 22:09:18,817: Graph loaded, edges: 911, nodes: 128
+2010-11-03 22:09:18,850: Blondel partition done
+2010-11-03 22:10:30,572: Graph loaded, edges: 911, nodes: 128
+2010-11-03 22:10:30,604: Blondel partition done
+2010-11-03 22:11:54,940: Graph loaded, edges: 911, nodes: 128
+2010-11-03 22:11:54,973: Blondel partition done
+2010-11-03 22:14:30,920: Graph loaded, edges: 911, nodes: 128
+2010-11-03 22:14:30,953: Blondel partition done
+2010-11-03 22:14:53,911: Graph loaded, edges: 911, nodes: 128
+2010-11-03 22:14:53,943: Blondel partition done
+2010-11-03 22:19:31,642: Graph loaded, edges: 911, nodes: 128
+2010-11-03 22:19:31,674: Blondel partition done
+2010-11-03 22:19:47,178: Graph loaded, edges: 911, nodes: 128
+2010-11-03 22:19:47,246: Blondel partition done
+2010-11-03 22:19:51,038: Graph loaded, edges: 911, nodes: 128
+2010-11-03 22:19:51,071: Blondel partition done
+2010-11-03 22:20:35,913: Graph loaded, edges: 911, nodes: 128
+2010-11-03 22:20:35,945: Blondel partition done
+2010-11-03 22:23:06,739: Graph loaded, edges: 911, nodes: 128
+2010-11-03 22:23:06,786: Blondel partition done
+2010-11-03 22:24:58,818: Graph loaded, edges: 911, nodes: 128
+2010-11-03 22:24:58,850: Blondel partition done
+2010-11-03 22:25:31,475: Graph loaded, edges: 911, nodes: 128
+2010-11-03 22:25:31,507: Blondel partition done
+2010-11-03 22:25:44,141: Graph loaded, edges: 911, nodes: 128
+2010-11-03 22:25:44,173: Blondel partition done
+2010-11-03 22:26:04,377: Graph loaded, edges: 911, nodes: 128
+2010-11-03 22:26:04,410: Blondel partition done
+2010-11-03 22:27:08,172: Graph loaded, edges: 911, nodes: 128
+2010-11-03 22:27:08,205: Blondel partition done
+2010-11-03 22:29:02,229: Graph loaded, edges: 911, nodes: 128
+2010-11-03 22:29:02,261: Blondel partition done
+2010-11-03 22:29:37,166: Graph loaded, edges: 911, nodes: 128
+2010-11-03 22:29:37,265: Blondel partition done
+2010-11-03 22:30:16,266: Graph loaded, edges: 911, nodes: 128
+2010-11-03 22:30:16,299: Blondel partition done
+2010-11-03 22:30:32,350: Graph loaded, edges: 911, nodes: 128
+2010-11-03 22:30:32,383: Blondel partition done
+2010-11-03 22:30:49,479: Graph loaded, edges: 911, nodes: 128
+2010-11-03 22:30:49,511: Blondel partition done
+2010-11-03 22:31:05,546: Graph loaded, edges: 911, nodes: 128
+2010-11-03 22:31:05,584: Blondel partition done
+2010-11-03 22:31:48,345: Graph loaded, edges: 911, nodes: 128
+2010-11-03 22:31:48,379: Blondel partition done
+2010-11-03 22:32:16,165: Graph loaded, edges: 911, nodes: 128
+2010-11-03 22:32:16,197: Blondel partition done
+2010-11-03 22:42:48,768: Graph loaded, edges: 911, nodes: 128
+2010-11-03 22:42:48,800: Blondel partition done
+2010-11-03 22:43:18,597: Graph loaded, edges: 911, nodes: 128
+2010-11-03 22:43:18,630: Blondel partition done
+2010-11-03 22:50:07,916: Graph loaded, edges: 911, nodes: 128
+2010-11-03 22:50:07,949: Blondel partition done
+2010-11-03 22:51:35,684: Graph loaded, edges: 911, nodes: 128
+2010-11-03 22:51:35,747: Blondel partition done
+2010-11-03 22:52:45,543: Graph loaded, edges: 911, nodes: 128
+2010-11-03 22:52:45,576: Blondel partition done
