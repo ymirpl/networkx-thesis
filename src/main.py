@@ -87,13 +87,14 @@ def testTwo():
 if __name__ == '__main__':
 #    experimentOne()
 #    testTwo()
-
+    
+    from thesis import experiment
 #    experiment.karateClub()
-#    experiment.sixtyOne()
+    experiment.sixtyOne()
 #    experiment.generated()
-    fb = Facebooker()
-    fb.loadGraph()
-    fb.partitionGraph()
+#    fb = Facebooker()
+#    fb.loadGraph()
+#    fb.partitionGraph()
 
 
 

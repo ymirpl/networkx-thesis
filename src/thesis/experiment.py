@@ -203,7 +203,13 @@ def sixtyOne(sliceLevels = [3], plot=False):
         cq = sna.Cliquer(gm.graph)
         cq.sliceGraph(sliceLevel)
         
-        partition = cq.blondelAlgorithm(verbose={'groups':2})
+        partition = cq.blondelAlgorithm()
+        suspects = cq.smartGetFristNGroups(partition, 2)
+        suspects_no = len(suspects)
+        # We take proper care only of blondel outcome
+        
+        
+        logger.info("There is %d suspects, what is  %f percent of total population." % (suspects_no, (suspects_no / len(cq.graph)) * 100.0) )
         if plot:
             cq.prettyPlotter(l=partition)
         
@@ -211,11 +217,11 @@ def sixtyOne(sliceLevels = [3], plot=False):
 #        if plot:
 #            cq.prettyPlotter(l=partition)
 #        
-        partition = cq.causetNewmanAlgorithm(verbose={'groups':2})
+        partition = cq.causetNewmanAlgorithm()
         if plot:
             cq.prettyPlotter(l=partition)
         
-        partition = cq.MCLAlgorithm(verbose={'groups':2})
+        partition = cq.MCLAlgorithm()
         if plot:
             cq.prettyPlotter(l=partition)
             

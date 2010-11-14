@@ -262,7 +262,7 @@ class Cliquer(object):
                 
         return retList
     
-    #@timeit
+    @timeit
     def blondelAlgorithm(self, verbose=False):
         from lib import blondel
         
@@ -281,7 +281,7 @@ class Cliquer(object):
             nodeList[d[k]].append(k)
         
         if verbose:
-            self.printSuspectedGroups(nodeList, verbose['groups'])    
+            self.getSuspectedGroups(nodeList, verbose['groups'])    
         
         return nodeList
     
@@ -294,7 +294,7 @@ class Cliquer(object):
         
         if verbose:
             logger.info("Q: %f" % Q)  
-            self.printSuspectedGroups(partition, verbose['groups'])    
+            self.getSuspectedGroups(partition, verbose['groups'])    
         
         return partition 
     
@@ -307,7 +307,7 @@ class Cliquer(object):
         logger.info("Causet-Newman partition done")
         
         if verbose:
-            self.printSuspectedGroups(partition, verbose['groups'])    
+            self.getSuspectedGroups(partition, verbose['groups'])    
         
         return partition    
     
@@ -336,7 +336,7 @@ class Cliquer(object):
             partition.append(map(int, string.split(line)))
         
         if verbose:
-           self.printSuspectedGroups(partition, verbose['groups'])   
+           self.getSuspectedGroups(partition, verbose['groups'])   
 
         return partition
         
