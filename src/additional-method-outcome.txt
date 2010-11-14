@@ -1,0 +1,16 @@
+2010-11-14 01:03:32,645: Graph loaded, nodes: 1761, edges: 334204
+2010-11-14 01:03:35,194: Data sliced with threshold 3, edges 73228, nodes 931
+2010-11-14 01:03:37,835: Blondel partition done
+2010-11-14 01:03:37,875: 'blondelAlgorithm' ((<thesis.sna.Cliquer object at 0x1757d90>,), {}) 2.680 sec
+2010-11-14 01:03:37,875: There is 106 suspects, what is  11.385607 percent of total population.
+2010-11-14 01:03:42,564: Causet-Newman partition done
+2010-11-14 01:05:47,149: Graph loaded, nodes: 1761, edges: 334204
+2010-11-14 01:05:49,708: Data sliced with threshold 3, edges 73228, nodes 931
+2010-11-14 01:05:52,445: Blondel partition done
+2010-11-14 01:05:52,490: 'blondelAlgorithm' ((<thesis.sna.Cliquer object at 0x108cd10>,), {}) 2.782 sec
+2010-11-14 01:05:52,491: There is 106 suspects, what is  11.385607 percent of total population.
+2010-11-14 01:05:57,537: Causet-Newman partition done
+2010-11-14 01:05:57,542: 'causetNewmanAlgorithm' ((<thesis.sna.Cliquer object at 0x108cd10>,), {}) 5.051 sec
+2010-11-14 01:05:59,385: Invoking mcl command ...
+2010-11-14 01:06:02,510: MCL clustering done
+2010-11-14 01:06:02,522: 'MCLAlgorithm' ((<thesis.sna.Cliquer object at 0x108cd10>,), {}) 4.979 sec
