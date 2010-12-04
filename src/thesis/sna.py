@@ -36,7 +36,7 @@ class DataMaker:
         self.path = path
         
         
-    def generate(self, number = 1, size = 5, target_size = 5, legible_target_size = 10,VOTERS=1000, OBJECTS=200, bad_hideout=False):
+    def generate(self, number = 1, size = 5, target_size = 5, legible_target_size = 10,VOTERS=1000, OBJECTS=200, bad_hideout=False, slice_level = 0):
         '''
         @param number: no of voting rings
         @param size: size of voting rings

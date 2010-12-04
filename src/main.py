@@ -11,11 +11,27 @@ from thesis.experiment import Experiment
 from thesis.fb import Facebooker
 
 
+def testOne():
+    e = Experiment()
+    e.paramsDict = {'size': 25, 'number': 1, \
+                   'legible_target_size': 10, 'target_size': 10, 'VOTERS': 500, 'OBJECTS': 100, 'bad_hideout': False, 'slice_level': 3}
+ 
+    (tuple, xaxis) = e.iterateParam(minValue = 1, maxValue = 4, param="slice_level", step = 1, runsNo = 3, hardGroupsNo = 2)
+
+    e.plotTuple(tuple, caption = "Skutecznosc metody w zaleznosci od poziomu odciecia", xlabel = "Poziom odciecia", ylabel = "", file_title = "slbhf", xaxis = xaxis, step = 1)
+
+#    e.paramsDict['bad_hideout'] = True
+#    (tuple, xaxis) = e.iterateParam(minValue = 10, maxValue = 40, param="size", hardGroupsNo=2, step = 5, runs = 3)
+#
+#    e.plotTuple(tuple, xaxis = xaxis, step = 5, caption = "Skutecznosc metody w zaleznosci  od wielkosci kliki", xlabel = "Wielkosc kliki", ylabel = "", file_title = "sizebhf")
+
+
 def experimentOne():
     e = Experiment()
+    e.paramsDict = {'size': 25, 'number': 1, \
+                   'legible_target_size': 10, 'target_size': 10, 'VOTERS': 500, 'OBJECTS': 100, 'bad_hideout': False, 'slice_level': 3}
  
-    (tuple, xaxis) = e.iterateParam(minValue = 1, maxValue = 4, param="slice_level", step = 1, size = 25, hardGroupsNo=2, number = 1, \
-                   legible_target_size = 10, target_size = 10, VOTERS=500, OBJECTS=100, bad_hideout=False, runsNo = 100)
+    (tuple, xaxis) = e.iterateParam(minValue = 1, maxValue = 4, param="slice_level", step = 1, runsNo = 100)
 
     e.plotTuple(tuple, caption = "Skutecznosc metody w zaleznosci od poziomu odciecia", xlabel = "Poziom odciecia", ylabel = "", file_title = "slbhf", xaxis = xaxis, step = 1)
     
@@ -86,11 +102,11 @@ def testTwo():
 
 if __name__ == '__main__':
 #    experimentOne()
-#    testTwo()
+    testOne()
     
     from thesis import experiment
 #    experiment.karateClub()
-    experiment.sixtyOne()
+#    experiment.sixtyOne()
 #    experiment.generated()
 #    fb = Facebooker()
 #    fb.loadGraph()

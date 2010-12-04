@@ -17,6 +17,10 @@ class Experiment:
     population = 0
     selectGroups = [2,3,4]    
     sliceLevels = [1,2,3,4]
+    vertexNo = 0
+    paramsDict = {'size': 10, 'number': 1, 'legible_target_size': 10, \
+                  'target_size': 10, 'VOTERS': 500, 'OBJECTS': 100, 'bad_hideout': False, 'slice_level': 3}
+    
     
     
     def __init__(self, testingDataPath = "/tmp/testing-ring.txt"):
@@ -25,23 +29,21 @@ class Experiment:
         self.gm = sna.GraphMaker(self.testingDataPath)
         
  
-    def compute(self, hardGroupsNo = 0, runsNo = 1, **kwargs ):
+    def compute(self, hardGroupsNo = 0, runsNo = 1):
         '''
         @returns Forwards touple (matchRate, popRate) returned by Quality, if hardSilceLevel and hardGroupsNo
         '''
         
         
         logger.info("Will generate graph with params")
-        logger.info(kwargs)
+        logger.info(self.paramsDict)
         logger.info("Will do %d runs" % runsNo )
         
 
         
-        sliceLevel = kwargs['slice_level']
-        logger.info("Slice is level: %d" % sliceLevel)
-        del kwargs['slice_level']
-        
+        logger.info("Slice is level: %d" % self.paramsDict['slice_level'])
         matchRate = 0.0
+        matchRateList = []
         popRate = 0.0
         suspectsRate = 0.0
         
@@ -49,17 +51,19 @@ class Experiment:
         near100Rate = 0.0 
   
         for run in xrange(runsNo):
-            self.dm.generate(**kwargs)
+            self.dm.generate(**self.paramsDict)
             self.graph = self.gm.makeGraph()
             self.rings = sum(self.dm.voting_rings, []) # H-H-HHACKISH list flattening
+            self.vertexNo = len(self.graph)
 
             self.cq = sna.Cliquer(self.graph)
-            self.cq.sliceGraph(sliceLevel)
+            self.cq.sliceGraph(self.paramsDict['slice_level'])
             self.result = self.cq.blondelAlgorithm()
             
             tuple = self.rateQuality(hardGroupsNo)
             
             matchRate += tuple[0]
+            matchRateList.append(tuple[0])
             popRate += tuple[1]
             suspectsRate += tuple[2] 
              
@@ -67,15 +71,20 @@ class Experiment:
             if tuple[0] > 90:
                 near100Rate += 1
             logger.debug(near100Rate)
-            
-        logger.info("Done run %d of %d" % (run, runsNo))     
-        logger.debug(near100Rate)       
-        logger.debug(float(near100Rate / float(runsNo))*100.0)
+
+        matchRateAvg = float(matchRate/float(runsNo))
+        
+        # compute variance
+        matchRateList = map(lambda rate: (rate - matchRateAvg)**2, matchRateList)
+        matchRateVariance = 1.0/runsNo * sum(matchRateList) 
+                    
         
         # we have to aggregate tuple for runsNo
-        tuple = (float(matchRate / float(runsNo)), float(popRate / float(runsNo)), float(suspectsRate / float(runsNo)), float(near100Rate / float(runsNo))*100.0)
+        tuple = (float(matchRate/float(runsNo)), float(popRate / float(runsNo)), float(suspectsRate / float(runsNo)), float(near100Rate / float(runsNo))*100.0)
         logger.info("After % d runs result is" % runsNo)
         logger.info(tuple)
+        logger.info("Variance")
+        logger.info(matchRateVariance)
         logger.info(" ------------------- END --------------------")
     
         return tuple
@@ -99,7 +108,7 @@ class Experiment:
                     matchCount += 1
             
             matchRate = matchCount/len(self.rings) * 100.0
-            popRate = len(suspects)/len(self.graph) * 100.0
+            popRate = len(suspects)/self.vertexNo * 100.0
             suspectsRate = matchCount/len(suspects) * 100.0
             
             logger.info("Taking first %d groups match rate is %f. These groups are %f  of users population." % (i, matchRate, popRate))
@@ -108,12 +117,12 @@ class Experiment:
             
             
     
-    def iterateParam(self, minValue = 10, maxValue = 25, step = 5, param = "target_size", hardGroupsNo = 0, **kwargs):
+    def iterateParam(self, minValue = 10, maxValue = 25, step = 5, param = "target_size", hardGroupsNo = 0, runsNo = 100):
         '''
         @return Hard version returns tuple of two list, so that you can make some pretty plots =D
         '''
         
-        kwargs[param] = minValue
+        self.paramsDict[param] = minValue
         
         matchRates = []
         popRates = []
@@ -122,11 +131,11 @@ class Experiment:
         xaxis = []
         
         
-        while kwargs[param] <= maxValue:
-            logger.info("Will iterate over %s : now it's %d:" % (param, kwargs[param]))
-            tuple = self.compute(hardGroupsNo = hardGroupsNo, **kwargs)
-            xaxis.append(kwargs[param]) 
-            kwargs[param] += step
+        while self.paramsDict[param] <= maxValue:
+            logger.info("Will iterate over %s : now it's %d:" % (param, self.paramsDict[param]))
+            tuple = self.compute(hardGroupsNo = hardGroupsNo, runsNo = runsNo)
+            xaxis.append(self.paramsDict[param]) 
+            self.paramsDict[param] += step
             
             if hardGroupsNo:
                 matchRates.append(tuple[0])
@@ -172,7 +181,7 @@ class Experiment:
         g('set yrange [ 0 : ' + repr(max_y+10) + ' ]')
         g.plot(suspects, population, suspectsR, near100)
         #g.plot(suspects, population, suspectsR)
-        g.hardcopy(file_title + '.ps', enhanced=1, color=1)
+        g.hardcopy(file_title + '.eps', eps=True)
         
 def karateClub():
     karateG = karate_graph.karate_graph()
