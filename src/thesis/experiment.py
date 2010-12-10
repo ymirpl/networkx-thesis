@@ -83,6 +83,8 @@ class Experiment:
         tuple = (float(matchRate/float(runsNo)), float(popRate / float(runsNo)), float(suspectsRate / float(runsNo)), float(near100Rate / float(runsNo))*100.0)
         logger.info("After % d runs result is" % runsNo)
         logger.info(tuple)
+        logger.info("For params")
+        logger.info(self.paramsDict)
         logger.info("Variance")
         logger.info(matchRateVariance)
         logger.info(" ------------------- END --------------------")

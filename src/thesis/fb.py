@@ -59,6 +59,8 @@ class Facebooker:
         self.centrality['closeness']= nx.closeness_centrality(self.graph)
         self.centrality['eigenvector']  = nx.eigenvector_centrality(self.graph)
         self.centrality['clustering']  = nx.clustering(self.graph)
+        self.centrality['avg_clustering'] = nx.average_clustering(self.graph)
+        self.centrality['avg_shortest_path'] = nx.average_shortest_path_length(self.graph)
         
         import pickle
         with open(filename, 'wb') as file:
@@ -69,6 +71,54 @@ class Facebooker:
         with open(filename, 'rb') as file:
             self.centrality = pickle.load(file)
             
+    def graphMeasure(self, measure = 'degree'):
+        measureValues = self.centrality[measure]
+        filename = measure + ".png"
+        
+        # print sorted node list on INFO
+        nodesDict = dict()
+        for node, data in self.graph.nodes_iter(data=True):
+            nodesDict[data['name']] = measureValues[node]
+        sortedNodes = sorted(nodesDict, key=nodesDict.get, reverse = True)
+        
+        logger.info(measure)
+        for name in sortedNodes:
+            logger.info(name + ": " + str(nodesDict[name]))
+        # end print on info
+        
+        # stupid graphViz utf-8 hack
+        graph_copy = nx.Graph();
+        graph_copy.add_nodes_from(self.graph.nodes())
+        graph_copy.add_edges_from(self.graph.edges())
+        # end stupid hack
+        
+        # labels and graphs
+        labels = dict()
+        import unicodedata
+        for node, data in self.graph.nodes_iter(data=True):
+            name = unicode(data['name'])
+            name.replace(u"Ł", 'L')
+            name.replace(u"l", 'l')
+            labels[node] = unicodedata.normalize('NFKD', name).encode('ascii','ignore')
+            labels[node] += "\n " + str(measureValues[node])
+        # TODO: problem z łłłł :(((
+        
+        pos=nx.pygraphviz_layout(graph_copy,prog='neato')
+        for i in pos:
+            pos[i] = (pos[i][0]*3, pos[i][1]*3)
+        
+        import matplotlib.pyplot as plt
+        
+        plt.figure(figsize=(20,20))
+        plt.axis('off')
+        nx.draw_networkx_edges(self.graph,pos,alpha=0.2)
+        nx.draw_networkx_nodes(self.graph, pos, size = 4, with_labels=False, node_color=measureValues.values(), cmap=plt.cm.get_cmap('Reds_r'))
+        nx.draw_networkx_labels(self.graph, pos, font_size = 10, labels = labels)
+        
+        plt.savefig(filename)
+        
+        
+            
     def partitionGraph(self, filename = "fb_partition.png", method = 'blondelAlgorithm'):
         from thesis.sna import Cliquer
         
@@ -77,6 +127,7 @@ class Facebooker:
         self.partition = function()
         
         # partition done, making colors
+        # making graph
         
         nodeList = self.partition
         colorList = [0] * self.graph.number_of_nodes()
@@ -95,9 +146,13 @@ class Facebooker:
         
         # labels
         labels = dict()
+        import unicodedata
         for node, data in self.graph.nodes_iter(data=True):
-            labels[node] = data['name'] 
-        
+            name = unicode(data['name'])
+            name.replace(u"Ł", 'L')
+            name.replace(u"l", 'l')
+            labels[node] = unicodedata.normalize('NFKD', name).encode('ascii','ignore')
+        # TODO: problem z łłłł :(((
         
         pos=nx.pygraphviz_layout(graph_copy,prog='neato')
         for i in pos:
@@ -117,6 +172,9 @@ class Facebooker:
 
 if __name__ == "__main__":
     fb = Facebooker()
-    fb.fetchGraph()
-    fb.saveGraph()
+#    fb.fetchGraph()
+#    fb.saveGraph()
+    fb.loadGraph()
+    fb.partitionGraph()
+    fb.loadMeasures()
     
