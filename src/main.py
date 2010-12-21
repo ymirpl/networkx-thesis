@@ -106,10 +106,10 @@ def fbExperiment():
 
 
 if __name__ == '__main__':
-#    experimentOneCorrection()
+    experimentOneCorrection()
     
-    from thesis import experiment
-    fbExperiment()
+#    from thesis import experiment
+#    fbExperiment()
 #    experiment.karateClub()
 #    experiment.sixtyOne()
 #    experiment.generated()

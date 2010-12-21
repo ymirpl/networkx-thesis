@@ -643,3 +643,1651 @@
 2010-12-10 02:04:23,118: Marta Baran: 0.0172536081004
 2010-12-10 02:04:23,118: Sebastian Hanula: 0.0172536081004
 2010-12-10 02:04:23,118: Dina Sterling: 0.0172536081004
+2010-12-10 20:58:27,047: Will iterate over legible_target_size : now it's 3:
+2010-12-10 20:58:27,052: Will generate graph with params
+2010-12-10 20:58:27,052: {'target_size': 10, 'OBJECTS': 100, 'bad_hideout': False, 'slice_level': 3, 'VOTERS': 500, 'legible_target_size': 3, 'number': 1, 'size': 25}
+2010-12-10 20:58:27,052: Will do 100 runs
+2010-12-10 20:58:27,052: Slice is level: 3
+2010-12-10 20:58:27,277: Graph loaded, nodes: 498, edges: 10110
+2010-12-10 20:58:27,323: Taking first 2 groups match rate is 100.000000. These groups are 5.622490  of users population.
+2010-12-10 20:58:27,323: Taking first 3 groups match rate is 100.000000. These groups are 5.622490  of users population.
+2010-12-10 20:58:27,323: Taking first 4 groups match rate is 100.000000. These groups are 5.622490  of users population.
+2010-12-10 20:58:27,407: Graph loaded, nodes: 500, edges: 9929
+2010-12-10 20:58:27,460: Taking first 2 groups match rate is 0.000000. These groups are 0.800000  of users population.
+2010-12-10 20:58:27,460: Taking first 3 groups match rate is 100.000000. These groups are 5.800000  of users population.
+2010-12-10 20:58:27,460: Taking first 4 groups match rate is 100.000000. These groups are 11.000000  of users population.
+2010-12-10 20:58:27,550: Graph loaded, nodes: 499, edges: 10397
+2010-12-10 20:58:27,611: Taking first 2 groups match rate is 0.000000. These groups are 0.801603  of users population.
+2010-12-10 20:58:27,611: Taking first 3 groups match rate is 92.000000. These groups are 5.410822  of users population.
+2010-12-10 20:58:27,611: Taking first 4 groups match rate is 96.000000. These groups are 10.020040  of users population.
+2010-12-10 20:58:27,707: Graph loaded, nodes: 498, edges: 10227
+2010-12-10 20:58:27,794: Taking first 2 groups match rate is 0.000000. These groups are 0.803213  of users population.
+2010-12-10 20:58:27,794: Taking first 3 groups match rate is 0.000000. These groups are 1.204819  of users population.
+2010-12-10 20:58:27,795: Taking first 4 groups match rate is 0.000000. These groups are 5.622490  of users population.
+2010-12-10 20:58:27,881: Graph loaded, nodes: 500, edges: 11015
+2010-12-10 20:58:27,961: Taking first 2 groups match rate is 0.000000. These groups are 0.800000  of users population.
+2010-12-10 20:58:27,962: Taking first 3 groups match rate is 0.000000. These groups are 1.200000  of users population.
+2010-12-10 20:58:27,962: Taking first 4 groups match rate is 0.000000. These groups are 4.800000  of users population.
+2010-12-10 20:58:28,050: Graph loaded, nodes: 501, edges: 11147
+2010-12-10 20:58:28,142: Taking first 2 groups match rate is 0.000000. These groups are 0.798403  of users population.
+2010-12-10 20:58:28,142: Taking first 3 groups match rate is 0.000000. These groups are 1.197605  of users population.
+2010-12-10 20:58:28,142: Taking first 4 groups match rate is 68.000000. These groups are 4.590818  of users population.
+2010-12-10 20:58:28,226: Graph loaded, nodes: 501, edges: 11097
+2010-12-10 20:58:28,333: Taking first 2 groups match rate is 0.000000. These groups are 0.798403  of users population.
+2010-12-10 20:58:28,334: Taking first 3 groups match rate is 0.000000. These groups are 1.197605  of users population.
+2010-12-10 20:58:28,334: Taking first 4 groups match rate is 0.000000. These groups are 4.191617  of users population.
+2010-12-10 20:58:28,427: Graph loaded, nodes: 497, edges: 10874
+2010-12-10 20:58:28,544: Taking first 2 groups match rate is 0.000000. These groups are 0.804829  of users population.
+2010-12-10 20:58:28,544: Taking first 3 groups match rate is 0.000000. These groups are 3.621730  of users population.
+2010-12-10 20:58:28,544: Taking first 4 groups match rate is 0.000000. These groups are 7.847082  of users population.
+2010-12-10 20:58:28,643: Graph loaded, nodes: 500, edges: 12203
+2010-12-10 20:58:28,762: Taking first 2 groups match rate is 0.000000. These groups are 0.800000  of users population.
+2010-12-10 20:58:28,762: Taking first 3 groups match rate is 0.000000. These groups are 4.200000  of users population.
+2010-12-10 20:58:28,762: Taking first 4 groups match rate is 0.000000. These groups are 8.400000  of users population.
+2010-12-10 20:58:28,851: Graph loaded, nodes: 501, edges: 12931
+2010-12-10 20:58:29,004: Taking first 2 groups match rate is 0.000000. These groups are 0.798403  of users population.
+2010-12-10 20:58:29,004: Taking first 3 groups match rate is 0.000000. These groups are 4.191617  of users population.
+2010-12-10 20:58:29,004: Taking first 4 groups match rate is 0.000000. These groups are 7.984032  of users population.
+2010-12-10 20:58:29,088: Graph loaded, nodes: 500, edges: 12567
+2010-12-10 20:58:29,243: Taking first 2 groups match rate is 0.000000. These groups are 0.800000  of users population.
+2010-12-10 20:58:29,243: Taking first 3 groups match rate is 0.000000. These groups are 1.200000  of users population.
+2010-12-10 20:58:29,243: Taking first 4 groups match rate is 0.000000. These groups are 4.400000  of users population.
+2010-12-10 20:58:29,332: Graph loaded, nodes: 499, edges: 12836
+2010-12-10 20:58:29,536: Taking first 2 groups match rate is 0.000000. These groups are 0.801603  of users population.
+2010-12-10 20:58:29,536: Taking first 3 groups match rate is 0.000000. These groups are 1.202405  of users population.
+2010-12-10 20:58:29,536: Taking first 4 groups match rate is 4.000000. These groups are 4.809619  of users population.
+2010-12-10 20:58:29,623: Graph loaded, nodes: 500, edges: 13178
+2010-12-10 20:58:29,778: Taking first 2 groups match rate is 0.000000. These groups are 0.800000  of users population.
+2010-12-10 20:58:29,778: Taking first 3 groups match rate is 0.000000. These groups are 5.000000  of users population.
+2010-12-10 20:58:29,779: Taking first 4 groups match rate is 4.000000. These groups are 9.800000  of users population.
+2010-12-10 20:58:29,866: Graph loaded, nodes: 500, edges: 13450
+2010-12-10 20:58:30,050: Taking first 2 groups match rate is 0.000000. These groups are 0.800000  of users population.
+2010-12-10 20:58:30,050: Taking first 3 groups match rate is 0.000000. These groups are 4.400000  of users population.
+2010-12-10 20:58:30,050: Taking first 4 groups match rate is 4.000000. These groups are 8.200000  of users population.
+2010-12-10 20:58:30,145: Graph loaded, nodes: 501, edges: 13966
+2010-12-10 20:58:30,318: Taking first 2 groups match rate is 0.000000. These groups are 0.798403  of users population.
+2010-12-10 20:58:30,319: Taking first 3 groups match rate is 0.000000. These groups are 1.197605  of users population.
+2010-12-10 20:58:30,319: Taking first 4 groups match rate is 0.000000. These groups are 3.792415  of users population.
+2010-12-10 20:58:30,419: Graph loaded, nodes: 499, edges: 14038
+2010-12-10 20:58:30,621: Taking first 2 groups match rate is 0.000000. These groups are 0.801603  of users population.
+2010-12-10 20:58:30,621: Taking first 3 groups match rate is 4.000000. These groups are 3.807615  of users population.
+2010-12-10 20:58:30,621: Taking first 4 groups match rate is 8.000000. These groups are 7.615230  of users population.
+2010-12-10 20:58:30,705: Graph loaded, nodes: 500, edges: 14140
+2010-12-10 20:58:30,910: Taking first 2 groups match rate is 0.000000. These groups are 0.800000  of users population.
+2010-12-10 20:58:30,910: Taking first 3 groups match rate is 0.000000. These groups are 5.000000  of users population.
+2010-12-10 20:58:30,910: Taking first 4 groups match rate is 80.000000. These groups are 9.200000  of users population.
+2010-12-10 20:58:31,008: Graph loaded, nodes: 501, edges: 14335
+2010-12-10 20:58:31,260: Taking first 2 groups match rate is 0.000000. These groups are 0.798403  of users population.
+2010-12-10 20:58:31,260: Taking first 3 groups match rate is 0.000000. These groups are 3.393214  of users population.
+2010-12-10 20:58:31,260: Taking first 4 groups match rate is 4.000000. These groups are 6.986028  of users population.
+2010-12-10 20:58:31,351: Graph loaded, nodes: 499, edges: 14518
+2010-12-10 20:58:31,580: Taking first 2 groups match rate is 0.000000. These groups are 4.609218  of users population.
+2010-12-10 20:58:31,581: Taking first 3 groups match rate is 0.000000. These groups are 9.218437  of users population.
+2010-12-10 20:58:31,581: Taking first 4 groups match rate is 4.000000. These groups are 14.228457  of users population.
+2010-12-10 20:58:31,674: Graph loaded, nodes: 501, edges: 15122
+2010-12-10 20:58:31,943: Taking first 2 groups match rate is 0.000000. These groups are 0.798403  of users population.
+2010-12-10 20:58:31,943: Taking first 3 groups match rate is 4.000000. These groups are 3.992016  of users population.
+2010-12-10 20:58:31,943: Taking first 4 groups match rate is 16.000000. These groups are 10.379242  of users population.
+2010-12-10 20:58:32,034: Graph loaded, nodes: 501, edges: 15008
+2010-12-10 20:58:32,291: Taking first 2 groups match rate is 4.000000. These groups are 2.994012  of users population.
+2010-12-10 20:58:32,291: Taking first 3 groups match rate is 8.000000. These groups are 7.584830  of users population.
+2010-12-10 20:58:32,291: Taking first 4 groups match rate is 12.000000. These groups are 12.175649  of users population.
+2010-12-10 20:58:32,377: Graph loaded, nodes: 500, edges: 15567
+2010-12-10 20:58:32,717: Taking first 2 groups match rate is 0.000000. These groups are 3.600000  of users population.
+2010-12-10 20:58:32,718: Taking first 3 groups match rate is 64.000000. These groups are 6.800000  of users population.
+2010-12-10 20:58:32,718: Taking first 4 groups match rate is 64.000000. These groups are 10.800000  of users population.
+2010-12-10 20:58:32,802: Graph loaded, nodes: 501, edges: 15737
+2010-12-10 20:58:33,094: Taking first 2 groups match rate is 0.000000. These groups are 4.990020  of users population.
+2010-12-10 20:58:33,095: Taking first 3 groups match rate is 4.000000. These groups are 9.580838  of users population.
+2010-12-10 20:58:33,095: Taking first 4 groups match rate is 12.000000. These groups are 14.171657  of users population.
+2010-12-10 20:58:33,184: Graph loaded, nodes: 500, edges: 16023
+2010-12-10 20:58:33,584: Taking first 2 groups match rate is 0.000000. These groups are 9.200000  of users population.
+2010-12-10 20:58:33,585: Taking first 3 groups match rate is 0.000000. These groups are 14.400000  of users population.
+2010-12-10 20:58:33,585: Taking first 4 groups match rate is 0.000000. These groups are 19.800000  of users population.
+2010-12-10 20:58:33,676: Graph loaded, nodes: 500, edges: 15936
+2010-12-10 20:58:34,100: Taking first 2 groups match rate is 8.000000. These groups are 9.800000  of users population.
+2010-12-10 20:58:34,100: Taking first 3 groups match rate is 16.000000. These groups are 16.000000  of users population.
+2010-12-10 20:58:34,100: Taking first 4 groups match rate is 20.000000. These groups are 22.400000  of users population.
+2010-12-10 20:58:34,194: Graph loaded, nodes: 500, edges: 16767
+2010-12-10 20:58:34,591: Taking first 2 groups match rate is 0.000000. These groups are 10.400000  of users population.
+2010-12-10 20:58:34,591: Taking first 3 groups match rate is 80.000000. These groups are 16.800000  of users population.
+2010-12-10 20:58:34,591: Taking first 4 groups match rate is 84.000000. These groups are 23.800000  of users population.
+2010-12-10 20:58:34,682: Graph loaded, nodes: 501, edges: 16182
+2010-12-10 20:58:35,007: Taking first 2 groups match rate is 56.000000. These groups are 7.584830  of users population.
+2010-12-10 20:58:35,007: Taking first 3 groups match rate is 60.000000. These groups are 12.375250  of users population.
+2010-12-10 20:58:35,007: Taking first 4 groups match rate is 64.000000. These groups are 18.363273  of users population.
+2010-12-10 20:58:35,103: Graph loaded, nodes: 501, edges: 17961
+2010-12-10 20:58:35,546: Taking first 2 groups match rate is 8.000000. These groups are 9.980040  of users population.
+2010-12-10 20:58:35,546: Taking first 3 groups match rate is 8.000000. These groups are 15.768463  of users population.
+2010-12-10 20:58:35,546: Taking first 4 groups match rate is 8.000000. These groups are 22.954092  of users population.
+2010-12-10 20:58:35,657: Graph loaded, nodes: 499, edges: 17032
+2010-12-10 20:58:36,003: Taking first 2 groups match rate is 8.000000. These groups are 9.619238  of users population.
+2010-12-10 20:58:36,003: Taking first 3 groups match rate is 16.000000. These groups are 15.230461  of users population.
+2010-12-10 20:58:36,003: Taking first 4 groups match rate is 24.000000. These groups are 21.042084  of users population.
+2010-12-10 20:58:36,088: Graph loaded, nodes: 501, edges: 17824
+2010-12-10 20:58:36,471: Taking first 2 groups match rate is 8.000000. These groups are 10.778443  of users population.
+2010-12-10 20:58:36,472: Taking first 3 groups match rate is 8.000000. These groups are 16.966068  of users population.
+2010-12-10 20:58:36,472: Taking first 4 groups match rate is 12.000000. These groups are 23.353293  of users population.
+2010-12-10 20:58:36,556: Graph loaded, nodes: 500, edges: 17974
+2010-12-10 20:58:37,011: Taking first 2 groups match rate is 4.000000. These groups are 9.000000  of users population.
+2010-12-10 20:58:37,011: Taking first 3 groups match rate is 4.000000. These groups are 15.000000  of users population.
+2010-12-10 20:58:37,011: Taking first 4 groups match rate is 8.000000. These groups are 21.000000  of users population.
+2010-12-10 20:58:37,100: Graph loaded, nodes: 501, edges: 18778
+2010-12-10 20:58:37,456: Taking first 2 groups match rate is 84.000000. These groups are 8.582834  of users population.
+2010-12-10 20:58:37,457: Taking first 3 groups match rate is 84.000000. These groups are 13.772455  of users population.
+2010-12-10 20:58:37,457: Taking first 4 groups match rate is 88.000000. These groups are 19.560878  of users population.
+2010-12-10 20:58:37,549: Graph loaded, nodes: 501, edges: 18505
+2010-12-10 20:58:38,012: Taking first 2 groups match rate is 8.000000. These groups are 8.582834  of users population.
+2010-12-10 20:58:38,012: Taking first 3 groups match rate is 8.000000. These groups are 13.972056  of users population.
+2010-12-10 20:58:38,013: Taking first 4 groups match rate is 16.000000. These groups are 19.760479  of users population.
+2010-12-10 20:58:38,105: Graph loaded, nodes: 501, edges: 19166
+2010-12-10 20:58:38,615: Taking first 2 groups match rate is 4.000000. These groups are 8.782435  of users population.
+2010-12-10 20:58:38,615: Taking first 3 groups match rate is 12.000000. These groups are 13.572854  of users population.
+2010-12-10 20:58:38,617: Taking first 4 groups match rate is 20.000000. These groups are 18.762475  of users population.
+2010-12-10 20:58:38,702: Graph loaded, nodes: 501, edges: 18972
+2010-12-10 20:58:39,201: Taking first 2 groups match rate is 8.000000. These groups are 11.976048  of users population.
+2010-12-10 20:58:39,201: Taking first 3 groups match rate is 8.000000. These groups are 20.558882  of users population.
+2010-12-10 20:58:39,201: Taking first 4 groups match rate is 12.000000. These groups are 29.341317  of users population.
+2010-12-10 20:58:39,289: Graph loaded, nodes: 500, edges: 18991
+2010-12-10 20:58:39,800: Taking first 2 groups match rate is 72.000000. These groups are 8.000000  of users population.
+2010-12-10 20:58:39,800: Taking first 3 groups match rate is 76.000000. These groups are 13.000000  of users population.
+2010-12-10 20:58:39,800: Taking first 4 groups match rate is 76.000000. These groups are 18.000000  of users population.
+2010-12-10 20:58:39,919: Graph loaded, nodes: 501, edges: 19741
+2010-12-10 20:58:40,492: Taking first 2 groups match rate is 12.000000. These groups are 9.580838  of users population.
+2010-12-10 20:58:40,493: Taking first 3 groups match rate is 16.000000. These groups are 15.568862  of users population.
+2010-12-10 20:58:40,493: Taking first 4 groups match rate is 16.000000. These groups are 21.956088  of users population.
+2010-12-10 20:58:40,579: Graph loaded, nodes: 501, edges: 20254
+2010-12-10 20:58:41,150: Taking first 2 groups match rate is 8.000000. These groups are 8.982036  of users population.
+2010-12-10 20:58:41,150: Taking first 3 groups match rate is 12.000000. These groups are 14.970060  of users population.
+2010-12-10 20:58:41,150: Taking first 4 groups match rate is 16.000000. These groups are 21.357285  of users population.
+2010-12-10 20:58:41,246: Graph loaded, nodes: 501, edges: 20462
+2010-12-10 20:58:41,890: Taking first 2 groups match rate is 0.000000. These groups are 10.578842  of users population.
+2010-12-10 20:58:41,890: Taking first 3 groups match rate is 4.000000. These groups are 17.964072  of users population.
+2010-12-10 20:58:41,890: Taking first 4 groups match rate is 8.000000. These groups are 25.748503  of users population.
+2010-12-10 20:58:41,978: Graph loaded, nodes: 501, edges: 20195
+2010-12-10 20:58:42,507: Taking first 2 groups match rate is 0.000000. These groups are 9.980040  of users population.
+2010-12-10 20:58:42,507: Taking first 3 groups match rate is 8.000000. These groups are 15.369261  of users population.
+2010-12-10 20:58:42,507: Taking first 4 groups match rate is 8.000000. These groups are 21.956088  of users population.
+2010-12-10 20:58:42,604: Graph loaded, nodes: 500, edges: 21186
+2010-12-10 20:58:43,279: Taking first 2 groups match rate is 20.000000. These groups are 9.000000  of users population.
+2010-12-10 20:58:43,279: Taking first 3 groups match rate is 24.000000. These groups are 15.000000  of users population.
+2010-12-10 20:58:43,279: Taking first 4 groups match rate is 32.000000. These groups are 21.400000  of users population.
+2010-12-10 20:58:43,366: Graph loaded, nodes: 501, edges: 21197
+2010-12-10 20:58:43,915: Taking first 2 groups match rate is 8.000000. These groups are 8.183633  of users population.
+2010-12-10 20:58:43,915: Taking first 3 groups match rate is 8.000000. These groups are 13.572854  of users population.
+2010-12-10 20:58:43,915: Taking first 4 groups match rate is 8.000000. These groups are 19.960080  of users population.
+2010-12-10 20:58:44,029: Graph loaded, nodes: 501, edges: 21368
+2010-12-10 20:58:44,601: Taking first 2 groups match rate is 16.000000. These groups are 9.381238  of users population.
+2010-12-10 20:58:44,601: Taking first 3 groups match rate is 24.000000. These groups are 15.768463  of users population.
+2010-12-10 20:58:44,602: Taking first 4 groups match rate is 24.000000. These groups are 22.754491  of users population.
+2010-12-10 20:58:44,687: Graph loaded, nodes: 501, edges: 21747
+2010-12-10 20:58:45,518: Taking first 2 groups match rate is 16.000000. These groups are 10.778443  of users population.
+2010-12-10 20:58:45,519: Taking first 3 groups match rate is 20.000000. These groups are 18.163673  of users population.
+2010-12-10 20:58:45,519: Taking first 4 groups match rate is 32.000000. These groups are 27.744511  of users population.
+2010-12-10 20:58:45,606: Graph loaded, nodes: 501, edges: 21866
+2010-12-10 20:58:46,312: Taking first 2 groups match rate is 8.000000. These groups are 9.580838  of users population.
+2010-12-10 20:58:46,313: Taking first 3 groups match rate is 8.000000. These groups are 16.167665  of users population.
+2010-12-10 20:58:46,315: Taking first 4 groups match rate is 12.000000. These groups are 23.153693  of users population.
+2010-12-10 20:58:46,412: Graph loaded, nodes: 501, edges: 21927
+2010-12-10 20:58:47,024: Taking first 2 groups match rate is 0.000000. These groups are 9.980040  of users population.
+2010-12-10 20:58:47,024: Taking first 3 groups match rate is 4.000000. These groups are 18.163673  of users population.
+2010-12-10 20:58:47,024: Taking first 4 groups match rate is 4.000000. These groups are 26.746507  of users population.
+2010-12-10 20:58:47,119: Graph loaded, nodes: 501, edges: 22670
+2010-12-10 20:58:47,859: Taking first 2 groups match rate is 8.000000. These groups are 10.379242  of users population.
+2010-12-10 20:58:47,860: Taking first 3 groups match rate is 8.000000. These groups are 16.566866  of users population.
+2010-12-10 20:58:47,860: Taking first 4 groups match rate is 12.000000. These groups are 23.353293  of users population.
+2010-12-10 20:58:47,943: Graph loaded, nodes: 501, edges: 22544
+2010-12-10 20:58:48,726: Taking first 2 groups match rate is 8.000000. These groups are 8.782435  of users population.
+2010-12-10 20:58:48,726: Taking first 3 groups match rate is 12.000000. These groups are 13.772455  of users population.
+2010-12-10 20:58:48,726: Taking first 4 groups match rate is 12.000000. These groups are 18.962076  of users population.
+2010-12-10 20:58:48,813: Graph loaded, nodes: 501, edges: 22978
+2010-12-10 20:58:49,577: Taking first 2 groups match rate is 4.000000. These groups are 5.988024  of users population.
+2010-12-10 20:58:49,577: Taking first 3 groups match rate is 4.000000. These groups are 11.976048  of users population.
+2010-12-10 20:58:49,578: Taking first 4 groups match rate is 4.000000. These groups are 19.960080  of users population.
+2010-12-10 20:58:49,665: Graph loaded, nodes: 501, edges: 23159
+2010-12-10 20:58:50,443: Taking first 2 groups match rate is 8.000000. These groups are 13.972056  of users population.
+2010-12-10 20:58:50,443: Taking first 3 groups match rate is 72.000000. These groups are 22.355289  of users population.
+2010-12-10 20:58:50,443: Taking first 4 groups match rate is 84.000000. These groups are 30.938124  of users population.
+2010-12-10 20:58:50,537: Graph loaded, nodes: 501, edges: 23361
+2010-12-10 20:58:51,150: Taking first 2 groups match rate is 32.000000. These groups are 11.976048  of users population.
+2010-12-10 20:58:51,150: Taking first 3 groups match rate is 40.000000. These groups are 19.560878  of users population.
+2010-12-10 20:58:51,150: Taking first 4 groups match rate is 48.000000. These groups are 29.740519  of users population.
+2010-12-10 20:58:51,270: Graph loaded, nodes: 501, edges: 22921
+2010-12-10 20:58:52,246: Taking first 2 groups match rate is 20.000000. These groups are 11.576846  of users population.
+2010-12-10 20:58:52,247: Taking first 3 groups match rate is 28.000000. These groups are 19.361277  of users population.
+2010-12-10 20:58:52,247: Taking first 4 groups match rate is 48.000000. These groups are 28.143713  of users population.
+2010-12-10 20:58:52,333: Graph loaded, nodes: 501, edges: 23081
+2010-12-10 20:58:53,096: Taking first 2 groups match rate is 4.000000. These groups are 11.976048  of users population.
+2010-12-10 20:58:53,096: Taking first 3 groups match rate is 8.000000. These groups are 19.361277  of users population.
+2010-12-10 20:58:53,097: Taking first 4 groups match rate is 20.000000. These groups are 27.145709  of users population.
+2010-12-10 20:58:53,185: Graph loaded, nodes: 501, edges: 24235
+2010-12-10 20:58:54,065: Taking first 2 groups match rate is 12.000000. These groups are 12.974052  of users population.
+2010-12-10 20:58:54,065: Taking first 3 groups match rate is 20.000000. These groups are 21.756487  of users population.
+2010-12-10 20:58:54,066: Taking first 4 groups match rate is 32.000000. These groups are 31.337325  of users population.
+2010-12-10 20:58:54,157: Graph loaded, nodes: 501, edges: 24624
+2010-12-10 20:58:55,058: Taking first 2 groups match rate is 8.000000. These groups are 12.175649  of users population.
+2010-12-10 20:58:55,058: Taking first 3 groups match rate is 12.000000. These groups are 19.361277  of users population.
+2010-12-10 20:58:55,058: Taking first 4 groups match rate is 16.000000. These groups are 27.145709  of users population.
+2010-12-10 20:58:55,171: Graph loaded, nodes: 501, edges: 24361
+2010-12-10 20:58:56,044: Taking first 2 groups match rate is 8.000000. These groups are 8.982036  of users population.
+2010-12-10 20:58:56,045: Taking first 3 groups match rate is 8.000000. These groups are 14.570858  of users population.
+2010-12-10 20:58:56,045: Taking first 4 groups match rate is 20.000000. These groups are 21.357285  of users population.
+2010-12-10 20:58:56,127: Graph loaded, nodes: 501, edges: 24415
+2010-12-10 20:58:56,867: Taking first 2 groups match rate is 8.000000. These groups are 8.582834  of users population.
+2010-12-10 20:58:56,867: Taking first 3 groups match rate is 8.000000. These groups are 14.970060  of users population.
+2010-12-10 20:58:56,867: Taking first 4 groups match rate is 16.000000. These groups are 23.952096  of users population.
+2010-12-10 20:58:56,950: Graph loaded, nodes: 501, edges: 24082
+2010-12-10 20:58:57,742: Taking first 2 groups match rate is 8.000000. These groups are 13.972056  of users population.
+2010-12-10 20:58:57,743: Taking first 3 groups match rate is 12.000000. These groups are 23.153693  of users population.
+2010-12-10 20:58:57,743: Taking first 4 groups match rate is 20.000000. These groups are 32.734531  of users population.
+2010-12-10 20:58:57,838: Graph loaded, nodes: 501, edges: 25393
+2010-12-10 20:58:58,604: Taking first 2 groups match rate is 4.000000. These groups are 7.784431  of users population.
+2010-12-10 20:58:58,604: Taking first 3 groups match rate is 12.000000. These groups are 12.974052  of users population.
+2010-12-10 20:58:58,604: Taking first 4 groups match rate is 16.000000. These groups are 18.762475  of users population.
+2010-12-10 20:58:58,690: Graph loaded, nodes: 501, edges: 25569
+2010-12-10 20:58:59,583: Taking first 2 groups match rate is 12.000000. These groups are 13.572854  of users population.
+2010-12-10 20:58:59,583: Taking first 3 groups match rate is 16.000000. These groups are 22.155689  of users population.
+2010-12-10 20:58:59,583: Taking first 4 groups match rate is 16.000000. These groups are 31.337325  of users population.
+2010-12-10 20:58:59,664: Graph loaded, nodes: 501, edges: 25397
+2010-12-10 20:59:00,947: Taking first 2 groups match rate is 4.000000. These groups are 11.377246  of users population.
+2010-12-10 20:59:00,947: Taking first 3 groups match rate is 4.000000. These groups are 21.956088  of users population.
+2010-12-10 20:59:00,948: Taking first 4 groups match rate is 8.000000. These groups are 32.734531  of users population.
+2010-12-10 20:59:01,036: Graph loaded, nodes: 501, edges: 26208
+2010-12-10 20:59:01,889: Taking first 2 groups match rate is 12.000000. These groups are 7.984032  of users population.
+2010-12-10 20:59:01,889: Taking first 3 groups match rate is 32.000000. These groups are 15.768463  of users population.
+2010-12-10 20:59:01,889: Taking first 4 groups match rate is 36.000000. These groups are 24.151697  of users population.
+2010-12-10 20:59:01,979: Graph loaded, nodes: 501, edges: 26154
+2010-12-10 20:59:03,041: Taking first 2 groups match rate is 8.000000. These groups are 8.782435  of users population.
+2010-12-10 20:59:03,041: Taking first 3 groups match rate is 8.000000. These groups are 16.766467  of users population.
+2010-12-10 20:59:03,041: Taking first 4 groups match rate is 16.000000. These groups are 27.544910  of users population.
+2010-12-10 20:59:03,138: Graph loaded, nodes: 501, edges: 26775
+2010-12-10 20:59:04,188: Taking first 2 groups match rate is 8.000000. These groups are 10.179641  of users population.
+2010-12-10 20:59:04,188: Taking first 3 groups match rate is 16.000000. These groups are 17.964072  of users population.
+2010-12-10 20:59:04,188: Taking first 4 groups match rate is 28.000000. These groups are 27.145709  of users population.
+2010-12-10 20:59:04,295: Graph loaded, nodes: 501, edges: 27061
+2010-12-10 20:59:05,333: Taking first 2 groups match rate is 12.000000. These groups are 9.780439  of users population.
+2010-12-10 20:59:05,334: Taking first 3 groups match rate is 20.000000. These groups are 15.568862  of users population.
+2010-12-10 20:59:05,334: Taking first 4 groups match rate is 32.000000. These groups are 21.956088  of users population.
+2010-12-10 20:59:05,425: Graph loaded, nodes: 501, edges: 26296
+2010-12-10 20:59:06,394: Taking first 2 groups match rate is 16.000000. These groups are 18.363273  of users population.
+2010-12-10 20:59:06,394: Taking first 3 groups match rate is 16.000000. These groups are 28.742515  of users population.
+2010-12-10 20:59:06,395: Taking first 4 groups match rate is 32.000000. These groups are 41.916168  of users population.
+2010-12-10 20:59:06,489: Graph loaded, nodes: 501, edges: 26833
+2010-12-10 20:59:07,772: Taking first 2 groups match rate is 0.000000. These groups are 9.580838  of users population.
+2010-12-10 20:59:07,772: Taking first 3 groups match rate is 0.000000. These groups are 15.169661  of users population.
+2010-12-10 20:59:07,774: Taking first 4 groups match rate is 8.000000. These groups are 23.153693  of users population.
+2010-12-10 20:59:07,859: Graph loaded, nodes: 500, edges: 26637
+2010-12-10 20:59:08,833: Taking first 2 groups match rate is 0.000000. These groups are 13.000000  of users population.
+2010-12-10 20:59:08,834: Taking first 3 groups match rate is 16.000000. These groups are 21.600000  of users population.
+2010-12-10 20:59:08,834: Taking first 4 groups match rate is 20.000000. These groups are 30.600000  of users population.
+2010-12-10 20:59:08,932: Graph loaded, nodes: 501, edges: 28186
+2010-12-10 20:59:09,832: Taking first 2 groups match rate is 0.000000. These groups are 11.576846  of users population.
+2010-12-10 20:59:09,833: Taking first 3 groups match rate is 100.000000. These groups are 19.161677  of users population.
+2010-12-10 20:59:09,833: Taking first 4 groups match rate is 100.000000. These groups are 26.946108  of users population.
+2010-12-10 20:59:09,925: Graph loaded, nodes: 501, edges: 28592
+2010-12-10 20:59:10,902: Taking first 2 groups match rate is 16.000000. These groups are 13.972056  of users population.
+2010-12-10 20:59:10,902: Taking first 3 groups match rate is 16.000000. These groups are 23.353293  of users population.
+2010-12-10 20:59:10,902: Taking first 4 groups match rate is 20.000000. These groups are 33.732535  of users population.
+2010-12-10 20:59:11,023: Graph loaded, nodes: 501, edges: 28595
+2010-12-10 20:59:12,109: Taking first 2 groups match rate is 4.000000. These groups are 8.982036  of users population.
+2010-12-10 20:59:12,109: Taking first 3 groups match rate is 12.000000. These groups are 14.570858  of users population.
+2010-12-10 20:59:12,109: Taking first 4 groups match rate is 32.000000. These groups are 20.758483  of users population.
+2010-12-10 20:59:12,195: Graph loaded, nodes: 501, edges: 28600
+2010-12-10 20:59:13,592: Taking first 2 groups match rate is 4.000000. These groups are 9.980040  of users population.
+2010-12-10 20:59:13,592: Taking first 3 groups match rate is 8.000000. These groups are 16.367265  of users population.
+2010-12-10 20:59:13,592: Taking first 4 groups match rate is 16.000000. These groups are 24.351297  of users population.
+2010-12-10 20:59:13,684: Graph loaded, nodes: 501, edges: 28767
+2010-12-10 20:59:14,670: Taking first 2 groups match rate is 12.000000. These groups are 13.572854  of users population.
+2010-12-10 20:59:14,671: Taking first 3 groups match rate is 12.000000. These groups are 23.353293  of users population.
+2010-12-10 20:59:14,671: Taking first 4 groups match rate is 64.000000. These groups are 34.331337  of users population.
+2010-12-10 20:59:14,761: Graph loaded, nodes: 501, edges: 29380
+2010-12-10 20:59:15,741: Taking first 2 groups match rate is 80.000000. These groups are 11.576846  of users population.
+2010-12-10 20:59:15,741: Taking first 3 groups match rate is 80.000000. These groups are 18.762475  of users population.
+2010-12-10 20:59:15,742: Taking first 4 groups match rate is 80.000000. These groups are 26.147705  of users population.
+2010-12-10 20:59:15,831: Graph loaded, nodes: 501, edges: 29369
+2010-12-10 20:59:17,192: Taking first 2 groups match rate is 12.000000. These groups are 15.768463  of users population.
+2010-12-10 20:59:17,192: Taking first 3 groups match rate is 20.000000. These groups are 26.147705  of users population.
+2010-12-10 20:59:17,192: Taking first 4 groups match rate is 28.000000. These groups are 37.325349  of users population.
+2010-12-10 20:59:17,283: Graph loaded, nodes: 501, edges: 29687
+2010-12-10 20:59:18,385: Taking first 2 groups match rate is 8.000000. These groups are 8.782435  of users population.
+2010-12-10 20:59:18,385: Taking first 3 groups match rate is 28.000000. These groups are 16.167665  of users population.
+2010-12-10 20:59:18,385: Taking first 4 groups match rate is 40.000000. These groups are 25.349301  of users population.
+2010-12-10 20:59:18,509: Graph loaded, nodes: 501, edges: 29353
+2010-12-10 20:59:19,811: Taking first 2 groups match rate is 20.000000. These groups are 9.181637  of users population.
+2010-12-10 20:59:19,812: Taking first 3 groups match rate is 20.000000. These groups are 14.770459  of users population.
+2010-12-10 20:59:19,812: Taking first 4 groups match rate is 20.000000. These groups are 23.153693  of users population.
+2010-12-10 20:59:19,899: Graph loaded, nodes: 501, edges: 29407
+2010-12-10 20:59:21,007: Taking first 2 groups match rate is 0.000000. These groups are 9.580838  of users population.
+2010-12-10 20:59:21,008: Taking first 3 groups match rate is 0.000000. These groups are 16.966068  of users population.
+2010-12-10 20:59:21,008: Taking first 4 groups match rate is 8.000000. These groups are 24.351297  of users population.
+2010-12-10 20:59:21,093: Graph loaded, nodes: 501, edges: 29944
+2010-12-10 20:59:22,912: Taking first 2 groups match rate is 8.000000. These groups are 9.381238  of users population.
+2010-12-10 20:59:22,912: Taking first 3 groups match rate is 16.000000. These groups are 16.566866  of users population.
+2010-12-10 20:59:22,913: Taking first 4 groups match rate is 28.000000. These groups are 28.143713  of users population.
+2010-12-10 20:59:22,994: Graph loaded, nodes: 501, edges: 29967
+2010-12-10 20:59:24,357: Taking first 2 groups match rate is 24.000000. These groups are 13.173653  of users population.
+2010-12-10 20:59:24,357: Taking first 3 groups match rate is 32.000000. These groups are 21.157685  of users population.
+2010-12-10 20:59:24,357: Taking first 4 groups match rate is 36.000000. These groups are 30.139721  of users population.
+2010-12-10 20:59:24,449: Graph loaded, nodes: 501, edges: 30746
+2010-12-10 20:59:25,730: Taking first 2 groups match rate is 12.000000. These groups are 13.572854  of users population.
+2010-12-10 20:59:25,731: Taking first 3 groups match rate is 12.000000. These groups are 20.958084  of users population.
+2010-12-10 20:59:25,731: Taking first 4 groups match rate is 16.000000. These groups are 29.540918  of users population.
+2010-12-10 20:59:25,816: Graph loaded, nodes: 501, edges: 30496
+2010-12-10 20:59:27,083: Taking first 2 groups match rate is 8.000000. These groups are 14.770459  of users population.
+2010-12-10 20:59:27,083: Taking first 3 groups match rate is 8.000000. These groups are 24.950100  of users population.
+2010-12-10 20:59:27,084: Taking first 4 groups match rate is 52.000000. These groups are 35.728543  of users population.
+2010-12-10 20:59:27,169: Graph loaded, nodes: 501, edges: 30926
+2010-12-10 20:59:28,357: Taking first 2 groups match rate is 4.000000. These groups are 9.580838  of users population.
+2010-12-10 20:59:28,357: Taking first 3 groups match rate is 12.000000. These groups are 15.568862  of users population.
+2010-12-10 20:59:28,357: Taking first 4 groups match rate is 16.000000. These groups are 21.756487  of users population.
+2010-12-10 20:59:28,473: Graph loaded, nodes: 501, edges: 30684
+2010-12-10 20:59:29,927: Taking first 2 groups match rate is 8.000000. These groups are 13.572854  of users population.
+2010-12-10 20:59:29,928: Taking first 3 groups match rate is 20.000000. These groups are 21.756487  of users population.
+2010-12-10 20:59:29,928: Taking first 4 groups match rate is 24.000000. These groups are 30.139721  of users population.
+2010-12-10 20:59:30,012: Graph loaded, nodes: 501, edges: 30952
+2010-12-10 20:59:31,601: Taking first 2 groups match rate is 8.000000. These groups are 11.576846  of users population.
+2010-12-10 20:59:31,601: Taking first 3 groups match rate is 16.000000. These groups are 20.359281  of users population.
+2010-12-10 20:59:31,601: Taking first 4 groups match rate is 24.000000. These groups are 29.141717  of users population.
+2010-12-10 20:59:31,682: Graph loaded, nodes: 501, edges: 30893
+2010-12-10 20:59:32,782: Taking first 2 groups match rate is 12.000000. These groups are 9.580838  of users population.
+2010-12-10 20:59:32,783: Taking first 3 groups match rate is 20.000000. These groups are 17.564870  of users population.
+2010-12-10 20:59:32,783: Taking first 4 groups match rate is 32.000000. These groups are 26.946108  of users population.
+2010-12-10 20:59:32,868: Graph loaded, nodes: 501, edges: 31674
+2010-12-10 20:59:34,168: Taking first 2 groups match rate is 4.000000. These groups are 13.572854  of users population.
+2010-12-10 20:59:34,169: Taking first 3 groups match rate is 8.000000. These groups are 22.954092  of users population.
+2010-12-10 20:59:34,169: Taking first 4 groups match rate is 8.000000. These groups are 33.333333  of users population.
+2010-12-10 20:59:34,259: Graph loaded, nodes: 501, edges: 31525
+2010-12-10 20:59:35,645: Taking first 2 groups match rate is 4.000000. These groups are 13.373253  of users population.
+2010-12-10 20:59:35,645: Taking first 3 groups match rate is 12.000000. These groups are 23.153693  of users population.
+2010-12-10 20:59:35,645: Taking first 4 groups match rate is 20.000000. These groups are 33.133733  of users population.
+2010-12-10 20:59:35,729: Graph loaded, nodes: 501, edges: 32104
+2010-12-10 20:59:36,811: Taking first 2 groups match rate is 20.000000. These groups are 14.570858  of users population.
+2010-12-10 20:59:36,811: Taking first 3 groups match rate is 20.000000. These groups are 22.754491  of users population.
+2010-12-10 20:59:36,812: Taking first 4 groups match rate is 44.000000. These groups are 31.337325  of users population.
+2010-12-10 20:59:36,912: Graph loaded, nodes: 501, edges: 32695
+2010-12-10 20:59:38,378: Taking first 2 groups match rate is 12.000000. These groups are 12.774451  of users population.
+2010-12-10 20:59:38,378: Taking first 3 groups match rate is 16.000000. These groups are 19.760479  of users population.
+2010-12-10 20:59:38,378: Taking first 4 groups match rate is 20.000000. These groups are 28.343313  of users population.
+2010-12-10 20:59:38,464: Graph loaded, nodes: 501, edges: 32399
+2010-12-10 20:59:39,615: Taking first 2 groups match rate is 8.000000. These groups are 10.578842  of users population.
+2010-12-10 20:59:39,616: Taking first 3 groups match rate is 16.000000. These groups are 17.964072  of users population.
+2010-12-10 20:59:39,616: Taking first 4 groups match rate is 76.000000. These groups are 28.942116  of users population.
+2010-12-10 20:59:39,702: Graph loaded, nodes: 501, edges: 32701
+2010-12-10 20:59:41,096: Taking first 2 groups match rate is 8.000000. These groups are 11.776447  of users population.
+2010-12-10 20:59:41,096: Taking first 3 groups match rate is 16.000000. These groups are 19.161677  of users population.
+2010-12-10 20:59:41,097: Taking first 4 groups match rate is 24.000000. These groups are 27.544910  of users population.
+2010-12-10 20:59:41,184: Graph loaded, nodes: 501, edges: 32742
+2010-12-10 20:59:42,433: Taking first 2 groups match rate is 12.000000. These groups are 8.383234  of users population.
+2010-12-10 20:59:42,433: Taking first 3 groups match rate is 24.000000. These groups are 12.774451  of users population.
+2010-12-10 20:59:42,433: Taking first 4 groups match rate is 24.000000. These groups are 19.760479  of users population.
+2010-12-10 20:59:42,521: Graph loaded, nodes: 501, edges: 33347
+2010-12-10 20:59:43,692: Taking first 2 groups match rate is 4.000000. These groups are 14.770459  of users population.
+2010-12-10 20:59:43,693: Taking first 3 groups match rate is 80.000000. These groups are 23.752495  of users population.
+2010-12-10 20:59:43,693: Taking first 4 groups match rate is 88.000000. These groups are 33.732535  of users population.
+2010-12-10 20:59:43,787: Graph loaded, nodes: 501, edges: 33400
+2010-12-10 20:59:45,384: Taking first 2 groups match rate is 8.000000. These groups are 10.978044  of users population.
+2010-12-10 20:59:45,385: Taking first 3 groups match rate is 16.000000. These groups are 18.962076  of users population.
+2010-12-10 20:59:45,385: Taking first 4 groups match rate is 32.000000. These groups are 29.341317  of users population.
+2010-12-10 20:59:45,477: Graph loaded, nodes: 501, edges: 33113
+2010-12-10 20:59:46,927: Taking first 2 groups match rate is 8.000000. These groups are 9.181637  of users population.
+2010-12-10 20:59:46,927: Taking first 3 groups match rate is 12.000000. These groups are 16.566866  of users population.
+2010-12-10 20:59:46,927: Taking first 4 groups match rate is 20.000000. These groups are 24.550898  of users population.
+2010-12-10 20:59:47,018: Graph loaded, nodes: 501, edges: 33188
+2010-12-10 20:59:48,701: Taking first 2 groups match rate is 12.000000. These groups are 10.179641  of users population.
+2010-12-10 20:59:48,701: Taking first 3 groups match rate is 16.000000. These groups are 15.568862  of users population.
+2010-12-10 20:59:48,701: Taking first 4 groups match rate is 16.000000. These groups are 21.357285  of users population.
+2010-12-10 20:59:48,785: Graph loaded, nodes: 501, edges: 33782
+2010-12-10 20:59:50,247: Taking first 2 groups match rate is 8.000000. These groups are 8.982036  of users population.
+2010-12-10 20:59:50,247: Taking first 3 groups match rate is 20.000000. These groups are 14.171657  of users population.
+2010-12-10 20:59:50,247: Taking first 4 groups match rate is 24.000000. These groups are 19.960080  of users population.
+2010-12-10 20:59:50,341: Graph loaded, nodes: 501, edges: 34352
+2010-12-10 20:59:52,092: Taking first 2 groups match rate is 12.000000. These groups are 10.179641  of users population.
+2010-12-10 20:59:52,092: Taking first 3 groups match rate is 12.000000. These groups are 17.165669  of users population.
+2010-12-10 20:59:52,092: Taking first 4 groups match rate is 16.000000. These groups are 24.351297  of users population.
+2010-12-10 20:59:52,183: Graph loaded, nodes: 501, edges: 34427
+2010-12-10 20:59:53,531: Taking first 2 groups match rate is 8.000000. These groups are 7.784431  of users population.
+2010-12-10 20:59:53,531: Taking first 3 groups match rate is 20.000000. These groups are 12.774451  of users population.
+2010-12-10 20:59:53,531: Taking first 4 groups match rate is 28.000000. These groups are 18.762475  of users population.
+2010-12-10 20:59:53,532: After  100 runs result is
+2010-12-10 20:59:53,532: (27.879999999999999, 21.740601878871509, 7.9930321017005941, 4.0)
+2010-12-10 20:59:53,532: For params
+2010-12-10 20:59:53,532: {'target_size': 10, 'OBJECTS': 100, 'bad_hideout': False, 'slice_level': 3, 'VOTERS': 500, 'legible_target_size': 3, 'number': 1, 'size': 25}
+2010-12-10 20:59:53,532: Variance
+2010-12-10 20:59:53,532: 708.9456
+2010-12-10 20:59:53,532:  ------------------- END --------------------
+2010-12-10 20:59:53,532: Will iterate over legible_target_size : now it's 6:
+2010-12-10 20:59:53,532: Will generate graph with params
+2010-12-10 20:59:53,532: {'target_size': 10, 'OBJECTS': 100, 'bad_hideout': False, 'slice_level': 3, 'VOTERS': 500, 'legible_target_size': 6, 'number': 1, 'size': 25}
+2010-12-10 20:59:53,532: Will do 100 runs
+2010-12-10 20:59:53,532: Slice is level: 3
+2010-12-10 20:59:53,802: Graph loaded, nodes: 501, edges: 54271
+2010-12-10 20:59:55,409: Taking first 2 groups match rate is 0.000000. These groups are 10.179641  of users population.
+2010-12-10 20:59:55,409: Taking first 3 groups match rate is 96.000000. These groups are 16.966068  of users population.
+2010-12-10 20:59:55,410: Taking first 4 groups match rate is 96.000000. These groups are 24.351297  of users population.
+2010-12-10 20:59:55,672: Graph loaded, nodes: 501, edges: 54040
+2010-12-10 20:59:57,439: Taking first 2 groups match rate is 16.000000. These groups are 9.381238  of users population.
+2010-12-10 20:59:57,439: Taking first 3 groups match rate is 28.000000. These groups are 14.970060  of users population.
+2010-12-10 20:59:57,439: Taking first 4 groups match rate is 32.000000. These groups are 22.754491  of users population.
+2010-12-10 20:59:57,724: Graph loaded, nodes: 501, edges: 54815
+2010-12-10 20:59:59,127: Taking first 2 groups match rate is 88.000000. These groups are 15.169661  of users population.
+2010-12-10 20:59:59,127: Taking first 3 groups match rate is 92.000000. These groups are 24.550898  of users population.
+2010-12-10 20:59:59,127: Taking first 4 groups match rate is 92.000000. These groups are 34.131737  of users population.
+2010-12-10 20:59:59,406: Graph loaded, nodes: 501, edges: 54974
+2010-12-10 21:00:01,121: Taking first 2 groups match rate is 4.000000. These groups are 9.980040  of users population.
+2010-12-10 21:00:01,122: Taking first 3 groups match rate is 4.000000. These groups are 16.566866  of users population.
+2010-12-10 21:00:01,122: Taking first 4 groups match rate is 8.000000. These groups are 24.351297  of users population.
+2010-12-10 21:00:01,395: Graph loaded, nodes: 501, edges: 54922
+2010-12-10 21:00:03,206: Taking first 2 groups match rate is 0.000000. These groups are 11.377246  of users population.
+2010-12-10 21:00:03,206: Taking first 3 groups match rate is 8.000000. These groups are 20.159681  of users population.
+2010-12-10 21:00:03,206: Taking first 4 groups match rate is 100.000000. These groups are 32.534930  of users population.
+2010-12-10 21:00:03,473: Graph loaded, nodes: 501, edges: 55109
+2010-12-10 21:00:05,380: Taking first 2 groups match rate is 4.000000. These groups are 10.978044  of users population.
+2010-12-10 21:00:05,380: Taking first 3 groups match rate is 4.000000. These groups are 18.562874  of users population.
+2010-12-10 21:00:05,381: Taking first 4 groups match rate is 8.000000. These groups are 26.147705  of users population.
+2010-12-10 21:00:05,647: Graph loaded, nodes: 501, edges: 55591
+2010-12-10 21:00:07,212: Taking first 2 groups match rate is 0.000000. These groups are 7.584830  of users population.
+2010-12-10 21:00:07,213: Taking first 3 groups match rate is 0.000000. These groups are 15.768463  of users population.
+2010-12-10 21:00:07,213: Taking first 4 groups match rate is 92.000000. These groups are 23.952096  of users population.
+2010-12-10 21:00:07,484: Graph loaded, nodes: 501, edges: 56949
+2010-12-10 21:00:09,295: Taking first 2 groups match rate is 80.000000. These groups are 10.578842  of users population.
+2010-12-10 21:00:09,295: Taking first 3 groups match rate is 80.000000. These groups are 16.766467  of users population.
+2010-12-10 21:00:09,295: Taking first 4 groups match rate is 88.000000. These groups are 23.153693  of users population.
+2010-12-10 21:00:09,558: Graph loaded, nodes: 501, edges: 56617
+2010-12-10 21:00:11,201: Taking first 2 groups match rate is 92.000000. These groups are 14.970060  of users population.
+2010-12-10 21:00:11,201: Taking first 3 groups match rate is 92.000000. These groups are 23.752495  of users population.
+2010-12-10 21:00:11,201: Taking first 4 groups match rate is 96.000000. These groups are 35.129741  of users population.
+2010-12-10 21:00:11,468: Graph loaded, nodes: 501, edges: 56779
+2010-12-10 21:00:13,661: Taking first 2 groups match rate is 76.000000. These groups are 10.578842  of users population.
+2010-12-10 21:00:13,661: Taking first 3 groups match rate is 80.000000. These groups are 18.163673  of users population.
+2010-12-10 21:00:13,661: Taking first 4 groups match rate is 80.000000. These groups are 26.946108  of users population.
+2010-12-10 21:00:13,925: Graph loaded, nodes: 501, edges: 56742
+2010-12-10 21:00:15,568: Taking first 2 groups match rate is 0.000000. These groups are 9.780439  of users population.
+2010-12-10 21:00:15,568: Taking first 3 groups match rate is 0.000000. These groups are 15.568862  of users population.
+2010-12-10 21:00:15,568: Taking first 4 groups match rate is 8.000000. These groups are 21.956088  of users population.
+2010-12-10 21:00:15,827: Graph loaded, nodes: 501, edges: 56274
+2010-12-10 21:00:17,716: Taking first 2 groups match rate is 72.000000. These groups are 10.379242  of users population.
+2010-12-10 21:00:17,717: Taking first 3 groups match rate is 72.000000. These groups are 17.365269  of users population.
+2010-12-10 21:00:17,717: Taking first 4 groups match rate is 72.000000. These groups are 24.550898  of users population.
+2010-12-10 21:00:17,990: Graph loaded, nodes: 501, edges: 56957
+2010-12-10 21:00:19,651: Taking first 2 groups match rate is 4.000000. These groups are 7.385230  of users population.
+2010-12-10 21:00:19,651: Taking first 3 groups match rate is 4.000000. These groups are 12.574850  of users population.
+2010-12-10 21:00:19,651: Taking first 4 groups match rate is 4.000000. These groups are 21.556886  of users population.
+2010-12-10 21:00:19,904: Graph loaded, nodes: 501, edges: 56318
+2010-12-10 21:00:21,923: Taking first 2 groups match rate is 0.000000. These groups are 9.381238  of users population.
+2010-12-10 21:00:21,923: Taking first 3 groups match rate is 0.000000. These groups are 14.570858  of users population.
+2010-12-10 21:00:21,923: Taking first 4 groups match rate is 0.000000. These groups are 21.157685  of users population.
+2010-12-10 21:00:22,174: Graph loaded, nodes: 501, edges: 56811
+2010-12-10 21:00:23,744: Taking first 2 groups match rate is 20.000000. These groups are 21.756487  of users population.
+2010-12-10 21:00:23,744: Taking first 3 groups match rate is 24.000000. These groups are 34.331337  of users population.
+2010-12-10 21:00:23,745: Taking first 4 groups match rate is 24.000000. These groups are 47.704591  of users population.
+2010-12-10 21:00:24,067: Graph loaded, nodes: 501, edges: 57395
+2010-12-10 21:00:26,303: Taking first 2 groups match rate is 4.000000. These groups are 14.570858  of users population.
+2010-12-10 21:00:26,303: Taking first 3 groups match rate is 4.000000. These groups are 23.752495  of users population.
+2010-12-10 21:00:26,303: Taking first 4 groups match rate is 4.000000. These groups are 33.333333  of users population.
+2010-12-10 21:00:26,559: Graph loaded, nodes: 501, edges: 57179
+2010-12-10 21:00:28,081: Taking first 2 groups match rate is 80.000000. These groups are 10.978044  of users population.
+2010-12-10 21:00:28,081: Taking first 3 groups match rate is 84.000000. These groups are 16.966068  of users population.
+2010-12-10 21:00:28,081: Taking first 4 groups match rate is 84.000000. These groups are 27.145709  of users population.
+2010-12-10 21:00:28,394: Graph loaded, nodes: 501, edges: 57759
+2010-12-10 21:00:30,579: Taking first 2 groups match rate is 0.000000. These groups are 9.980040  of users population.
+2010-12-10 21:00:30,579: Taking first 3 groups match rate is 0.000000. These groups are 16.167665  of users population.
+2010-12-10 21:00:30,579: Taking first 4 groups match rate is 100.000000. These groups are 24.550898  of users population.
+2010-12-10 21:00:30,830: Graph loaded, nodes: 501, edges: 57074
+2010-12-10 21:00:33,010: Taking first 2 groups match rate is 4.000000. These groups are 11.976048  of users population.
+2010-12-10 21:00:33,010: Taking first 3 groups match rate is 8.000000. These groups are 22.155689  of users population.
+2010-12-10 21:00:33,011: Taking first 4 groups match rate is 96.000000. These groups are 33.532934  of users population.
+2010-12-10 21:00:33,271: Graph loaded, nodes: 501, edges: 57657
+2010-12-10 21:00:35,375: Taking first 2 groups match rate is 16.000000. These groups are 17.564870  of users population.
+2010-12-10 21:00:35,376: Taking first 3 groups match rate is 16.000000. These groups are 26.347305  of users population.
+2010-12-10 21:00:35,376: Taking first 4 groups match rate is 16.000000. These groups are 35.528942  of users population.
+2010-12-10 21:00:35,718: Graph loaded, nodes: 501, edges: 59558
+2010-12-10 21:00:37,762: Taking first 2 groups match rate is 4.000000. These groups are 10.578842  of users population.
+2010-12-10 21:00:37,762: Taking first 3 groups match rate is 4.000000. These groups are 16.367265  of users population.
+2010-12-10 21:00:37,762: Taking first 4 groups match rate is 4.000000. These groups are 22.554890  of users population.
+2010-12-10 21:00:38,025: Graph loaded, nodes: 501, edges: 58619
+2010-12-10 21:00:39,933: Taking first 2 groups match rate is 0.000000. These groups are 8.183633  of users population.
+2010-12-10 21:00:39,933: Taking first 3 groups match rate is 88.000000. These groups are 16.966068  of users population.
+2010-12-10 21:00:39,934: Taking first 4 groups match rate is 88.000000. These groups are 26.746507  of users population.
+2010-12-10 21:00:40,235: Graph loaded, nodes: 501, edges: 57784
+2010-12-10 21:00:42,276: Taking first 2 groups match rate is 88.000000. These groups are 17.564870  of users population.
+2010-12-10 21:00:42,276: Taking first 3 groups match rate is 88.000000. These groups are 28.942116  of users population.
+2010-12-10 21:00:42,277: Taking first 4 groups match rate is 92.000000. These groups are 40.918164  of users population.
+2010-12-10 21:00:42,543: Graph loaded, nodes: 501, edges: 58414
+2010-12-10 21:00:45,823: Taking first 2 groups match rate is 96.000000. These groups are 21.556886  of users population.
+2010-12-10 21:00:45,823: Taking first 3 groups match rate is 100.000000. These groups are 35.129741  of users population.
+2010-12-10 21:00:45,823: Taking first 4 groups match rate is 100.000000. These groups are 49.101796  of users population.
+2010-12-10 21:00:46,095: Graph loaded, nodes: 501, edges: 59365
+2010-12-10 21:00:48,265: Taking first 2 groups match rate is 0.000000. These groups are 9.580838  of users population.
+2010-12-10 21:00:48,265: Taking first 3 groups match rate is 92.000000. These groups are 16.367265  of users population.
+2010-12-10 21:00:48,266: Taking first 4 groups match rate is 96.000000. These groups are 27.145709  of users population.
+2010-12-10 21:00:48,579: Graph loaded, nodes: 501, edges: 59270
+2010-12-10 21:00:50,390: Taking first 2 groups match rate is 12.000000. These groups are 14.171657  of users population.
+2010-12-10 21:00:50,391: Taking first 3 groups match rate is 20.000000. These groups are 23.353293  of users population.
+2010-12-10 21:00:50,391: Taking first 4 groups match rate is 20.000000. These groups are 34.730539  of users population.
+2010-12-10 21:00:50,645: Graph loaded, nodes: 501, edges: 59339
+2010-12-10 21:00:53,242: Taking first 2 groups match rate is 4.000000. These groups are 12.175649  of users population.
+2010-12-10 21:00:53,242: Taking first 3 groups match rate is 16.000000. These groups are 19.161677  of users population.
+2010-12-10 21:00:53,242: Taking first 4 groups match rate is 16.000000. These groups are 27.544910  of users population.
+2010-12-10 21:00:53,515: Graph loaded, nodes: 501, edges: 59848
+2010-12-10 21:00:55,913: Taking first 2 groups match rate is 0.000000. These groups are 7.185629  of users population.
+2010-12-10 21:00:55,913: Taking first 3 groups match rate is 0.000000. These groups are 11.976048  of users population.
+2010-12-10 21:00:55,913: Taking first 4 groups match rate is 0.000000. These groups are 17.564870  of users population.
+2010-12-10 21:00:56,233: Graph loaded, nodes: 501, edges: 59895
+2010-12-10 21:00:58,804: Taking first 2 groups match rate is 0.000000. These groups are 14.171657  of users population.
+2010-12-10 21:00:58,805: Taking first 3 groups match rate is 8.000000. These groups are 25.548902  of users population.
+2010-12-10 21:00:58,805: Taking first 4 groups match rate is 12.000000. These groups are 37.524950  of users population.
+2010-12-10 21:00:59,072: Graph loaded, nodes: 501, edges: 61149
+2010-12-10 21:01:01,486: Taking first 2 groups match rate is 4.000000. These groups are 11.377246  of users population.
+2010-12-10 21:01:01,487: Taking first 3 groups match rate is 8.000000. These groups are 18.762475  of users population.
+2010-12-10 21:01:01,487: Taking first 4 groups match rate is 12.000000. These groups are 26.347305  of users population.
+2010-12-10 21:01:01,750: Graph loaded, nodes: 501, edges: 59210
+2010-12-10 21:01:03,793: Taking first 2 groups match rate is 4.000000. These groups are 11.976048  of users population.
+2010-12-10 21:01:03,793: Taking first 3 groups match rate is 88.000000. These groups are 18.962076  of users population.
+2010-12-10 21:01:03,793: Taking first 4 groups match rate is 88.000000. These groups are 27.345309  of users population.
+2010-12-10 21:01:04,118: Graph loaded, nodes: 501, edges: 60360
+2010-12-10 21:01:06,497: Taking first 2 groups match rate is 96.000000. These groups are 14.970060  of users population.
+2010-12-10 21:01:06,498: Taking first 3 groups match rate is 100.000000. These groups are 25.548902  of users population.
+2010-12-10 21:01:06,498: Taking first 4 groups match rate is 100.000000. These groups are 36.327345  of users population.
+2010-12-10 21:01:06,763: Graph loaded, nodes: 501, edges: 60709
+2010-12-10 21:01:09,108: Taking first 2 groups match rate is 4.000000. These groups are 12.774451  of users population.
+2010-12-10 21:01:09,108: Taking first 3 groups match rate is 8.000000. These groups are 20.159681  of users population.
+2010-12-10 21:01:09,108: Taking first 4 groups match rate is 12.000000. These groups are 27.744511  of users population.
+2010-12-10 21:01:09,372: Graph loaded, nodes: 501, edges: 60957
+2010-12-10 21:01:11,329: Taking first 2 groups match rate is 80.000000. These groups are 13.972056  of users population.
+2010-12-10 21:01:11,329: Taking first 3 groups match rate is 84.000000. These groups are 24.950100  of users population.
+2010-12-10 21:01:11,329: Taking first 4 groups match rate is 88.000000. These groups are 37.125749  of users population.
+2010-12-10 21:01:11,637: Graph loaded, nodes: 501, edges: 60232
+2010-12-10 21:01:13,518: Taking first 2 groups match rate is 88.000000. These groups are 13.173653  of users population.
+2010-12-10 21:01:13,518: Taking first 3 groups match rate is 88.000000. These groups are 23.952096  of users population.
+2010-12-10 21:01:13,518: Taking first 4 groups match rate is 92.000000. These groups are 35.329341  of users population.
+2010-12-10 21:01:13,797: Graph loaded, nodes: 501, edges: 61292
+2010-12-10 21:01:16,548: Taking first 2 groups match rate is 100.000000. These groups are 20.958084  of users population.
+2010-12-10 21:01:16,549: Taking first 3 groups match rate is 100.000000. These groups are 32.135729  of users population.
+2010-12-10 21:01:16,549: Taking first 4 groups match rate is 100.000000. These groups are 44.111776  of users population.
+2010-12-10 21:01:16,808: Graph loaded, nodes: 501, edges: 60478
+2010-12-10 21:01:18,825: Taking first 2 groups match rate is 8.000000. These groups are 11.576846  of users population.
+2010-12-10 21:01:18,825: Taking first 3 groups match rate is 92.000000. These groups are 18.163673  of users population.
+2010-12-10 21:01:18,825: Taking first 4 groups match rate is 92.000000. These groups are 26.946108  of users population.
+2010-12-10 21:01:19,095: Graph loaded, nodes: 501, edges: 61326
+2010-12-10 21:01:21,073: Taking first 2 groups match rate is 8.000000. These groups are 18.562874  of users population.
+2010-12-10 21:01:21,074: Taking first 3 groups match rate is 84.000000. These groups are 29.341317  of users population.
+2010-12-10 21:01:21,074: Taking first 4 groups match rate is 92.000000. These groups are 40.319361  of users population.
+2010-12-10 21:01:21,402: Graph loaded, nodes: 501, edges: 61570
+2010-12-10 21:01:23,827: Taking first 2 groups match rate is 8.000000. These groups are 10.179641  of users population.
+2010-12-10 21:01:23,827: Taking first 3 groups match rate is 8.000000. These groups are 16.566866  of users population.
+2010-12-10 21:01:23,827: Taking first 4 groups match rate is 92.000000. These groups are 24.351297  of users population.
+2010-12-10 21:01:24,087: Graph loaded, nodes: 501, edges: 62137
+2010-12-10 21:01:26,221: Taking first 2 groups match rate is 0.000000. These groups are 15.968064  of users population.
+2010-12-10 21:01:26,221: Taking first 3 groups match rate is 0.000000. These groups are 25.948104  of users population.
+2010-12-10 21:01:26,221: Taking first 4 groups match rate is 0.000000. These groups are 38.323353  of users population.
+2010-12-10 21:01:26,483: Graph loaded, nodes: 501, edges: 62314
+2010-12-10 21:01:28,770: Taking first 2 groups match rate is 8.000000. These groups are 11.177645  of users population.
+2010-12-10 21:01:28,770: Taking first 3 groups match rate is 8.000000. These groups are 20.159681  of users population.
+2010-12-10 21:01:28,770: Taking first 4 groups match rate is 8.000000. These groups are 29.540918  of users population.
+2010-12-10 21:01:29,087: Graph loaded, nodes: 501, edges: 62023
+2010-12-10 21:01:30,889: Taking first 2 groups match rate is 0.000000. These groups are 8.982036  of users population.
+2010-12-10 21:01:30,889: Taking first 3 groups match rate is 96.000000. These groups are 17.564870  of users population.
+2010-12-10 21:01:30,889: Taking first 4 groups match rate is 96.000000. These groups are 26.347305  of users population.
+2010-12-10 21:01:31,145: Graph loaded, nodes: 501, edges: 62687
+2010-12-10 21:01:34,449: Taking first 2 groups match rate is 8.000000. These groups are 16.367265  of users population.
+2010-12-10 21:01:34,449: Taking first 3 groups match rate is 12.000000. These groups are 28.343313  of users population.
+2010-12-10 21:01:34,450: Taking first 4 groups match rate is 16.000000. These groups are 41.516966  of users population.
+2010-12-10 21:01:34,715: Graph loaded, nodes: 501, edges: 62493
+2010-12-10 21:01:37,779: Taking first 2 groups match rate is 0.000000. These groups are 14.970060  of users population.
+2010-12-10 21:01:37,779: Taking first 3 groups match rate is 100.000000. These groups are 23.952096  of users population.
+2010-12-10 21:01:37,779: Taking first 4 groups match rate is 100.000000. These groups are 34.530938  of users population.
+2010-12-10 21:01:38,034: Graph loaded, nodes: 501, edges: 62384
+2010-12-10 21:01:41,119: Taking first 2 groups match rate is 4.000000. These groups are 14.570858  of users population.
+2010-12-10 21:01:41,119: Taking first 3 groups match rate is 8.000000. These groups are 22.554890  of users population.
+2010-12-10 21:01:41,119: Taking first 4 groups match rate is 8.000000. These groups are 30.738523  of users population.
+2010-12-10 21:01:41,429: Graph loaded, nodes: 501, edges: 62900
+2010-12-10 21:01:43,510: Taking first 2 groups match rate is 0.000000. These groups are 9.780439  of users population.
+2010-12-10 21:01:43,511: Taking first 3 groups match rate is 0.000000. These groups are 18.562874  of users population.
+2010-12-10 21:01:43,511: Taking first 4 groups match rate is 0.000000. These groups are 28.542914  of users population.
+2010-12-10 21:01:43,761: Graph loaded, nodes: 501, edges: 62465
+2010-12-10 21:01:46,014: Taking first 2 groups match rate is 12.000000. These groups are 15.768463  of users population.
+2010-12-10 21:01:46,015: Taking first 3 groups match rate is 12.000000. These groups are 24.750499  of users population.
+2010-12-10 21:01:46,015: Taking first 4 groups match rate is 16.000000. These groups are 34.730539  of users population.
+2010-12-10 21:01:46,267: Graph loaded, nodes: 501, edges: 62618
+2010-12-10 21:01:49,052: Taking first 2 groups match rate is 76.000000. These groups are 11.177645  of users population.
+2010-12-10 21:01:49,052: Taking first 3 groups match rate is 84.000000. These groups are 18.962076  of users population.
+2010-12-10 21:01:49,052: Taking first 4 groups match rate is 84.000000. These groups are 29.341317  of users population.
+2010-12-10 21:01:49,313: Graph loaded, nodes: 501, edges: 62846
+2010-12-10 21:01:51,110: Taking first 2 groups match rate is 4.000000. These groups are 13.772455  of users population.
+2010-12-10 21:01:51,110: Taking first 3 groups match rate is 4.000000. These groups are 24.750499  of users population.
+2010-12-10 21:01:51,111: Taking first 4 groups match rate is 4.000000. These groups are 36.726547  of users population.
+2010-12-10 21:01:51,428: Graph loaded, nodes: 501, edges: 63150
+2010-12-10 21:01:53,816: Taking first 2 groups match rate is 0.000000. These groups are 16.167665  of users population.
+2010-12-10 21:01:53,816: Taking first 3 groups match rate is 0.000000. These groups are 27.544910  of users population.
+2010-12-10 21:01:53,817: Taking first 4 groups match rate is 0.000000. These groups are 40.119760  of users population.
+2010-12-10 21:01:54,145: Graph loaded, nodes: 501, edges: 63569
+2010-12-10 21:01:56,276: Taking first 2 groups match rate is 92.000000. These groups are 19.560878  of users population.
+2010-12-10 21:01:56,276: Taking first 3 groups match rate is 92.000000. These groups are 32.135729  of users population.
+2010-12-10 21:01:56,276: Taking first 4 groups match rate is 92.000000. These groups are 45.908184  of users population.
+2010-12-10 21:01:56,530: Graph loaded, nodes: 501, edges: 63399
+2010-12-10 21:01:58,595: Taking first 2 groups match rate is 80.000000. These groups are 11.377246  of users population.
+2010-12-10 21:01:58,595: Taking first 3 groups match rate is 80.000000. These groups are 19.760479  of users population.
+2010-12-10 21:01:58,596: Taking first 4 groups match rate is 88.000000. These groups are 30.139721  of users population.
+2010-12-10 21:01:58,856: Graph loaded, nodes: 501, edges: 63447
+2010-12-10 21:02:01,604: Taking first 2 groups match rate is 88.000000. These groups are 16.766467  of users population.
+2010-12-10 21:02:01,604: Taking first 3 groups match rate is 88.000000. These groups are 26.347305  of users population.
+2010-12-10 21:02:01,605: Taking first 4 groups match rate is 88.000000. These groups are 36.526946  of users population.
+2010-12-10 21:02:01,868: Graph loaded, nodes: 501, edges: 64202
+2010-12-10 21:02:04,755: Taking first 2 groups match rate is 4.000000. These groups are 15.568862  of users population.
+2010-12-10 21:02:04,755: Taking first 3 groups match rate is 4.000000. These groups are 26.147705  of users population.
+2010-12-10 21:02:04,755: Taking first 4 groups match rate is 92.000000. These groups are 37.125749  of users population.
+2010-12-10 21:02:05,068: Graph loaded, nodes: 501, edges: 63772
+2010-12-10 21:02:07,135: Taking first 2 groups match rate is 92.000000. These groups are 13.173653  of users population.
+2010-12-10 21:02:07,135: Taking first 3 groups match rate is 92.000000. These groups are 19.960080  of users population.
+2010-12-10 21:02:07,135: Taking first 4 groups match rate is 96.000000. These groups are 28.143713  of users population.
+2010-12-10 21:02:07,389: Graph loaded, nodes: 501, edges: 63763
+2010-12-10 21:02:11,456: Taking first 2 groups match rate is 0.000000. These groups are 10.778443  of users population.
+2010-12-10 21:02:11,457: Taking first 3 groups match rate is 96.000000. These groups are 19.161677  of users population.
+2010-12-10 21:02:11,457: Taking first 4 groups match rate is 96.000000. These groups are 33.133733  of users population.
+2010-12-10 21:02:11,715: Graph loaded, nodes: 501, edges: 63808
+2010-12-10 21:02:14,005: Taking first 2 groups match rate is 4.000000. These groups are 12.774451  of users population.
+2010-12-10 21:02:14,006: Taking first 3 groups match rate is 92.000000. These groups are 20.159681  of users population.
+2010-12-10 21:02:14,006: Taking first 4 groups match rate is 92.000000. These groups are 27.944112  of users population.
+2010-12-10 21:02:14,270: Graph loaded, nodes: 501, edges: 63760
+2010-12-10 21:02:18,140: Taking first 2 groups match rate is 0.000000. These groups are 9.580838  of users population.
+2010-12-10 21:02:18,141: Taking first 3 groups match rate is 0.000000. These groups are 16.367265  of users population.
+2010-12-10 21:02:18,141: Taking first 4 groups match rate is 92.000000. These groups are 26.147705  of users population.
+2010-12-10 21:02:18,400: Graph loaded, nodes: 501, edges: 64541
+2010-12-10 21:02:20,496: Taking first 2 groups match rate is 88.000000. These groups are 14.371257  of users population.
+2010-12-10 21:02:20,496: Taking first 3 groups match rate is 92.000000. These groups are 24.151697  of users population.
+2010-12-10 21:02:20,496: Taking first 4 groups match rate is 92.000000. These groups are 33.932136  of users population.
+2010-12-10 21:02:20,811: Graph loaded, nodes: 501, edges: 64891
+2010-12-10 21:02:23,500: Taking first 2 groups match rate is 0.000000. These groups are 11.576846  of users population.
+2010-12-10 21:02:23,500: Taking first 3 groups match rate is 88.000000. These groups are 18.962076  of users population.
+2010-12-10 21:02:23,501: Taking first 4 groups match rate is 96.000000. These groups are 26.946108  of users population.
+2010-12-10 21:02:23,827: Graph loaded, nodes: 501, edges: 64209
+2010-12-10 21:02:26,034: Taking first 2 groups match rate is 0.000000. These groups are 14.970060  of users population.
+2010-12-10 21:02:26,034: Taking first 3 groups match rate is 0.000000. These groups are 24.550898  of users population.
+2010-12-10 21:02:26,034: Taking first 4 groups match rate is 0.000000. These groups are 34.730539  of users population.
+2010-12-10 21:02:26,292: Graph loaded, nodes: 501, edges: 63930
+2010-12-10 21:02:29,087: Taking first 2 groups match rate is 96.000000. These groups are 18.562874  of users population.
+2010-12-10 21:02:29,087: Taking first 3 groups match rate is 96.000000. These groups are 28.942116  of users population.
+2010-12-10 21:02:29,088: Taking first 4 groups match rate is 96.000000. These groups are 39.520958  of users population.
+2010-12-10 21:02:29,368: Graph loaded, nodes: 501, edges: 64300
+2010-12-10 21:02:31,829: Taking first 2 groups match rate is 0.000000. These groups are 11.377246  of users population.
+2010-12-10 21:02:31,829: Taking first 3 groups match rate is 100.000000. These groups are 21.556886  of users population.
+2010-12-10 21:02:31,829: Taking first 4 groups match rate is 100.000000. These groups are 31.936128  of users population.
+2010-12-10 21:02:32,086: Graph loaded, nodes: 501, edges: 65160
+2010-12-10 21:02:34,823: Taking first 2 groups match rate is 12.000000. These groups are 12.175649  of users population.
+2010-12-10 21:02:34,824: Taking first 3 groups match rate is 12.000000. These groups are 18.762475  of users population.
+2010-12-10 21:02:34,824: Taking first 4 groups match rate is 88.000000. These groups are 25.349301  of users population.
+2010-12-10 21:02:35,078: Graph loaded, nodes: 501, edges: 65388
+2010-12-10 21:02:37,549: Taking first 2 groups match rate is 92.000000. These groups are 17.564870  of users population.
+2010-12-10 21:02:37,549: Taking first 3 groups match rate is 92.000000. These groups are 32.135729  of users population.
+2010-12-10 21:02:37,549: Taking first 4 groups match rate is 92.000000. These groups are 47.105788  of users population.
+2010-12-10 21:02:37,813: Graph loaded, nodes: 501, edges: 66042
+2010-12-10 21:02:40,426: Taking first 2 groups match rate is 0.000000. These groups are 14.371257  of users population.
+2010-12-10 21:02:40,426: Taking first 3 groups match rate is 0.000000. These groups are 21.956088  of users population.
+2010-12-10 21:02:40,426: Taking first 4 groups match rate is 100.000000. These groups are 29.540918  of users population.
+2010-12-10 21:02:40,783: Graph loaded, nodes: 501, edges: 65680
+2010-12-10 21:02:42,974: Taking first 2 groups match rate is 8.000000. These groups are 11.177645  of users population.
+2010-12-10 21:02:42,974: Taking first 3 groups match rate is 16.000000. These groups are 17.764471  of users population.
+2010-12-10 21:02:42,974: Taking first 4 groups match rate is 16.000000. These groups are 25.748503  of users population.
+2010-12-10 21:02:43,317: Graph loaded, nodes: 501, edges: 65028
+2010-12-10 21:02:46,850: Taking first 2 groups match rate is 12.000000. These groups are 14.371257  of users population.
+2010-12-10 21:02:46,850: Taking first 3 groups match rate is 16.000000. These groups are 22.754491  of users population.
+2010-12-10 21:02:46,850: Taking first 4 groups match rate is 16.000000. These groups are 31.936128  of users population.
+2010-12-10 21:02:47,111: Graph loaded, nodes: 501, edges: 65521
+2010-12-10 21:02:50,442: Taking first 2 groups match rate is 8.000000. These groups are 12.375250  of users population.
+2010-12-10 21:02:50,443: Taking first 3 groups match rate is 8.000000. These groups are 20.159681  of users population.
+2010-12-10 21:02:50,443: Taking first 4 groups match rate is 16.000000. These groups are 28.742515  of users population.
+2010-12-10 21:02:50,707: Graph loaded, nodes: 501, edges: 66350
+2010-12-10 21:02:53,610: Taking first 2 groups match rate is 16.000000. These groups are 15.369261  of users population.
+2010-12-10 21:02:53,611: Taking first 3 groups match rate is 20.000000. These groups are 23.752495  of users population.
+2010-12-10 21:02:53,611: Taking first 4 groups match rate is 24.000000. These groups are 32.335329  of users population.
+2010-12-10 21:02:53,900: Graph loaded, nodes: 501, edges: 66134
+2010-12-10 21:02:56,619: Taking first 2 groups match rate is 12.000000. These groups are 6.187625  of users population.
+2010-12-10 21:02:56,619: Taking first 3 groups match rate is 20.000000. These groups are 15.369261  of users population.
+2010-12-10 21:02:56,620: Taking first 4 groups match rate is 32.000000. These groups are 26.546906  of users population.
+2010-12-10 21:02:56,885: Graph loaded, nodes: 501, edges: 66056
+2010-12-10 21:02:59,865: Taking first 2 groups match rate is 4.000000. These groups are 13.772455  of users population.
+2010-12-10 21:02:59,866: Taking first 3 groups match rate is 12.000000. These groups are 22.554890  of users population.
+2010-12-10 21:02:59,866: Taking first 4 groups match rate is 20.000000. These groups are 32.135729  of users population.
+2010-12-10 21:03:00,118: Graph loaded, nodes: 501, edges: 65308
+2010-12-10 21:03:03,030: Taking first 2 groups match rate is 4.000000. These groups are 12.774451  of users population.
+2010-12-10 21:03:03,031: Taking first 3 groups match rate is 4.000000. These groups are 22.954092  of users population.
+2010-12-10 21:03:03,031: Taking first 4 groups match rate is 100.000000. These groups are 33.532934  of users population.
+2010-12-10 21:03:03,371: Graph loaded, nodes: 501, edges: 66486
+2010-12-10 21:03:06,203: Taking first 2 groups match rate is 0.000000. These groups are 22.954092  of users population.
+2010-12-10 21:03:06,203: Taking first 3 groups match rate is 0.000000. These groups are 36.726547  of users population.
+2010-12-10 21:03:06,203: Taking first 4 groups match rate is 4.000000. These groups are 51.297405  of users population.
+2010-12-10 21:03:06,546: Graph loaded, nodes: 501, edges: 66327
+2010-12-10 21:03:10,099: Taking first 2 groups match rate is 64.000000. These groups are 14.371257  of users population.
+2010-12-10 21:03:10,099: Taking first 3 groups match rate is 68.000000. These groups are 22.554890  of users population.
+2010-12-10 21:03:10,100: Taking first 4 groups match rate is 76.000000. These groups are 31.736527  of users population.
+2010-12-10 21:03:10,451: Graph loaded, nodes: 501, edges: 66460
+2010-12-10 21:03:13,525: Taking first 2 groups match rate is 12.000000. These groups are 19.361277  of users population.
+2010-12-10 21:03:13,525: Taking first 3 groups match rate is 16.000000. These groups are 30.538922  of users population.
+2010-12-10 21:03:13,525: Taking first 4 groups match rate is 96.000000. These groups are 42.714571  of users population.
+2010-12-10 21:03:13,789: Graph loaded, nodes: 501, edges: 65901
+2010-12-10 21:03:16,269: Taking first 2 groups match rate is 0.000000. These groups are 11.377246  of users population.
+2010-12-10 21:03:16,269: Taking first 3 groups match rate is 4.000000. These groups are 20.359281  of users population.
+2010-12-10 21:03:16,270: Taking first 4 groups match rate is 4.000000. These groups are 29.540918  of users population.
+2010-12-10 21:03:16,561: Graph loaded, nodes: 501, edges: 66324
+2010-12-10 21:03:18,975: Taking first 2 groups match rate is 4.000000. These groups are 13.572854  of users population.
+2010-12-10 21:03:18,975: Taking first 3 groups match rate is 68.000000. These groups are 20.758483  of users population.
+2010-12-10 21:03:18,977: Taking first 4 groups match rate is 72.000000. These groups are 31.936128  of users population.
+2010-12-10 21:03:19,248: Graph loaded, nodes: 501, edges: 66883
+2010-12-10 21:03:22,526: Taking first 2 groups match rate is 0.000000. These groups are 12.375250  of users population.
+2010-12-10 21:03:22,526: Taking first 3 groups match rate is 4.000000. These groups are 20.758483  of users population.
+2010-12-10 21:03:22,527: Taking first 4 groups match rate is 8.000000. These groups are 30.538922  of users population.
+2010-12-10 21:03:22,794: Graph loaded, nodes: 501, edges: 66571
+2010-12-10 21:03:26,092: Taking first 2 groups match rate is 0.000000. These groups are 13.173653  of users population.
+2010-12-10 21:03:26,092: Taking first 3 groups match rate is 96.000000. These groups are 21.157685  of users population.
+2010-12-10 21:03:26,092: Taking first 4 groups match rate is 96.000000. These groups are 29.940120  of users population.
+2010-12-10 21:03:26,347: Graph loaded, nodes: 501, edges: 67312
+2010-12-10 21:03:29,852: Taking first 2 groups match rate is 0.000000. These groups are 12.974052  of users population.
+2010-12-10 21:03:29,852: Taking first 3 groups match rate is 4.000000. These groups are 21.357285  of users population.
+2010-12-10 21:03:29,853: Taking first 4 groups match rate is 4.000000. These groups are 29.940120  of users population.
+2010-12-10 21:03:30,109: Graph loaded, nodes: 501, edges: 67304
+2010-12-10 21:03:32,868: Taking first 2 groups match rate is 76.000000. These groups are 10.578842  of users population.
+2010-12-10 21:03:32,868: Taking first 3 groups match rate is 80.000000. These groups are 17.764471  of users population.
+2010-12-10 21:03:32,868: Taking first 4 groups match rate is 84.000000. These groups are 25.548902  of users population.
+2010-12-10 21:03:33,122: Graph loaded, nodes: 501, edges: 67023
+2010-12-10 21:03:36,580: Taking first 2 groups match rate is 4.000000. These groups are 18.562874  of users population.
+2010-12-10 21:03:36,580: Taking first 3 groups match rate is 4.000000. These groups are 29.141717  of users population.
+2010-12-10 21:03:36,581: Taking first 4 groups match rate is 4.000000. These groups are 39.920160  of users population.
+2010-12-10 21:03:36,836: Graph loaded, nodes: 501, edges: 67065
+2010-12-10 21:03:40,165: Taking first 2 groups match rate is 96.000000. These groups are 13.772455  of users population.
+2010-12-10 21:03:40,165: Taking first 3 groups match rate is 96.000000. These groups are 20.958084  of users population.
+2010-12-10 21:03:40,166: Taking first 4 groups match rate is 96.000000. These groups are 31.736527  of users population.
+2010-12-10 21:03:40,456: Graph loaded, nodes: 501, edges: 67384
+2010-12-10 21:03:43,053: Taking first 2 groups match rate is 12.000000. These groups are 12.974052  of users population.
+2010-12-10 21:03:43,054: Taking first 3 groups match rate is 12.000000. These groups are 20.958084  of users population.
+2010-12-10 21:03:43,054: Taking first 4 groups match rate is 12.000000. These groups are 29.540918  of users population.
+2010-12-10 21:03:43,425: Graph loaded, nodes: 501, edges: 66726
+2010-12-10 21:03:45,945: Taking first 2 groups match rate is 4.000000. These groups are 11.776447  of users population.
+2010-12-10 21:03:45,945: Taking first 3 groups match rate is 4.000000. These groups are 22.754491  of users population.
+2010-12-10 21:03:45,947: Taking first 4 groups match rate is 4.000000. These groups are 33.932136  of users population.
+2010-12-10 21:03:46,265: Graph loaded, nodes: 501, edges: 66173
+2010-12-10 21:03:49,268: Taking first 2 groups match rate is 0.000000. These groups are 15.768463  of users population.
+2010-12-10 21:03:49,268: Taking first 3 groups match rate is 0.000000. These groups are 24.950100  of users population.
+2010-12-10 21:03:49,269: Taking first 4 groups match rate is 4.000000. These groups are 35.129741  of users population.
+2010-12-10 21:03:49,600: Graph loaded, nodes: 501, edges: 67858
+2010-12-10 21:03:52,123: Taking first 2 groups match rate is 4.000000. These groups are 12.175649  of users population.
+2010-12-10 21:03:52,124: Taking first 3 groups match rate is 4.000000. These groups are 20.359281  of users population.
+2010-12-10 21:03:52,124: Taking first 4 groups match rate is 12.000000. These groups are 30.738523  of users population.
+2010-12-10 21:03:52,450: Graph loaded, nodes: 501, edges: 67445
+2010-12-10 21:03:55,528: Taking first 2 groups match rate is 0.000000. These groups are 12.974052  of users population.
+2010-12-10 21:03:55,528: Taking first 3 groups match rate is 0.000000. These groups are 22.554890  of users population.
+2010-12-10 21:03:55,528: Taking first 4 groups match rate is 92.000000. These groups are 32.335329  of users population.
+2010-12-10 21:03:55,781: Graph loaded, nodes: 501, edges: 67955
+2010-12-10 21:03:58,552: Taking first 2 groups match rate is 0.000000. These groups are 14.570858  of users population.
+2010-12-10 21:03:58,552: Taking first 3 groups match rate is 4.000000. These groups are 22.754491  of users population.
+2010-12-10 21:03:58,552: Taking first 4 groups match rate is 80.000000. These groups are 31.137725  of users population.
+2010-12-10 21:03:58,813: Graph loaded, nodes: 501, edges: 68685
+2010-12-10 21:04:01,303: Taking first 2 groups match rate is 0.000000. These groups are 17.165669  of users population.
+2010-12-10 21:04:01,303: Taking first 3 groups match rate is 0.000000. These groups are 27.145709  of users population.
+2010-12-10 21:04:01,303: Taking first 4 groups match rate is 4.000000. These groups are 40.319361  of users population.
+2010-12-10 21:04:01,555: Graph loaded, nodes: 501, edges: 68053
+2010-12-10 21:04:04,903: Taking first 2 groups match rate is 8.000000. These groups are 13.772455  of users population.
+2010-12-10 21:04:04,903: Taking first 3 groups match rate is 12.000000. These groups are 21.956088  of users population.
+2010-12-10 21:04:04,903: Taking first 4 groups match rate is 20.000000. These groups are 30.938124  of users population.
+2010-12-10 21:04:05,162: Graph loaded, nodes: 501, edges: 68244
+2010-12-10 21:04:09,138: Taking first 2 groups match rate is 12.000000. These groups are 19.161677  of users population.
+2010-12-10 21:04:09,138: Taking first 3 groups match rate is 16.000000. These groups are 29.740519  of users population.
+2010-12-10 21:04:09,139: Taking first 4 groups match rate is 28.000000. These groups are 40.518962  of users population.
+2010-12-10 21:04:09,389: Graph loaded, nodes: 501, edges: 68061
+2010-12-10 21:04:12,554: Taking first 2 groups match rate is 4.000000. These groups are 10.379242  of users population.
+2010-12-10 21:04:12,554: Taking first 3 groups match rate is 4.000000. These groups are 18.562874  of users population.
+2010-12-10 21:04:12,555: Taking first 4 groups match rate is 8.000000. These groups are 29.740519  of users population.
+2010-12-10 21:04:12,801: Graph loaded, nodes: 501, edges: 67612
+2010-12-10 21:04:16,421: Taking first 2 groups match rate is 0.000000. These groups are 18.762475  of users population.
+2010-12-10 21:04:16,421: Taking first 3 groups match rate is 0.000000. These groups are 30.139721  of users population.
+2010-12-10 21:04:16,422: Taking first 4 groups match rate is 0.000000. These groups are 42.514970  of users population.
+2010-12-10 21:04:16,672: Graph loaded, nodes: 501, edges: 68162
+2010-12-10 21:04:19,209: Taking first 2 groups match rate is 88.000000. These groups are 19.161677  of users population.
+2010-12-10 21:04:19,209: Taking first 3 groups match rate is 92.000000. These groups are 31.736527  of users population.
+2010-12-10 21:04:19,209: Taking first 4 groups match rate is 96.000000. These groups are 46.906188  of users population.
+2010-12-10 21:04:19,464: Graph loaded, nodes: 501, edges: 67900
+2010-12-10 21:04:22,335: Taking first 2 groups match rate is 4.000000. These groups are 18.562874  of users population.
+2010-12-10 21:04:22,335: Taking first 3 groups match rate is 8.000000. These groups are 28.742515  of users population.
+2010-12-10 21:04:22,335: Taking first 4 groups match rate is 96.000000. These groups are 39.720559  of users population.
+2010-12-10 21:04:22,632: Graph loaded, nodes: 501, edges: 68667
+2010-12-10 21:04:26,551: Taking first 2 groups match rate is 0.000000. These groups are 17.964072  of users population.
+2010-12-10 21:04:26,551: Taking first 3 groups match rate is 0.000000. These groups are 27.544910  of users population.
+2010-12-10 21:04:26,551: Taking first 4 groups match rate is 0.000000. These groups are 37.524950  of users population.
+2010-12-10 21:04:26,793: Graph loaded, nodes: 501, edges: 67587
+2010-12-10 21:04:29,587: Taking first 2 groups match rate is 76.000000. These groups are 10.778443  of users population.
+2010-12-10 21:04:29,588: Taking first 3 groups match rate is 84.000000. These groups are 20.958084  of users population.
+2010-12-10 21:04:29,588: Taking first 4 groups match rate is 84.000000. These groups are 34.930140  of users population.
+2010-12-10 21:04:29,868: Graph loaded, nodes: 501, edges: 70086
+2010-12-10 21:04:32,921: Taking first 2 groups match rate is 0.000000. These groups are 15.169661  of users population.
+2010-12-10 21:04:32,921: Taking first 3 groups match rate is 0.000000. These groups are 23.552894  of users population.
+2010-12-10 21:04:32,921: Taking first 4 groups match rate is 0.000000. These groups are 33.133733  of users population.
+2010-12-10 21:04:32,922: After  100 runs result is
+2010-12-10 21:04:32,922: (53.359999999999999, 32.337325349301409, 8.4759072066416188, 37.0)
+2010-12-10 21:04:32,922: For params
+2010-12-10 21:04:32,922: {'target_size': 10, 'OBJECTS': 100, 'bad_hideout': False, 'slice_level': 3, 'VOTERS': 500, 'legible_target_size': 6, 'number': 1, 'size': 25}
+2010-12-10 21:04:32,922: Variance
+2010-12-10 21:04:32,922: 1724.8704
+2010-12-10 21:04:32,922:  ------------------- END --------------------
+2010-12-10 21:04:32,922: Will iterate over legible_target_size : now it's 9:
+2010-12-10 21:04:32,922: Will generate graph with params
+2010-12-10 21:04:32,922: {'target_size': 10, 'OBJECTS': 100, 'bad_hideout': False, 'slice_level': 3, 'VOTERS': 500, 'legible_target_size': 9, 'number': 1, 'size': 25}
+2010-12-10 21:04:32,922: Will do 100 runs
+2010-12-10 21:04:32,922: Slice is level: 3
+2010-12-10 21:04:33,447: Graph loaded, nodes: 501, edges: 87144
+2010-12-10 21:04:36,201: Taking first 2 groups match rate is 0.000000. These groups are 17.365269  of users population.
+2010-12-10 21:04:36,201: Taking first 3 groups match rate is 0.000000. These groups are 29.540918  of users population.
+2010-12-10 21:04:36,201: Taking first 4 groups match rate is 100.000000. These groups are 41.716567  of users population.
+2010-12-10 21:04:36,786: Graph loaded, nodes: 501, edges: 87721
+2010-12-10 21:04:40,077: Taking first 2 groups match rate is 0.000000. These groups are 9.381238  of users population.
+2010-12-10 21:04:40,078: Taking first 3 groups match rate is 0.000000. These groups are 19.960080  of users population.
+2010-12-10 21:04:40,078: Taking first 4 groups match rate is 4.000000. These groups are 31.536926  of users population.
+2010-12-10 21:04:40,573: Graph loaded, nodes: 501, edges: 88826
+2010-12-10 21:04:44,508: Taking first 2 groups match rate is 0.000000. These groups are 22.954092  of users population.
+2010-12-10 21:04:44,509: Taking first 3 groups match rate is 100.000000. These groups are 34.930140  of users population.
+2010-12-10 21:04:44,509: Taking first 4 groups match rate is 100.000000. These groups are 48.502994  of users population.
+2010-12-10 21:04:45,082: Graph loaded, nodes: 501, edges: 88748
+2010-12-10 21:04:48,592: Taking first 2 groups match rate is 0.000000. These groups are 11.576846  of users population.
+2010-12-10 21:04:48,592: Taking first 3 groups match rate is 0.000000. These groups are 21.556886  of users population.
+2010-12-10 21:04:48,592: Taking first 4 groups match rate is 4.000000. These groups are 31.736527  of users population.
+2010-12-10 21:04:49,122: Graph loaded, nodes: 501, edges: 91078
+2010-12-10 21:04:52,839: Taking first 2 groups match rate is 100.000000. These groups are 28.942116  of users population.
+2010-12-10 21:04:52,839: Taking first 3 groups match rate is 100.000000. These groups are 44.510978  of users population.
+2010-12-10 21:04:52,839: Taking first 4 groups match rate is 100.000000. These groups are 61.676647  of users population.
+2010-12-10 21:04:53,400: Graph loaded, nodes: 501, edges: 90334
+2010-12-10 21:04:56,273: Taking first 2 groups match rate is 0.000000. These groups are 11.976048  of users population.
+2010-12-10 21:04:56,273: Taking first 3 groups match rate is 0.000000. These groups are 19.361277  of users population.
+2010-12-10 21:04:56,274: Taking first 4 groups match rate is 0.000000. These groups are 27.145709  of users population.
+2010-12-10 21:04:56,769: Graph loaded, nodes: 501, edges: 91627
+2010-12-10 21:05:00,722: Taking first 2 groups match rate is 0.000000. These groups are 16.566866  of users population.
+2010-12-10 21:05:00,722: Taking first 3 groups match rate is 0.000000. These groups are 28.143713  of users population.
+2010-12-10 21:05:00,722: Taking first 4 groups match rate is 100.000000. These groups are 40.119760  of users population.
+2010-12-10 21:05:01,207: Graph loaded, nodes: 501, edges: 91026
+2010-12-10 21:05:05,606: Taking first 2 groups match rate is 0.000000. These groups are 18.363273  of users population.
+2010-12-10 21:05:05,606: Taking first 3 groups match rate is 0.000000. These groups are 28.942116  of users population.
+2010-12-10 21:05:05,606: Taking first 4 groups match rate is 0.000000. These groups are 40.319361  of users population.
+2010-12-10 21:05:06,323: Graph loaded, nodes: 501, edges: 92375
+2010-12-10 21:05:10,516: Taking first 2 groups match rate is 0.000000. These groups are 10.179641  of users population.
+2010-12-10 21:05:10,517: Taking first 3 groups match rate is 0.000000. These groups are 16.566866  of users population.
+2010-12-10 21:05:10,517: Taking first 4 groups match rate is 0.000000. These groups are 27.345309  of users population.
+2010-12-10 21:05:11,021: Graph loaded, nodes: 501, edges: 92678
+2010-12-10 21:05:15,602: Taking first 2 groups match rate is 0.000000. These groups are 19.361277  of users population.
+2010-12-10 21:05:15,602: Taking first 3 groups match rate is 100.000000. These groups are 29.540918  of users population.
+2010-12-10 21:05:15,602: Taking first 4 groups match rate is 100.000000. These groups are 40.518962  of users population.
+2010-12-10 21:05:16,160: Graph loaded, nodes: 501, edges: 92592
+2010-12-10 21:05:19,683: Taking first 2 groups match rate is 0.000000. These groups are 14.770459  of users population.
+2010-12-10 21:05:19,683: Taking first 3 groups match rate is 96.000000. These groups are 25.149701  of users population.
+2010-12-10 21:05:19,683: Taking first 4 groups match rate is 96.000000. These groups are 35.728543  of users population.
+2010-12-10 21:05:20,168: Graph loaded, nodes: 501, edges: 93565
+2010-12-10 21:05:23,496: Taking first 2 groups match rate is 0.000000. These groups are 13.572854  of users population.
+2010-12-10 21:05:23,496: Taking first 3 groups match rate is 0.000000. These groups are 23.952096  of users population.
+2010-12-10 21:05:23,496: Taking first 4 groups match rate is 0.000000. These groups are 37.125749  of users population.
+2010-12-10 21:05:23,981: Graph loaded, nodes: 501, edges: 93809
+2010-12-10 21:05:28,624: Taking first 2 groups match rate is 0.000000. These groups are 15.369261  of users population.
+2010-12-10 21:05:28,624: Taking first 3 groups match rate is 0.000000. These groups are 24.351297  of users population.
+2010-12-10 21:05:28,625: Taking first 4 groups match rate is 0.000000. These groups are 36.726547  of users population.
+2010-12-10 21:05:29,120: Graph loaded, nodes: 501, edges: 94874
+2010-12-10 21:05:32,834: Taking first 2 groups match rate is 4.000000. These groups are 22.155689  of users population.
+2010-12-10 21:05:32,834: Taking first 3 groups match rate is 4.000000. These groups are 34.331337  of users population.
+2010-12-10 21:05:32,834: Taking first 4 groups match rate is 8.000000. These groups are 48.103792  of users population.
+2010-12-10 21:05:33,433: Graph loaded, nodes: 501, edges: 95696
+2010-12-10 21:05:36,715: Taking first 2 groups match rate is 0.000000. These groups are 14.371257  of users population.
+2010-12-10 21:05:36,715: Taking first 3 groups match rate is 100.000000. These groups are 25.748503  of users population.
+2010-12-10 21:05:36,715: Taking first 4 groups match rate is 100.000000. These groups are 39.121756  of users population.
+2010-12-10 21:05:37,202: Graph loaded, nodes: 501, edges: 95931
+2010-12-10 21:05:42,213: Taking first 2 groups match rate is 4.000000. These groups are 12.375250  of users population.
+2010-12-10 21:05:42,213: Taking first 3 groups match rate is 4.000000. These groups are 22.954092  of users population.
+2010-12-10 21:05:42,214: Taking first 4 groups match rate is 4.000000. These groups are 34.930140  of users population.
+2010-12-10 21:05:42,736: Graph loaded, nodes: 501, edges: 95815
+2010-12-10 21:05:46,539: Taking first 2 groups match rate is 0.000000. These groups are 15.568862  of users population.
+2010-12-10 21:05:46,540: Taking first 3 groups match rate is 0.000000. These groups are 26.546906  of users population.
+2010-12-10 21:05:46,540: Taking first 4 groups match rate is 0.000000. These groups are 39.720559  of users population.
+2010-12-10 21:05:47,047: Graph loaded, nodes: 501, edges: 96472
+2010-12-10 21:05:54,187: Taking first 2 groups match rate is 0.000000. These groups are 13.572854  of users population.
+2010-12-10 21:05:54,187: Taking first 3 groups match rate is 0.000000. These groups are 22.155689  of users population.
+2010-12-10 21:05:54,187: Taking first 4 groups match rate is 4.000000. These groups are 31.536926  of users population.
+2010-12-10 21:05:54,805: Graph loaded, nodes: 501, edges: 96434
+2010-12-10 21:05:58,631: Taking first 2 groups match rate is 4.000000. These groups are 14.371257  of users population.
+2010-12-10 21:05:58,631: Taking first 3 groups match rate is 8.000000. These groups are 24.950100  of users population.
+2010-12-10 21:05:58,631: Taking first 4 groups match rate is 20.000000. These groups are 35.928144  of users population.
+2010-12-10 21:05:59,254: Graph loaded, nodes: 501, edges: 97879
+2010-12-10 21:06:04,264: Taking first 2 groups match rate is 4.000000. These groups are 15.768463  of users population.
+2010-12-10 21:06:04,264: Taking first 3 groups match rate is 8.000000. These groups are 25.149701  of users population.
+2010-12-10 21:06:04,264: Taking first 4 groups match rate is 84.000000. These groups are 36.127745  of users population.
+2010-12-10 21:06:04,733: Graph loaded, nodes: 501, edges: 97060
+2010-12-10 21:06:09,835: Taking first 2 groups match rate is 0.000000. These groups are 15.169661  of users population.
+2010-12-10 21:06:09,836: Taking first 3 groups match rate is 0.000000. These groups are 25.748503  of users population.
+2010-12-10 21:06:09,836: Taking first 4 groups match rate is 0.000000. These groups are 37.924152  of users population.
+2010-12-10 21:06:10,312: Graph loaded, nodes: 501, edges: 96998
+2010-12-10 21:06:14,350: Taking first 2 groups match rate is 0.000000. These groups are 13.572854  of users population.
+2010-12-10 21:06:14,350: Taking first 3 groups match rate is 0.000000. These groups are 22.355289  of users population.
+2010-12-10 21:06:14,350: Taking first 4 groups match rate is 0.000000. These groups are 31.137725  of users population.
+2010-12-10 21:06:14,834: Graph loaded, nodes: 501, edges: 98091
+2010-12-10 21:06:18,919: Taking first 2 groups match rate is 4.000000. These groups are 11.976048  of users population.
+2010-12-10 21:06:18,920: Taking first 3 groups match rate is 8.000000. These groups are 20.359281  of users population.
+2010-12-10 21:06:18,920: Taking first 4 groups match rate is 12.000000. These groups are 29.740519  of users population.
+2010-12-10 21:06:19,393: Graph loaded, nodes: 501, edges: 97498
+2010-12-10 21:06:24,804: Taking first 2 groups match rate is 0.000000. These groups are 12.774451  of users population.
+2010-12-10 21:06:24,804: Taking first 3 groups match rate is 0.000000. These groups are 23.353293  of users population.
+2010-12-10 21:06:24,805: Taking first 4 groups match rate is 0.000000. These groups are 34.530938  of users population.
+2010-12-10 21:06:25,295: Graph loaded, nodes: 501, edges: 99126
+2010-12-10 21:06:29,659: Taking first 2 groups match rate is 12.000000. These groups are 11.576846  of users population.
+2010-12-10 21:06:29,660: Taking first 3 groups match rate is 12.000000. These groups are 20.558882  of users population.
+2010-12-10 21:06:29,660: Taking first 4 groups match rate is 20.000000. These groups are 31.137725  of users population.
+2010-12-10 21:06:30,139: Graph loaded, nodes: 501, edges: 99215
+2010-12-10 21:06:34,943: Taking first 2 groups match rate is 8.000000. These groups are 11.576846  of users population.
+2010-12-10 21:06:34,943: Taking first 3 groups match rate is 12.000000. These groups are 21.956088  of users population.
+2010-12-10 21:06:34,944: Taking first 4 groups match rate is 24.000000. These groups are 35.528942  of users population.
+2010-12-10 21:06:35,515: Graph loaded, nodes: 501, edges: 98831
+2010-12-10 21:06:40,280: Taking first 2 groups match rate is 24.000000. These groups are 20.558882  of users population.
+2010-12-10 21:06:40,280: Taking first 3 groups match rate is 36.000000. These groups are 31.337325  of users population.
+2010-12-10 21:06:40,280: Taking first 4 groups match rate is 48.000000. These groups are 42.914172  of users population.
+2010-12-10 21:06:40,858: Graph loaded, nodes: 501, edges: 99159
+2010-12-10 21:06:44,722: Taking first 2 groups match rate is 4.000000. These groups are 19.361277  of users population.
+2010-12-10 21:06:44,723: Taking first 3 groups match rate is 4.000000. These groups are 32.335329  of users population.
+2010-12-10 21:06:44,723: Taking first 4 groups match rate is 4.000000. These groups are 46.706587  of users population.
+2010-12-10 21:06:45,290: Graph loaded, nodes: 501, edges: 98675
+2010-12-10 21:06:51,137: Taking first 2 groups match rate is 8.000000. These groups are 13.772455  of users population.
+2010-12-10 21:06:51,138: Taking first 3 groups match rate is 20.000000. These groups are 21.756487  of users population.
+2010-12-10 21:06:51,138: Taking first 4 groups match rate is 40.000000. These groups are 31.936128  of users population.
+2010-12-10 21:06:51,739: Graph loaded, nodes: 501, edges: 100132
+2010-12-10 21:06:57,021: Taking first 2 groups match rate is 0.000000. These groups are 14.171657  of users population.
+2010-12-10 21:06:57,022: Taking first 3 groups match rate is 0.000000. These groups are 24.351297  of users population.
+2010-12-10 21:06:57,022: Taking first 4 groups match rate is 0.000000. These groups are 36.926148  of users population.
+2010-12-10 21:06:57,609: Graph loaded, nodes: 501, edges: 99957
+2010-12-10 21:07:01,907: Taking first 2 groups match rate is 0.000000. These groups are 13.972056  of users population.
+2010-12-10 21:07:01,907: Taking first 3 groups match rate is 4.000000. These groups are 23.353293  of users population.
+2010-12-10 21:07:01,908: Taking first 4 groups match rate is 8.000000. These groups are 35.329341  of users population.
+2010-12-10 21:07:02,355: Graph loaded, nodes: 501, edges: 99489
+2010-12-10 21:07:07,528: Taking first 2 groups match rate is 16.000000. These groups are 16.167665  of users population.
+2010-12-10 21:07:07,528: Taking first 3 groups match rate is 20.000000. These groups are 26.546906  of users population.
+2010-12-10 21:07:07,528: Taking first 4 groups match rate is 28.000000. These groups are 37.524950  of users population.
+2010-12-10 21:07:08,000: Graph loaded, nodes: 501, edges: 100395
+2010-12-10 21:07:16,010: Taking first 2 groups match rate is 20.000000. These groups are 11.377246  of users population.
+2010-12-10 21:07:16,010: Taking first 3 groups match rate is 24.000000. These groups are 18.762475  of users population.
+2010-12-10 21:07:16,010: Taking first 4 groups match rate is 32.000000. These groups are 26.746507  of users population.
+2010-12-10 21:07:16,497: Graph loaded, nodes: 501, edges: 101141
+2010-12-10 21:07:20,790: Taking first 2 groups match rate is 0.000000. These groups are 14.371257  of users population.
+2010-12-10 21:07:20,790: Taking first 3 groups match rate is 4.000000. These groups are 21.956088  of users population.
+2010-12-10 21:07:20,790: Taking first 4 groups match rate is 8.000000. These groups are 29.740519  of users population.
+2010-12-10 21:07:21,273: Graph loaded, nodes: 501, edges: 101513
+2010-12-10 21:07:25,907: Taking first 2 groups match rate is 0.000000. These groups are 12.774451  of users population.
+2010-12-10 21:07:25,908: Taking first 3 groups match rate is 4.000000. These groups are 21.556886  of users population.
+2010-12-10 21:07:25,908: Taking first 4 groups match rate is 4.000000. These groups are 30.538922  of users population.
+2010-12-10 21:07:26,507: Graph loaded, nodes: 501, edges: 101718
+2010-12-10 21:07:32,891: Taking first 2 groups match rate is 4.000000. These groups are 13.373253  of users population.
+2010-12-10 21:07:32,892: Taking first 3 groups match rate is 20.000000. These groups are 24.550898  of users population.
+2010-12-10 21:07:32,892: Taking first 4 groups match rate is 72.000000. These groups are 42.514970  of users population.
+2010-12-10 21:07:33,462: Graph loaded, nodes: 501, edges: 101021
+2010-12-10 21:07:39,168: Taking first 2 groups match rate is 0.000000. These groups are 12.774451  of users population.
+2010-12-10 21:07:39,168: Taking first 3 groups match rate is 0.000000. These groups are 20.558882  of users population.
+2010-12-10 21:07:39,169: Taking first 4 groups match rate is 4.000000. These groups are 29.341317  of users population.
+2010-12-10 21:07:39,752: Graph loaded, nodes: 501, edges: 101508
+2010-12-10 21:07:45,387: Taking first 2 groups match rate is 4.000000. These groups are 14.371257  of users population.
+2010-12-10 21:07:45,387: Taking first 3 groups match rate is 12.000000. These groups are 25.548902  of users population.
+2010-12-10 21:07:45,387: Taking first 4 groups match rate is 32.000000. These groups are 37.125749  of users population.
+2010-12-10 21:07:46,069: Graph loaded, nodes: 501, edges: 102259
+2010-12-10 21:07:50,153: Taking first 2 groups match rate is 4.000000. These groups are 15.968064  of users population.
+2010-12-10 21:07:50,153: Taking first 3 groups match rate is 4.000000. These groups are 26.147705  of users population.
+2010-12-10 21:07:50,154: Taking first 4 groups match rate is 4.000000. These groups are 36.526946  of users population.
+2010-12-10 21:07:50,786: Graph loaded, nodes: 501, edges: 102507
+2010-12-10 21:07:55,874: Taking first 2 groups match rate is 16.000000. These groups are 11.776447  of users population.
+2010-12-10 21:07:55,875: Taking first 3 groups match rate is 36.000000. These groups are 18.363273  of users population.
+2010-12-10 21:07:55,875: Taking first 4 groups match rate is 72.000000. These groups are 26.746507  of users population.
+2010-12-10 21:07:56,459: Graph loaded, nodes: 501, edges: 102676
+2010-12-10 21:08:01,672: Taking first 2 groups match rate is 8.000000. These groups are 10.578842  of users population.
+2010-12-10 21:08:01,672: Taking first 3 groups match rate is 20.000000. These groups are 20.558882  of users population.
+2010-12-10 21:08:01,672: Taking first 4 groups match rate is 32.000000. These groups are 30.738523  of users population.
+2010-12-10 21:08:02,117: Graph loaded, nodes: 501, edges: 102261
+2010-12-10 21:08:06,281: Taking first 2 groups match rate is 0.000000. These groups are 11.776447  of users population.
+2010-12-10 21:08:06,281: Taking first 3 groups match rate is 0.000000. These groups are 19.760479  of users population.
+2010-12-10 21:08:06,281: Taking first 4 groups match rate is 12.000000. These groups are 28.343313  of users population.
+2010-12-10 21:08:06,857: Graph loaded, nodes: 501, edges: 103331
+2010-12-10 21:08:12,776: Taking first 2 groups match rate is 12.000000. These groups are 9.780439  of users population.
+2010-12-10 21:08:12,776: Taking first 3 groups match rate is 16.000000. These groups are 20.159681  of users population.
+2010-12-10 21:08:12,776: Taking first 4 groups match rate is 36.000000. These groups are 31.536926  of users population.
+2010-12-10 21:08:13,340: Graph loaded, nodes: 501, edges: 103317
+2010-12-10 21:08:20,170: Taking first 2 groups match rate is 20.000000. These groups are 16.966068  of users population.
+2010-12-10 21:08:20,171: Taking first 3 groups match rate is 24.000000. These groups are 28.343313  of users population.
+2010-12-10 21:08:20,171: Taking first 4 groups match rate is 56.000000. These groups are 40.718563  of users population.
+2010-12-10 21:08:20,667: Graph loaded, nodes: 501, edges: 104003
+2010-12-10 21:08:29,090: Taking first 2 groups match rate is 16.000000. These groups are 14.770459  of users population.
+2010-12-10 21:08:29,090: Taking first 3 groups match rate is 20.000000. These groups are 24.550898  of users population.
+2010-12-10 21:08:29,090: Taking first 4 groups match rate is 44.000000. These groups are 37.325349  of users population.
+2010-12-10 21:08:29,632: Graph loaded, nodes: 501, edges: 103516
+2010-12-10 21:08:35,916: Taking first 2 groups match rate is 12.000000. These groups are 15.169661  of users population.
+2010-12-10 21:08:35,916: Taking first 3 groups match rate is 32.000000. These groups are 24.950100  of users population.
+2010-12-10 21:08:35,917: Taking first 4 groups match rate is 44.000000. These groups are 36.327345  of users population.
+2010-12-10 21:08:36,442: Graph loaded, nodes: 501, edges: 103651
+2010-12-10 21:08:42,757: Taking first 2 groups match rate is 36.000000. These groups are 22.554890  of users population.
+2010-12-10 21:08:42,757: Taking first 3 groups match rate is 48.000000. These groups are 35.528942  of users population.
+2010-12-10 21:08:42,758: Taking first 4 groups match rate is 56.000000. These groups are 48.502994  of users population.
+2010-12-10 21:08:43,315: Graph loaded, nodes: 501, edges: 103605
+2010-12-10 21:08:49,901: Taking first 2 groups match rate is 8.000000. These groups are 10.778443  of users population.
+2010-12-10 21:08:49,901: Taking first 3 groups match rate is 16.000000. These groups are 22.155689  of users population.
+2010-12-10 21:08:49,902: Taking first 4 groups match rate is 24.000000. These groups are 33.732535  of users population.
+2010-12-10 21:08:50,485: Graph loaded, nodes: 501, edges: 105072
+2010-12-10 21:08:56,911: Taking first 2 groups match rate is 0.000000. These groups are 12.774451  of users population.
+2010-12-10 21:08:56,912: Taking first 3 groups match rate is 8.000000. These groups are 23.353293  of users population.
+2010-12-10 21:08:56,912: Taking first 4 groups match rate is 20.000000. These groups are 35.928144  of users population.
+2010-12-10 21:08:57,371: Graph loaded, nodes: 501, edges: 104499
+2010-12-10 21:09:03,550: Taking first 2 groups match rate is 36.000000. These groups are 13.772455  of users population.
+2010-12-10 21:09:03,550: Taking first 3 groups match rate is 36.000000. These groups are 23.552894  of users population.
+2010-12-10 21:09:03,551: Taking first 4 groups match rate is 48.000000. These groups are 35.129741  of users population.
+2010-12-10 21:09:04,001: Graph loaded, nodes: 501, edges: 104622
+2010-12-10 21:09:07,979: Taking first 2 groups match rate is 4.000000. These groups are 16.566866  of users population.
+2010-12-10 21:09:07,979: Taking first 3 groups match rate is 24.000000. These groups are 28.742515  of users population.
+2010-12-10 21:09:07,979: Taking first 4 groups match rate is 48.000000. These groups are 41.117764  of users population.
+2010-12-10 21:09:08,443: Graph loaded, nodes: 501, edges: 105163
+2010-12-10 21:09:14,599: Taking first 2 groups match rate is 8.000000. These groups are 17.165669  of users population.
+2010-12-10 21:09:14,599: Taking first 3 groups match rate is 16.000000. These groups are 26.347305  of users population.
+2010-12-10 21:09:14,600: Taking first 4 groups match rate is 24.000000. These groups are 38.922156  of users population.
+2010-12-10 21:09:15,047: Graph loaded, nodes: 501, edges: 104625
+2010-12-10 21:09:21,792: Taking first 2 groups match rate is 8.000000. These groups are 15.568862  of users population.
+2010-12-10 21:09:21,792: Taking first 3 groups match rate is 28.000000. These groups are 26.347305  of users population.
+2010-12-10 21:09:21,792: Taking first 4 groups match rate is 48.000000. These groups are 38.922156  of users population.
+2010-12-10 21:09:22,372: Graph loaded, nodes: 501, edges: 105360
+2010-12-10 21:09:28,769: Taking first 2 groups match rate is 20.000000. These groups are 13.173653  of users population.
+2010-12-10 21:09:28,769: Taking first 3 groups match rate is 24.000000. These groups are 21.756487  of users population.
+2010-12-10 21:09:28,769: Taking first 4 groups match rate is 32.000000. These groups are 31.337325  of users population.
+2010-12-10 21:09:29,335: Graph loaded, nodes: 501, edges: 105352
+2010-12-10 21:09:39,043: Taking first 2 groups match rate is 20.000000. These groups are 15.568862  of users population.
+2010-12-10 21:09:39,043: Taking first 3 groups match rate is 20.000000. These groups are 27.345309  of users population.
+2010-12-10 21:09:39,044: Taking first 4 groups match rate is 32.000000. These groups are 39.321357  of users population.
+2010-12-10 21:09:39,509: Graph loaded, nodes: 501, edges: 105998
+2010-12-10 21:09:46,833: Taking first 2 groups match rate is 32.000000. These groups are 17.165669  of users population.
+2010-12-10 21:09:46,833: Taking first 3 groups match rate is 36.000000. These groups are 29.141717  of users population.
+2010-12-10 21:09:46,834: Taking first 4 groups match rate is 68.000000. These groups are 41.117764  of users population.
+2010-12-10 21:09:47,289: Graph loaded, nodes: 501, edges: 105495
+2010-12-10 21:09:54,873: Taking first 2 groups match rate is 24.000000. These groups are 17.165669  of users population.
+2010-12-10 21:09:54,873: Taking first 3 groups match rate is 32.000000. These groups are 27.345309  of users population.
+2010-12-10 21:09:54,874: Taking first 4 groups match rate is 48.000000. These groups are 38.522954  of users population.
+2010-12-10 21:09:55,339: Graph loaded, nodes: 501, edges: 105859
+2010-12-10 21:10:04,072: Taking first 2 groups match rate is 12.000000. These groups are 12.175649  of users population.
+2010-12-10 21:10:04,072: Taking first 3 groups match rate is 12.000000. These groups are 21.956088  of users population.
+2010-12-10 21:10:04,072: Taking first 4 groups match rate is 24.000000. These groups are 32.534930  of users population.
+2010-12-10 21:10:04,654: Graph loaded, nodes: 501, edges: 106197
+2010-12-10 21:10:11,197: Taking first 2 groups match rate is 8.000000. These groups are 17.365269  of users population.
+2010-12-10 21:10:11,197: Taking first 3 groups match rate is 20.000000. These groups are 28.942116  of users population.
+2010-12-10 21:10:11,198: Taking first 4 groups match rate is 32.000000. These groups are 41.117764  of users population.
+2010-12-10 21:10:11,642: Graph loaded, nodes: 501, edges: 105870
+2010-12-10 21:10:16,938: Taking first 2 groups match rate is 20.000000. These groups are 16.766467  of users population.
+2010-12-10 21:10:16,938: Taking first 3 groups match rate is 64.000000. These groups are 25.948104  of users population.
+2010-12-10 21:10:16,938: Taking first 4 groups match rate is 68.000000. These groups are 35.129741  of users population.
+2010-12-10 21:10:17,391: Graph loaded, nodes: 501, edges: 106039
+2010-12-10 21:10:27,070: Taking first 2 groups match rate is 16.000000. These groups are 10.978044  of users population.
+2010-12-10 21:10:27,070: Taking first 3 groups match rate is 16.000000. These groups are 19.960080  of users population.
+2010-12-10 21:10:27,071: Taking first 4 groups match rate is 24.000000. These groups are 33.532934  of users population.
+2010-12-10 21:10:27,529: Graph loaded, nodes: 501, edges: 106358
+2010-12-10 21:10:33,091: Taking first 2 groups match rate is 12.000000. These groups are 16.167665  of users population.
+2010-12-10 21:10:33,092: Taking first 3 groups match rate is 12.000000. These groups are 25.948104  of users population.
+2010-12-10 21:10:33,092: Taking first 4 groups match rate is 24.000000. These groups are 38.323353  of users population.
+2010-12-10 21:10:33,545: Graph loaded, nodes: 501, edges: 106674
+2010-12-10 21:10:42,121: Taking first 2 groups match rate is 16.000000. These groups are 17.964072  of users population.
+2010-12-10 21:10:42,122: Taking first 3 groups match rate is 36.000000. These groups are 29.141717  of users population.
+2010-12-10 21:10:42,122: Taking first 4 groups match rate is 52.000000. These groups are 41.716567  of users population.
+2010-12-10 21:10:42,679: Graph loaded, nodes: 501, edges: 106324
+2010-12-10 21:10:51,767: Taking first 2 groups match rate is 8.000000. These groups are 20.758483  of users population.
+2010-12-10 21:10:51,768: Taking first 3 groups match rate is 12.000000. These groups are 33.732535  of users population.
+2010-12-10 21:10:51,768: Taking first 4 groups match rate is 12.000000. These groups are 47.305389  of users population.
+2010-12-10 21:10:52,241: Graph loaded, nodes: 501, edges: 107350
+2010-12-10 21:10:57,334: Taking first 2 groups match rate is 24.000000. These groups are 16.966068  of users population.
+2010-12-10 21:10:57,334: Taking first 3 groups match rate is 52.000000. These groups are 27.744511  of users population.
+2010-12-10 21:10:57,335: Taking first 4 groups match rate is 56.000000. These groups are 39.321357  of users population.
+2010-12-10 21:10:57,784: Graph loaded, nodes: 501, edges: 107437
+2010-12-10 21:11:03,750: Taking first 2 groups match rate is 16.000000. These groups are 14.371257  of users population.
+2010-12-10 21:11:03,751: Taking first 3 groups match rate is 16.000000. These groups are 23.153693  of users population.
+2010-12-10 21:11:03,751: Taking first 4 groups match rate is 24.000000. These groups are 32.135729  of users population.
+2010-12-10 21:11:04,201: Graph loaded, nodes: 501, edges: 107282
+2010-12-10 21:11:09,585: Taking first 2 groups match rate is 24.000000. These groups are 13.173653  of users population.
+2010-12-10 21:11:09,585: Taking first 3 groups match rate is 44.000000. These groups are 26.147705  of users population.
+2010-12-10 21:11:09,586: Taking first 4 groups match rate is 44.000000. These groups are 39.321357  of users population.
+2010-12-10 21:11:10,043: Graph loaded, nodes: 501, edges: 107517
+2010-12-10 21:11:17,979: Taking first 2 groups match rate is 20.000000. These groups are 17.365269  of users population.
+2010-12-10 21:11:17,979: Taking first 3 groups match rate is 28.000000. These groups are 28.542914  of users population.
+2010-12-10 21:11:17,979: Taking first 4 groups match rate is 40.000000. These groups are 40.119760  of users population.
+2010-12-10 21:11:18,420: Graph loaded, nodes: 501, edges: 107201
+2010-12-10 21:11:25,297: Taking first 2 groups match rate is 28.000000. These groups are 19.161677  of users population.
+2010-12-10 21:11:25,297: Taking first 3 groups match rate is 36.000000. These groups are 32.335329  of users population.
+2010-12-10 21:11:25,297: Taking first 4 groups match rate is 64.000000. These groups are 46.307385  of users population.
+2010-12-10 21:11:25,754: Graph loaded, nodes: 501, edges: 107831
+2010-12-10 21:11:31,432: Taking first 2 groups match rate is 20.000000. These groups are 16.566866  of users population.
+2010-12-10 21:11:31,432: Taking first 3 groups match rate is 32.000000. These groups are 26.347305  of users population.
+2010-12-10 21:11:31,433: Taking first 4 groups match rate is 40.000000. These groups are 38.123752  of users population.
+2010-12-10 21:11:32,007: Graph loaded, nodes: 501, edges: 107731
+2010-12-10 21:11:37,577: Taking first 2 groups match rate is 16.000000. These groups are 16.167665  of users population.
+2010-12-10 21:11:37,577: Taking first 3 groups match rate is 24.000000. These groups are 25.548902  of users population.
+2010-12-10 21:11:37,577: Taking first 4 groups match rate is 32.000000. These groups are 36.327345  of users population.
+2010-12-10 21:11:38,010: Graph loaded, nodes: 501, edges: 107474
+2010-12-10 21:11:44,164: Taking first 2 groups match rate is 4.000000. These groups are 8.782435  of users population.
+2010-12-10 21:11:44,165: Taking first 3 groups match rate is 8.000000. These groups are 16.766467  of users population.
+2010-12-10 21:11:44,165: Taking first 4 groups match rate is 28.000000. These groups are 24.750499  of users population.
+2010-12-10 21:11:44,608: Graph loaded, nodes: 501, edges: 107454
+2010-12-10 21:11:53,584: Taking first 2 groups match rate is 8.000000. These groups are 16.966068  of users population.
+2010-12-10 21:11:53,584: Taking first 3 groups match rate is 36.000000. These groups are 26.546906  of users population.
+2010-12-10 21:11:53,585: Taking first 4 groups match rate is 40.000000. These groups are 38.522954  of users population.
+2010-12-10 21:11:54,179: Graph loaded, nodes: 501, edges: 108708
+2010-12-10 21:12:00,350: Taking first 2 groups match rate is 20.000000. These groups are 15.369261  of users population.
+2010-12-10 21:12:00,350: Taking first 3 groups match rate is 40.000000. These groups are 26.746507  of users population.
+2010-12-10 21:12:00,351: Taking first 4 groups match rate is 44.000000. These groups are 39.121756  of users population.
+2010-12-10 21:12:00,817: Graph loaded, nodes: 501, edges: 108634
+2010-12-10 21:12:08,594: Taking first 2 groups match rate is 24.000000. These groups are 25.548902  of users population.
+2010-12-10 21:12:08,595: Taking first 3 groups match rate is 32.000000. These groups are 39.121756  of users population.
+2010-12-10 21:12:08,595: Taking first 4 groups match rate is 48.000000. These groups are 53.293413  of users population.
+2010-12-10 21:12:09,045: Graph loaded, nodes: 501, edges: 108639
+2010-12-10 21:12:15,563: Taking first 2 groups match rate is 8.000000. These groups are 14.770459  of users population.
+2010-12-10 21:12:15,564: Taking first 3 groups match rate is 28.000000. These groups are 26.746507  of users population.
+2010-12-10 21:12:15,564: Taking first 4 groups match rate is 36.000000. These groups are 39.321357  of users population.
+2010-12-10 21:12:16,169: Graph loaded, nodes: 501, edges: 108393
+2010-12-10 21:12:22,926: Taking first 2 groups match rate is 20.000000. These groups are 10.978044  of users population.
+2010-12-10 21:12:22,926: Taking first 3 groups match rate is 32.000000. These groups are 19.361277  of users population.
+2010-12-10 21:12:22,926: Taking first 4 groups match rate is 36.000000. These groups are 28.143713  of users population.
+2010-12-10 21:12:23,384: Graph loaded, nodes: 501, edges: 108783
+2010-12-10 21:12:29,462: Taking first 2 groups match rate is 20.000000. These groups are 18.962076  of users population.
+2010-12-10 21:12:29,463: Taking first 3 groups match rate is 28.000000. These groups are 30.538922  of users population.
+2010-12-10 21:12:29,463: Taking first 4 groups match rate is 40.000000. These groups are 42.514970  of users population.
+2010-12-10 21:12:29,912: Graph loaded, nodes: 501, edges: 108917
+2010-12-10 21:12:37,877: Taking first 2 groups match rate is 8.000000. These groups are 20.758483  of users population.
+2010-12-10 21:12:37,877: Taking first 3 groups match rate is 24.000000. These groups are 32.335329  of users population.
+2010-12-10 21:12:37,878: Taking first 4 groups match rate is 40.000000. These groups are 46.107784  of users population.
+2010-12-10 21:12:38,455: Graph loaded, nodes: 501, edges: 109108
+2010-12-10 21:12:45,038: Taking first 2 groups match rate is 16.000000. These groups are 14.371257  of users population.
+2010-12-10 21:12:45,038: Taking first 3 groups match rate is 36.000000. These groups are 25.149701  of users population.
+2010-12-10 21:12:45,038: Taking first 4 groups match rate is 40.000000. These groups are 39.121756  of users population.
+2010-12-10 21:12:45,479: Graph loaded, nodes: 501, edges: 109147
+2010-12-10 21:12:51,965: Taking first 2 groups match rate is 16.000000. These groups are 10.578842  of users population.
+2010-12-10 21:12:51,966: Taking first 3 groups match rate is 28.000000. These groups are 20.159681  of users population.
+2010-12-10 21:12:51,966: Taking first 4 groups match rate is 48.000000. These groups are 31.736527  of users population.
+2010-12-10 21:12:52,425: Graph loaded, nodes: 501, edges: 109230
+2010-12-10 21:13:01,038: Taking first 2 groups match rate is 12.000000. These groups are 18.962076  of users population.
+2010-12-10 21:13:01,038: Taking first 3 groups match rate is 20.000000. These groups are 29.341317  of users population.
+2010-12-10 21:13:01,038: Taking first 4 groups match rate is 36.000000. These groups are 39.720559  of users population.
+2010-12-10 21:13:01,621: Graph loaded, nodes: 501, edges: 110034
+2010-12-10 21:13:08,728: Taking first 2 groups match rate is 8.000000. These groups are 18.363273  of users population.
+2010-12-10 21:13:08,729: Taking first 3 groups match rate is 20.000000. These groups are 29.740519  of users population.
+2010-12-10 21:13:08,729: Taking first 4 groups match rate is 40.000000. These groups are 41.516966  of users population.
+2010-12-10 21:13:09,183: Graph loaded, nodes: 501, edges: 109430
+2010-12-10 21:13:17,477: Taking first 2 groups match rate is 20.000000. These groups are 15.568862  of users population.
+2010-12-10 21:13:17,478: Taking first 3 groups match rate is 24.000000. These groups are 26.546906  of users population.
+2010-12-10 21:13:17,478: Taking first 4 groups match rate is 28.000000. These groups are 40.119760  of users population.
+2010-12-10 21:13:17,911: Graph loaded, nodes: 501, edges: 109251
+2010-12-10 21:13:25,746: Taking first 2 groups match rate is 12.000000. These groups are 16.167665  of users population.
+2010-12-10 21:13:25,747: Taking first 3 groups match rate is 12.000000. These groups are 27.944112  of users population.
+2010-12-10 21:13:25,747: Taking first 4 groups match rate is 28.000000. These groups are 39.920160  of users population.
+2010-12-10 21:13:26,182: Graph loaded, nodes: 501, edges: 109522
+2010-12-10 21:13:36,191: Taking first 2 groups match rate is 12.000000. These groups are 15.768463  of users population.
+2010-12-10 21:13:36,192: Taking first 3 groups match rate is 36.000000. These groups are 25.748503  of users population.
+2010-12-10 21:13:36,192: Taking first 4 groups match rate is 40.000000. These groups are 37.924152  of users population.
+2010-12-10 21:13:36,651: Graph loaded, nodes: 501, edges: 110218
+2010-12-10 21:13:43,013: Taking first 2 groups match rate is 12.000000. These groups are 16.367265  of users population.
+2010-12-10 21:13:43,013: Taking first 3 groups match rate is 32.000000. These groups are 28.542914  of users population.
+2010-12-10 21:13:43,013: Taking first 4 groups match rate is 36.000000. These groups are 41.716567  of users population.
+2010-12-10 21:13:43,601: Graph loaded, nodes: 501, edges: 110143
+2010-12-10 21:13:50,316: Taking first 2 groups match rate is 36.000000. These groups are 21.756487  of users population.
+2010-12-10 21:13:50,316: Taking first 3 groups match rate is 52.000000. These groups are 34.331337  of users population.
+2010-12-10 21:13:50,316: Taking first 4 groups match rate is 64.000000. These groups are 47.704591  of users population.
+2010-12-10 21:13:50,775: Graph loaded, nodes: 501, edges: 110738
+2010-12-10 21:13:58,707: Taking first 2 groups match rate is 4.000000. These groups are 12.175649  of users population.
+2010-12-10 21:13:58,707: Taking first 3 groups match rate is 32.000000. These groups are 22.554890  of users population.
+2010-12-10 21:13:58,707: Taking first 4 groups match rate is 48.000000. These groups are 34.331337  of users population.
+2010-12-10 21:13:59,158: Graph loaded, nodes: 501, edges: 110511
+2010-12-10 21:14:06,085: Taking first 2 groups match rate is 28.000000. These groups are 16.966068  of users population.
+2010-12-10 21:14:06,085: Taking first 3 groups match rate is 40.000000. These groups are 27.944112  of users population.
+2010-12-10 21:14:06,086: Taking first 4 groups match rate is 68.000000. These groups are 41.117764  of users population.
+2010-12-10 21:14:06,509: Graph loaded, nodes: 501, edges: 109792
+2010-12-10 21:14:12,085: Taking first 2 groups match rate is 20.000000. These groups are 15.568862  of users population.
+2010-12-10 21:14:12,086: Taking first 3 groups match rate is 36.000000. These groups are 23.752495  of users population.
+2010-12-10 21:14:12,086: Taking first 4 groups match rate is 36.000000. These groups are 32.335329  of users population.
+2010-12-10 21:14:12,534: Graph loaded, nodes: 501, edges: 110488
+2010-12-10 21:14:19,297: Taking first 2 groups match rate is 16.000000. These groups are 11.776447  of users population.
+2010-12-10 21:14:19,297: Taking first 3 groups match rate is 24.000000. These groups are 23.952096  of users population.
+2010-12-10 21:14:19,297: Taking first 4 groups match rate is 40.000000. These groups are 37.125749  of users population.
+2010-12-10 21:14:19,872: Graph loaded, nodes: 501, edges: 110604
+2010-12-10 21:14:29,266: Taking first 2 groups match rate is 28.000000. These groups are 24.351297  of users population.
+2010-12-10 21:14:29,267: Taking first 3 groups match rate is 56.000000. These groups are 40.918164  of users population.
+2010-12-10 21:14:29,267: Taking first 4 groups match rate is 64.000000. These groups are 59.281437  of users population.
+2010-12-10 21:14:29,711: Graph loaded, nodes: 501, edges: 110557
+2010-12-10 21:14:37,132: Taking first 2 groups match rate is 20.000000. These groups are 13.373253  of users population.
+2010-12-10 21:14:37,132: Taking first 3 groups match rate is 20.000000. These groups are 21.556886  of users population.
+2010-12-10 21:14:37,132: Taking first 4 groups match rate is 48.000000. These groups are 35.928144  of users population.
+2010-12-10 21:14:37,589: Graph loaded, nodes: 501, edges: 110833
+2010-12-10 21:14:47,744: Taking first 2 groups match rate is 16.000000. These groups are 11.377246  of users population.
+2010-12-10 21:14:47,744: Taking first 3 groups match rate is 32.000000. These groups are 24.950100  of users population.
+2010-12-10 21:14:47,745: Taking first 4 groups match rate is 44.000000. These groups are 38.922156  of users population.
+2010-12-10 21:14:48,178: Graph loaded, nodes: 501, edges: 110678
+2010-12-10 21:14:54,143: Taking first 2 groups match rate is 20.000000. These groups are 18.363273  of users population.
+2010-12-10 21:14:54,144: Taking first 3 groups match rate is 24.000000. These groups are 28.343313  of users population.
+2010-12-10 21:14:54,144: Taking first 4 groups match rate is 32.000000. These groups are 39.720559  of users population.
+2010-12-10 21:14:54,584: Graph loaded, nodes: 501, edges: 110483
+2010-12-10 21:15:00,140: Taking first 2 groups match rate is 16.000000. These groups are 16.766467  of users population.
+2010-12-10 21:15:00,141: Taking first 3 groups match rate is 16.000000. These groups are 25.548902  of users population.
+2010-12-10 21:15:00,141: Taking first 4 groups match rate is 32.000000. These groups are 34.930140  of users population.
+2010-12-10 21:15:00,760: Graph loaded, nodes: 501, edges: 111019
+2010-12-10 21:15:07,446: Taking first 2 groups match rate is 4.000000. These groups are 10.379242  of users population.
+2010-12-10 21:15:07,446: Taking first 3 groups match rate is 12.000000. These groups are 16.966068  of users population.
+2010-12-10 21:15:07,446: Taking first 4 groups match rate is 32.000000. These groups are 28.143713  of users population.
+2010-12-10 21:15:07,915: Graph loaded, nodes: 501, edges: 111029
+2010-12-10 21:15:13,765: Taking first 2 groups match rate is 20.000000. These groups are 15.369261  of users population.
+2010-12-10 21:15:13,766: Taking first 3 groups match rate is 28.000000. These groups are 23.752495  of users population.
+2010-12-10 21:15:13,766: Taking first 4 groups match rate is 32.000000. These groups are 33.732535  of users population.
+2010-12-10 21:15:14,326: Graph loaded, nodes: 501, edges: 110768
+2010-12-10 21:15:20,240: Taking first 2 groups match rate is 24.000000. These groups are 21.556886  of users population.
+2010-12-10 21:15:20,240: Taking first 3 groups match rate is 36.000000. These groups are 33.732535  of users population.
+2010-12-10 21:15:20,240: Taking first 4 groups match rate is 52.000000. These groups are 47.704591  of users population.
+2010-12-10 21:15:20,240: After  100 runs result is
+2010-12-10 21:15:20,240: (36.439999999999998, 37.596806387225548, 4.7314876672369506, 7.0000000000000009)
+2010-12-10 21:15:20,241: For params
+2010-12-10 21:15:20,241: {'target_size': 10, 'OBJECTS': 100, 'bad_hideout': False, 'slice_level': 3, 'VOTERS': 500, 'legible_target_size': 9, 'number': 1, 'size': 25}
+2010-12-10 21:15:20,241: Variance
+2010-12-10 21:15:20,241: 694.0464
+2010-12-10 21:15:20,241:  ------------------- END --------------------
+2010-12-10 21:15:20,241: Will iterate over legible_target_size : now it's 12:
+2010-12-10 21:15:20,241: Will generate graph with params
+2010-12-10 21:15:20,241: {'target_size': 10, 'OBJECTS': 100, 'bad_hideout': False, 'slice_level': 3, 'VOTERS': 500, 'legible_target_size': 12, 'number': 1, 'size': 25}
+2010-12-10 21:15:20,241: Will do 100 runs
+2010-12-10 21:15:20,241: Slice is level: 3
+2010-12-10 21:15:21,002: Graph loaded, nodes: 501, edges: 116496
+2010-12-10 21:15:27,574: Taking first 2 groups match rate is 12.000000. These groups are 11.377246  of users population.
+2010-12-10 21:15:27,575: Taking first 3 groups match rate is 28.000000. These groups are 19.960080  of users population.
+2010-12-10 21:15:27,575: Taking first 4 groups match rate is 36.000000. These groups are 28.942116  of users population.
+2010-12-10 21:15:28,352: Graph loaded, nodes: 501, edges: 117768
+2010-12-10 21:15:36,342: Taking first 2 groups match rate is 24.000000. These groups are 20.958084  of users population.
+2010-12-10 21:15:36,342: Taking first 3 groups match rate is 36.000000. These groups are 33.732535  of users population.
+2010-12-10 21:15:36,342: Taking first 4 groups match rate is 48.000000. These groups are 48.902196  of users population.
+2010-12-10 21:15:37,200: Graph loaded, nodes: 501, edges: 118448
+2010-12-10 21:15:43,807: Taking first 2 groups match rate is 12.000000. These groups are 16.367265  of users population.
+2010-12-10 21:15:43,807: Taking first 3 groups match rate is 20.000000. These groups are 28.343313  of users population.
+2010-12-10 21:15:43,807: Taking first 4 groups match rate is 28.000000. These groups are 40.718563  of users population.
+2010-12-10 21:15:44,554: Graph loaded, nodes: 501, edges: 119392
+2010-12-10 21:15:51,963: Taking first 2 groups match rate is 20.000000. These groups are 17.764471  of users population.
+2010-12-10 21:15:51,963: Taking first 3 groups match rate is 24.000000. These groups are 29.341317  of users population.
+2010-12-10 21:15:51,963: Taking first 4 groups match rate is 40.000000. These groups are 44.111776  of users population.
+2010-12-10 21:15:52,704: Graph loaded, nodes: 501, edges: 119648
+2010-12-10 21:16:02,496: Taking first 2 groups match rate is 16.000000. These groups are 13.972056  of users population.
+2010-12-10 21:16:02,497: Taking first 3 groups match rate is 28.000000. These groups are 22.554890  of users population.
+2010-12-10 21:16:02,497: Taking first 4 groups match rate is 40.000000. These groups are 32.734531  of users population.
+2010-12-10 21:16:03,221: Graph loaded, nodes: 501, edges: 120180
+2010-12-10 21:16:10,138: Taking first 2 groups match rate is 8.000000. These groups are 12.375250  of users population.
+2010-12-10 21:16:10,138: Taking first 3 groups match rate is 24.000000. These groups are 21.756487  of users population.
+2010-12-10 21:16:10,138: Taking first 4 groups match rate is 32.000000. These groups are 33.333333  of users population.
+2010-12-10 21:16:10,832: Graph loaded, nodes: 501, edges: 120101
+2010-12-10 21:16:19,706: Taking first 2 groups match rate is 20.000000. These groups are 21.157685  of users population.
+2010-12-10 21:16:19,707: Taking first 3 groups match rate is 24.000000. These groups are 34.331337  of users population.
+2010-12-10 21:16:19,707: Taking first 4 groups match rate is 40.000000. These groups are 49.900200  of users population.
+2010-12-10 21:16:20,579: Graph loaded, nodes: 501, edges: 120637
+2010-12-10 21:16:30,603: Taking first 2 groups match rate is 20.000000. These groups are 12.375250  of users population.
+2010-12-10 21:16:30,603: Taking first 3 groups match rate is 40.000000. These groups are 25.349301  of users population.
+2010-12-10 21:16:30,604: Taking first 4 groups match rate is 48.000000. These groups are 38.722555  of users population.
+2010-12-10 21:16:31,314: Graph loaded, nodes: 501, edges: 121150
+2010-12-10 21:16:44,470: Taking first 2 groups match rate is 12.000000. These groups are 19.161677  of users population.
+2010-12-10 21:16:44,470: Taking first 3 groups match rate is 24.000000. These groups are 30.538922  of users population.
+2010-12-10 21:16:44,471: Taking first 4 groups match rate is 28.000000. These groups are 42.115768  of users population.
+2010-12-10 21:16:45,223: Graph loaded, nodes: 501, edges: 121441
+2010-12-10 21:16:54,633: Taking first 2 groups match rate is 20.000000. These groups are 16.566866  of users population.
+2010-12-10 21:16:54,633: Taking first 3 groups match rate is 24.000000. These groups are 25.349301  of users population.
+2010-12-10 21:16:54,633: Taking first 4 groups match rate is 40.000000. These groups are 34.730539  of users population.
+2010-12-10 21:16:55,341: Graph loaded, nodes: 501, edges: 121547
+2010-12-10 21:17:02,551: Taking first 2 groups match rate is 8.000000. These groups are 16.766467  of users population.
+2010-12-10 21:17:02,551: Taking first 3 groups match rate is 20.000000. These groups are 28.343313  of users population.
+2010-12-10 21:17:02,552: Taking first 4 groups match rate is 40.000000. These groups are 40.119760  of users population.
+2010-12-10 21:17:03,257: Graph loaded, nodes: 501, edges: 121671
+2010-12-10 21:17:11,097: Taking first 2 groups match rate is 8.000000. These groups are 14.570858  of users population.
+2010-12-10 21:17:11,097: Taking first 3 groups match rate is 12.000000. These groups are 24.151697  of users population.
+2010-12-10 21:17:11,098: Taking first 4 groups match rate is 24.000000. These groups are 33.932136  of users population.
+2010-12-10 21:17:11,820: Graph loaded, nodes: 501, edges: 121954
+2010-12-10 21:17:19,637: Taking first 2 groups match rate is 8.000000. These groups are 14.171657  of users population.
+2010-12-10 21:17:19,637: Taking first 3 groups match rate is 16.000000. These groups are 22.754491  of users population.
+2010-12-10 21:17:19,637: Taking first 4 groups match rate is 28.000000. These groups are 32.934132  of users population.
+2010-12-10 21:17:20,337: Graph loaded, nodes: 501, edges: 122130
+2010-12-10 21:17:28,504: Taking first 2 groups match rate is 12.000000. These groups are 13.772455  of users population.
+2010-12-10 21:17:28,505: Taking first 3 groups match rate is 32.000000. These groups are 25.748503  of users population.
+2010-12-10 21:17:28,505: Taking first 4 groups match rate is 48.000000. These groups are 38.522954  of users population.
+2010-12-10 21:17:29,210: Graph loaded, nodes: 501, edges: 122263
+2010-12-10 21:17:38,320: Taking first 2 groups match rate is 12.000000. These groups are 13.173653  of users population.
+2010-12-10 21:17:38,321: Taking first 3 groups match rate is 24.000000. These groups are 22.754491  of users population.
+2010-12-10 21:17:38,321: Taking first 4 groups match rate is 40.000000. These groups are 33.932136  of users population.
+2010-12-10 21:17:39,069: Graph loaded, nodes: 501, edges: 122569
+2010-12-10 21:17:46,092: Taking first 2 groups match rate is 4.000000. These groups are 12.375250  of users population.
+2010-12-10 21:17:46,093: Taking first 3 groups match rate is 12.000000. These groups are 20.758483  of users population.
+2010-12-10 21:17:46,093: Taking first 4 groups match rate is 20.000000. These groups are 29.940120  of users population.
+2010-12-10 21:17:46,790: Graph loaded, nodes: 501, edges: 122633
+2010-12-10 21:17:55,744: Taking first 2 groups match rate is 24.000000. These groups are 11.377246  of users population.
+2010-12-10 21:17:55,744: Taking first 3 groups match rate is 40.000000. These groups are 24.151697  of users population.
+2010-12-10 21:17:55,745: Taking first 4 groups match rate is 44.000000. These groups are 37.325349  of users population.
+2010-12-10 21:17:56,452: Graph loaded, nodes: 501, edges: 122801
+2010-12-10 21:18:05,087: Taking first 2 groups match rate is 12.000000. These groups are 17.365269  of users population.
+2010-12-10 21:18:05,087: Taking first 3 groups match rate is 32.000000. These groups are 30.339321  of users population.
+2010-12-10 21:18:05,088: Taking first 4 groups match rate is 40.000000. These groups are 46.706587  of users population.
+2010-12-10 21:18:05,796: Graph loaded, nodes: 501, edges: 123030
+2010-12-10 21:18:13,713: Taking first 2 groups match rate is 8.000000. These groups are 7.984032  of users population.
+2010-12-10 21:18:13,713: Taking first 3 groups match rate is 24.000000. These groups are 15.768463  of users population.
+2010-12-10 21:18:13,714: Taking first 4 groups match rate is 32.000000. These groups are 26.546906  of users population.
+2010-12-10 21:18:14,413: Graph loaded, nodes: 501, edges: 123120
+2010-12-10 21:18:21,038: Taking first 2 groups match rate is 16.000000. These groups are 11.976048  of users population.
+2010-12-10 21:18:21,038: Taking first 3 groups match rate is 24.000000. These groups are 22.754491  of users population.
+2010-12-10 21:18:21,039: Taking first 4 groups match rate is 36.000000. These groups are 33.532934  of users population.
+2010-12-10 21:18:21,723: Graph loaded, nodes: 501, edges: 123337
+2010-12-10 21:18:31,492: Taking first 2 groups match rate is 16.000000. These groups are 16.167665  of users population.
+2010-12-10 21:18:31,493: Taking first 3 groups match rate is 20.000000. These groups are 27.544910  of users population.
+2010-12-10 21:18:31,493: Taking first 4 groups match rate is 28.000000. These groups are 40.518962  of users population.
+2010-12-10 21:18:32,155: Graph loaded, nodes: 501, edges: 123249
+2010-12-10 21:18:41,026: Taking first 2 groups match rate is 4.000000. These groups are 9.381238  of users population.
+2010-12-10 21:18:41,026: Taking first 3 groups match rate is 4.000000. These groups are 16.566866  of users population.
+2010-12-10 21:18:41,027: Taking first 4 groups match rate is 12.000000. These groups are 25.548902  of users population.
+2010-12-10 21:18:41,735: Graph loaded, nodes: 501, edges: 123664
+2010-12-10 21:18:50,018: Taking first 2 groups match rate is 28.000000. These groups are 17.365269  of users population.
+2010-12-10 21:18:50,018: Taking first 3 groups match rate is 36.000000. These groups are 26.946108  of users population.
+2010-12-10 21:18:50,018: Taking first 4 groups match rate is 40.000000. These groups are 36.526946  of users population.
+2010-12-10 21:18:50,724: Graph loaded, nodes: 501, edges: 123641
+2010-12-10 21:18:57,124: Taking first 2 groups match rate is 16.000000. These groups are 18.962076  of users population.
+2010-12-10 21:18:57,125: Taking first 3 groups match rate is 32.000000. These groups are 31.736527  of users population.
+2010-12-10 21:18:57,125: Taking first 4 groups match rate is 48.000000. These groups are 45.508982  of users population.
+2010-12-10 21:18:57,836: Graph loaded, nodes: 501, edges: 123659
+2010-12-10 21:19:07,120: Taking first 2 groups match rate is 12.000000. These groups are 9.181637  of users population.
+2010-12-10 21:19:07,120: Taking first 3 groups match rate is 28.000000. These groups are 19.161677  of users population.
+2010-12-10 21:19:07,120: Taking first 4 groups match rate is 40.000000. These groups are 33.732535  of users population.
+2010-12-10 21:19:07,809: Graph loaded, nodes: 501, edges: 123779
+2010-12-10 21:19:14,981: Taking first 2 groups match rate is 4.000000. These groups are 11.177645  of users population.
+2010-12-10 21:19:14,981: Taking first 3 groups match rate is 12.000000. These groups are 20.159681  of users population.
+2010-12-10 21:19:14,982: Taking first 4 groups match rate is 28.000000. These groups are 29.940120  of users population.
+2010-12-10 21:19:15,651: Graph loaded, nodes: 501, edges: 123763
+2010-12-10 21:19:25,225: Taking first 2 groups match rate is 12.000000. These groups are 14.770459  of users population.
+2010-12-10 21:19:25,225: Taking first 3 groups match rate is 28.000000. These groups are 25.948104  of users population.
+2010-12-10 21:19:25,226: Taking first 4 groups match rate is 44.000000. These groups are 38.123752  of users population.
+2010-12-10 21:19:25,912: Graph loaded, nodes: 501, edges: 123881
+2010-12-10 21:19:33,620: Taking first 2 groups match rate is 16.000000. These groups are 14.171657  of users population.
+2010-12-10 21:19:33,620: Taking first 3 groups match rate is 24.000000. These groups are 24.351297  of users population.
+2010-12-10 21:19:33,621: Taking first 4 groups match rate is 36.000000. These groups are 36.127745  of users population.
+2010-12-10 21:19:34,320: Graph loaded, nodes: 501, edges: 123955
+2010-12-10 21:19:43,245: Taking first 2 groups match rate is 20.000000. These groups are 21.956088  of users population.
+2010-12-10 21:19:43,246: Taking first 3 groups match rate is 32.000000. These groups are 34.331337  of users population.
+2010-12-10 21:19:43,246: Taking first 4 groups match rate is 48.000000. These groups are 47.305389  of users population.
+2010-12-10 21:19:43,943: Graph loaded, nodes: 501, edges: 124139
+2010-12-10 21:19:51,096: Taking first 2 groups match rate is 20.000000. These groups are 22.355289  of users population.
+2010-12-10 21:19:51,096: Taking first 3 groups match rate is 36.000000. These groups are 36.127745  of users population.
+2010-12-10 21:19:51,096: Taking first 4 groups match rate is 48.000000. These groups are 50.499002  of users population.
+2010-12-10 21:19:51,784: Graph loaded, nodes: 501, edges: 124048
+2010-12-10 21:20:04,529: Taking first 2 groups match rate is 12.000000. These groups are 9.381238  of users population.
+2010-12-10 21:20:04,530: Taking first 3 groups match rate is 32.000000. These groups are 23.153693  of users population.
+2010-12-10 21:20:04,530: Taking first 4 groups match rate is 40.000000. These groups are 37.325349  of users population.
+2010-12-10 21:20:05,210: Graph loaded, nodes: 501, edges: 124135
+2010-12-10 21:20:17,840: Taking first 2 groups match rate is 16.000000. These groups are 15.369261  of users population.
+2010-12-10 21:20:17,840: Taking first 3 groups match rate is 20.000000. These groups are 26.946108  of users population.
+2010-12-10 21:20:17,841: Taking first 4 groups match rate is 32.000000. These groups are 42.914172  of users population.
+2010-12-10 21:20:18,526: Graph loaded, nodes: 501, edges: 124204
+2010-12-10 21:20:27,976: Taking first 2 groups match rate is 20.000000. These groups are 16.766467  of users population.
+2010-12-10 21:20:27,976: Taking first 3 groups match rate is 40.000000. These groups are 29.341317  of users population.
+2010-12-10 21:20:27,977: Taking first 4 groups match rate is 56.000000. These groups are 43.912176  of users population.
+2010-12-10 21:20:28,690: Graph loaded, nodes: 501, edges: 124319
+2010-12-10 21:20:37,799: Taking first 2 groups match rate is 4.000000. These groups are 12.375250  of users population.
+2010-12-10 21:20:37,799: Taking first 3 groups match rate is 8.000000. These groups are 19.560878  of users population.
+2010-12-10 21:20:37,799: Taking first 4 groups match rate is 16.000000. These groups are 27.544910  of users population.
+2010-12-10 21:20:38,479: Graph loaded, nodes: 501, edges: 124348
+2010-12-10 21:20:47,406: Taking first 2 groups match rate is 36.000000. These groups are 23.153693  of users population.
+2010-12-10 21:20:47,406: Taking first 3 groups match rate is 48.000000. These groups are 39.520958  of users population.
+2010-12-10 21:20:47,406: Taking first 4 groups match rate is 60.000000. These groups are 56.886228  of users population.
+2010-12-10 21:20:48,094: Graph loaded, nodes: 501, edges: 124407
+2010-12-10 21:20:55,935: Taking first 2 groups match rate is 16.000000. These groups are 10.978044  of users population.
+2010-12-10 21:20:55,936: Taking first 3 groups match rate is 16.000000. These groups are 19.960080  of users population.
+2010-12-10 21:20:55,936: Taking first 4 groups match rate is 40.000000. These groups are 36.726547  of users population.
+2010-12-10 21:20:56,640: Graph loaded, nodes: 501, edges: 124382
+2010-12-10 21:21:03,819: Taking first 2 groups match rate is 20.000000. These groups are 23.952096  of users population.
+2010-12-10 21:21:03,820: Taking first 3 groups match rate is 32.000000. These groups are 36.127745  of users population.
+2010-12-10 21:21:03,820: Taking first 4 groups match rate is 52.000000. These groups are 48.902196  of users population.
+2010-12-10 21:21:04,502: Graph loaded, nodes: 501, edges: 124450
+2010-12-10 21:21:11,219: Taking first 2 groups match rate is 32.000000. These groups are 22.554890  of users population.
+2010-12-10 21:21:11,219: Taking first 3 groups match rate is 40.000000. These groups are 34.730539  of users population.
+2010-12-10 21:21:11,219: Taking first 4 groups match rate is 52.000000. These groups are 48.902196  of users population.
+2010-12-10 21:21:11,922: Graph loaded, nodes: 501, edges: 124434
+2010-12-10 21:21:19,625: Taking first 2 groups match rate is 24.000000. These groups are 21.357285  of users population.
+2010-12-10 21:21:19,625: Taking first 3 groups match rate is 28.000000. These groups are 34.730539  of users population.
+2010-12-10 21:21:19,626: Taking first 4 groups match rate is 48.000000. These groups are 50.299401  of users population.
+2010-12-10 21:21:20,319: Graph loaded, nodes: 501, edges: 124511
+2010-12-10 21:21:27,956: Taking first 2 groups match rate is 20.000000. These groups are 15.369261  of users population.
+2010-12-10 21:21:27,957: Taking first 3 groups match rate is 36.000000. These groups are 26.946108  of users population.
+2010-12-10 21:21:27,957: Taking first 4 groups match rate is 56.000000. These groups are 42.714571  of users population.
+2010-12-10 21:21:28,643: Graph loaded, nodes: 501, edges: 124623
+2010-12-10 21:21:38,730: Taking first 2 groups match rate is 8.000000. These groups are 14.371257  of users population.
+2010-12-10 21:21:38,730: Taking first 3 groups match rate is 32.000000. These groups are 25.748503  of users population.
+2010-12-10 21:21:38,731: Taking first 4 groups match rate is 36.000000. These groups are 38.722555  of users population.
+2010-12-10 21:21:39,560: Graph loaded, nodes: 501, edges: 124609
+2010-12-10 21:21:46,028: Taking first 2 groups match rate is 8.000000. These groups are 17.165669  of users population.
+2010-12-10 21:21:46,028: Taking first 3 groups match rate is 20.000000. These groups are 29.141717  of users population.
+2010-12-10 21:21:46,029: Taking first 4 groups match rate is 36.000000. These groups are 41.117764  of users population.
+2010-12-10 21:21:46,847: Graph loaded, nodes: 501, edges: 124553
+2010-12-10 21:21:56,352: Taking first 2 groups match rate is 12.000000. These groups are 14.970060  of users population.
+2010-12-10 21:21:56,352: Taking first 3 groups match rate is 20.000000. These groups are 25.548902  of users population.
+2010-12-10 21:21:56,353: Taking first 4 groups match rate is 40.000000. These groups are 38.123752  of users population.
+2010-12-10 21:21:57,052: Graph loaded, nodes: 501, edges: 124656
+2010-12-10 21:22:06,775: Taking first 2 groups match rate is 8.000000. These groups are 11.377246  of users population.
+2010-12-10 21:22:06,775: Taking first 3 groups match rate is 28.000000. These groups are 23.552894  of users population.
+2010-12-10 21:22:06,776: Taking first 4 groups match rate is 40.000000. These groups are 36.926148  of users population.
+2010-12-10 21:22:07,478: Graph loaded, nodes: 501, edges: 124622
+2010-12-10 21:22:14,932: Taking first 2 groups match rate is 20.000000. These groups are 18.762475  of users population.
+2010-12-10 21:22:14,933: Taking first 3 groups match rate is 36.000000. These groups are 31.337325  of users population.
+2010-12-10 21:22:14,933: Taking first 4 groups match rate is 48.000000. These groups are 45.708583  of users population.
+2010-12-10 21:22:15,612: Graph loaded, nodes: 501, edges: 124649
+2010-12-10 21:22:24,071: Taking first 2 groups match rate is 16.000000. These groups are 21.357285  of users population.
+2010-12-10 21:22:24,071: Taking first 3 groups match rate is 28.000000. These groups are 33.133733  of users population.
+2010-12-10 21:22:24,071: Taking first 4 groups match rate is 52.000000. These groups are 49.101796  of users population.
+2010-12-10 21:22:24,767: Graph loaded, nodes: 501, edges: 124697
+2010-12-10 21:22:34,156: Taking first 2 groups match rate is 24.000000. These groups are 19.760479  of users population.
+2010-12-10 21:22:34,156: Taking first 3 groups match rate is 36.000000. These groups are 37.524950  of users population.
+2010-12-10 21:22:34,156: Taking first 4 groups match rate is 64.000000. These groups are 56.087824  of users population.
+2010-12-10 21:22:34,832: Graph loaded, nodes: 501, edges: 124687
+2010-12-10 21:22:43,043: Taking first 2 groups match rate is 20.000000. These groups are 28.542914  of users population.
+2010-12-10 21:22:43,043: Taking first 3 groups match rate is 24.000000. These groups are 43.712575  of users population.
+2010-12-10 21:22:43,043: Taking first 4 groups match rate is 44.000000. These groups are 60.878244  of users population.
+2010-12-10 21:22:43,710: Graph loaded, nodes: 501, edges: 124720
+2010-12-10 21:22:51,796: Taking first 2 groups match rate is 12.000000. These groups are 10.379242  of users population.
+2010-12-10 21:22:51,797: Taking first 3 groups match rate is 20.000000. These groups are 16.966068  of users population.
+2010-12-10 21:22:51,797: Taking first 4 groups match rate is 28.000000. These groups are 25.548902  of users population.
+2010-12-10 21:22:52,504: Graph loaded, nodes: 501, edges: 124896
+2010-12-10 21:22:59,262: Taking first 2 groups match rate is 12.000000. These groups are 14.770459  of users population.
+2010-12-10 21:22:59,263: Taking first 3 groups match rate is 24.000000. These groups are 26.147705  of users population.
+2010-12-10 21:22:59,263: Taking first 4 groups match rate is 40.000000. These groups are 39.920160  of users population.
+2010-12-10 21:22:59,946: Graph loaded, nodes: 501, edges: 124784
+2010-12-10 21:23:09,378: Taking first 2 groups match rate is 8.000000. These groups are 13.572854  of users population.
+2010-12-10 21:23:09,378: Taking first 3 groups match rate is 24.000000. These groups are 25.748503  of users population.
+2010-12-10 21:23:09,378: Taking first 4 groups match rate is 40.000000. These groups are 38.323353  of users population.
+2010-12-10 21:23:10,063: Graph loaded, nodes: 501, edges: 124802
+2010-12-10 21:23:17,530: Taking first 2 groups match rate is 20.000000. These groups are 20.359281  of users population.
+2010-12-10 21:23:17,530: Taking first 3 groups match rate is 40.000000. These groups are 32.734531  of users population.
+2010-12-10 21:23:17,530: Taking first 4 groups match rate is 52.000000. These groups are 46.307385  of users population.
+2010-12-10 21:23:18,174: Graph loaded, nodes: 501, edges: 124745
+2010-12-10 21:23:25,940: Taking first 2 groups match rate is 24.000000. These groups are 18.562874  of users population.
+2010-12-10 21:23:25,940: Taking first 3 groups match rate is 36.000000. These groups are 28.542914  of users population.
+2010-12-10 21:23:25,940: Taking first 4 groups match rate is 52.000000. These groups are 41.117764  of users population.
+2010-12-10 21:23:26,609: Graph loaded, nodes: 501, edges: 124860
+2010-12-10 21:23:36,515: Taking first 2 groups match rate is 24.000000. These groups are 20.558882  of users population.
+2010-12-10 21:23:36,515: Taking first 3 groups match rate is 44.000000. These groups are 39.920160  of users population.
+2010-12-10 21:23:36,515: Taking first 4 groups match rate is 64.000000. These groups are 59.281437  of users population.
+2010-12-10 21:23:37,215: Graph loaded, nodes: 501, edges: 124951
+2010-12-10 21:23:48,325: Taking first 2 groups match rate is 40.000000. These groups are 28.143713  of users population.
+2010-12-10 21:23:48,325: Taking first 3 groups match rate is 52.000000. These groups are 43.113772  of users population.
+2010-12-10 21:23:48,325: Taking first 4 groups match rate is 68.000000. These groups are 59.880240  of users population.
+2010-12-10 21:23:49,139: Graph loaded, nodes: 501, edges: 124961
+2010-12-10 21:23:58,139: Taking first 2 groups match rate is 12.000000. These groups are 18.762475  of users population.
+2010-12-10 21:23:58,139: Taking first 3 groups match rate is 24.000000. These groups are 29.940120  of users population.
+2010-12-10 21:23:58,139: Taking first 4 groups match rate is 36.000000. These groups are 41.916168  of users population.
+2010-12-10 21:23:58,832: Graph loaded, nodes: 501, edges: 124927
+2010-12-10 21:24:06,866: Taking first 2 groups match rate is 12.000000. These groups are 13.572854  of users population.
+2010-12-10 21:24:06,866: Taking first 3 groups match rate is 28.000000. These groups are 25.349301  of users population.
+2010-12-10 21:24:06,866: Taking first 4 groups match rate is 44.000000. These groups are 37.524950  of users population.
+2010-12-10 21:24:07,552: Graph loaded, nodes: 501, edges: 124907
+2010-12-10 21:24:15,421: Taking first 2 groups match rate is 12.000000. These groups are 15.768463  of users population.
+2010-12-10 21:24:15,421: Taking first 3 groups match rate is 24.000000. These groups are 29.940120  of users population.
+2010-12-10 21:24:15,421: Taking first 4 groups match rate is 44.000000. These groups are 44.710579  of users population.
+2010-12-10 21:24:16,105: Graph loaded, nodes: 501, edges: 124917
+2010-12-10 21:24:25,133: Taking first 2 groups match rate is 8.000000. These groups are 17.564870  of users population.
+2010-12-10 21:24:25,134: Taking first 3 groups match rate is 20.000000. These groups are 28.343313  of users population.
+2010-12-10 21:24:25,134: Taking first 4 groups match rate is 32.000000. These groups are 39.720559  of users population.
+2010-12-10 21:24:25,787: Graph loaded, nodes: 501, edges: 124926
+2010-12-10 21:24:36,928: Taking first 2 groups match rate is 40.000000. These groups are 23.153693  of users population.
+2010-12-10 21:24:36,929: Taking first 3 groups match rate is 56.000000. These groups are 39.121756  of users population.
+2010-12-10 21:24:36,930: Taking first 4 groups match rate is 80.000000. These groups are 57.485030  of users population.
+2010-12-10 21:24:37,634: Graph loaded, nodes: 501, edges: 124945
+2010-12-10 21:24:43,984: Taking first 2 groups match rate is 16.000000. These groups are 15.568862  of users population.
+2010-12-10 21:24:43,984: Taking first 3 groups match rate is 24.000000. These groups are 24.750499  of users population.
+2010-12-10 21:24:43,984: Taking first 4 groups match rate is 28.000000. These groups are 34.730539  of users population.
+2010-12-10 21:24:44,680: Graph loaded, nodes: 501, edges: 124957
+2010-12-10 21:24:52,854: Taking first 2 groups match rate is 20.000000. These groups are 19.960080  of users population.
+2010-12-10 21:24:52,854: Taking first 3 groups match rate is 32.000000. These groups are 33.732535  of users population.
+2010-12-10 21:24:52,854: Taking first 4 groups match rate is 40.000000. These groups are 49.101796  of users population.
+2010-12-10 21:24:53,545: Graph loaded, nodes: 501, edges: 124955
+2010-12-10 21:25:01,157: Taking first 2 groups match rate is 4.000000. These groups are 13.772455  of users population.
+2010-12-10 21:25:01,157: Taking first 3 groups match rate is 16.000000. These groups are 24.351297  of users population.
+2010-12-10 21:25:01,157: Taking first 4 groups match rate is 40.000000. These groups are 37.325349  of users population.
+2010-12-10 21:25:01,928: Graph loaded, nodes: 501, edges: 124935
+2010-12-10 21:25:09,540: Taking first 2 groups match rate is 20.000000. These groups are 18.962076  of users population.
+2010-12-10 21:25:09,540: Taking first 3 groups match rate is 32.000000. These groups are 33.532934  of users population.
+2010-12-10 21:25:09,540: Taking first 4 groups match rate is 40.000000. These groups are 48.502994  of users population.
+2010-12-10 21:25:10,249: Graph loaded, nodes: 501, edges: 124969
+2010-12-10 21:25:19,539: Taking first 2 groups match rate is 28.000000. These groups are 27.744511  of users population.
+2010-12-10 21:25:19,539: Taking first 3 groups match rate is 52.000000. These groups are 43.113772  of users population.
+2010-12-10 21:25:19,540: Taking first 4 groups match rate is 68.000000. These groups are 61.477046  of users population.
+2010-12-10 21:25:20,226: Graph loaded, nodes: 501, edges: 124993
+2010-12-10 21:25:28,631: Taking first 2 groups match rate is 16.000000. These groups are 20.159681  of users population.
+2010-12-10 21:25:28,631: Taking first 3 groups match rate is 36.000000. These groups are 31.137725  of users population.
+2010-12-10 21:25:28,631: Taking first 4 groups match rate is 48.000000. These groups are 43.113772  of users population.
+2010-12-10 21:25:29,302: Graph loaded, nodes: 501, edges: 124957
+2010-12-10 21:25:39,649: Taking first 2 groups match rate is 20.000000. These groups are 13.373253  of users population.
+2010-12-10 21:25:39,649: Taking first 3 groups match rate is 32.000000. These groups are 28.343313  of users population.
+2010-12-10 21:25:39,649: Taking first 4 groups match rate is 52.000000. These groups are 43.313373  of users population.
+2010-12-10 21:25:40,657: Graph loaded, nodes: 501, edges: 124977
+2010-12-10 21:25:48,304: Taking first 2 groups match rate is 12.000000. These groups are 14.570858  of users population.
+2010-12-10 21:25:48,305: Taking first 3 groups match rate is 28.000000. These groups are 25.748503  of users population.
+2010-12-10 21:25:48,305: Taking first 4 groups match rate is 52.000000. These groups are 38.522954  of users population.
+2010-12-10 21:25:48,969: Graph loaded, nodes: 501, edges: 125019
+2010-12-10 21:25:58,969: Taking first 2 groups match rate is 12.000000. These groups are 23.353293  of users population.
+2010-12-10 21:25:58,969: Taking first 3 groups match rate is 28.000000. These groups are 35.129741  of users population.
+2010-12-10 21:25:58,969: Taking first 4 groups match rate is 48.000000. These groups are 48.502994  of users population.
+2010-12-10 21:25:59,721: Graph loaded, nodes: 501, edges: 125020
+2010-12-10 21:26:08,761: Taking first 2 groups match rate is 12.000000. These groups are 15.768463  of users population.
+2010-12-10 21:26:08,761: Taking first 3 groups match rate is 20.000000. These groups are 28.343313  of users population.
+2010-12-10 21:26:08,761: Taking first 4 groups match rate is 44.000000. These groups are 42.315369  of users population.
+2010-12-10 21:26:09,527: Graph loaded, nodes: 501, edges: 125030
+2010-12-10 21:26:20,262: Taking first 2 groups match rate is 12.000000. These groups are 21.556886  of users population.
+2010-12-10 21:26:20,262: Taking first 3 groups match rate is 28.000000. These groups are 35.329341  of users population.
+2010-12-10 21:26:20,262: Taking first 4 groups match rate is 56.000000. These groups are 55.489022  of users population.
+2010-12-10 21:26:20,970: Graph loaded, nodes: 501, edges: 125023
+2010-12-10 21:26:30,275: Taking first 2 groups match rate is 28.000000. These groups are 22.954092  of users population.
+2010-12-10 21:26:30,276: Taking first 3 groups match rate is 44.000000. These groups are 37.724551  of users population.
+2010-12-10 21:26:30,276: Taking first 4 groups match rate is 52.000000. These groups are 55.289421  of users population.
+2010-12-10 21:26:30,985: Graph loaded, nodes: 501, edges: 125099
+2010-12-10 21:26:41,510: Taking first 2 groups match rate is 32.000000. These groups are 17.964072  of users population.
+2010-12-10 21:26:41,510: Taking first 3 groups match rate is 52.000000. These groups are 29.540918  of users population.
+2010-12-10 21:26:41,510: Taking first 4 groups match rate is 64.000000. These groups are 44.510978  of users population.
+2010-12-10 21:26:42,171: Graph loaded, nodes: 501, edges: 125017
+2010-12-10 21:26:49,487: Taking first 2 groups match rate is 12.000000. These groups are 22.554890  of users population.
+2010-12-10 21:26:49,487: Taking first 3 groups match rate is 24.000000. These groups are 34.331337  of users population.
+2010-12-10 21:26:49,488: Taking first 4 groups match rate is 48.000000. These groups are 48.902196  of users population.
+2010-12-10 21:26:50,200: Graph loaded, nodes: 501, edges: 125012
+2010-12-10 21:26:57,698: Taking first 2 groups match rate is 24.000000. These groups are 18.163673  of users population.
+2010-12-10 21:26:57,699: Taking first 3 groups match rate is 36.000000. These groups are 31.536926  of users population.
+2010-12-10 21:26:57,699: Taking first 4 groups match rate is 44.000000. These groups are 47.105788  of users population.
+2010-12-10 21:26:58,414: Graph loaded, nodes: 501, edges: 125040
+2010-12-10 21:27:07,457: Taking first 2 groups match rate is 12.000000. These groups are 11.177645  of users population.
+2010-12-10 21:27:07,457: Taking first 3 groups match rate is 24.000000. These groups are 18.962076  of users population.
+2010-12-10 21:27:07,458: Taking first 4 groups match rate is 44.000000. These groups are 32.135729  of users population.
+2010-12-10 21:27:08,169: Graph loaded, nodes: 501, edges: 125033
+2010-12-10 21:27:18,612: Taking first 2 groups match rate is 4.000000. These groups are 8.183633  of users population.
+2010-12-10 21:27:18,612: Taking first 3 groups match rate is 16.000000. These groups are 17.964072  of users population.
+2010-12-10 21:27:18,612: Taking first 4 groups match rate is 28.000000. These groups are 30.538922  of users population.
+2010-12-10 21:27:19,455: Graph loaded, nodes: 501, edges: 125036
+2010-12-10 21:27:27,245: Taking first 2 groups match rate is 24.000000. These groups are 23.552894  of users population.
+2010-12-10 21:27:27,246: Taking first 3 groups match rate is 44.000000. These groups are 39.920160  of users population.
+2010-12-10 21:27:27,246: Taking first 4 groups match rate is 60.000000. These groups are 57.684631  of users population.
+2010-12-10 21:27:27,958: Graph loaded, nodes: 501, edges: 125010
+2010-12-10 21:27:41,852: Taking first 2 groups match rate is 24.000000. These groups are 32.934132  of users population.
+2010-12-10 21:27:41,852: Taking first 3 groups match rate is 36.000000. These groups are 52.095808  of users population.
+2010-12-10 21:27:41,853: Taking first 4 groups match rate is 64.000000. These groups are 73.652695  of users population.
+2010-12-10 21:27:42,657: Graph loaded, nodes: 501, edges: 125142
+2010-12-10 21:27:51,539: Taking first 2 groups match rate is 28.000000. These groups are 27.544910  of users population.
+2010-12-10 21:27:51,539: Taking first 3 groups match rate is 48.000000. These groups are 41.516966  of users population.
+2010-12-10 21:27:51,539: Taking first 4 groups match rate is 64.000000. These groups are 59.081836  of users population.
+2010-12-10 21:27:52,216: Graph loaded, nodes: 501, edges: 125059
+2010-12-10 21:27:59,356: Taking first 2 groups match rate is 12.000000. These groups are 10.778443  of users population.
+2010-12-10 21:27:59,356: Taking first 3 groups match rate is 20.000000. These groups are 22.355289  of users population.
+2010-12-10 21:27:59,356: Taking first 4 groups match rate is 28.000000. These groups are 34.530938  of users population.
+2010-12-10 21:28:00,061: Graph loaded, nodes: 501, edges: 125132
+2010-12-10 21:28:11,728: Taking first 2 groups match rate is 40.000000. These groups are 24.151697  of users population.
+2010-12-10 21:28:11,729: Taking first 3 groups match rate is 48.000000. These groups are 36.526946  of users population.
+2010-12-10 21:28:11,729: Taking first 4 groups match rate is 48.000000. These groups are 50.299401  of users population.
+2010-12-10 21:28:12,425: Graph loaded, nodes: 501, edges: 125126
+2010-12-10 21:28:19,211: Taking first 2 groups match rate is 24.000000. These groups are 19.560878  of users population.
+2010-12-10 21:28:19,212: Taking first 3 groups match rate is 32.000000. These groups are 31.536926  of users population.
+2010-12-10 21:28:19,212: Taking first 4 groups match rate is 56.000000. These groups are 46.107784  of users population.
+2010-12-10 21:28:19,965: Graph loaded, nodes: 501, edges: 125049
+2010-12-10 21:28:29,114: Taking first 2 groups match rate is 12.000000. These groups are 16.766467  of users population.
+2010-12-10 21:28:29,115: Taking first 3 groups match rate is 24.000000. These groups are 32.534930  of users population.
+2010-12-10 21:28:29,115: Taking first 4 groups match rate is 48.000000. These groups are 48.502994  of users population.
+2010-12-10 21:28:29,887: Graph loaded, nodes: 501, edges: 125061
+2010-12-10 21:28:38,946: Taking first 2 groups match rate is 24.000000. These groups are 26.347305  of users population.
+2010-12-10 21:28:38,947: Taking first 3 groups match rate is 44.000000. These groups are 41.516966  of users population.
+2010-12-10 21:28:38,947: Taking first 4 groups match rate is 68.000000. These groups are 59.680639  of users population.
+2010-12-10 21:28:39,717: Graph loaded, nodes: 501, edges: 125090
+2010-12-10 21:28:50,222: Taking first 2 groups match rate is 16.000000. These groups are 17.365269  of users population.
+2010-12-10 21:28:50,222: Taking first 3 groups match rate is 28.000000. These groups are 27.944112  of users population.
+2010-12-10 21:28:50,223: Taking first 4 groups match rate is 32.000000. These groups are 39.520958  of users population.
+2010-12-10 21:28:51,045: Graph loaded, nodes: 501, edges: 125105
+2010-12-10 21:29:00,468: Taking first 2 groups match rate is 24.000000. These groups are 14.970060  of users population.
+2010-12-10 21:29:00,469: Taking first 3 groups match rate is 36.000000. These groups are 24.351297  of users population.
+2010-12-10 21:29:00,469: Taking first 4 groups match rate is 36.000000. These groups are 34.331337  of users population.
+2010-12-10 21:29:01,199: Graph loaded, nodes: 501, edges: 125068
+2010-12-10 21:29:09,791: Taking first 2 groups match rate is 12.000000. These groups are 22.754491  of users population.
+2010-12-10 21:29:09,791: Taking first 3 groups match rate is 32.000000. These groups are 40.119760  of users population.
+2010-12-10 21:29:09,791: Taking first 4 groups match rate is 56.000000. These groups are 58.682635  of users population.
+2010-12-10 21:29:10,474: Graph loaded, nodes: 501, edges: 125075
+2010-12-10 21:29:19,173: Taking first 2 groups match rate is 20.000000. These groups are 12.974052  of users population.
+2010-12-10 21:29:19,173: Taking first 3 groups match rate is 40.000000. These groups are 28.542914  of users population.
+2010-12-10 21:29:19,173: Taking first 4 groups match rate is 40.000000. These groups are 45.508982  of users population.
+2010-12-10 21:29:20,030: Graph loaded, nodes: 501, edges: 125070
+2010-12-10 21:29:30,622: Taking first 2 groups match rate is 16.000000. These groups are 12.774451  of users population.
+2010-12-10 21:29:30,622: Taking first 3 groups match rate is 32.000000. These groups are 25.149701  of users population.
+2010-12-10 21:29:30,623: Taking first 4 groups match rate is 48.000000. These groups are 39.321357  of users population.
+2010-12-10 21:29:31,330: Graph loaded, nodes: 501, edges: 125128
+2010-12-10 21:29:42,258: Taking first 2 groups match rate is 32.000000. These groups are 22.355289  of users population.
+2010-12-10 21:29:42,258: Taking first 3 groups match rate is 48.000000. These groups are 34.730539  of users population.
+2010-12-10 21:29:42,258: Taking first 4 groups match rate is 68.000000. These groups are 48.303393  of users population.
+2010-12-10 21:29:42,971: Graph loaded, nodes: 501, edges: 125128
+2010-12-10 21:29:50,476: Taking first 2 groups match rate is 20.000000. These groups are 20.958084  of users population.
+2010-12-10 21:29:50,476: Taking first 3 groups match rate is 36.000000. These groups are 34.331337  of users population.
+2010-12-10 21:29:50,477: Taking first 4 groups match rate is 60.000000. These groups are 53.892216  of users population.
+2010-12-10 21:29:51,147: Graph loaded, nodes: 501, edges: 125067
+2010-12-10 21:30:00,725: Taking first 2 groups match rate is 28.000000. These groups are 27.744511  of users population.
+2010-12-10 21:30:00,725: Taking first 3 groups match rate is 40.000000. These groups are 44.111776  of users population.
+2010-12-10 21:30:00,726: Taking first 4 groups match rate is 60.000000. These groups are 60.479042  of users population.
+2010-12-10 21:30:01,409: Graph loaded, nodes: 501, edges: 125091
+2010-12-10 21:30:10,547: Taking first 2 groups match rate is 12.000000. These groups are 19.161677  of users population.
+2010-12-10 21:30:10,548: Taking first 3 groups match rate is 32.000000. These groups are 32.734531  of users population.
+2010-12-10 21:30:10,548: Taking first 4 groups match rate is 44.000000. These groups are 48.103792  of users population.
+2010-12-10 21:30:11,225: Graph loaded, nodes: 501, edges: 125102
+2010-12-10 21:30:20,172: Taking first 2 groups match rate is 16.000000. These groups are 14.970060  of users population.
+2010-12-10 21:30:20,173: Taking first 3 groups match rate is 24.000000. These groups are 30.538922  of users population.
+2010-12-10 21:30:20,173: Taking first 4 groups match rate is 40.000000. These groups are 46.706587  of users population.
+2010-12-10 21:30:20,840: Graph loaded, nodes: 501, edges: 125064
+2010-12-10 21:30:30,371: Taking first 2 groups match rate is 16.000000. These groups are 11.576846  of users population.
+2010-12-10 21:30:30,371: Taking first 3 groups match rate is 36.000000. These groups are 23.952096  of users population.
+2010-12-10 21:30:30,371: Taking first 4 groups match rate is 52.000000. These groups are 36.926148  of users population.
+2010-12-10 21:30:31,071: Graph loaded, nodes: 501, edges: 125082
+2010-12-10 21:30:40,970: Taking first 2 groups match rate is 8.000000. These groups are 17.165669  of users population.
+2010-12-10 21:30:40,970: Taking first 3 groups match rate is 20.000000. These groups are 26.546906  of users population.
+2010-12-10 21:30:40,971: Taking first 4 groups match rate is 28.000000. These groups are 38.522954  of users population.
+2010-12-10 21:30:41,645: Graph loaded, nodes: 501, edges: 125060
+2010-12-10 21:30:51,907: Taking first 2 groups match rate is 12.000000. These groups are 24.550898  of users population.
+2010-12-10 21:30:51,907: Taking first 3 groups match rate is 24.000000. These groups are 38.722555  of users population.
+2010-12-10 21:30:51,907: Taking first 4 groups match rate is 40.000000. These groups are 57.085828  of users population.
+2010-12-10 21:30:52,587: Graph loaded, nodes: 501, edges: 125085
+2010-12-10 21:31:00,046: Taking first 2 groups match rate is 8.000000. These groups are 11.377246  of users population.
+2010-12-10 21:31:00,046: Taking first 3 groups match rate is 20.000000. These groups are 19.760479  of users population.
+2010-12-10 21:31:00,047: Taking first 4 groups match rate is 36.000000. These groups are 30.538922  of users population.
+2010-12-10 21:31:00,783: Graph loaded, nodes: 501, edges: 125048
+2010-12-10 21:31:07,890: Taking first 2 groups match rate is 20.000000. These groups are 21.357285  of users population.
+2010-12-10 21:31:07,890: Taking first 3 groups match rate is 36.000000. These groups are 35.728543  of users population.
+2010-12-10 21:31:07,890: Taking first 4 groups match rate is 48.000000. These groups are 56.886228  of users population.
+2010-12-10 21:31:07,890: After  100 runs result is
+2010-12-10 21:31:07,890: (44.159999999999997, 43.512974051896208, 5.065237872484885, 0.0)
+2010-12-10 21:31:07,891: For params
+2010-12-10 21:31:07,891: {'target_size': 10, 'OBJECTS': 100, 'bad_hideout': False, 'slice_level': 3, 'VOTERS': 500, 'legible_target_size': 12, 'number': 1, 'size': 25}
+2010-12-10 21:31:07,891: Variance
+2010-12-10 21:31:07,891: 150.6944
+2010-12-10 21:31:07,891:  ------------------- END --------------------
