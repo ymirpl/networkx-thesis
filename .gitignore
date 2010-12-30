@@ -2,5 +2,4 @@
 .project
 .pydevproject
 build/
-*.png
 testing-ring.txt

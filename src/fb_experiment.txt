@@ -1,3 +1,13 @@
+print fb.centrality['avg_clustering'] 
+print fb.centrality['avg_shortest_path'] 
+        
+
+0.748795357219
+1.88791830709
+
+
+
+
 2010-12-30 01:24:33,191: clustering
 2010-12-30 01:24:33,191: Krzych Wiśniewski (16): 1.0
 2010-12-30 01:24:33,192: Kamil Opacki (27): 1.0

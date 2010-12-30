@@ -15,6 +15,7 @@ class Facebooker:
     
     graph = nx.Graph()
     myId = 0
+    labels = dict()
     
     def __init__(self):
         self.graph.add_node(self.myId, {'name': 'Marcin Mincer'})
@@ -42,6 +43,11 @@ class Facebooker:
         
     def loadGraph(self, filename = 'fb.gpickle'):
         self.graph = nx.read_gpickle(filename)
+        # make normal label numbers
+        i = 1
+        for node in self.graph:
+            self.labels[node] = i
+            i += 1 
         logger.debug("Graph loaded, edges: %d, nodes: %d" % (self.graph.number_of_edges(), self.graph.number_of_nodes()))
     
     def draw(self, filename = "fb.png"):
@@ -73,35 +79,31 @@ class Facebooker:
             
     def graphMeasure(self, measure = 'degree'):
         measureValues = self.centrality[measure]
+        
+       
+        
         filename = measure + ".png"
         
         # print sorted node list on INFO
         nodesDict = dict()
         for node, data in self.graph.nodes_iter(data=True):
-            nodesDict[data['name']] = measureValues[node]
+            nodesDict[node] = measureValues[node]
         sortedNodes = sorted(nodesDict, key=nodesDict.get, reverse = True)
         
         logger.info(measure)
-        for name in sortedNodes:
-            logger.info(name + ": " + str(nodesDict[name]))
-        # end print on info
+        for node in sortedNodes:
+            logger.info(self.graph.node[node]['name'] +" (" + str(self.labels[node]) + "): " + str(nodesDict[node]))
+            # set my value to 0 for better colors
+            if self.graph.node[node]['name'] == 'Marcin Mincer':
+                measureValues[node] = 0
         
-        # stupid graphViz utf-8 hack
+        
+
+        # stupid hack becouse of pygraphviz utf-8 malfunction
         graph_copy = nx.Graph();
         graph_copy.add_nodes_from(self.graph.nodes())
         graph_copy.add_edges_from(self.graph.edges())
         # end stupid hack
-        
-        # labels and graphs
-        labels = dict()
-        import unicodedata
-        for node, data in self.graph.nodes_iter(data=True):
-            name = unicode(data['name'])
-            name.replace(u"Ł", 'L')
-            name.replace(u"l", 'l')
-            labels[node] = unicodedata.normalize('NFKD', name).encode('ascii','ignore')
-            labels[node] += "\n " + str(measureValues[node])
-        # TODO: problem z łłłł :(((
         
         pos=nx.pygraphviz_layout(graph_copy,prog='neato')
         for i in pos:
@@ -109,14 +111,15 @@ class Facebooker:
         
         import matplotlib.pyplot as plt
         
+
+        
         plt.figure(figsize=(20,20))
         plt.axis('off')
         nx.draw_networkx_edges(self.graph,pos,alpha=0.2)
-        nx.draw_networkx_nodes(self.graph, pos, size = 4, with_labels=False, node_color=measureValues.values(), cmap=plt.cm.get_cmap('Reds_r'))
-        nx.draw_networkx_labels(self.graph, pos, font_size = 10, labels = labels)
-        
+        nx.draw_networkx_nodes(self.graph, pos, size = 4, with_labels=False, node_color=measureValues.values(), cmap=plt.cm.get_cmap('Spectral'))
+        nx.draw_networkx_labels(self.graph, pos, font_size = 10, labels = self.labels)
+        plt.colorbar(orientation="horizontal", fraction = 0.04, pad = 0.01, aspect = 16)
         plt.savefig(filename)
-        
         
             
     def partitionGraph(self, filename = "fb_partition.png", method = 'blondelAlgorithm'):
@@ -144,15 +147,6 @@ class Facebooker:
         graph_copy.add_edges_from(self.graph.edges())
         # end stupid hack
         
-        # labels
-        labels = dict()
-        import unicodedata
-        for node, data in self.graph.nodes_iter(data=True):
-            name = unicode(data['name'])
-            name.replace(u"Ł", 'L')
-            name.replace(u"l", 'l')
-            labels[node] = unicodedata.normalize('NFKD', name).encode('ascii','ignore')
-        # TODO: problem z łłłł :(((
         
         pos=nx.pygraphviz_layout(graph_copy,prog='neato')
         for i in pos:
@@ -163,7 +157,7 @@ class Facebooker:
         plt.axis('off')
         nx.draw_networkx_edges(self.graph,pos,alpha=0.2)
         nx.draw_networkx_nodes(self.graph, pos, size = 4, node_color=colorList, with_labels=False)
-        nx.draw_networkx_labels(self.graph, pos, font_size = 10, labels = labels)
+        nx.draw_networkx_labels(self.graph, pos, font_size = 10, labels = self.labels)
         
         plt.savefig(filename)
         

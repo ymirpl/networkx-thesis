@@ -92,6 +92,7 @@ def testTwo():
 def fbExperiment():
     fb = Facebooker()
     fb.loadGraph()
+#    fb.partitionGraph()
     fb.computeMeasures()
     fb.loadMeasures()
     fb.graphMeasure('clustering')
@@ -106,13 +107,14 @@ def fbExperiment():
 
 
 if __name__ == '__main__':
-    experimentOneCorrection()
+#    experimentOneCorrection()
     
 #    from thesis import experiment
-#    fbExperiment()
+    fbExperiment()
 #    experiment.karateClub()
 #    experiment.sixtyOne()
 #    experiment.generated()
+
 
 
 
