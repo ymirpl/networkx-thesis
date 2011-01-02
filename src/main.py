@@ -93,15 +93,16 @@ def fbExperiment():
     fb = Facebooker()
     fb.loadGraph()
 #    fb.partitionGraph()
-    fb.computeMeasures()
+#    fb.ratePartition()
+#    fb.computeMeasures()
     fb.loadMeasures()
-    fb.graphMeasure('clustering')
-    fb.graphMeasure('betweeness')
-    fb.graphMeasure('degree')
-    fb.graphMeasure('closeness')
-    fb.graphMeasure('eigenvector')
-    print fb.centrality['avg_clustering'] 
-    print fb.centrality['avg_shortest_path'] 
+    fb.graphMeasure('clustering', True)
+    fb.graphMeasure('betweeness', True)
+    fb.graphMeasure('degree', True)
+    fb.graphMeasure('closeness', True)
+    fb.graphMeasure('eigenvector', True)
+#    print fb.centrality['avg_clustering'] 
+#    print fb.centrality['avg_shortest_path'] 
         
     
 
