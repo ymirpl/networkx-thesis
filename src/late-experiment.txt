@@ -1,0 +1,18 @@
+Will iterate over slice_level : now it's 1:
+Will generate graph with params
+{'target_size': 10, 'OBJECTS': 100, 'bad_hideout': False, 'slice_level': 1, 'VOTERS': 500, 'legible_target_size': 10, 'number': 1, 'size': 25}
+Will do 100 runs
+Slice is level: 1
+Graph loaded, nodes: 500, edges: 71394
+Taking first 2 groups match rate is 0.000000. These groups are 38.200000  of users population.
+Graph loaded, nodes: 500, edges: 101930
+Taking first 2 groups match rate is 0.000000. These groups are 31.800000  of users population.
+Graph loaded, nodes: 500, edges: 115285
+Taking first 2 groups match rate is 16.000000. These groups are 16.200000  of users population.
+Graph loaded, nodes: 500, edges: 116120
+Taking first 2 groups match rate is 20.000000. These groups are 15.600000  of users population.
+Graph loaded, nodes: 501, edges: 119450
+Taking first 2 groups match rate is 44.000000. These groups are 18.962076  of users population.
+Graph loaded, nodes: 501, edges: 119637
+Taking first 2 groups match rate is 8.000000. These groups are 16.766467  of users population.
+Graph loaded, nodes: 501, edges: 120938

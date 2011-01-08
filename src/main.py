@@ -92,15 +92,15 @@ def testTwo():
 def fbExperiment():
     fb = Facebooker()
     fb.loadGraph()
-#    fb.partitionGraph()
-#    fb.ratePartition()
+    fb.partitionGraph()
+    fb.ratePartition()
 #    fb.computeMeasures()
-    fb.loadMeasures()
-    fb.graphMeasure('clustering', True)
-    fb.graphMeasure('betweeness', True)
-    fb.graphMeasure('degree', True)
-    fb.graphMeasure('closeness', True)
-    fb.graphMeasure('eigenvector', True)
+#    fb.loadMeasures()
+#    fb.graphMeasure('clustering', True)
+#    fb.graphMeasure('betweeness', True)
+#    fb.graphMeasure('degree', True)
+#    fb.graphMeasure('closeness', True)
+#    fb.graphMeasure('eigenvector', True)
 #    print fb.centrality['avg_clustering'] 
 #    print fb.centrality['avg_shortest_path'] 
         
@@ -108,12 +108,12 @@ def fbExperiment():
 
 
 if __name__ == '__main__':
-#    experimentOneCorrection()
+#    fbExperiment()
+    experimentOne()
     
-#    from thesis import experiment
-    fbExperiment()
+    from thesis import experiment
 #    experiment.karateClub()
-#    experiment.sixtyOne()
+    experiment.sixtyOne()
 #    experiment.generated()
 
 

@@ -124,6 +124,7 @@ class Experiment:
         @return Hard version returns tuple of two list, so that you can make some pretty plots =D
         '''
         
+        oldDictValue = self.paramsDict[param]
         self.paramsDict[param] = minValue
         
         matchRates = []
@@ -145,7 +146,9 @@ class Experiment:
                 suspectRates.append(tuple[2])
                 near100Rates.append(tuple[3])
             
-            
+        
+        self.paramsDict[param] = oldDictValue
+        
         if hardGroupsNo:
             return ((matchRates, popRates, suspectRates, near100Rates), xaxis)
         
@@ -205,36 +208,26 @@ def karateClub():
     
     logger.info("Karate Graph experiment done")
     
-def sixtyOne(sliceLevels = [3], plot=False):
+def sixtyOne(sliceLevels = [3]):
     gm = sna.GraphMaker("/home/ymir/eclipse/networkx-thesis/voting_ring.txt")
     gm.makeGraph()
     
     
     for sliceLevel in sliceLevels:
         cq = sna.Cliquer(gm.graph)
+        nodesNo = cq.graph.number_of_nodes()
         cq.sliceGraph(sliceLevel)
         
         partition = cq.blondelAlgorithm()
         suspects = cq.smartGetFristNGroups(partition, 2)
         suspects_no = len(suspects)
-        # We take proper care only of blondel outcome
         
+        logger.info("############### THESIXTYONE EXPERIMENT ##################")
+        logger.info("There is %d suspects, what is  %f percent of total population." % (suspects_no, (suspects_no / nodesNo ) * 100.0) )
+        logger.info("Suspects are: ")
+        logger.info(suspects)
+        logger.info("End of suspectes.")
         
-        logger.info("There is %d suspects, what is  %f percent of total population." % (suspects_no, (suspects_no / len(cq.graph)) * 100.0) )
-        if plot:
-            cq.prettyPlotter(l=partition)
-        
-#        partition = cq.newmanAlgorithm(verbose=True)
-#        if plot:
-#            cq.prettyPlotter(l=partition)
-#        
-        partition = cq.causetNewmanAlgorithm()
-        if plot:
-            cq.prettyPlotter(l=partition)
-        
-        partition = cq.MCLAlgorithm()
-        if plot:
-            cq.prettyPlotter(l=partition)
             
 
 def generated(sliceLevels = [3], plot=False):
