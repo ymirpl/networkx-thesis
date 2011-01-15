@@ -7,13 +7,14 @@ from thesis import logger
 from thesis.sna import timeit
 import networkx as nx
 
+# dane potrzebne do użycia Facebook Graph API z uprawnieniami mojego użytkownika
 FB_API_KEY = "ca00488bed6f966941788ddca65823ca"
 FB_SECRET =  "0d950a306c96374ec2b09d113190cb09"
 FB_APP_ID = "152284658119481"
 FB_CODE = "917aefd01a1c2bac3e1d478f-1244349170|NSedJegWuBgi7ZcFk77WmWQgL8g"
 TOKEN = "152284658119481|917aefd01a1c2bac3e1d478f-1244349170|oejQMHFngbBNJCdGUXFfmkE9ZJo"
 
-# podział wykonany przeze mnie
+# podział wykonany przeze mnie ręcznie
 handPartition = [[100000648559579, 100000568166299, 1083970911, 100001151564860, 100000650966699], # awf 
                  [100000865749997, 100000028449750, 100001045601749, 100000243669458, 100000081887173, 1162622890, 1547725220, 100000416738692, 766967667, 100000548456815, 1054225249, 1796057946, 0, 1812844057, 100000796855344, 100000251476023, 670774349, 100000195247193, 574613122, 100000177233035, 100000950045344, 100001401545390, 1563941552, 100000072241347, 100000665913030, 1579834588, 100000115366354, 100000875089655, 1605019392, 100000072977670, 1682210082, 1255764264, 100000223015724, 1130027485], # studia
                  [1456110848, 682314702, 906415022, 100000675199851, 1361434456, 100000511275520, 1500674056, 1341281293, 100000559244304, 1283026463, 1251644963, 1423307828, 100000978972259, 100000359074423, 1145690747, 543900798, 1458353825, 100000500574893, 1218227920, 730325234, 652673267, 100000786148478, 100000844134666, 1374489875, 1438635288, 1334643932, 1674574646], # gim
@@ -35,6 +36,11 @@ class Facebooker:
         self.graph.add_node(self.myId, {'name': 'Marcin Mincer'})
     
     def fetchGraph(self):
+        """
+        Metoda pobiera informacje o znajomych i połączeniach pomiędzy nimi korzystając z Facebook Graph API.
+        
+        Sieć jest zapisywana w systemie plików jako serializowany obiekt python pickle. 
+        """
         from simplejson import loads
         from urllib2 import urlopen
         from xml.dom import minidom
@@ -53,18 +59,29 @@ class Facebooker:
         self.saveGraph()
                 
     def saveGraph(self, filename = 'fb.gpickle'):
+        """
+        Zpisuje sieć w systemie plików jako serializowany obiekt python pickle.
+        @param filename: nazwa pliku 
+        """ 
         nx.write_gpickle(self.graph, filename)
         
     def loadGraph(self, filename = 'fb.gpickle'):
+        """
+        Ładuje sieć do pamięci z pliku typu python pickle.
+        @param filename: nazwa pliku  
+        """
         self.graph = nx.read_gpickle(filename)
-        # make normal label numbers
+        # anonimizacja grafu, każdemu węzłowi przypisywany jest numer
         i = 1
         for node in self.graph:
             self.labels[node] = i
             i += 1 
-        logger.debug("Graph loaded, edges: %d, nodes: %d" % (self.graph.number_of_edges(), self.graph.number_of_nodes()))
+        logger.debug("Sieć załadowana, krawędzi: %d, węzłów: %d" % (self.graph.number_of_edges(), self.graph.number_of_nodes()))
     
     def draw(self, filename = "fb.png"):
+        """
+        @deprecated: Metoda rysująca jedynie prosty graf sieci
+        """
 #        from pygraphviz import *
         import matplotlib.pyplot as plt
         nx.draw(self.graph)
@@ -72,6 +89,12 @@ class Facebooker:
     
     @timeit        
     def computeMeasures(self, filename = "measures.pickle"):
+        """
+        Metoda wyznacza miary centralności dla każdego węzła w sieci oraz całej sieci. 
+        Wynik zapisywany jest w sysytmie plików jako serializowany obiekt python pickle.
+        
+        @param filename: nazwa pliku  
+        """
         self.centrality = {}
         
         self.centrality['betweeness'] = nx.betweenness_centrality(self.graph)
@@ -87,6 +110,10 @@ class Facebooker:
             pickle.dump(self.centrality, file)
         
     def loadMeasures(self, filename =  "measures.pickle"):
+        """
+        Ładuje wyznaczone miary centralności do pamięci z pliku typu python pickle.
+        @param filename: nazwa pliku  
+        """
         import pickle
         with open(filename, 'rb') as file:
             self.centrality = pickle.load(file)

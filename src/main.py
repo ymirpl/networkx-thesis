@@ -4,7 +4,7 @@
 '''
 Created on 02-08-2010
 
-@author: ymir
+@author: Marcin Mincer, IAiIS
 '''
 import networkx as nx
 from thesis.experiment import Experiment
@@ -57,20 +57,6 @@ def experimentOne():
     e.paramsDict['bad_hideout'] = True  
     (tuple, xaxis) = e.iterateParam(minValue = 300, maxValue = 700, param="VOTERS", hardGroupsNo=2, step = 100, runsNo = 100)
     e.plotTuple(tuple, xaxis = xaxis, step = 100,caption = "Skutecznosc metody w zaleznosci od liczby glosujacych ", xlabel = "Liczba glosujacych", ylabel = "", file_title = "vbht")
-    
-    e.paramsDict['bad_hideout'] = False 
-    (tuple, xaxis) = e.iterateParam(minValue = 3, maxValue = 12, param="legal_target_size", step = 3, runsNo = 100)
-    e.plotTuple(tuple, xaxis = xaxis, step = 3,caption = "Skutecznosc metody w zaleznosci od liczby obiektow, na ktore glosuja uczciwi glosujacy ", xlabel = "Liczba obiektow", ylabel = "", file_title = "ltshf")
-    e.paramsDict['bad_hideout'] = True 
-    (tuple, xaxis) = e.iterateParam(minValue = 3, maxValue = 12, param="legal_target_size", step = 3, runsNo = 100)
-    e.plotTuple(tuple, xaxis = xaxis, step = 3,caption = "Skutecznosc metody w zaleznosci od liczby obiektow, na ktore glosuja uczciwi glosujacy ", xlabel = "Liczba obiektow", ylabel = "", file_title = "ltsht")
-
-
-def experimentOneCorrection():
-    e = Experiment()
-    e.paramsDict = {'size': 25, 'number': 1, \
-                   'legal_target_size': 10, 'target_size': 10, 'VOTERS': 500, 'OBJECTS': 100, 'bad_hideout': False, 'slice_level': 3}
-
 
     e.paramsDict['bad_hideout'] = False 
     (tuple, xaxis) = e.iterateParam(minValue = 3, maxValue = 12, hardGroupsNo=2, param="legal_target_size", step = 3, runsNo = 100)
@@ -101,14 +87,12 @@ def fbExperiment():
 
 
 if __name__ == '__main__':
-#    fbExperiment()
-#    experimentOne()
-#    experimentOneCorrection()
+    fbExperiment()
+    experimentOne()
     
     from thesis import experiment
 #    experiment.karateClub()
     experiment.sixtyOne()
-#    experiment.generated()
 
 
 

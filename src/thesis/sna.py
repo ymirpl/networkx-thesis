@@ -282,7 +282,7 @@ class Cliquer(object):
         """
         Metod służy do rysowania grafu reprezentującego sieć, w którym węzły należące do tej samej grupy są oznaczone jednym kolorem.
         
-        @type l: lista list
+        @type l: list
         @param l: lista list węzłów podzielonych na grupy
         @param filename: nazwa pliku PNG z wynikowym obrazem
         """
@@ -301,6 +301,15 @@ class Cliquer(object):
             plt.show()
             
     def getSuspectedGroups(self, lists, noGroups=2):
+        """
+        Metoda zwraca członków noGroups wyznaczonych grup, zaczynając od najmniej licznej. 
+        
+        @param lists: lista list węzłów podzielonych na grupy
+        @param noGroups: liczba grup, których członkowie będą zwróceni
+        
+        @rtype: list
+        @return: lista członków noGroups najmniej licznych grup
+        """
         lists.sort(key=len)
         retList = []
 
@@ -311,8 +320,17 @@ class Cliquer(object):
         
     
     def smartGetFristNGroups(self, lists, noGroups=2):
+        """
+        Metoda zwraca członków noGroups wyznaczonych grup, zaczynając od najmniej licznej. 
+        Jeżeli zwrócone węzły stanowią mniej niż 10% populacji, metoda zwraca członków noGroups+1 grup. 
+        
+        @param lists: lista list węzłów podzielonych na grupy
+        @param noGroups: liczba grup, których członkowie będą zwróceni
+        
+        @rtype: list
+        @return: lista członków kilki najmniej licznych grup, stanowiących powyżej 10% populacji
+        """
         lists.sort(key=len)
-        # return as one big lists
         retList = []
         for i in xrange(min(noGroups, len(lists))):
             retList.extend(lists[i])
@@ -323,19 +341,24 @@ class Cliquer(object):
             try:
                 retList.extend(lists[i])
             except:
-                logger.debug("This was last group! Population is now %f ." % (len(retList)/len(self.graph)))
+                logger.error("To byłą ostatani grupa! Zwrócono  %f procent." % (len(retList)/len(self.graph)))
                 
         return retList
     
     @timeit
-    def blondelAlgorithm(self, verbose=False):
+    def blondelAlgorithm(self):
+        """
+        Metoda wykonuje grupowanie za pomocą algorytmu Blodela et al.
+        @rtype: list
+        @return: lista list z członkami grup
+        """
         from lib import blondel
         
         d = blondel.best_partition(self.graph)
-        # returns dict of nodes with cluster number values
-        logger.debug("Blondel partition done")
+        # zwraca słownik węzłów z numerem grupy jako wartość
+        logger.debug("Algorytm Blondela wykonany")
 
-        # change it to list of lists
+        # zamieniamy na listę list
         
         clusters = max(d.values())
         nodeList = [None]*(clusters+1)
@@ -345,51 +368,56 @@ class Cliquer(object):
                 nodeList[d[k]] = []
             nodeList[d[k]].append(k)
         
-        if verbose:
-            self.getSuspectedGroups(nodeList, verbose['groups'])    
-        
         return nodeList
     
     @timeit
-    def newmanAlgorithm(self, verbose=False):
+    def newmanAlgorithm(self):
+        """
+        Metoda wykonuje grupowanie za pomocą algorytmu Girvana-Newaman.
+        @rtype: list
+        @return: lista list z członkami grup
+        """
         from lib import newman
         (Q, partition) = newman.detect_communities(self.graph)
         # returns list o lists (each list for community) as a second tuple member
-        logger.info("Newman partition done")
-        
-        if verbose:
-            logger.info("Q: %f" % Q)  
-            self.getSuspectedGroups(partition, verbose['groups'])    
+        logger.debug("Newman zrobiony")
         
         return partition 
     
     @timeit
     def causetNewmanAlgorithm(self, verbose=False):
+        """
+        Metoda wykonuje grupowanie za pomocą algorytmu Caluseta-Newmana
+        @rtype: list
+        @return: lista list z członkami grup
+        """
         from lib import causet_newman
         
         (maxQ, partition, tree, treeRoot) = causet_newman.communityStructureNewman(self.graph)
         # returns list o lists (each list for community) as a second tuple member
-        logger.info("Causet-Newman partition done")
-        
-        if verbose:
-            self.getSuspectedGroups(partition, verbose['groups'])    
+        logger.debug("Causet-Newman zrobiony")
         
         return partition    
     
     @timeit
-    def MCLAlgorithm(self, inflation=3.3, verbose=False):
-        '''
-        requires installed mcl in system bin path
-        '''
+    def MCLAlgorithm(self, inflation=3.3):
+        """
+        Metoda wykonuje grupowanie za pomocą algorytmu MCL
+        
+        @param inflation: wartość współczynnika inflacji algorytmu MCL
+        @requires: program MCL w ścieżce wykonywalnej 
+        @rtype: list
+        @return: lista list z członkami grup
+        """
         
         try:
             nx.write_weighted_edgelist(self.graph, "/tmp/mcl-input", delimiter="\t")
         except:
             nx.write_edgelist(self.graph, "/tmp/mcl-input", delimiter="\t")
         import os
-        logger.info("Invoking mcl command ...")
+        logger.debug("Invoking mcl command ...")
         os.system("mcl /tmp/mcl-input --abc -te 2 -I %f -o /tmp/mcl-output" % inflation)
-        logger.info("MCL clustering done")
+        logger.debug("MCL clustering done")
         
         out_file = open("/tmp/mcl-output", 'r')
         lines = out_file.readlines()
@@ -400,12 +428,5 @@ class Cliquer(object):
         for line in lines:
             partition.append(map(int, string.split(line)))
         
-        if verbose:
-            self.getSuspectedGroups(partition, verbose['groups'])   
         return partition
-        
-        
-        
-        
-
         
