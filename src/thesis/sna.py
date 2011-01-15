@@ -36,7 +36,7 @@ class DataMaker:
         self.path = path
         
         
-    def generate(self, number = 1, size = 5, target_size = 5, legible_target_size = 10,VOTERS=1000, OBJECTS=200, bad_hideout=False, slice_level = 0):
+    def generate(self, number = 1, size = 5, target_size = 5, legal_target_size = 10,VOTERS=1000, OBJECTS=200, bad_hideout=False, slice_level = 0):
         '''
         @param number: no of voting rings
         @param size: size of voting rings
@@ -44,7 +44,7 @@ class DataMaker:
         ''' 
         # TODO Sometimes generated data crashes partitioner, don't know why ;(
         
-        additional_votes = legible_target_size - target_size
+        additional_votes = legal_target_size - target_size
         if additional_votes < 0:
             additional_votes = 0
         
@@ -84,7 +84,7 @@ class DataMaker:
                 else:
                     votes = int(random.gauss(additional_votes, additional_votes/4.0))
             else:
-                votes = int(random.gauss(legible_target_size, legible_target_size/4.0))
+                votes = int(random.gauss(legal_target_size, legal_target_size/4.0))
                     
             for i in xrange(votes):
                 target = random.randint(0, OBJECTS-1)

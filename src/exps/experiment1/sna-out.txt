@@ -1,6 +1,6 @@
 INFO: Will iterate over slice_level : now it's 1:
 INFO: Will generate graph with params
-INFO: {'bad_hideout': False, 'slice_level': 1, 'VOTERS': 500, 'legible_target_size': 10, 'number': 1, 'OBJECTS': 100, 'size': 25}
+INFO: {'bad_hideout': False, 'slice_level': 1, 'VOTERS': 500, 'legal_target_size': 10, 'number': 1, 'OBJECTS': 100, 'size': 25}
 INFO: Will do 80 runs
 INFO: Slice is level: 1
 INFO: Graph loaded, nodes: 500, edges: 69633
@@ -169,7 +169,7 @@ INFO: (13.25, 13.992335329341325)
 INFO:  ------------------- END --------------------
 INFO: Will iterate over slice_level : now it's 2:
 INFO: Will generate graph with params
-INFO: {'bad_hideout': False, 'slice_level': 2, 'VOTERS': 500, 'legible_target_size': 10, 'number': 1, 'OBJECTS': 100, 'size': 25}
+INFO: {'bad_hideout': False, 'slice_level': 2, 'VOTERS': 500, 'legal_target_size': 10, 'number': 1, 'OBJECTS': 100, 'size': 25}
 INFO: Will do 80 runs
 INFO: Slice is level: 2
 INFO: Graph loaded, nodes: 501, edges: 125126
@@ -338,7 +338,7 @@ INFO: (14.35, 13.842315369261479)
 INFO:  ------------------- END --------------------
 INFO: Will iterate over slice_level : now it's 3:
 INFO: Will generate graph with params
-INFO: {'bad_hideout': False, 'slice_level': 3, 'VOTERS': 500, 'legible_target_size': 10, 'number': 1, 'OBJECTS': 100, 'size': 25}
+INFO: {'bad_hideout': False, 'slice_level': 3, 'VOTERS': 500, 'legal_target_size': 10, 'number': 1, 'OBJECTS': 100, 'size': 25}
 INFO: Will do 80 runs
 INFO: Slice is level: 3
 INFO: Graph loaded, nodes: 501, edges: 124749
@@ -507,7 +507,7 @@ INFO: (14.800000000000001, 15.251996007984028)
 INFO:  ------------------- END --------------------
 INFO: Will iterate over slice_level : now it's 4:
 INFO: Will generate graph with params
-INFO: {'bad_hideout': False, 'slice_level': 4, 'VOTERS': 500, 'legible_target_size': 10, 'number': 1, 'OBJECTS': 100, 'size': 25}
+INFO: {'bad_hideout': False, 'slice_level': 4, 'VOTERS': 500, 'legal_target_size': 10, 'number': 1, 'OBJECTS': 100, 'size': 25}
 INFO: Will do 80 runs
 INFO: Slice is level: 4
 INFO: Graph loaded, nodes: 501, edges: 122305
@@ -678,7 +678,7 @@ INFO: ############# Plotting tuples ################
 INFO: ([13.25, 14.35, 14.800000000000001, 17.550000000000001], [13.992335329341325, 13.842315369261479, 15.251996007984028, 16.452095808383238])
 INFO: Will iterate over slice_level : now it's 1:
 INFO: Will generate graph with params
-INFO: {'bad_hideout': True, 'slice_level': 1, 'VOTERS': 500, 'legible_target_size': 10, 'number': 1, 'OBJECTS': 100, 'size': 25}
+INFO: {'bad_hideout': True, 'slice_level': 1, 'VOTERS': 500, 'legal_target_size': 10, 'number': 1, 'OBJECTS': 100, 'size': 25}
 INFO: Will do 80 runs
 INFO: Slice is level: 1
 INFO: Graph loaded, nodes: 501, edges: 113421
@@ -847,7 +847,7 @@ INFO: (12.0, 13.126247504990022)
 INFO:  ------------------- END --------------------
 INFO: Will iterate over slice_level : now it's 2:
 INFO: Will generate graph with params
-INFO: {'bad_hideout': True, 'slice_level': 2, 'VOTERS': 500, 'legible_target_size': 10, 'number': 1, 'OBJECTS': 100, 'size': 25}
+INFO: {'bad_hideout': True, 'slice_level': 2, 'VOTERS': 500, 'legal_target_size': 10, 'number': 1, 'OBJECTS': 100, 'size': 25}
 INFO: Will do 80 runs
 INFO: Slice is level: 2
 INFO: Graph loaded, nodes: 501, edges: 125340
@@ -1016,7 +1016,7 @@ INFO: (14.300000000000001, 13.697604790419163)
 INFO:  ------------------- END --------------------
 INFO: Will iterate over slice_level : now it's 3:
 INFO: Will generate graph with params
-INFO: {'bad_hideout': True, 'slice_level': 3, 'VOTERS': 500, 'legible_target_size': 10, 'number': 1, 'OBJECTS': 100, 'size': 25}
+INFO: {'bad_hideout': True, 'slice_level': 3, 'VOTERS': 500, 'legal_target_size': 10, 'number': 1, 'OBJECTS': 100, 'size': 25}
 INFO: Will do 80 runs
 INFO: Slice is level: 3
 INFO: Graph loaded, nodes: 501, edges: 124812
@@ -1185,7 +1185,7 @@ INFO: (15.35, 15.923153692614772)
 INFO:  ------------------- END --------------------
 INFO: Will iterate over slice_level : now it's 4:
 INFO: Will generate graph with params
-INFO: {'bad_hideout': True, 'slice_level': 4, 'VOTERS': 500, 'legible_target_size': 10, 'number': 1, 'OBJECTS': 100, 'size': 25}
+INFO: {'bad_hideout': True, 'slice_level': 4, 'VOTERS': 500, 'legal_target_size': 10, 'number': 1, 'OBJECTS': 100, 'size': 25}
 INFO: Will do 80 runs
 INFO: Slice is level: 4
 INFO: Graph loaded, nodes: 501, edges: 121627
@@ -1356,7 +1356,7 @@ INFO: ############# Plotting tuples ################
 INFO: ([12.0, 14.300000000000001, 15.35, 17.100000000000001], [13.126247504990022, 13.697604790419163, 15.923153692614772, 16.61177644710579])
 INFO: Will iterate over size : now it's 10:
 INFO: Will generate graph with params
-INFO: {'bad_hideout': False, 'slice_level': 3, 'VOTERS': 500, 'legible_target_size': 10, 'number': 1, 'OBJECTS': 100, 'size': 10}
+INFO: {'bad_hideout': False, 'slice_level': 3, 'VOTERS': 500, 'legal_target_size': 10, 'number': 1, 'OBJECTS': 100, 'size': 10}
 INFO: Will do 80 runs
 INFO: Slice is level: 3
 INFO: Graph loaded, nodes: 501, edges: 112456
@@ -1525,7 +1525,7 @@ INFO: (14.0, 15.209580838323351)
 INFO:  ------------------- END --------------------
 INFO: Will iterate over size : now it's 15:
 INFO: Will generate graph with params
-INFO: {'bad_hideout': False, 'slice_level': 3, 'VOTERS': 500, 'legible_target_size': 10, 'number': 1, 'OBJECTS': 100, 'size': 15}
+INFO: {'bad_hideout': False, 'slice_level': 3, 'VOTERS': 500, 'legal_target_size': 10, 'number': 1, 'OBJECTS': 100, 'size': 15}
 INFO: Will do 80 runs
 INFO: Slice is level: 3
 INFO: Graph loaded, nodes: 501, edges: 120352
@@ -1694,7 +1694,7 @@ INFO: (16.333333333333336, 15.359281437125754)
 INFO:  ------------------- END --------------------
 INFO: Will iterate over size : now it's 20:
 INFO: Will generate graph with params
-INFO: {'bad_hideout': False, 'slice_level': 3, 'VOTERS': 500, 'legible_target_size': 10, 'number': 1, 'OBJECTS': 100, 'size': 20}
+INFO: {'bad_hideout': False, 'slice_level': 3, 'VOTERS': 500, 'legal_target_size': 10, 'number': 1, 'OBJECTS': 100, 'size': 20}
 INFO: Will do 80 runs
 INFO: Slice is level: 3
 INFO: Graph loaded, nodes: 501, edges: 121655
@@ -1863,7 +1863,7 @@ INFO: (14.75, 15.179640718562876)
 INFO:  ------------------- END --------------------
 INFO: Will iterate over size : now it's 25:
 INFO: Will generate graph with params
-INFO: {'bad_hideout': False, 'slice_level': 3, 'VOTERS': 500, 'legible_target_size': 10, 'number': 1, 'OBJECTS': 100, 'size': 25}
+INFO: {'bad_hideout': False, 'slice_level': 3, 'VOTERS': 500, 'legal_target_size': 10, 'number': 1, 'OBJECTS': 100, 'size': 25}
 INFO: Will do 80 runs
 INFO: Slice is level: 3
 INFO: Graph loaded, nodes: 501, edges: 121875
@@ -2032,7 +2032,7 @@ INFO: (16.75, 15.476546906187631)
 INFO:  ------------------- END --------------------
 INFO: Will iterate over size : now it's 30:
 INFO: Will generate graph with params
-INFO: {'bad_hideout': False, 'slice_level': 3, 'VOTERS': 500, 'legible_target_size': 10, 'number': 1, 'OBJECTS': 100, 'size': 30}
+INFO: {'bad_hideout': False, 'slice_level': 3, 'VOTERS': 500, 'legal_target_size': 10, 'number': 1, 'OBJECTS': 100, 'size': 30}
 INFO: Will do 80 runs
 INFO: Slice is level: 3
 INFO: Graph loaded, nodes: 501, edges: 121897
@@ -2201,7 +2201,7 @@ INFO: (16.0, 16.546906187624749)
 INFO:  ------------------- END --------------------
 INFO: Will iterate over size : now it's 35:
 INFO: Will generate graph with params
-INFO: {'bad_hideout': False, 'slice_level': 3, 'VOTERS': 500, 'legible_target_size': 10, 'number': 1, 'OBJECTS': 100, 'size': 35}
+INFO: {'bad_hideout': False, 'slice_level': 3, 'VOTERS': 500, 'legal_target_size': 10, 'number': 1, 'OBJECTS': 100, 'size': 35}
 INFO: Will do 80 runs
 INFO: Slice is level: 3
 INFO: Graph loaded, nodes: 501, edges: 122149
@@ -2370,7 +2370,7 @@ INFO: (16.642857142857142, 16.245009980039924)
 INFO:  ------------------- END --------------------
 INFO: Will iterate over size : now it's 40:
 INFO: Will generate graph with params
-INFO: {'bad_hideout': False, 'slice_level': 3, 'VOTERS': 500, 'legible_target_size': 10, 'number': 1, 'OBJECTS': 100, 'size': 40}
+INFO: {'bad_hideout': False, 'slice_level': 3, 'VOTERS': 500, 'legal_target_size': 10, 'number': 1, 'OBJECTS': 100, 'size': 40}
 INFO: Will do 80 runs
 INFO: Slice is level: 3
 INFO: Graph loaded, nodes: 501, edges: 122190
@@ -2541,7 +2541,7 @@ INFO: ############# Plotting tuples ################
 INFO: ([14.0, 16.333333333333336, 14.75, 16.75, 16.0, 16.642857142857142, 15.84375], [15.209580838323351, 15.359281437125754, 15.179640718562876, 15.476546906187631, 16.546906187624749, 16.245009980039924, 15.843313373253498])
 INFO: Will iterate over size : now it's 10:
 INFO: Will generate graph with params
-INFO: {'bad_hideout': True, 'slice_level': 3, 'VOTERS': 500, 'legible_target_size': 10, 'number': 1, 'OBJECTS': 100, 'size': 10}
+INFO: {'bad_hideout': True, 'slice_level': 3, 'VOTERS': 500, 'legal_target_size': 10, 'number': 1, 'OBJECTS': 100, 'size': 10}
 INFO: Will do 80 runs
 INFO: Slice is level: 3
 INFO: Graph loaded, nodes: 501, edges: 122168
@@ -2710,7 +2710,7 @@ INFO: (14.75, 14.95508982035928)
 INFO:  ------------------- END --------------------
 INFO: Will iterate over size : now it's 15:
 INFO: Will generate graph with params
-INFO: {'bad_hideout': True, 'slice_level': 3, 'VOTERS': 500, 'legible_target_size': 10, 'number': 1, 'OBJECTS': 100, 'size': 15}
+INFO: {'bad_hideout': True, 'slice_level': 3, 'VOTERS': 500, 'legal_target_size': 10, 'number': 1, 'OBJECTS': 100, 'size': 15}
 INFO: Will do 80 runs
 INFO: Slice is level: 3
 INFO: Graph loaded, nodes: 501, edges: 121664
@@ -2879,7 +2879,7 @@ INFO: (16.333333333333336, 15.371756487025939)
 INFO:  ------------------- END --------------------
 INFO: Will iterate over size : now it's 20:
 INFO: Will generate graph with params
-INFO: {'bad_hideout': True, 'slice_level': 3, 'VOTERS': 500, 'legible_target_size': 10, 'number': 1, 'OBJECTS': 100, 'size': 20}
+INFO: {'bad_hideout': True, 'slice_level': 3, 'VOTERS': 500, 'legal_target_size': 10, 'number': 1, 'OBJECTS': 100, 'size': 20}
 INFO: Will do 80 runs
 INFO: Slice is level: 3
 INFO: Graph loaded, nodes: 501, edges: 121446
@@ -3048,7 +3048,7 @@ INFO: (15.0, 15.668662674650701)
 INFO:  ------------------- END --------------------
 INFO: Will iterate over size : now it's 25:
 INFO: Will generate graph with params
-INFO: {'bad_hideout': True, 'slice_level': 3, 'VOTERS': 500, 'legible_target_size': 10, 'number': 1, 'OBJECTS': 100, 'size': 25}
+INFO: {'bad_hideout': True, 'slice_level': 3, 'VOTERS': 500, 'legal_target_size': 10, 'number': 1, 'OBJECTS': 100, 'size': 25}
 INFO: Will do 80 runs
 INFO: Slice is level: 3
 INFO: Graph loaded, nodes: 501, edges: 121380
@@ -3217,7 +3217,7 @@ INFO: (14.35, 15.571357285429144)
 INFO:  ------------------- END --------------------
 INFO: Will iterate over size : now it's 30:
 INFO: Will generate graph with params
-INFO: {'bad_hideout': True, 'slice_level': 3, 'VOTERS': 500, 'legible_target_size': 10, 'number': 1, 'OBJECTS': 100, 'size': 30}
+INFO: {'bad_hideout': True, 'slice_level': 3, 'VOTERS': 500, 'legal_target_size': 10, 'number': 1, 'OBJECTS': 100, 'size': 30}
 INFO: Will do 80 runs
 INFO: Slice is level: 3
 INFO: Graph loaded, nodes: 501, edges: 121347
@@ -3386,7 +3386,7 @@ INFO: (14.541666666666666, 14.870259481037928)
 INFO:  ------------------- END --------------------
 INFO: Will iterate over size : now it's 35:
 INFO: Will generate graph with params
-INFO: {'bad_hideout': True, 'slice_level': 3, 'VOTERS': 500, 'legible_target_size': 10, 'number': 1, 'OBJECTS': 100, 'size': 35}
+INFO: {'bad_hideout': True, 'slice_level': 3, 'VOTERS': 500, 'legal_target_size': 10, 'number': 1, 'OBJECTS': 100, 'size': 35}
 INFO: Will do 80 runs
 INFO: Slice is level: 3
 INFO: Graph loaded, nodes: 501, edges: 121429
@@ -3555,7 +3555,7 @@ INFO: (15.464285714285719, 15.778443113772457)
 INFO:  ------------------- END --------------------
 INFO: Will iterate over size : now it's 40:
 INFO: Will generate graph with params
-INFO: {'bad_hideout': True, 'slice_level': 3, 'VOTERS': 500, 'legible_target_size': 10, 'number': 1, 'OBJECTS': 100, 'size': 40}
+INFO: {'bad_hideout': True, 'slice_level': 3, 'VOTERS': 500, 'legal_target_size': 10, 'number': 1, 'OBJECTS': 100, 'size': 40}
 INFO: Will do 80 runs
 INFO: Slice is level: 3
 INFO: Graph loaded, nodes: 501, edges: 121353
@@ -3726,7 +3726,7 @@ INFO: ############# Plotting tuples ################
 INFO: ([14.75, 16.333333333333336, 15.0, 14.35, 14.541666666666666, 15.464285714285719, 16.375], [14.95508982035928, 15.371756487025939, 15.668662674650701, 15.571357285429144, 14.870259481037928, 15.778443113772457, 16.117764471057875])
 INFO: Will iterate over target_size : now it's 3:
 INFO: Will generate graph with params
-INFO: {'bad_hideout': False, 'slice_level': 3, 'VOTERS': 500, 'legible_target_size': 10, 'number': 1, 'target_size': 3, 'OBJECTS': 100, 'size': 25}
+INFO: {'bad_hideout': False, 'slice_level': 3, 'VOTERS': 500, 'legal_target_size': 10, 'number': 1, 'target_size': 3, 'OBJECTS': 100, 'size': 25}
 INFO: Will do 80 runs
 INFO: Slice is level: 3
 INFO: Graph loaded, nodes: 501, edges: 121533
@@ -3895,7 +3895,7 @@ INFO: (15.65, 15.104790419161679)
 INFO:  ------------------- END --------------------
 INFO: Will iterate over target_size : now it's 6:
 INFO: Will generate graph with params
-INFO: {'bad_hideout': False, 'slice_level': 3, 'VOTERS': 500, 'legible_target_size': 10, 'number': 1, 'target_size': 6, 'OBJECTS': 100, 'size': 25}
+INFO: {'bad_hideout': False, 'slice_level': 3, 'VOTERS': 500, 'legal_target_size': 10, 'number': 1, 'target_size': 6, 'OBJECTS': 100, 'size': 25}
 INFO: Will do 80 runs
 INFO: Slice is level: 3
 INFO: Graph loaded, nodes: 501, edges: 121833
@@ -4064,7 +4064,7 @@ INFO: (15.449999999999999, 15.157185628742511)
 INFO:  ------------------- END --------------------
 INFO: Will iterate over target_size : now it's 9:
 INFO: Will generate graph with params
-INFO: {'bad_hideout': False, 'slice_level': 3, 'VOTERS': 500, 'legible_target_size': 10, 'number': 1, 'target_size': 9, 'OBJECTS': 100, 'size': 25}
+INFO: {'bad_hideout': False, 'slice_level': 3, 'VOTERS': 500, 'legal_target_size': 10, 'number': 1, 'target_size': 9, 'OBJECTS': 100, 'size': 25}
 INFO: Will do 80 runs
 INFO: Slice is level: 3
 INFO: Graph loaded, nodes: 501, edges: 122243
@@ -4233,7 +4233,7 @@ INFO: (16.600000000000001, 16.11526946107784)
 INFO:  ------------------- END --------------------
 INFO: Will iterate over target_size : now it's 12:
 INFO: Will generate graph with params
-INFO: {'bad_hideout': False, 'slice_level': 3, 'VOTERS': 500, 'legible_target_size': 10, 'number': 1, 'target_size': 12, 'OBJECTS': 100, 'size': 25}
+INFO: {'bad_hideout': False, 'slice_level': 3, 'VOTERS': 500, 'legal_target_size': 10, 'number': 1, 'target_size': 12, 'OBJECTS': 100, 'size': 25}
 INFO: Will do 80 runs
 INFO: Slice is level: 3
 INFO: Graph loaded, nodes: 501, edges: 122024
@@ -4404,7 +4404,7 @@ INFO: ############# Plotting tuples ################
 INFO: ([15.65, 15.449999999999999, 16.600000000000001, 16.649999999999999], [15.104790419161679, 15.157185628742511, 16.11526946107784, 15.91317365269461])
 INFO: Will iterate over target_size : now it's 3:
 INFO: Will generate graph with params
-INFO: {'bad_hideout': True, 'slice_level': 3, 'VOTERS': 500, 'legible_target_size': 10, 'number': 1, 'target_size': 3, 'OBJECTS': 100, 'size': 25}
+INFO: {'bad_hideout': True, 'slice_level': 3, 'VOTERS': 500, 'legal_target_size': 10, 'number': 1, 'target_size': 3, 'OBJECTS': 100, 'size': 25}
 INFO: Will do 80 runs
 INFO: Slice is level: 3
 INFO: Graph loaded, nodes: 501, edges: 121674
@@ -4573,7 +4573,7 @@ INFO: (14.1, 15.271956087824346)
 INFO:  ------------------- END --------------------
 INFO: Will iterate over target_size : now it's 6:
 INFO: Will generate graph with params
-INFO: {'bad_hideout': True, 'slice_level': 3, 'VOTERS': 500, 'legible_target_size': 10, 'number': 1, 'target_size': 6, 'OBJECTS': 100, 'size': 25}
+INFO: {'bad_hideout': True, 'slice_level': 3, 'VOTERS': 500, 'legal_target_size': 10, 'number': 1, 'target_size': 6, 'OBJECTS': 100, 'size': 25}
 INFO: Will do 80 runs
 INFO: Slice is level: 3
 INFO: Graph loaded, nodes: 501, edges: 121241
@@ -4742,7 +4742,7 @@ INFO: (14.6, 14.967564870259485)
 INFO:  ------------------- END --------------------
 INFO: Will iterate over target_size : now it's 9:
 INFO: Will generate graph with params
-INFO: {'bad_hideout': True, 'slice_level': 3, 'VOTERS': 500, 'legible_target_size': 10, 'number': 1, 'target_size': 9, 'OBJECTS': 100, 'size': 25}
+INFO: {'bad_hideout': True, 'slice_level': 3, 'VOTERS': 500, 'legal_target_size': 10, 'number': 1, 'target_size': 9, 'OBJECTS': 100, 'size': 25}
 INFO: Will do 80 runs
 INFO: Slice is level: 3
 INFO: Graph loaded, nodes: 501, edges: 121784
@@ -4911,7 +4911,7 @@ INFO: (17.050000000000001, 16.422155688622745)
 INFO:  ------------------- END --------------------
 INFO: Will iterate over target_size : now it's 12:
 INFO: Will generate graph with params
-INFO: {'bad_hideout': True, 'slice_level': 3, 'VOTERS': 500, 'legible_target_size': 10, 'number': 1, 'target_size': 12, 'OBJECTS': 100, 'size': 25}
+INFO: {'bad_hideout': True, 'slice_level': 3, 'VOTERS': 500, 'legal_target_size': 10, 'number': 1, 'target_size': 12, 'OBJECTS': 100, 'size': 25}
 INFO: Will do 80 runs
 INFO: Slice is level: 3
 INFO: Graph loaded, nodes: 501, edges: 121790
@@ -5082,7 +5082,7 @@ INFO: ############# Plotting tuples ################
 INFO: ([14.1, 14.6, 17.050000000000001, 16.800000000000001], [15.271956087824346, 14.967564870259485, 16.422155688622745, 15.923153692614772])
 INFO: Will iterate over OBJECTS : now it's 20:
 INFO: Will generate graph with params
-INFO: {'bad_hideout': False, 'slice_level': 3, 'VOTERS': 500, 'legible_target_size': 10, 'number': 1, 'target_size': 5, 'OBJECTS': 20, 'size': 25}
+INFO: {'bad_hideout': False, 'slice_level': 3, 'VOTERS': 500, 'legal_target_size': 10, 'number': 1, 'target_size': 5, 'OBJECTS': 20, 'size': 25}
 INFO: Will do 80 runs
 INFO: Slice is level: 3
 INFO: Graph loaded, nodes: 501, edges: 125184
@@ -5251,7 +5251,7 @@ INFO: (19.149999999999999, 19.341317365269465)
 INFO:  ------------------- END --------------------
 INFO: Will iterate over OBJECTS : now it's 40:
 INFO: Will generate graph with params
-INFO: {'bad_hideout': False, 'slice_level': 3, 'VOTERS': 500, 'legible_target_size': 10, 'number': 1, 'target_size': 5, 'OBJECTS': 40, 'size': 25}
+INFO: {'bad_hideout': False, 'slice_level': 3, 'VOTERS': 500, 'legal_target_size': 10, 'number': 1, 'target_size': 5, 'OBJECTS': 40, 'size': 25}
 INFO: Will do 80 runs
 INFO: Slice is level: 3
 INFO: Graph loaded, nodes: 501, edges: 125568
@@ -5420,7 +5420,7 @@ INFO: (17.100000000000001, 16.756487025948104)
 INFO:  ------------------- END --------------------
 INFO: Will iterate over OBJECTS : now it's 60:
 INFO: Will generate graph with params
-INFO: {'bad_hideout': False, 'slice_level': 3, 'VOTERS': 500, 'legible_target_size': 10, 'number': 1, 'target_size': 5, 'OBJECTS': 60, 'size': 25}
+INFO: {'bad_hideout': False, 'slice_level': 3, 'VOTERS': 500, 'legal_target_size': 10, 'number': 1, 'target_size': 5, 'OBJECTS': 60, 'size': 25}
 INFO: Will do 80 runs
 INFO: Slice is level: 3
 INFO: Graph loaded, nodes: 501, edges: 125566
@@ -5589,7 +5589,7 @@ INFO: (16.199999999999999, 16.170159680638722)
 INFO:  ------------------- END --------------------
 INFO: Will iterate over OBJECTS : now it's 80:
 INFO: Will generate graph with params
-INFO: {'bad_hideout': False, 'slice_level': 3, 'VOTERS': 500, 'legible_target_size': 10, 'number': 1, 'target_size': 5, 'OBJECTS': 80, 'size': 25}
+INFO: {'bad_hideout': False, 'slice_level': 3, 'VOTERS': 500, 'legal_target_size': 10, 'number': 1, 'target_size': 5, 'OBJECTS': 80, 'size': 25}
 INFO: Will do 80 runs
 INFO: Slice is level: 3
 INFO: Graph loaded, nodes: 501, edges: 125429
@@ -5758,7 +5758,7 @@ INFO: (14.1, 15.144710578842316)
 INFO:  ------------------- END --------------------
 INFO: Will iterate over OBJECTS : now it's 100:
 INFO: Will generate graph with params
-INFO: {'bad_hideout': False, 'slice_level': 3, 'VOTERS': 500, 'legible_target_size': 10, 'number': 1, 'target_size': 5, 'OBJECTS': 100, 'size': 25}
+INFO: {'bad_hideout': False, 'slice_level': 3, 'VOTERS': 500, 'legal_target_size': 10, 'number': 1, 'target_size': 5, 'OBJECTS': 100, 'size': 25}
 INFO: Will do 80 runs
 INFO: Slice is level: 3
 INFO: Graph loaded, nodes: 501, edges: 124466
@@ -5929,7 +5929,7 @@ INFO: ############# Plotting tuples ################
 INFO: ([19.149999999999999, 17.100000000000001, 16.199999999999999, 14.1, 16.0], [19.341317365269465, 16.756487025948104, 16.170159680638722, 15.144710578842316, 15.261976047904193])
 INFO: Will iterate over OBJECTS : now it's 20:
 INFO: Will generate graph with params
-INFO: {'bad_hideout': True, 'slice_level': 3, 'VOTERS': 500, 'legible_target_size': 10, 'number': 1, 'target_size': 5, 'OBJECTS': 20, 'size': 25}
+INFO: {'bad_hideout': True, 'slice_level': 3, 'VOTERS': 500, 'legal_target_size': 10, 'number': 1, 'target_size': 5, 'OBJECTS': 20, 'size': 25}
 INFO: Will do 80 runs
 INFO: Slice is level: 3
 INFO: Graph loaded, nodes: 501, edges: 125269
@@ -6098,7 +6098,7 @@ INFO: (17.699999999999999, 18.043912175648703)
 INFO:  ------------------- END --------------------
 INFO: Will iterate over OBJECTS : now it's 40:
 INFO: Will generate graph with params
-INFO: {'bad_hideout': True, 'slice_level': 3, 'VOTERS': 500, 'legible_target_size': 10, 'number': 1, 'target_size': 5, 'OBJECTS': 40, 'size': 25}
+INFO: {'bad_hideout': True, 'slice_level': 3, 'VOTERS': 500, 'legal_target_size': 10, 'number': 1, 'target_size': 5, 'OBJECTS': 40, 'size': 25}
 INFO: Will do 80 runs
 INFO: Slice is level: 3
 INFO: Graph loaded, nodes: 501, edges: 125589
@@ -6267,7 +6267,7 @@ INFO: (17.350000000000001, 17.819361277445115)
 INFO:  ------------------- END --------------------
 INFO: Will iterate over OBJECTS : now it's 60:
 INFO: Will generate graph with params
-INFO: {'bad_hideout': True, 'slice_level': 3, 'VOTERS': 500, 'legible_target_size': 10, 'number': 1, 'target_size': 5, 'OBJECTS': 60, 'size': 25}
+INFO: {'bad_hideout': True, 'slice_level': 3, 'VOTERS': 500, 'legal_target_size': 10, 'number': 1, 'target_size': 5, 'OBJECTS': 60, 'size': 25}
 INFO: Will do 80 runs
 INFO: Slice is level: 3
 INFO: Graph loaded, nodes: 501, edges: 125557
@@ -6436,7 +6436,7 @@ INFO: (15.800000000000001, 16.022954091816366)
 INFO:  ------------------- END --------------------
 INFO: Will iterate over OBJECTS : now it's 80:
 INFO: Will generate graph with params
-INFO: {'bad_hideout': True, 'slice_level': 3, 'VOTERS': 500, 'legible_target_size': 10, 'number': 1, 'target_size': 5, 'OBJECTS': 80, 'size': 25}
+INFO: {'bad_hideout': True, 'slice_level': 3, 'VOTERS': 500, 'legal_target_size': 10, 'number': 1, 'target_size': 5, 'OBJECTS': 80, 'size': 25}
 INFO: Will do 80 runs
 INFO: Slice is level: 3
 INFO: Graph loaded, nodes: 501, edges: 125355
@@ -6605,7 +6605,7 @@ INFO: (15.25, 15.311876247504998)
 INFO:  ------------------- END --------------------
 INFO: Will iterate over OBJECTS : now it's 100:
 INFO: Will generate graph with params
-INFO: {'bad_hideout': True, 'slice_level': 3, 'VOTERS': 500, 'legible_target_size': 10, 'number': 1, 'target_size': 5, 'OBJECTS': 100, 'size': 25}
+INFO: {'bad_hideout': True, 'slice_level': 3, 'VOTERS': 500, 'legal_target_size': 10, 'number': 1, 'target_size': 5, 'OBJECTS': 100, 'size': 25}
 INFO: Will do 80 runs
 INFO: Slice is level: 3
 INFO: Graph loaded, nodes: 501, edges: 124331
@@ -6776,7 +6776,7 @@ INFO: ############# Plotting tuples ################
 INFO: ([17.699999999999999, 17.350000000000001, 15.800000000000001, 15.25, 15.4], [18.043912175648703, 17.819361277445115, 16.022954091816366, 15.311876247504998, 15.404191616766472])
 INFO: Will iterate over VOTERS : now it's 300:
 INFO: Will generate graph with params
-INFO: {'bad_hideout': False, 'slice_level': 3, 'VOTERS': 300, 'legible_target_size': 10, 'number': 1, 'target_size': 5, 'OBJECTS': 100, 'size': 25}
+INFO: {'bad_hideout': False, 'slice_level': 3, 'VOTERS': 300, 'legal_target_size': 10, 'number': 1, 'target_size': 5, 'OBJECTS': 100, 'size': 25}
 INFO: Will do 80 runs
 INFO: Slice is level: 3
 INFO: Graph loaded, nodes: 501, edges: 119539
@@ -6945,7 +6945,7 @@ INFO: (15.15, 15.069860279441112)
 INFO:  ------------------- END --------------------
 INFO: Will iterate over VOTERS : now it's 400:
 INFO: Will generate graph with params
-INFO: {'bad_hideout': False, 'slice_level': 3, 'VOTERS': 400, 'legible_target_size': 10, 'number': 1, 'target_size': 5, 'OBJECTS': 100, 'size': 25}
+INFO: {'bad_hideout': False, 'slice_level': 3, 'VOTERS': 400, 'legal_target_size': 10, 'number': 1, 'target_size': 5, 'OBJECTS': 100, 'size': 25}
 INFO: Will do 80 runs
 INFO: Slice is level: 3
 INFO: Graph loaded, nodes: 501, edges: 120362
@@ -7114,7 +7114,7 @@ INFO: (13.4, 14.134231536926146)
 INFO:  ------------------- END --------------------
 INFO: Will iterate over VOTERS : now it's 500:
 INFO: Will generate graph with params
-INFO: {'bad_hideout': False, 'slice_level': 3, 'VOTERS': 500, 'legible_target_size': 10, 'number': 1, 'target_size': 5, 'OBJECTS': 100, 'size': 25}
+INFO: {'bad_hideout': False, 'slice_level': 3, 'VOTERS': 500, 'legal_target_size': 10, 'number': 1, 'target_size': 5, 'OBJECTS': 100, 'size': 25}
 INFO: Will do 80 runs
 INFO: Slice is level: 3
 INFO: Graph loaded, nodes: 501, edges: 122345
@@ -7283,7 +7283,7 @@ INFO: (16.350000000000001, 15.219560878243509)
 INFO:  ------------------- END --------------------
 INFO: Will iterate over VOTERS : now it's 600:
 INFO: Will generate graph with params
-INFO: {'bad_hideout': False, 'slice_level': 3, 'VOTERS': 600, 'legible_target_size': 10, 'number': 1, 'target_size': 5, 'OBJECTS': 100, 'size': 25}
+INFO: {'bad_hideout': False, 'slice_level': 3, 'VOTERS': 600, 'legal_target_size': 10, 'number': 1, 'target_size': 5, 'OBJECTS': 100, 'size': 25}
 INFO: Will do 80 runs
 INFO: Slice is level: 3
 INFO: Graph loaded, nodes: 600, edges: 153621
@@ -7452,7 +7452,7 @@ INFO: (16.300000000000001, 15.063311900403429)
 INFO:  ------------------- END --------------------
 INFO: Will iterate over VOTERS : now it's 700:
 INFO: Will generate graph with params
-INFO: {'bad_hideout': False, 'slice_level': 3, 'VOTERS': 700, 'legible_target_size': 10, 'number': 1, 'target_size': 5, 'OBJECTS': 100, 'size': 25}
+INFO: {'bad_hideout': False, 'slice_level': 3, 'VOTERS': 700, 'legal_target_size': 10, 'number': 1, 'target_size': 5, 'OBJECTS': 100, 'size': 25}
 INFO: Will do 80 runs
 INFO: Slice is level: 3
 INFO: Graph loaded, nodes: 700, edges: 209265
@@ -7623,7 +7623,7 @@ INFO: ############# Plotting tuples ################
 INFO: ([15.15, 13.4, 16.350000000000001, 16.300000000000001, 14.75], [15.069860279441112, 14.134231536926146, 15.219560878243509, 15.063311900403429, 14.134173120032603])
 INFO: Will iterate over VOTERS : now it's 300:
 INFO: Will generate graph with params
-INFO: {'bad_hideout': True, 'slice_level': 3, 'VOTERS': 300, 'legible_target_size': 10, 'number': 1, 'target_size': 5, 'OBJECTS': 100, 'size': 25}
+INFO: {'bad_hideout': True, 'slice_level': 3, 'VOTERS': 300, 'legal_target_size': 10, 'number': 1, 'target_size': 5, 'OBJECTS': 100, 'size': 25}
 INFO: Will do 80 runs
 INFO: Slice is level: 3
 INFO: Graph loaded, nodes: 701, edges: 222001
@@ -7792,7 +7792,7 @@ INFO: (14.449999999999999, 15.244293865905846)
 INFO:  ------------------- END --------------------
 INFO: Will iterate over VOTERS : now it's 400:
 INFO: Will generate graph with params
-INFO: {'bad_hideout': True, 'slice_level': 3, 'VOTERS': 400, 'legible_target_size': 10, 'number': 1, 'target_size': 5, 'OBJECTS': 100, 'size': 25}
+INFO: {'bad_hideout': True, 'slice_level': 3, 'VOTERS': 400, 'legal_target_size': 10, 'number': 1, 'target_size': 5, 'OBJECTS': 100, 'size': 25}
 INFO: Will do 80 runs
 INFO: Slice is level: 3
 INFO: Graph loaded, nodes: 701, edges: 221591
@@ -7961,7 +7961,7 @@ INFO: (13.5, 15.529600570613415)
 INFO:  ------------------- END --------------------
 INFO: Will iterate over VOTERS : now it's 500:
 INFO: Will generate graph with params
-INFO: {'bad_hideout': True, 'slice_level': 3, 'VOTERS': 500, 'legible_target_size': 10, 'number': 1, 'target_size': 5, 'OBJECTS': 100, 'size': 25}
+INFO: {'bad_hideout': True, 'slice_level': 3, 'VOTERS': 500, 'legal_target_size': 10, 'number': 1, 'target_size': 5, 'OBJECTS': 100, 'size': 25}
 INFO: Will do 80 runs
 INFO: Slice is level: 3
 INFO: Graph loaded, nodes: 701, edges: 223388

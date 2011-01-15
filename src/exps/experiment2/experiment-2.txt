@@ -1,6 +1,6 @@
 2010-10-31 12:44:13,882: Will iterate over slice_level : now it's 1:
 2010-10-31 12:44:13,882: Will generate graph with params
-2010-10-31 12:44:13,882: {'bad_hideout': False, 'slice_level': 1, 'VOTERS': 500, 'legible_target_size': 10, 'number': 1, 'OBJECTS': 100, 'size': 25}
+2010-10-31 12:44:13,882: {'bad_hideout': False, 'slice_level': 1, 'VOTERS': 500, 'legal_target_size': 10, 'number': 1, 'OBJECTS': 100, 'size': 25}
 2010-10-31 12:44:13,882: Will do 100 runs
 2010-10-31 12:44:13,882: Slice is level: 1
 2010-10-31 12:44:14,538: Graph loaded, nodes: 500, edges: 70315
@@ -209,7 +209,7 @@
 2010-10-31 12:57:31,799:  ------------------- END --------------------
 2010-10-31 12:57:31,799: Will iterate over slice_level : now it's 2:
 2010-10-31 12:57:31,799: Will generate graph with params
-2010-10-31 12:57:31,799: {'bad_hideout': False, 'slice_level': 2, 'VOTERS': 500, 'legible_target_size': 10, 'number': 1, 'OBJECTS': 100, 'size': 25}
+2010-10-31 12:57:31,799: {'bad_hideout': False, 'slice_level': 2, 'VOTERS': 500, 'legal_target_size': 10, 'number': 1, 'OBJECTS': 100, 'size': 25}
 2010-10-31 12:57:31,799: Will do 100 runs
 2010-10-31 12:57:31,799: Slice is level: 2
 2010-10-31 12:57:32,397: Graph loaded, nodes: 501, edges: 125171
@@ -418,7 +418,7 @@
 2010-10-31 13:12:18,296:  ------------------- END --------------------
 2010-10-31 13:12:18,297: Will iterate over slice_level : now it's 3:
 2010-10-31 13:12:18,297: Will generate graph with params
-2010-10-31 13:12:18,297: {'bad_hideout': False, 'slice_level': 3, 'VOTERS': 500, 'legible_target_size': 10, 'number': 1, 'OBJECTS': 100, 'size': 25}
+2010-10-31 13:12:18,297: {'bad_hideout': False, 'slice_level': 3, 'VOTERS': 500, 'legal_target_size': 10, 'number': 1, 'OBJECTS': 100, 'size': 25}
 2010-10-31 13:12:18,297: Will do 100 runs
 2010-10-31 13:12:18,297: Slice is level: 3
 2010-10-31 13:12:18,757: Graph loaded, nodes: 501, edges: 124767
@@ -627,7 +627,7 @@
 2010-10-31 13:27:02,788:  ------------------- END --------------------
 2010-10-31 13:27:02,788: Will iterate over slice_level : now it's 4:
 2010-10-31 13:27:02,788: Will generate graph with params
-2010-10-31 13:27:02,789: {'bad_hideout': False, 'slice_level': 4, 'VOTERS': 500, 'legible_target_size': 10, 'number': 1, 'OBJECTS': 100, 'size': 25}
+2010-10-31 13:27:02,789: {'bad_hideout': False, 'slice_level': 4, 'VOTERS': 500, 'legal_target_size': 10, 'number': 1, 'OBJECTS': 100, 'size': 25}
 2010-10-31 13:27:02,789: Will do 100 runs
 2010-10-31 13:27:02,789: Slice is level: 4
 2010-10-31 13:27:03,286: Graph loaded, nodes: 501, edges: 121911
@@ -838,7 +838,7 @@
 2010-10-31 13:40:00,788: ([14.24, 14.6, 16.239999999999998, 19.559999999999999], [13.820562874251491, 13.706586826347312, 16.057884231536924, 19.12974051896207], [5.1725580818343708, 5.3114548290777019, 5.0962489006174359, 5.1785698653007186], [99.0, 100.0, 100.0, 100.0])
 2010-10-31 13:40:01,201: Will iterate over slice_level : now it's 1:
 2010-10-31 13:40:01,201: Will generate graph with params
-2010-10-31 13:40:01,201: {'bad_hideout': True, 'slice_level': 1, 'VOTERS': 500, 'legible_target_size': 10, 'number': 1, 'OBJECTS': 100, 'size': 25}
+2010-10-31 13:40:01,201: {'bad_hideout': True, 'slice_level': 1, 'VOTERS': 500, 'legal_target_size': 10, 'number': 1, 'OBJECTS': 100, 'size': 25}
 2010-10-31 13:40:01,201: Will do 100 runs
 2010-10-31 13:40:01,201: Slice is level: 1
 2010-10-31 13:40:01,824: Graph loaded, nodes: 501, edges: 111068
@@ -1047,7 +1047,7 @@
 2010-10-31 13:52:31,960:  ------------------- END --------------------
 2010-10-31 13:52:31,960: Will iterate over slice_level : now it's 2:
 2010-10-31 13:52:31,960: Will generate graph with params
-2010-10-31 13:52:31,960: {'bad_hideout': True, 'slice_level': 2, 'VOTERS': 500, 'legible_target_size': 10, 'number': 1, 'OBJECTS': 100, 'size': 25}
+2010-10-31 13:52:31,960: {'bad_hideout': True, 'slice_level': 2, 'VOTERS': 500, 'legal_target_size': 10, 'number': 1, 'OBJECTS': 100, 'size': 25}
 2010-10-31 13:52:31,960: Will do 100 runs
 2010-10-31 13:52:31,960: Slice is level: 2
 2010-10-31 13:52:32,430: Graph loaded, nodes: 501, edges: 125336
@@ -1256,7 +1256,7 @@
 2010-10-31 14:08:18,481:  ------------------- END --------------------
 2010-10-31 14:08:18,481: Will iterate over slice_level : now it's 3:
 2010-10-31 14:08:18,481: Will generate graph with params
-2010-10-31 14:08:18,481: {'bad_hideout': True, 'slice_level': 3, 'VOTERS': 500, 'legible_target_size': 10, 'number': 1, 'OBJECTS': 100, 'size': 25}
+2010-10-31 14:08:18,481: {'bad_hideout': True, 'slice_level': 3, 'VOTERS': 500, 'legal_target_size': 10, 'number': 1, 'OBJECTS': 100, 'size': 25}
 2010-10-31 14:08:18,482: Will do 100 runs
 2010-10-31 14:08:18,482: Slice is level: 3
 2010-10-31 14:08:18,963: Graph loaded, nodes: 501, edges: 124960
@@ -1465,7 +1465,7 @@
 2010-10-31 14:24:06,002:  ------------------- END --------------------
 2010-10-31 14:24:06,002: Will iterate over slice_level : now it's 4:
 2010-10-31 14:24:06,002: Will generate graph with params
-2010-10-31 14:24:06,003: {'bad_hideout': True, 'slice_level': 4, 'VOTERS': 500, 'legible_target_size': 10, 'number': 1, 'OBJECTS': 100, 'size': 25}
+2010-10-31 14:24:06,003: {'bad_hideout': True, 'slice_level': 4, 'VOTERS': 500, 'legal_target_size': 10, 'number': 1, 'OBJECTS': 100, 'size': 25}
 2010-10-31 14:24:06,003: Will do 100 runs
 2010-10-31 14:24:06,003: Slice is level: 4
 2010-10-31 14:24:06,490: Graph loaded, nodes: 501, edges: 121673
@@ -1676,7 +1676,7 @@
 2010-10-31 14:37:14,952: ([13.52, 13.039999999999999, 18.120000000000001, 19.640000000000001], [13.241516966067868, 13.696606786427148, 17.465069860279446, 20.153692614770456], [5.0717895821382912, 4.6940040365357065, 5.2171668096577601, 4.864448237249988], [99.0, 100.0, 100.0, 100.0])
 2010-10-31 14:37:15,173: Will iterate over size : now it's 10:
 2010-10-31 14:37:15,174: Will generate graph with params
-2010-10-31 14:37:15,174: {'bad_hideout': False, 'slice_level': 3, 'VOTERS': 500, 'legible_target_size': 10, 'number': 1, 'OBJECTS': 100, 'size': 10}
+2010-10-31 14:37:15,174: {'bad_hideout': False, 'slice_level': 3, 'VOTERS': 500, 'legal_target_size': 10, 'number': 1, 'OBJECTS': 100, 'size': 10}
 2010-10-31 14:37:15,174: Will do 100 runs
 2010-10-31 14:37:15,174: Slice is level: 3
 2010-10-31 14:37:15,744: Graph loaded, nodes: 501, edges: 110681
@@ -1885,7 +1885,7 @@
 2010-10-31 14:51:26,452:  ------------------- END --------------------
 2010-10-31 14:51:26,452: Will iterate over size : now it's 15:
 2010-10-31 14:51:26,452: Will generate graph with params
-2010-10-31 14:51:26,452: {'bad_hideout': False, 'slice_level': 3, 'VOTERS': 500, 'legible_target_size': 10, 'number': 1, 'OBJECTS': 100, 'size': 15}
+2010-10-31 14:51:26,452: {'bad_hideout': False, 'slice_level': 3, 'VOTERS': 500, 'legal_target_size': 10, 'number': 1, 'OBJECTS': 100, 'size': 15}
 2010-10-31 14:51:26,453: Will do 100 runs
 2010-10-31 14:51:26,453: Slice is level: 3
 2010-10-31 14:51:26,963: Graph loaded, nodes: 501, edges: 120906
@@ -2094,7 +2094,7 @@
 2010-10-31 15:06:21,198:  ------------------- END --------------------
 2010-10-31 15:06:21,198: Will iterate over size : now it's 20:
 2010-10-31 15:06:21,198: Will generate graph with params
-2010-10-31 15:06:21,198: {'bad_hideout': False, 'slice_level': 3, 'VOTERS': 500, 'legible_target_size': 10, 'number': 1, 'OBJECTS': 100, 'size': 20}
+2010-10-31 15:06:21,198: {'bad_hideout': False, 'slice_level': 3, 'VOTERS': 500, 'legal_target_size': 10, 'number': 1, 'OBJECTS': 100, 'size': 20}
 2010-10-31 15:06:21,198: Will do 100 runs
 2010-10-31 15:06:21,198: Slice is level: 3
 2010-10-31 15:06:21,713: Graph loaded, nodes: 501, edges: 121954
@@ -2303,7 +2303,7 @@
 2010-10-31 15:21:19,157:  ------------------- END --------------------
 2010-10-31 15:21:19,157: Will iterate over size : now it's 25:
 2010-10-31 15:21:19,157: Will generate graph with params
-2010-10-31 15:21:19,157: {'bad_hideout': False, 'slice_level': 3, 'VOTERS': 500, 'legible_target_size': 10, 'number': 1, 'OBJECTS': 100, 'size': 25}
+2010-10-31 15:21:19,157: {'bad_hideout': False, 'slice_level': 3, 'VOTERS': 500, 'legal_target_size': 10, 'number': 1, 'OBJECTS': 100, 'size': 25}
 2010-10-31 15:21:19,157: Will do 100 runs
 2010-10-31 15:21:19,157: Slice is level: 3
 2010-10-31 15:21:19,819: Graph loaded, nodes: 501, edges: 121885
@@ -2512,7 +2512,7 @@
 2010-10-31 15:36:42,285:  ------------------- END --------------------
 2010-10-31 15:36:42,285: Will iterate over size : now it's 30:
 2010-10-31 15:36:42,285: Will generate graph with params
-2010-10-31 15:36:42,285: {'bad_hideout': False, 'slice_level': 3, 'VOTERS': 500, 'legible_target_size': 10, 'number': 1, 'OBJECTS': 100, 'size': 30}
+2010-10-31 15:36:42,285: {'bad_hideout': False, 'slice_level': 3, 'VOTERS': 500, 'legal_target_size': 10, 'number': 1, 'OBJECTS': 100, 'size': 30}
 2010-10-31 15:36:42,285: Will do 100 runs
 2010-10-31 15:36:42,285: Slice is level: 3
 2010-10-31 15:36:42,793: Graph loaded, nodes: 501, edges: 122035
@@ -2721,7 +2721,7 @@
 2010-10-31 15:52:03,255:  ------------------- END --------------------
 2010-10-31 15:52:03,255: Will iterate over size : now it's 35:
 2010-10-31 15:52:03,255: Will generate graph with params
-2010-10-31 15:52:03,255: {'bad_hideout': False, 'slice_level': 3, 'VOTERS': 500, 'legible_target_size': 10, 'number': 1, 'OBJECTS': 100, 'size': 35}
+2010-10-31 15:52:03,255: {'bad_hideout': False, 'slice_level': 3, 'VOTERS': 500, 'legal_target_size': 10, 'number': 1, 'OBJECTS': 100, 'size': 35}
 2010-10-31 15:52:03,255: Will do 100 runs
 2010-10-31 15:52:03,255: Slice is level: 3
 2010-10-31 15:52:03,776: Graph loaded, nodes: 501, edges: 122225
@@ -2930,7 +2930,7 @@
 2010-10-31 16:07:57,680:  ------------------- END --------------------
 2010-10-31 16:07:57,680: Will iterate over size : now it's 40:
 2010-10-31 16:07:57,681: Will generate graph with params
-2010-10-31 16:07:57,681: {'bad_hideout': False, 'slice_level': 3, 'VOTERS': 500, 'legible_target_size': 10, 'number': 1, 'OBJECTS': 100, 'size': 40}
+2010-10-31 16:07:57,681: {'bad_hideout': False, 'slice_level': 3, 'VOTERS': 500, 'legal_target_size': 10, 'number': 1, 'OBJECTS': 100, 'size': 40}
 2010-10-31 16:07:57,681: Will do 100 runs
 2010-10-31 16:07:57,681: Slice is level: 3
 2010-10-31 16:07:58,206: Graph loaded, nodes: 501, edges: 122318
@@ -3141,7 +3141,7 @@
 2010-10-31 16:23:47,422: ([16.300000000000001, 15.800000000000002, 16.300000000000001, 15.800000000000001, 16.366666666666671, 16.685714285714283, 17.199999999999999], [16.293413173652691, 15.692614770459079, 16.516966067864271, 16.982035928143709, 16.556886227544908, 17.534930139720558, 17.918163672654689], [2.0204257049880479, 3.0284868147700861, 3.8899780074468571, 4.6144690623926099, 5.9114803318102158, 6.7156609596373915, 7.6096772790872844], [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0])
 2010-10-31 16:23:47,654: Will iterate over size : now it's 10:
 2010-10-31 16:23:47,654: Will generate graph with params
-2010-10-31 16:23:47,654: {'bad_hideout': True, 'slice_level': 3, 'VOTERS': 500, 'legible_target_size': 10, 'number': 1, 'OBJECTS': 100, 'size': 10}
+2010-10-31 16:23:47,654: {'bad_hideout': True, 'slice_level': 3, 'VOTERS': 500, 'legal_target_size': 10, 'number': 1, 'OBJECTS': 100, 'size': 10}
 2010-10-31 16:23:47,654: Will do 100 runs
 2010-10-31 16:23:47,654: Slice is level: 3
 2010-10-31 16:23:48,225: Graph loaded, nodes: 501, edges: 122414
@@ -3350,7 +3350,7 @@
 2010-10-31 16:38:46,587:  ------------------- END --------------------
 2010-10-31 16:38:46,587: Will iterate over size : now it's 15:
 2010-10-31 16:38:46,587: Will generate graph with params
-2010-10-31 16:38:46,587: {'bad_hideout': True, 'slice_level': 3, 'VOTERS': 500, 'legible_target_size': 10, 'number': 1, 'OBJECTS': 100, 'size': 15}
+2010-10-31 16:38:46,587: {'bad_hideout': True, 'slice_level': 3, 'VOTERS': 500, 'legal_target_size': 10, 'number': 1, 'OBJECTS': 100, 'size': 15}
 2010-10-31 16:38:46,587: Will do 100 runs
 2010-10-31 16:38:46,587: Slice is level: 3
 2010-10-31 16:38:47,086: Graph loaded, nodes: 501, edges: 121742
@@ -3559,7 +3559,7 @@
 2010-10-31 16:53:55,845:  ------------------- END --------------------
 2010-10-31 16:53:55,846: Will iterate over size : now it's 20:
 2010-10-31 16:53:55,846: Will generate graph with params
-2010-10-31 16:53:55,846: {'bad_hideout': True, 'slice_level': 3, 'VOTERS': 500, 'legible_target_size': 10, 'number': 1, 'OBJECTS': 100, 'size': 20}
+2010-10-31 16:53:55,846: {'bad_hideout': True, 'slice_level': 3, 'VOTERS': 500, 'legal_target_size': 10, 'number': 1, 'OBJECTS': 100, 'size': 20}
 2010-10-31 16:53:55,846: Will do 100 runs
 2010-10-31 16:53:55,846: Slice is level: 3
 2010-10-31 16:53:56,338: Graph loaded, nodes: 501, edges: 121566
@@ -3768,7 +3768,7 @@
 2010-10-31 17:09:19,832:  ------------------- END --------------------
 2010-10-31 17:09:19,832: Will iterate over size : now it's 25:
 2010-10-31 17:09:19,832: Will generate graph with params
-2010-10-31 17:09:19,832: {'bad_hideout': True, 'slice_level': 3, 'VOTERS': 500, 'legible_target_size': 10, 'number': 1, 'OBJECTS': 100, 'size': 25}
+2010-10-31 17:09:19,832: {'bad_hideout': True, 'slice_level': 3, 'VOTERS': 500, 'legal_target_size': 10, 'number': 1, 'OBJECTS': 100, 'size': 25}
 2010-10-31 17:09:19,832: Will do 100 runs
 2010-10-31 17:09:19,832: Slice is level: 3
 2010-10-31 17:09:20,478: Graph loaded, nodes: 501, edges: 121362
@@ -3977,7 +3977,7 @@
 2010-10-31 17:24:25,614:  ------------------- END --------------------
 2010-10-31 17:24:25,614: Will iterate over size : now it's 30:
 2010-10-31 17:24:25,614: Will generate graph with params
-2010-10-31 17:24:25,614: {'bad_hideout': True, 'slice_level': 3, 'VOTERS': 500, 'legible_target_size': 10, 'number': 1, 'OBJECTS': 100, 'size': 30}
+2010-10-31 17:24:25,614: {'bad_hideout': True, 'slice_level': 3, 'VOTERS': 500, 'legal_target_size': 10, 'number': 1, 'OBJECTS': 100, 'size': 30}
 2010-10-31 17:24:25,614: Will do 100 runs
 2010-10-31 17:24:25,614: Slice is level: 3
 2010-10-31 17:24:26,095: Graph loaded, nodes: 501, edges: 121200
@@ -4186,7 +4186,7 @@
 2010-10-31 17:40:02,938:  ------------------- END --------------------
 2010-10-31 17:40:02,938: Will iterate over size : now it's 35:
 2010-10-31 17:40:02,938: Will generate graph with params
-2010-10-31 17:40:02,938: {'bad_hideout': True, 'slice_level': 3, 'VOTERS': 500, 'legible_target_size': 10, 'number': 1, 'OBJECTS': 100, 'size': 35}
+2010-10-31 17:40:02,938: {'bad_hideout': True, 'slice_level': 3, 'VOTERS': 500, 'legal_target_size': 10, 'number': 1, 'OBJECTS': 100, 'size': 35}
 2010-10-31 17:40:02,938: Will do 100 runs
 2010-10-31 17:40:02,938: Slice is level: 3
 2010-10-31 17:40:03,418: Graph loaded, nodes: 501, edges: 121193
@@ -4395,7 +4395,7 @@
 2010-10-31 17:55:26,892:  ------------------- END --------------------
 2010-10-31 17:55:26,892: Will iterate over size : now it's 40:
 2010-10-31 17:55:26,892: Will generate graph with params
-2010-10-31 17:55:26,892: {'bad_hideout': True, 'slice_level': 3, 'VOTERS': 500, 'legible_target_size': 10, 'number': 1, 'OBJECTS': 100, 'size': 40}
+2010-10-31 17:55:26,892: {'bad_hideout': True, 'slice_level': 3, 'VOTERS': 500, 'legal_target_size': 10, 'number': 1, 'OBJECTS': 100, 'size': 40}
 2010-10-31 17:55:26,892: Will do 100 runs
 2010-10-31 17:55:26,892: Slice is level: 3
 2010-10-31 17:55:27,355: Graph loaded, nodes: 501, edges: 121022
@@ -4606,7 +4606,7 @@
 2010-10-31 18:11:40,198: ([15.800000000000001, 17.066666666666666, 16.899999999999999, 17.199999999999999, 16.800000000000001, 18.171428571428557, 20.899999999999999], [15.678642714570863, 16.471057884231538, 17.087824351297403, 16.898203592814379, 16.926147704590814, 18.508982035928138, 20.069860279441116], [2.0170989833057571, 3.1196713170721284, 3.9178448268087287, 5.056313106835562, 5.9192129923092951, 6.9380552670883313, 8.2537373507000709], [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0])
 2010-10-31 18:11:40,453: Will iterate over target_size : now it's 3:
 2010-10-31 18:11:40,454: Will generate graph with params
-2010-10-31 18:11:40,454: {'bad_hideout': False, 'slice_level': 3, 'VOTERS': 500, 'legible_target_size': 10, 'number': 1, 'target_size': 3, 'OBJECTS': 100, 'size': 25}
+2010-10-31 18:11:40,454: {'bad_hideout': False, 'slice_level': 3, 'VOTERS': 500, 'legal_target_size': 10, 'number': 1, 'target_size': 3, 'OBJECTS': 100, 'size': 25}
 2010-10-31 18:11:40,454: Will do 100 runs
 2010-10-31 18:11:40,454: Slice is level: 3
 2010-10-31 18:11:41,048: Graph loaded, nodes: 501, edges: 121603
@@ -4815,7 +4815,7 @@
 2010-10-31 18:26:43,878:  ------------------- END --------------------
 2010-10-31 18:26:43,878: Will iterate over target_size : now it's 6:
 2010-10-31 18:26:43,879: Will generate graph with params
-2010-10-31 18:26:43,879: {'bad_hideout': False, 'slice_level': 3, 'VOTERS': 500, 'legible_target_size': 10, 'number': 1, 'target_size': 6, 'OBJECTS': 100, 'size': 25}
+2010-10-31 18:26:43,879: {'bad_hideout': False, 'slice_level': 3, 'VOTERS': 500, 'legal_target_size': 10, 'number': 1, 'target_size': 6, 'OBJECTS': 100, 'size': 25}
 2010-10-31 18:26:43,879: Will do 100 runs
 2010-10-31 18:26:43,879: Slice is level: 3
 2010-10-31 18:26:44,374: Graph loaded, nodes: 501, edges: 122138
@@ -5024,7 +5024,7 @@
 2010-10-31 18:42:11,256:  ------------------- END --------------------
 2010-10-31 18:42:11,256: Will iterate over target_size : now it's 9:
 2010-10-31 18:42:11,256: Will generate graph with params
-2010-10-31 18:42:11,256: {'bad_hideout': False, 'slice_level': 3, 'VOTERS': 500, 'legible_target_size': 10, 'number': 1, 'target_size': 9, 'OBJECTS': 100, 'size': 25}
+2010-10-31 18:42:11,256: {'bad_hideout': False, 'slice_level': 3, 'VOTERS': 500, 'legal_target_size': 10, 'number': 1, 'target_size': 9, 'OBJECTS': 100, 'size': 25}
 2010-10-31 18:42:11,256: Will do 100 runs
 2010-10-31 18:42:11,256: Slice is level: 3
 2010-10-31 18:42:11,760: Graph loaded, nodes: 501, edges: 122124
@@ -5233,7 +5233,7 @@
 2010-10-31 18:57:39,536:  ------------------- END --------------------
 2010-10-31 18:57:39,536: Will iterate over target_size : now it's 12:
 2010-10-31 18:57:39,536: Will generate graph with params
-2010-10-31 18:57:39,536: {'bad_hideout': False, 'slice_level': 3, 'VOTERS': 500, 'legible_target_size': 10, 'number': 1, 'target_size': 12, 'OBJECTS': 100, 'size': 25}
+2010-10-31 18:57:39,536: {'bad_hideout': False, 'slice_level': 3, 'VOTERS': 500, 'legal_target_size': 10, 'number': 1, 'target_size': 12, 'OBJECTS': 100, 'size': 25}
 2010-10-31 18:57:39,536: Will do 100 runs
 2010-10-31 18:57:39,536: Slice is level: 3
 2010-10-31 18:57:40,063: Graph loaded, nodes: 501, edges: 121956
@@ -5444,7 +5444,7 @@
 2010-10-31 19:12:36,024: ([15.84, 17.199999999999999, 18.48, 18.760000000000002], [15.972055888223551, 16.934131736526947, 17.672654690618764, 18.12974051896207], [4.9947460805716224, 5.0585266247968761, 5.2418574941767977, 5.1378266509395765], [100.0, 100.0, 100.0, 100.0])
 2010-10-31 19:12:36,243: Will iterate over target_size : now it's 3:
 2010-10-31 19:12:36,244: Will generate graph with params
-2010-10-31 19:12:36,244: {'bad_hideout': True, 'slice_level': 3, 'VOTERS': 500, 'legible_target_size': 10, 'number': 1, 'target_size': 3, 'OBJECTS': 100, 'size': 25}
+2010-10-31 19:12:36,244: {'bad_hideout': True, 'slice_level': 3, 'VOTERS': 500, 'legal_target_size': 10, 'number': 1, 'target_size': 3, 'OBJECTS': 100, 'size': 25}
 2010-10-31 19:12:36,244: Will do 100 runs
 2010-10-31 19:12:36,244: Slice is level: 3
 2010-10-31 19:12:36,782: Graph loaded, nodes: 501, edges: 121925
@@ -5653,7 +5653,7 @@
 2010-10-31 19:27:43,649:  ------------------- END --------------------
 2010-10-31 19:27:43,649: Will iterate over target_size : now it's 6:
 2010-10-31 19:27:43,649: Will generate graph with params
-2010-10-31 19:27:43,649: {'bad_hideout': True, 'slice_level': 3, 'VOTERS': 500, 'legible_target_size': 10, 'number': 1, 'target_size': 6, 'OBJECTS': 100, 'size': 25}
+2010-10-31 19:27:43,649: {'bad_hideout': True, 'slice_level': 3, 'VOTERS': 500, 'legal_target_size': 10, 'number': 1, 'target_size': 6, 'OBJECTS': 100, 'size': 25}
 2010-10-31 19:27:43,650: Will do 100 runs
 2010-10-31 19:27:43,650: Slice is level: 3
 2010-10-31 19:27:44,131: Graph loaded, nodes: 501, edges: 121320
@@ -5862,7 +5862,7 @@
 2010-10-31 19:43:13,672:  ------------------- END --------------------
 2010-10-31 19:43:13,672: Will iterate over target_size : now it's 9:
 2010-10-31 19:43:13,672: Will generate graph with params
-2010-10-31 19:43:13,672: {'bad_hideout': True, 'slice_level': 3, 'VOTERS': 500, 'legible_target_size': 10, 'number': 1, 'target_size': 9, 'OBJECTS': 100, 'size': 25}
+2010-10-31 19:43:13,672: {'bad_hideout': True, 'slice_level': 3, 'VOTERS': 500, 'legal_target_size': 10, 'number': 1, 'target_size': 9, 'OBJECTS': 100, 'size': 25}
 2010-10-31 19:43:13,673: Will do 100 runs
 2010-10-31 19:43:13,673: Slice is level: 3
 2010-10-31 19:43:14,358: Graph loaded, nodes: 501, edges: 121661
@@ -6071,7 +6071,7 @@
 2010-10-31 19:58:25,931:  ------------------- END --------------------
 2010-10-31 19:58:25,931: Will iterate over target_size : now it's 12:
 2010-10-31 19:58:25,931: Will generate graph with params
-2010-10-31 19:58:25,931: {'bad_hideout': True, 'slice_level': 3, 'VOTERS': 500, 'legible_target_size': 10, 'number': 1, 'target_size': 12, 'OBJECTS': 100, 'size': 25}
+2010-10-31 19:58:25,931: {'bad_hideout': True, 'slice_level': 3, 'VOTERS': 500, 'legal_target_size': 10, 'number': 1, 'target_size': 12, 'OBJECTS': 100, 'size': 25}
 2010-10-31 19:58:25,931: Will do 100 runs
 2010-10-31 19:58:25,931: Slice is level: 3
 2010-10-31 19:58:26,444: Graph loaded, nodes: 501, edges: 121943
@@ -6282,7 +6282,7 @@
 2010-10-31 20:13:30,503: ([15.76, 16.079999999999998, 17.760000000000002, 17.800000000000001], [15.752495009980041, 16.043912175648707, 18.047904191616766, 17.954091816367267], [4.9691866746926658, 5.001039278459805, 4.9613323268545271, 5.0043747972171602], [100.0, 100.0, 100.0, 100.0])
 2010-10-31 20:13:30,751: Will iterate over OBJECTS : now it's 20:
 2010-10-31 20:13:30,751: Will generate graph with params
-2010-10-31 20:13:30,751: {'bad_hideout': False, 'slice_level': 3, 'VOTERS': 500, 'legible_target_size': 10, 'number': 1, 'target_size': 5, 'OBJECTS': 20, 'size': 25}
+2010-10-31 20:13:30,751: {'bad_hideout': False, 'slice_level': 3, 'VOTERS': 500, 'legal_target_size': 10, 'number': 1, 'target_size': 5, 'OBJECTS': 20, 'size': 25}
 2010-10-31 20:13:30,752: Will do 100 runs
 2010-10-31 20:13:30,752: Slice is level: 3
 2010-10-31 20:13:33,355: Graph loaded, nodes: 501, edges: 125337
@@ -6491,7 +6491,7 @@
 2010-10-31 20:31:33,213:  ------------------- END --------------------
 2010-10-31 20:31:33,214: Will iterate over OBJECTS : now it's 40:
 2010-10-31 20:31:33,214: Will generate graph with params
-2010-10-31 20:31:33,214: {'bad_hideout': False, 'slice_level': 3, 'VOTERS': 500, 'legible_target_size': 10, 'number': 1, 'target_size': 5, 'OBJECTS': 40, 'size': 25}
+2010-10-31 20:31:33,214: {'bad_hideout': False, 'slice_level': 3, 'VOTERS': 500, 'legal_target_size': 10, 'number': 1, 'target_size': 5, 'OBJECTS': 40, 'size': 25}
 2010-10-31 20:31:33,214: Will do 100 runs
 2010-10-31 20:31:33,214: Slice is level: 3
 2010-10-31 20:31:34,602: Graph loaded, nodes: 501, edges: 125589
@@ -6700,7 +6700,7 @@
 2010-10-31 20:48:22,655:  ------------------- END --------------------
 2010-10-31 20:48:22,656: Will iterate over OBJECTS : now it's 60:
 2010-10-31 20:48:22,656: Will generate graph with params
-2010-10-31 20:48:22,656: {'bad_hideout': False, 'slice_level': 3, 'VOTERS': 500, 'legible_target_size': 10, 'number': 1, 'target_size': 5, 'OBJECTS': 60, 'size': 25}
+2010-10-31 20:48:22,656: {'bad_hideout': False, 'slice_level': 3, 'VOTERS': 500, 'legal_target_size': 10, 'number': 1, 'target_size': 5, 'OBJECTS': 60, 'size': 25}
 2010-10-31 20:48:22,656: Will do 100 runs
 2010-10-31 20:48:22,656: Slice is level: 3
 2010-10-31 20:48:23,622: Graph loaded, nodes: 501, edges: 125579
@@ -6909,7 +6909,7 @@
 2010-10-31 21:05:46,215:  ------------------- END --------------------
 2010-10-31 21:05:46,215: Will iterate over OBJECTS : now it's 80:
 2010-10-31 21:05:46,215: Will generate graph with params
-2010-10-31 21:05:46,215: {'bad_hideout': False, 'slice_level': 3, 'VOTERS': 500, 'legible_target_size': 10, 'number': 1, 'target_size': 5, 'OBJECTS': 80, 'size': 25}
+2010-10-31 21:05:46,215: {'bad_hideout': False, 'slice_level': 3, 'VOTERS': 500, 'legal_target_size': 10, 'number': 1, 'target_size': 5, 'OBJECTS': 80, 'size': 25}
 2010-10-31 21:05:46,215: Will do 100 runs
 2010-10-31 21:05:46,215: Slice is level: 3
 2010-10-31 21:05:46,826: Graph loaded, nodes: 501, edges: 125412
@@ -7118,7 +7118,7 @@
 2010-10-31 21:21:55,952:  ------------------- END --------------------
 2010-10-31 21:21:55,952: Will iterate over OBJECTS : now it's 100:
 2010-10-31 21:21:55,952: Will generate graph with params
-2010-10-31 21:21:55,952: {'bad_hideout': False, 'slice_level': 3, 'VOTERS': 500, 'legible_target_size': 10, 'number': 1, 'target_size': 5, 'OBJECTS': 100, 'size': 25}
+2010-10-31 21:21:55,952: {'bad_hideout': False, 'slice_level': 3, 'VOTERS': 500, 'legal_target_size': 10, 'number': 1, 'target_size': 5, 'OBJECTS': 100, 'size': 25}
 2010-10-31 21:21:55,952: Will do 100 runs
 2010-10-31 21:21:55,952: Slice is level: 3
 2010-10-31 21:21:56,445: Graph loaded, nodes: 501, edges: 124518
@@ -7329,7 +7329,7 @@
 2010-10-31 21:37:58,073: ([30.84, 24.719999999999999, 19.239999999999998, 15.039999999999999, 15.08], [30.303393213572846, 24.656686626746506, 19.215568862275447, 15.455089820359284, 15.231536926147703], [5.0727524460616626, 5.0727046358552155, 5.0787990990279974, 4.8111600366652967, 4.9365311983692512], [100.0, 100.0, 100.0, 100.0, 100.0])
 2010-10-31 21:37:58,301: Will iterate over OBJECTS : now it's 20:
 2010-10-31 21:37:58,301: Will generate graph with params
-2010-10-31 21:37:58,301: {'bad_hideout': True, 'slice_level': 3, 'VOTERS': 500, 'legible_target_size': 10, 'number': 1, 'target_size': 5, 'OBJECTS': 20, 'size': 25}
+2010-10-31 21:37:58,301: {'bad_hideout': True, 'slice_level': 3, 'VOTERS': 500, 'legal_target_size': 10, 'number': 1, 'target_size': 5, 'OBJECTS': 20, 'size': 25}
 2010-10-31 21:37:58,301: Will do 100 runs
 2010-10-31 21:37:58,301: Slice is level: 3
 2010-10-31 21:38:00,769: Graph loaded, nodes: 501, edges: 125284
@@ -7538,7 +7538,7 @@
 2010-10-31 21:55:25,777:  ------------------- END --------------------
 2010-10-31 21:55:25,777: Will iterate over OBJECTS : now it's 40:
 2010-10-31 21:55:25,777: Will generate graph with params
-2010-10-31 21:55:25,777: {'bad_hideout': True, 'slice_level': 3, 'VOTERS': 500, 'legible_target_size': 10, 'number': 1, 'target_size': 5, 'OBJECTS': 40, 'size': 25}
+2010-10-31 21:55:25,777: {'bad_hideout': True, 'slice_level': 3, 'VOTERS': 500, 'legal_target_size': 10, 'number': 1, 'target_size': 5, 'OBJECTS': 40, 'size': 25}
 2010-10-31 21:55:25,777: Will do 100 runs
 2010-10-31 21:55:25,777: Slice is level: 3
 2010-10-31 21:55:26,963: Graph loaded, nodes: 501, edges: 125617
@@ -7747,7 +7747,7 @@
 2010-10-31 22:11:46,238:  ------------------- END --------------------
 2010-10-31 22:11:46,238: Will iterate over OBJECTS : now it's 60:
 2010-10-31 22:11:46,238: Will generate graph with params
-2010-10-31 22:11:46,238: {'bad_hideout': True, 'slice_level': 3, 'VOTERS': 500, 'legible_target_size': 10, 'number': 1, 'target_size': 5, 'OBJECTS': 60, 'size': 25}
+2010-10-31 22:11:46,238: {'bad_hideout': True, 'slice_level': 3, 'VOTERS': 500, 'legal_target_size': 10, 'number': 1, 'target_size': 5, 'OBJECTS': 60, 'size': 25}
 2010-10-31 22:11:46,238: Will do 100 runs
 2010-10-31 22:11:46,238: Slice is level: 3
 2010-10-31 22:11:46,998: Graph loaded, nodes: 501, edges: 125595
@@ -7956,7 +7956,7 @@
 2010-10-31 22:28:22,914:  ------------------- END --------------------
 2010-10-31 22:28:22,914: Will iterate over OBJECTS : now it's 80:
 2010-10-31 22:28:22,914: Will generate graph with params
-2010-10-31 22:28:22,914: {'bad_hideout': True, 'slice_level': 3, 'VOTERS': 500, 'legible_target_size': 10, 'number': 1, 'target_size': 5, 'OBJECTS': 80, 'size': 25}
+2010-10-31 22:28:22,914: {'bad_hideout': True, 'slice_level': 3, 'VOTERS': 500, 'legal_target_size': 10, 'number': 1, 'target_size': 5, 'OBJECTS': 80, 'size': 25}
 2010-10-31 22:28:22,915: Will do 100 runs
 2010-10-31 22:28:22,915: Slice is level: 3
 2010-10-31 22:28:23,494: Graph loaded, nodes: 501, edges: 125330
@@ -8165,7 +8165,7 @@
 2010-10-31 22:44:48,653:  ------------------- END --------------------
 2010-10-31 22:44:48,653: Will iterate over OBJECTS : now it's 100:
 2010-10-31 22:44:48,653: Will generate graph with params
-2010-10-31 22:44:48,653: {'bad_hideout': True, 'slice_level': 3, 'VOTERS': 500, 'legible_target_size': 10, 'number': 1, 'target_size': 5, 'OBJECTS': 100, 'size': 25}
+2010-10-31 22:44:48,653: {'bad_hideout': True, 'slice_level': 3, 'VOTERS': 500, 'legal_target_size': 10, 'number': 1, 'target_size': 5, 'OBJECTS': 100, 'size': 25}
 2010-10-31 22:44:48,653: Will do 100 runs
 2010-10-31 22:44:48,653: Slice is level: 3
 2010-10-31 22:44:49,107: Graph loaded, nodes: 501, edges: 124031
@@ -8376,7 +8376,7 @@
 2010-10-31 23:00:27,404: ([32.32, 24.920000000000002, 18.760000000000002, 16.399999999999999, 14.359999999999999], [31.708582834331331, 25.149700598802401, 18.954091816367271, 16.572854291417162, 15.43512974051896], [5.1636176069313375, 4.901166613583241, 4.9648133882021908, 4.9129414132878155, 4.6426163279275645], [100.0, 100.0, 100.0, 100.0, 100.0])
 2010-10-31 23:00:27,641: Will iterate over VOTERS : now it's 300:
 2010-10-31 23:00:27,641: Will generate graph with params
-2010-10-31 23:00:27,641: {'bad_hideout': False, 'slice_level': 3, 'VOTERS': 300, 'legible_target_size': 10, 'number': 1, 'target_size': 5, 'OBJECTS': 100, 'size': 25}
+2010-10-31 23:00:27,641: {'bad_hideout': False, 'slice_level': 3, 'VOTERS': 300, 'legal_target_size': 10, 'number': 1, 'target_size': 5, 'OBJECTS': 100, 'size': 25}
 2010-10-31 23:00:27,642: Will do 100 runs
 2010-10-31 23:00:27,642: Slice is level: 3
 2010-10-31 23:00:27,880: Graph loaded, nodes: 501, edges: 119046
@@ -8585,7 +8585,7 @@
 2010-10-31 23:14:51,519:  ------------------- END --------------------
 2010-10-31 23:14:51,519: Will iterate over VOTERS : now it's 400:
 2010-10-31 23:14:51,519: Will generate graph with params
-2010-10-31 23:14:51,519: {'bad_hideout': False, 'slice_level': 3, 'VOTERS': 400, 'legible_target_size': 10, 'number': 1, 'target_size': 5, 'OBJECTS': 100, 'size': 25}
+2010-10-31 23:14:51,519: {'bad_hideout': False, 'slice_level': 3, 'VOTERS': 400, 'legal_target_size': 10, 'number': 1, 'target_size': 5, 'OBJECTS': 100, 'size': 25}
 2010-10-31 23:14:51,519: Will do 100 runs
 2010-10-31 23:14:51,519: Slice is level: 3
 2010-10-31 23:14:51,830: Graph loaded, nodes: 501, edges: 120103
@@ -8794,7 +8794,7 @@
 2010-10-31 23:30:31,290:  ------------------- END --------------------
 2010-10-31 23:30:31,290: Will iterate over VOTERS : now it's 500:
 2010-10-31 23:30:31,290: Will generate graph with params
-2010-10-31 23:30:31,291: {'bad_hideout': False, 'slice_level': 3, 'VOTERS': 500, 'legible_target_size': 10, 'number': 1, 'target_size': 5, 'OBJECTS': 100, 'size': 25}
+2010-10-31 23:30:31,291: {'bad_hideout': False, 'slice_level': 3, 'VOTERS': 500, 'legal_target_size': 10, 'number': 1, 'target_size': 5, 'OBJECTS': 100, 'size': 25}
 2010-10-31 23:30:31,291: Will do 100 runs
 2010-10-31 23:30:31,291: Slice is level: 3
 2010-10-31 23:30:31,799: Graph loaded, nodes: 501, edges: 122141

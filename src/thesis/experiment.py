@@ -1,7 +1,8 @@
-'''
-Created on 03-10-2010
+# -*- encoding: utf-8 -*-
 
-@author: ymir
+'''
+Stworzono: 03-10-2010
+@author: Marcin Mincer, IAiIS
 '''
 
 from __future__ import division
@@ -11,6 +12,10 @@ from thesis import logger
 from lib import  karate_graph
 
 class Experiment:
+    """
+    Klasa zwierająca metody wykonujące eksperymenty mające na celu ocenę skuteczności autorskiej metody wykrywania klik złośliwie głosujących. 
+    """
+    
     graph = nx.Graph()
     rings = []
     result = []
@@ -18,12 +23,18 @@ class Experiment:
     selectGroups = [2,3,4]    
     sliceLevels = [1,2,3,4]
     vertexNo = 0
-    paramsDict = {'size': 10, 'number': 1, 'legible_target_size': 10, \
+    paramsDict = {'size': 10, 'number': 1, 'legal_target_size': 10, \
                   'target_size': 10, 'VOTERS': 500, 'OBJECTS': 100, 'bad_hideout': False, 'slice_level': 3}
     
     
     
     def __init__(self, testingDataPath = "/tmp/testing-ring.txt"):
+        """
+        Konstruktor
+        @param testingDataPath: ścieżka do pliku z testowymi danymi o głosowaniu
+        @type testingDataPath: text
+        """
+        
         self.testingDataPath = testingDataPath
         self.dm = sna.DataMaker(self.testingDataPath)
         self.gm = sna.GraphMaker(self.testingDataPath)
@@ -31,17 +42,22 @@ class Experiment:
  
     def compute(self, hardGroupsNo = 0, runsNo = 1):
         '''
-        @returns Forwards touple (matchRate, popRate) returned by Quality, if hardSilceLevel and hardGroupsNo
+        Metoda wykonuje określoną w L{runsNo} liczbę uruchomień algorytmu, zwaraca średnią arytmetyczną wskaźników jakości. 
+
+        @type hardGroupsNo: number
+        @param hardGroupsNo: liczba grup (począwszy od najmniej licznej), których członkowie są uważania za podjerzanych
+        @rtype: tuple
+        @return: Zwraca krotkę (matchRate, popRate, suspectsRate, near100rate), która zwiera średnią arytmetyczną z wartości wyznaczonych przez metodę L{rateQuality}.  
         '''
         
         
-        logger.info("Will generate graph with params")
-        logger.info(self.paramsDict)
-        logger.info("Will do %d runs" % runsNo )
+        logger.info("# Parametry generatora")
+        logger.info("# " + str(self.paramsDict))
+        logger.info("# Liczba prób: %d" % runsNo )
         
 
         
-        logger.info("Slice is level: %d" % self.paramsDict['slice_level'])
+        logger.info("# Poziom odcięcia: %d" % self.paramsDict['slice_level'])
         matchRate = 0.0
         matchRateList = []
         popRate = 0.0
@@ -53,7 +69,7 @@ class Experiment:
         for run in xrange(runsNo):
             self.dm.generate(**self.paramsDict)
             self.graph = self.gm.makeGraph()
-            self.rings = sum(self.dm.voting_rings, []) # H-H-HHACKISH list flattening
+            self.rings = sum(self.dm.voting_rings, []) # H-H-HHACKISH spłaszczenie listy list
             self.vertexNo = len(self.graph)
 
             self.cq = sna.Cliquer(self.graph)
@@ -67,43 +83,49 @@ class Experiment:
             popRate += tuple[1]
             suspectsRate += tuple[2] 
              
-            # fourth quality marker 
+            # czwarty wskaźnik jakości
             if tuple[0] > 90:
                 near100Rate += 1
             logger.debug(near100Rate)
 
         matchRateAvg = float(matchRate/float(runsNo))
         
-        # compute variance
+        # obliczenie wariancji matchRate
         matchRateList = map(lambda rate: (rate - matchRateAvg)**2, matchRateList)
         matchRateVariance = 1.0/runsNo * sum(matchRateList) 
                     
         
-        # we have to aggregate tuple for runsNo
+        # wyznaczanie średnich arytmetycznych
         tuple = (float(matchRate/float(runsNo)), float(popRate / float(runsNo)), float(suspectsRate / float(runsNo)), float(near100Rate / float(runsNo))*100.0)
-        logger.info("After % d runs result is" % runsNo)
+        logger.info("# Po  % d uruchomieniach (procent wykrytych; procent populacji podjerzewany; procent faktycznych wśród podejrzewanych; procent podejść, gdzie wykryto powyżej 90%" % runsNo)
         logger.info(tuple)
-        logger.info("For params")
+        logger.info("# Dla parametrów generatora: ")
         logger.info(self.paramsDict)
-        logger.info("Variance")
+        logger.info("# Wariancja porcentu wykrytych")
         logger.info(matchRateVariance)
-        logger.info(" ------------------- END --------------------")
+        logger.info("# ------------------- KONIEC --------------------")
     
         return tuple
     
     def rateQuality(self, hardGroupsNo = 0):
         '''
-        @returns touple of matchRate and popRate if hardGroupsNo, for sake of plotting or smth
+        Wyznacza wskaźniki jakości działania metody autorskiej
+
+        @type hardGroupsNo: number
+        @param hardGroupsNo: liczba kolejnych (od najmniej licznej) grup, których członkowie będą uznani za podjerzanych
+        
+        @rtype: tuple
+        @return: Krotka matchRate i popRate
         '''
         if hardGroupsNo:
             self.selectGroups = [hardGroupsNo]
-        for i in self.selectGroups: # select first i groups
+        for i in self.selectGroups: # pobierz pierwszych i grup
             matchCount = 0
             # suspects = self.cq.smartGetFristNGroups(self.result, i)
             suspects = self.cq.getSuspectedGroups(self.result, i)
             
-            logger.debug("Suspects: ")
-            logger.debug(suspects)
+            logger.debug("# Podejrzani: ")
+            logger.debug("# " + str(suspects))
             
             for v in self.rings:
                 if int(v) in suspects:
@@ -113,7 +135,7 @@ class Experiment:
             popRate = len(suspects)/self.vertexNo * 100.0
             suspectsRate = matchCount/len(suspects) * 100.0
             
-            logger.info("Taking first %d groups match rate is %f. These groups are %f  of users population." % (i, matchRate, popRate))
+            logger.info("%d, %f, %f" % (i, matchRate, popRate)) # liczba grup, procent wykrytych, procent podejrzewanje populacji
         
         return (matchRate, popRate, suspectsRate)
             
@@ -121,7 +143,19 @@ class Experiment:
     
     def iterateParam(self, minValue = 10, maxValue = 25, step = 5, param = "target_size", hardGroupsNo = 0, runsNo = 100):
         '''
-        @return Hard version returns tuple of two list, so that you can make some pretty plots =D
+        Służy do przeprowadzania eksperytmentu polegającego na ocenie jakości działania metody przy zmieniającym się jednym parametrze generatora. 
+        
+        Podawana jest nazwa parametru, wartości minimalna i maksymalna oraz krok, z jakim zmieniania jest wartość. 
+        
+        @param minValue: wartość startowa parametru
+        @param maxValue: wartośc końcowa
+        @param step: krok
+        @param param: nazwa parametru
+        @param hardGroupsNo: liczba grup
+        @param runsNo: liczba uruchomień
+        
+        @rtype: tuple
+        @return Krotka zwierające krotkę z wynikami oraz listę argumentów, w celu rysowania wykresów
         '''
         
         oldDictValue = self.paramsDict[param]
@@ -153,12 +187,22 @@ class Experiment:
             return ((matchRates, popRates, suspectRates, near100Rates), xaxis)
         
     def plotTuple(self, tuple, caption = "This is experiment", xlabel = "This is x label", ylabel = "This is y label", file_title = "chart", xaxis = [], step = 1):
+        """
+        Metoda rysuje wykres ilustrujący eksperyment
         
+        @param tuple: krotka z wynikami
+        @param caption: tytuł wykresu
+        @param xlabel: tytuł osi poziomej
+        @param ylabel: tytuł osi pionowej
+        @param file_title: nazwa pliku
+        
+        @return: W systemie plików pojawia się plik w formacie eps będący zadanym wykresem
+        """
         if not xaxis:
             from numpy import arange
             xaxis = arange(0,len(tuple[0]),1)
 
-        logger.info("############# Plotting tuples ################")
+        logger.info("############# Rysowanie wykresu ################")
         logger.info(tuple)
         
         import Gnuplot
@@ -192,7 +236,7 @@ def karateClub():
     karateG = karate_graph.karate_graph()
     cq = sna.Cliquer(karateG)
     
-    logger.info("Karate Graph experiment... ")
+    logger.info("# Karate Graph... ")
     partition = cq.blondelAlgorithm()
     cq.prettyPlotter(l=partition, filename="karate_blondel.png")
     
@@ -206,7 +250,7 @@ def karateClub():
     partition = cq.MCLAlgorithm(2.0)
     cq.prettyPlotter(l=partition, filename="karate_MCL.png")
     
-    logger.info("Karate Graph experiment done")
+    logger.info("# Karate Graph wykonano")
     
 def sixtyOne(sliceLevels = [3]):
     gm = sna.GraphMaker("/home/ymir/eclipse/networkx-thesis/voting_ring.txt")
@@ -222,17 +266,16 @@ def sixtyOne(sliceLevels = [3]):
         suspects = cq.smartGetFristNGroups(partition, 2)
         suspects_no = len(suspects)
         
-        logger.info("############### THESIXTYONE EXPERIMENT ##################")
-        logger.info("There is %d suspects, what is  %f percent of total population." % (suspects_no, (suspects_no / nodesNo ) * 100.0) )
-        logger.info("Suspects are: ")
+        logger.info("############### EKSPERYMENT THESIXTYONE  ##################")
+        logger.info("# O przynależność do kliki jest podejrzanch %d użytkowników, co stanowi  %f\% całej populacji." % (suspects_no, (suspects_no / nodesNo ) * 100.0) )
+        logger.info("# Identyfikatory podjerzanych użytkowników: ")
         logger.info(suspects)
-        logger.info("End of suspectes.")
         
             
 
 def generated(sliceLevels = [3], plot=False):
     dm = sna.DataMaker("/home/ymir/eclipse/networkx-thesis/testing-ring.txt")
-    dm.generate(number = 1, size = 25, target_size = 10, legible_target_size = 10, VOTERS=5000, OBJECTS=1000, bad_hideout=True)
+    dm.generate(number = 1, size = 25, target_size = 10, legal_target_size = 10, VOTERS=5000, OBJECTS=1000, bad_hideout=True)
     gm = sna.GraphMaker("/home/ymir/eclipse/networkx-thesis/testing-ring.txt")
     gm.makeGraph()
     
