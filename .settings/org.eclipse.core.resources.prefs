@@ -1,6 +1,7 @@
-#Sat Jan 15 00:59:10 CET 2011
+#Sat Jan 15 12:44:30 CET 2011
 eclipse.preferences.version=1
 encoding//src/lib/blondel.py=utf-8
 encoding//src/main.py=utf-8
 encoding//src/thesis/experiment.py=utf-8
 encoding//src/thesis/fb.py=utf-8
+encoding//src/thesis/sna.py=utf-8

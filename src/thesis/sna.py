@@ -1,15 +1,21 @@
+# -*- encoding: utf-8 -*-
 '''
-Created on 03-08-2010
+@created_at: 03-08-2010
 
-@author: ymir
+@author: Marcin Mincer
 '''
 from __future__ import division
 import networkx as nx
 from thesis import logger
 
-# timeit decorator
+
 import time                                                
 def timeit(method):
+    """
+    Dekorator wypisujący na standardowe wyjście czas działania dekorowanej funkcji w milisekundach
+    
+    @return: Czas działanie funkcji 
+    """
 
     def timed(*args, **kw):
         ts = time.time()
@@ -28,27 +34,39 @@ class FileType:
     VOTING_RING = 1
     
 class DataMaker:
-    '''
-    Provides methods for generating data containing voting rings
-    '''
+    """
+    Zawiera metody generujące dane głosowań, w których bierze udział klika złośliwie głosujących.
+    """
+    
     path = ''
     def __init__(self, path):
+        """
+        Konstruktor.
+        @param path: ścieżka do pliku, w którym będą zapisane wygnerowane dane głosownia
+        """
         self.path = path
         
         
     def generate(self, number = 1, size = 5, target_size = 5, legal_target_size = 10,VOTERS=1000, OBJECTS=200, bad_hideout=False, slice_level = 0):
-        '''
-        @param number: no of voting rings
-        @param size: size of voting rings
-        @param target_size: size of voting ring target set
-        ''' 
-        # TODO Sometimes generated data crashes partitioner, don't know why ;(
+        """
+        Metoda generuje dane głosowania (listę obiektów wraz z indetyfikatorami głosujących, którzy oddali głos na dany obiekt) i zapisuje je do pliku
+        określonego w self.path.
+        
+        @param number: liczba klik
+        @param size: rozmiar kliki
+        @param target_size: liczba obiektów, na które głosują członkowie kliki
+        @param legal_target_size: średnie liczba obiektów, na które głosują uczciwi głosujący
+        @param VOTERS: liczba głosujących
+        @param OBJECTS: liczba obiektów
+        @type bad_hideout: boolean
+        @param bad_hideout: parametr mówu o tym, czy członkowie kliki nie głosują na obiekty nie będące ich zadanym celem. 
+        """ 
         
         additional_votes = legal_target_size - target_size
         if additional_votes < 0:
             additional_votes = 0
         
-        objects = [[] for i in xrange(OBJECTS)] # every object has a list of his voters
+        objects = [[] for i in xrange(OBJECTS)] # każdy obiekt ma listę swoich głosujących
         
         import random
         self.voting_rings = [[] for i in xrange(number)]
@@ -60,7 +78,7 @@ class DataMaker:
                 self.voting_rings[i].append(voter)
                    
         
-        # voting ringers vote for their objects
+        # członkowie kliki głosują na swoje cele
         for i in xrange(number):
             for j in xrange(target_size):
                 target = random.randint(0, OBJECTS-1)
@@ -92,8 +110,8 @@ class DataMaker:
                     objects[target].append(str(voter))
         
         
-        logger.debug("Non voting cntr is %d" % nonVotingCntr)
-        logger.debug("Voting rings are:")
+        # logger.debug("Non voting cntr is %d" % nonVotingCntr)
+        logger.debug("Kliki to:")
         logger.debug(self.voting_rings)
         
         file = open(self.path, 'w')
@@ -109,21 +127,33 @@ class DataMaker:
         
         
 class GraphMaker:
-    '''
-    Provides methods for reading/writing files
-    '''
+    """
+    Dostarcza metod do czytania/pisania sieci
+    """
     
     path = ""
     file_type = FileType.unknown
     graph = nx.Graph()
     
     def __init__(self, path = None, file_type = FileType.VOTING_RING):
+        """
+        Konstruktor. 
+        
+        @param path: ścieżka do pliku
+        @param file_type: format pliku. W tej wersji obsługiwany jedynie format FileType.VOTING_RING
+        """
         if path:
             self.path = path
         self.file_type = file_type
     
     
     def makeGraph(self):
+        """
+        Tworzy sieć według autorskiej metody wczytując dane o głosowaniu z pliku.
+        
+        @rtype: networkx.Graph
+        @return: Wczytana sieć.
+        """
         if self.file_type == FileType.VOTING_RING:
             i = 0
             voters = []
@@ -137,10 +167,16 @@ class GraphMaker:
                     
                     i += 1
             
-            logger.info("Graph loaded, nodes: "  + repr(self.graph.number_of_nodes()) + ", edges: " + repr(self.graph.number_of_edges()))
+            logger.info("# Sieć załadowana, węzłów: "  + repr(self.graph.number_of_nodes()) + ", krawędzi: " + repr(self.graph.number_of_edges()))
             return self.graph
     
     def addEdges(self, voters):
+        """
+        Wykorzystywane przez L{makeGraph} do tworzenia krawędzi na podstawie informacji o oddanych głosach. 
+        
+        @see: makeGraph
+        @param voters: lista głosujących na dany obiekt
+        """
         edges = []
         for v in voters:
             for rb in voters[voters.index(v) + 1:]:
@@ -156,9 +192,10 @@ class GraphMaker:
                        
 
 class Cliquer(object):
-    '''
-    classdocs
-    '''
+    """
+    Klasa dostarcza metody służącę do wykrywania klik złośliwych głosujących za pomocą autorskiego algorytmu.
+    """
+    
     graph = nx.Graph()
     minWeight = 0
     maxWeight = 0
@@ -166,20 +203,38 @@ class Cliquer(object):
 
 
     def __init__(self, graph):
+        """
+        Konstruktor.
+        
+        @type graph: networkx.Graph
+        @param graph: sieć, stworzona na podstawie informacji o głosowaniach
+        """
         self.graph = graph
 
     def calculateMinMax(self):
-        # calulate min/max w
+        """
+        Metoda pomocnicza. Zapisuje do pliku dziennika informacje o największej i najmniejszej wadze krawędzi w sieci.
+        """
         
         minEdge = min(self.graph.edges(data=True), key=lambda node: node[2]['weight'])
         self.minWeight = self.graph.get_edge_data(*minEdge[:2])['weight']
         maxEdge = max(self.graph.edges(data=True), key=lambda node: node[2]['weight'])
         self.maxWeight = self.graph.get_edge_data(*maxEdge[:2])['weight']
         
-        logger.debug("Weight: max " + repr(self.maxWeight) + " and min " + repr(self.minWeight))
+        logger.debug("Waga: max " + repr(self.maxWeight) + " and min " + repr(self.minWeight))
 
     
     def sliceGraph(self, threshold):
+        """
+        Metoda służy do odfiltrowania z sieci połączeń o zbyt dużej wadze (świadczących o luźnych związkach pomiędzy węzłami).
+        
+        Jeżeli dawaj użytkownicy brali udział wspólnie w mniejszej ilości głosowań, niż określa parametr threshold, to krawędź pomiędzy węzłami 
+        reprezentującymi tych użytkowników jest usuwana. Następnie usuwane są wszystkie węzły, których stopień jest równy 0 
+        (nie są połączone z żadnymi innymi węzłami)
+        
+        @type threshold: number
+        @param threshold: Wartość progu. Minimalna liczba głosowań, w których użytkownicy musieli brać wspólnie udział, aby w sieci istniała krawędź ich łącząca.  
+        """
 
         def filter(edge):
             if edge[2]['weight'] < threshold:
@@ -187,40 +242,50 @@ class Cliquer(object):
                 
         map(filter, self.graph.edges(data=True))
         
-        # remove disconnected nodes
+        # usuń odłączone węzły
         def filterNodes(node):
             if self.graph.degree(node) == 0:
                 self.graph.remove_node(node)
                 
         map(filterNodes, self.graph.nodes())
         
-        # we have to change weights to 1/weight, so that stronger connected nodes appears to be closer for cclustering algorithms
+        # następuje przeliczenie wartości wag krawędzi. Wagi otrzymują docelową wartość, czyli taką, gdzie bardziej związane węzły są połączone
+        # krawędzią o mniejszej wadze. W tym celu wagom zostaje przypisana wartość waga = 1/liczba_wspolnych_glosowan 
         def invertWeight(edge):
             try:
                 edge[2]['weight'] = int(100/edge[2]['weight'])
             except:
                 edge[2]['weight'] = float('Inf')
-                logger.error("Exception in weight inverting, infinity set")
+                logger.error("Błąd przy wyliczaniu wagi krawędzi, ustawiono nieskończoność!!")
         
-        def nullifyWeight(edge):
-            edge[2]['weight'] = 1
+#        def nullifyWeight(edge):
+#            edge[2]['weight'] = 1
         
         map(invertWeight, self.graph.edges(data=True))
 #        map(nullifyWeight, self.graph.edges(data=True))
         
-        logger.debug("Data sliced with threshold " + repr(threshold) + ", edges " + repr(self.graph.number_of_edges()) + ", nodes " + repr(self.graph.number_of_nodes()))
+        logger.debug("Wykonano filtrowanie z poziomem odcięcia: " + repr(threshold) + ", krawędzi " + repr(self.graph.number_of_edges()) + ", węzłów " + repr(self.graph.number_of_nodes()))
   
     
     def nativeCliquer(self):
-        '''
-        honestly -- useless
-        '''
+        """
+        Wykorzystuje metodę znajdowania klik z biblioteki NetworkX. 
+        
+        Metoda ta nie wykorzystuje algorytmów grupowania, wyznacza jedynie k-kliki. Nie jest to właściwe podejście do problemu.
+        """
         cliques = list(nx.find_cliques(self.graph))
-        logger.info("Cliques found:")
+        logger.info("Kliki wyznaczone:")
         import pprint
         pprint.pprint(cliques)
  
     def prettyPlotter(self, l=None, filename=None):
+        """
+        Metod służy do rysowania grafu reprezentującego sieć, w którym węzły należące do tej samej grupy są oznaczone jednym kolorem.
+        
+        @type l: lista list
+        @param l: lista list węzłów podzielonych na grupy
+        @param filename: nazwa pliku PNG z wynikowym obrazem
+        """
         nodeList = l
             
         colorList = [0] * self.graph.number_of_nodes()
@@ -336,8 +401,7 @@ class Cliquer(object):
             partition.append(map(int, string.split(line)))
         
         if verbose:
-           self.getSuspectedGroups(partition, verbose['groups'])   
-
+            self.getSuspectedGroups(partition, verbose['groups'])   
         return partition
         
         

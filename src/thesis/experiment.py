@@ -203,7 +203,7 @@ class Experiment:
             xaxis = arange(0,len(tuple[0]),1)
 
         logger.info("############# Rysowanie wykresu ################")
-        logger.info(tuple)
+        logger.info("# " + str(tuple))
         
         import Gnuplot
         g = Gnuplot.Gnuplot()
@@ -233,6 +233,12 @@ class Experiment:
         g.hardcopy(file_title + '.eps', eps=True)
         
 def karateClub():
+    """
+    Funkcja uruchamia różne algorytmy grupowania na sieci klubu karate
+    
+    @return: W systemie plików zapisywane są obrazy PNG z wynikami grupowań
+    """
+    
     karateG = karate_graph.karate_graph()
     cq = sna.Cliquer(karateG)
     
@@ -253,6 +259,11 @@ def karateClub():
     logger.info("# Karate Graph wykonano")
     
 def sixtyOne(sliceLevels = [3]):
+    """
+    Funkcja uruchamia autorską metodą na danych ze strony thesixtyone.com
+    @param sliceLevels: lista poziomów odcięcia, z jakimi ma być uruchomiony algorytm
+    @return: Obraz PNG w systemie plików, lista podejrzanych w pliku dziennika
+    """
     gm = sna.GraphMaker("/home/ymir/eclipse/networkx-thesis/voting_ring.txt")
     gm.makeGraph()
     
@@ -274,6 +285,10 @@ def sixtyOne(sliceLevels = [3]):
             
 
 def generated(sliceLevels = [3], plot=False):
+    """
+    @deprecated: Używana w przeszłości do testowania różnych algorytmów grupowania, w tej chwili używany generator z modułu sna. 
+    """
+    
     dm = sna.DataMaker("/home/ymir/eclipse/networkx-thesis/testing-ring.txt")
     dm.generate(number = 1, size = 25, target_size = 10, legal_target_size = 10, VOTERS=5000, OBJECTS=1000, bad_hideout=True)
     gm = sna.GraphMaker("/home/ymir/eclipse/networkx-thesis/testing-ring.txt")
