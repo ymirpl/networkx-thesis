@@ -1,6 +1,6 @@
 # -*- encoding: utf-8 -*-
 '''
-@created_at: 03-08-2010
+Stworzono: 03-08-2010
 
 @author: Marcin Mincer
 '''

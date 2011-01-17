@@ -118,7 +118,14 @@ class Facebooker:
         with open(filename, 'rb') as file:
             self.centrality = pickle.load(file)
             
-    def graphMeasure(self, measure = 'degree', anonymized_log = False):
+    def graphMeasure(self, measure = 'degree', anonymized_log = True):
+        """
+        Metoda twrzy rysunek grafu reprezentującego sieć kolorując węzły odpowiednio do charakteryzującej je miary centralnośći. 
+        
+        @param measure: nazwa miary centralności, której wartość bęðzie wykorzystana przy kolorowaniu węzłów
+        @type anonymized_log: boolean
+        @param anonymized_log: włączenie anonimizacji danych zapisywanch w pliku dziennika (numery zamiast pełnego imienia i nazwiska)
+        """
         measureValues = self.centrality[measure]
         
         
@@ -214,7 +221,10 @@ class Facebooker:
         
     
     def ratePartition(self):
-        """ Metoda do oceny podziału sieci. Porównuje podział wykonany z wzrocowym i wyznacza procentową skuteczność podziału. 
+        """ 
+        Metoda do oceny podziału sieci. Porównuje podział wykonany z wzrocowym i wyznacza procentową skuteczność podziału.
+        
+        @return:  
         """
         result = 0
         maximal_result = 0

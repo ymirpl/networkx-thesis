@@ -1,0 +1,743 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>thesis.sna.Cliquer</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="thesis-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+      <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        <a href="thesis-module.html">Package&nbsp;thesis</a> ::
+        <a href="thesis.sna-module.html">Module&nbsp;sna</a> ::
+        Class&nbsp;Cliquer
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options">[<a href="javascript:void(0);" class="privatelink"
+    onclick="toggle_private();">hide&nbsp;private</a>]</span></td></tr>
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="thesis.sna.Cliquer-class.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- ==================== CLASS DESCRIPTION ==================== -->
+<h1 class="epydoc">Class Cliquer</h1><p class="nomargin-top"><span class="codelink"><a href="thesis.sna-pysrc.html#Cliquer">source&nbsp;code</a></span></p>
+<pre class="base-tree">
+object --+
+         |
+        <strong class="uidshort">Cliquer</strong>
+</pre>
+
+<hr />
+<p>Klasa dostarcza metody s&#322;u&#380;&#261;c&#281; do wykrywania klik z&#322;o&#347;liwych 
+  g&#322;osuj&#261;cych za pomoc&#261; autorskiego algorytmu.</p>
+
+<!-- ==================== INSTANCE METHODS ==================== -->
+<a name="section-InstanceMethods"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Instance Methods</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-InstanceMethods"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="thesis.sna.Cliquer-class.html#__init__" class="summary-sig-name">__init__</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">graph</span>)</span><br />
+      Konstruktor.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="thesis.sna-pysrc.html#Cliquer.__init__">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="thesis.sna.Cliquer-class.html#calculateMinMax" class="summary-sig-name">calculateMinMax</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Metoda pomocnicza.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="thesis.sna-pysrc.html#Cliquer.calculateMinMax">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="thesis.sna.Cliquer-class.html#sliceGraph" class="summary-sig-name">sliceGraph</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">threshold</span>)</span><br />
+      Metoda s&#322;u&#380;y do odfiltrowania z sieci po&#322;&#261;cze&#324; o zbyt du&#380;ej wadze 
+      (&#347;wiadcz&#261;cych o lu&#378;nych zwi&#261;zkach pomi&#281;dzy w&#281;z&#322;ami).</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="thesis.sna-pysrc.html#Cliquer.sliceGraph">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="thesis.sna.Cliquer-class.html#nativeCliquer" class="summary-sig-name">nativeCliquer</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Wykorzystuje metod&#281; znajdowania klik z biblioteki NetworkX.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="thesis.sna-pysrc.html#Cliquer.nativeCliquer">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="thesis.sna.Cliquer-class.html#prettyPlotter" class="summary-sig-name">prettyPlotter</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">l</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">filename</span>=<span class="summary-sig-default">None</span>)</span><br />
+      Metod s&#322;u&#380;y do rysowania grafu reprezentuj&#261;cego sie&#263;, w kt&#243;rym w&#281;z&#322;y 
+      nale&#380;&#261;ce do tej samej grupy s&#261; oznaczone jednym kolorem.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="thesis.sna-pysrc.html#Cliquer.prettyPlotter">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">list</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="thesis.sna.Cliquer-class.html#getSuspectedGroups" class="summary-sig-name">getSuspectedGroups</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">lists</span>,
+        <span class="summary-sig-arg">noGroups</span>=<span class="summary-sig-default">2</span>)</span><br />
+      Metoda zwraca cz&#322;onk&#243;w noGroups wyznaczonych grup, zaczynaj&#261;c od 
+      najmniej licznej.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="thesis.sna-pysrc.html#Cliquer.getSuspectedGroups">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">list</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="thesis.sna.Cliquer-class.html#smartGetFristNGroups" class="summary-sig-name">smartGetFristNGroups</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">lists</span>,
+        <span class="summary-sig-arg">noGroups</span>=<span class="summary-sig-default">2</span>)</span><br />
+      Metoda zwraca cz&#322;onk&#243;w noGroups wyznaczonych grup, zaczynaj&#261;c od 
+      najmniej licznej.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="thesis.sna-pysrc.html#Cliquer.smartGetFristNGroups">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">list</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="thesis.sna.Cliquer-class.html#blondelAlgorithm" class="summary-sig-name">blondelAlgorithm</a>(<span class="summary-sig-arg">*args</span>,
+        <span class="summary-sig-arg">**kw</span>)</span><br />
+      Metoda wykonuje grupowanie za pomoc&#261; algorytmu Blodela et al.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="thesis.sna-pysrc.html#Cliquer.blondelAlgorithm">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">list</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="thesis.sna.Cliquer-class.html#newmanAlgorithm" class="summary-sig-name">newmanAlgorithm</a>(<span class="summary-sig-arg">*args</span>,
+        <span class="summary-sig-arg">**kw</span>)</span><br />
+      Metoda wykonuje grupowanie za pomoc&#261; algorytmu Girvana-Newaman.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="thesis.sna-pysrc.html#Cliquer.newmanAlgorithm">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">list</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="thesis.sna.Cliquer-class.html#causetNewmanAlgorithm" class="summary-sig-name">causetNewmanAlgorithm</a>(<span class="summary-sig-arg">*args</span>,
+        <span class="summary-sig-arg">**kw</span>)</span><br />
+      Metoda wykonuje grupowanie za pomoc&#261; algorytmu Caluseta-Newmana</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="thesis.sna-pysrc.html#Cliquer.causetNewmanAlgorithm">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">list</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="thesis.sna.Cliquer-class.html#MCLAlgorithm" class="summary-sig-name">MCLAlgorithm</a>(<span class="summary-sig-arg">*args</span>,
+        <span class="summary-sig-arg">**kw</span>)</span><br />
+      Metoda wykonuje grupowanie za pomoc&#261; algorytmu MCL</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="thesis.sna-pysrc.html#Cliquer.MCLAlgorithm">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" class="summary">
+    <p class="indent-wrapped-lines"><b>Inherited from <code>object</code></b>:
+      <code>__delattr__</code>,
+      <code>__format__</code>,
+      <code>__getattribute__</code>,
+      <code>__hash__</code>,
+      <code>__new__</code>,
+      <code>__reduce__</code>,
+      <code>__reduce_ex__</code>,
+      <code>__repr__</code>,
+      <code>__setattr__</code>,
+      <code>__sizeof__</code>,
+      <code>__str__</code>,
+      <code>__subclasshook__</code>
+      </p>
+    </td>
+  </tr>
+</table>
+<!-- ==================== CLASS VARIABLES ==================== -->
+<a name="section-ClassVariables"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Class Variables</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-ClassVariables"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="graph"></a><span class="summary-name">graph</span> = <code title="nx.Graph()">nx.Graph()</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="minWeight"></a><span class="summary-name">minWeight</span> = <code title="0">0</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="maxWeight"></a><span class="summary-name">maxWeight</span> = <code title="0">0</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="weight_dist"></a><span class="summary-name">weight_dist</span> = <code title="{}"><code class="variable-group">{</code><code class="variable-group">}</code></code>
+    </td>
+  </tr>
+</table>
+<!-- ==================== PROPERTIES ==================== -->
+<a name="section-Properties"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Properties</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-Properties"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+  <tr>
+    <td colspan="2" class="summary">
+    <p class="indent-wrapped-lines"><b>Inherited from <code>object</code></b>:
+      <code>__class__</code>
+      </p>
+    </td>
+  </tr>
+</table>
+<!-- ==================== METHOD DETAILS ==================== -->
+<a name="section-MethodDetails"></a>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Method Details</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-MethodDetails"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+</table>
+<a name="__init__"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">__init__</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">graph</span>)</span>
+    <br /><em class="fname">(Constructor)</em>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="thesis.sna-pysrc.html#Cliquer.__init__">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Konstruktor.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>graph</code></strong> (networkx.Graph) - sie&#263;, stworzona na podstawie informacji o g&#322;osowaniach</li>
+    </ul></dd>
+    <dt>Overrides:
+        object.__init__
+    </dt>
+  </dl>
+</td></tr></table>
+</div>
+<a name="calculateMinMax"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">calculateMinMax</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="thesis.sna-pysrc.html#Cliquer.calculateMinMax">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Metoda pomocnicza. Zapisuje do pliku dziennika informacje o 
+  najwi&#281;kszej i najmniejszej wadze kraw&#281;dzi w sieci.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="sliceGraph"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">sliceGraph</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">threshold</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="thesis.sna-pysrc.html#Cliquer.sliceGraph">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Metoda s&#322;u&#380;y do odfiltrowania z sieci po&#322;&#261;cze&#324; o zbyt du&#380;ej wadze 
+  (&#347;wiadcz&#261;cych o lu&#378;nych zwi&#261;zkach pomi&#281;dzy w&#281;z&#322;ami).</p>
+  <p>Je&#380;eli dawaj u&#380;ytkownicy brali udzia&#322; wsp&#243;lnie w mniejszej ilo&#347;ci 
+  g&#322;osowa&#324;, ni&#380; okre&#347;la parametr threshold, to kraw&#281;d&#378; pomi&#281;dzy w&#281;z&#322;ami 
+  reprezentuj&#261;cymi tych u&#380;ytkownik&#243;w jest usuwana. Nast&#281;pnie usuwane s&#261; 
+  wszystkie w&#281;z&#322;y, kt&#243;rych stopie&#324; jest r&#243;wny 0 (nie s&#261; po&#322;&#261;czone z &#380;adnymi
+  innymi w&#281;z&#322;ami)</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>threshold</code></strong> (number) - Warto&#347;&#263; progu. Minimalna liczba g&#322;osowa&#324;, w kt&#243;rych u&#380;ytkownicy 
+          musieli bra&#263; wsp&#243;lnie udzia&#322;, aby w sieci istnia&#322;a kraw&#281;d&#378; ich 
+          &#322;&#261;cz&#261;ca.</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="nativeCliquer"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">nativeCliquer</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="thesis.sna-pysrc.html#Cliquer.nativeCliquer">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Wykorzystuje metod&#281; znajdowania klik z biblioteki NetworkX.</p>
+  <p>Metoda ta nie wykorzystuje algorytm&#243;w grupowania, wyznacza jedynie 
+  k-kliki. Nie jest to w&#322;a&#347;ciwe podej&#347;cie do problemu.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="prettyPlotter"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">prettyPlotter</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">l</span>=<span class="sig-default">None</span>,
+        <span class="sig-arg">filename</span>=<span class="sig-default">None</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="thesis.sna-pysrc.html#Cliquer.prettyPlotter">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Metod s&#322;u&#380;y do rysowania grafu reprezentuj&#261;cego sie&#263;, w kt&#243;rym w&#281;z&#322;y 
+  nale&#380;&#261;ce do tej samej grupy s&#261; oznaczone jednym kolorem.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>l</code></strong> (list) - lista list w&#281;z&#322;&#243;w podzielonych na grupy</li>
+        <li><strong class="pname"><code>filename</code></strong> - nazwa pliku PNG z wynikowym obrazem</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="getSuspectedGroups"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">getSuspectedGroups</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">lists</span>,
+        <span class="sig-arg">noGroups</span>=<span class="sig-default">2</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="thesis.sna-pysrc.html#Cliquer.getSuspectedGroups">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Metoda zwraca cz&#322;onk&#243;w noGroups wyznaczonych grup, zaczynaj&#261;c od 
+  najmniej licznej.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>lists</code></strong> - lista list w&#281;z&#322;&#243;w podzielonych na grupy</li>
+        <li><strong class="pname"><code>noGroups</code></strong> - liczba grup, kt&#243;rych cz&#322;onkowie b&#281;d&#261; zwr&#243;ceni</li>
+    </ul></dd>
+    <dt>Returns: list</dt>
+        <dd>lista cz&#322;onk&#243;w noGroups najmniej licznych grup</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="smartGetFristNGroups"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">smartGetFristNGroups</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">lists</span>,
+        <span class="sig-arg">noGroups</span>=<span class="sig-default">2</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="thesis.sna-pysrc.html#Cliquer.smartGetFristNGroups">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Metoda zwraca cz&#322;onk&#243;w noGroups wyznaczonych grup, zaczynaj&#261;c od 
+  najmniej licznej. Je&#380;eli zwr&#243;cone w&#281;z&#322;y stanowi&#261; mniej ni&#380; 10% populacji,
+  metoda zwraca cz&#322;onk&#243;w noGroups+1 grup.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>lists</code></strong> - lista list w&#281;z&#322;&#243;w podzielonych na grupy</li>
+        <li><strong class="pname"><code>noGroups</code></strong> - liczba grup, kt&#243;rych cz&#322;onkowie b&#281;d&#261; zwr&#243;ceni</li>
+    </ul></dd>
+    <dt>Returns: list</dt>
+        <dd>lista cz&#322;onk&#243;w kilki najmniej licznych grup, stanowi&#261;cych powy&#380;ej
+          10% populacji</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="blondelAlgorithm"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">blondelAlgorithm</span>(<span class="sig-arg">*args</span>,
+        <span class="sig-arg">**kw</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="thesis.sna-pysrc.html#Cliquer.blondelAlgorithm">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Metoda wykonuje grupowanie za pomoc&#261; algorytmu Blodela et al.</p>
+  <dl class="fields">
+    <dt>Returns: list</dt>
+        <dd>lista list z cz&#322;onkami grup</dd>
+    <dt>Decorators:</dt>
+    <dd><ul class="nomargin-top">
+        <li><code>@timeit</code></li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="newmanAlgorithm"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">newmanAlgorithm</span>(<span class="sig-arg">*args</span>,
+        <span class="sig-arg">**kw</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="thesis.sna-pysrc.html#Cliquer.newmanAlgorithm">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Metoda wykonuje grupowanie za pomoc&#261; algorytmu Girvana-Newaman.</p>
+  <dl class="fields">
+    <dt>Returns: list</dt>
+        <dd>lista list z cz&#322;onkami grup</dd>
+    <dt>Decorators:</dt>
+    <dd><ul class="nomargin-top">
+        <li><code>@timeit</code></li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="causetNewmanAlgorithm"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">causetNewmanAlgorithm</span>(<span class="sig-arg">*args</span>,
+        <span class="sig-arg">**kw</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="thesis.sna-pysrc.html#Cliquer.causetNewmanAlgorithm">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Metoda wykonuje grupowanie za pomoc&#261; algorytmu Caluseta-Newmana</p>
+  <dl class="fields">
+    <dt>Returns: list</dt>
+        <dd>lista list z cz&#322;onkami grup</dd>
+    <dt>Decorators:</dt>
+    <dd><ul class="nomargin-top">
+        <li><code>@timeit</code></li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="MCLAlgorithm"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">MCLAlgorithm</span>(<span class="sig-arg">*args</span>,
+        <span class="sig-arg">**kw</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="thesis.sna-pysrc.html#Cliquer.MCLAlgorithm">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Metoda wykonuje grupowanie za pomoc&#261; algorytmu MCL</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>inflation</code></strong> - warto&#347;&#263; wsp&#243;&#322;czynnika inflacji algorytmu MCL</li>
+    </ul></dd>
+    <dt>Returns: list</dt>
+        <dd>lista list z cz&#322;onkami grup</dd>
+    <dt>Decorators:</dt>
+    <dd><ul class="nomargin-top">
+        <li><code>@timeit</code></li>
+    </ul></dd>
+  </dl>
+<div class="fields">      <p><strong>Requires:</strong>
+        program MCL w &#347;cie&#380;ce wykonywalnej
+      </p>
+</div></td></tr></table>
+</div>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="thesis-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+      <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Mon Jan 17 21:51:58 2011
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>

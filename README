@@ -1,0 +1,21 @@
+Marcin Mincer, Marcin
+Praca inżynierska: Metody analityczne w sieciach socjalnych
+Opiekun: prof. dr hab. Ewa Niewiadomska-Szynkiewicz
+
+Moduł "Facebook" oraz moduł "Wykrywanie klik złośliwych głosujących". 
+
+Wymagania:
+gnuplot
+python >=2.6
+networkx >=1.4
+numpy
+Gnuplot.py
+simplejson
+urllib2
+xml
+matplotlib >=0.99
+
+Uruchamianie:
+Z katalogu ./src
+> python main.py
+

@@ -12,6 +12,12 @@ from thesis.fb import Facebooker
 
 
 def experimentOne():
+    """
+    Funkcja uruchamia eksperyment autorskiej metody wykrywania klik złośliwych głosujących. 
+    
+    Następuje ustawienie słownika domyślnych parametrów generatora, a następnie zmiana kolejno po jednym z parametrów.
+    Dla każdego zmienianego parametru sporządzany jest odpowiedni wykres i zpisywany w pliku typu eps (enhanced postscript).
+    """  
     e = Experiment()
     e.paramsDict = {'size': 25, 'number': 1, \
                    'legal_target_size': 10, 'target_size': 10, 'VOTERS': 500, 'OBJECTS': 100, 'bad_hideout': False, 'slice_level': 3}
@@ -68,17 +74,20 @@ def experimentOne():
     
 
 def fbExperiment():
+    """
+    Uruchomienie eksperymentów na danych z platformy facebook. Zakłada, że sieć znajduje się w pliku fb.gpickle. 
+    """
     fb = Facebooker()
     fb.loadGraph()
     fb.partitionGraph()
     fb.ratePartition()
-#    fb.computeMeasures()
+    fb.computeMeasures()
     fb.loadMeasures()
-#    fb.graphMeasure('clustering', True)
-#    fb.graphMeasure('betweeness', True)
-#    fb.graphMeasure('degree', True)
-#    fb.graphMeasure('closeness', True)
-#    fb.graphMeasure('eigenvector', True)
+    fb.graphMeasure('clustering', True)
+    fb.graphMeasure('betweeness', True)
+    fb.graphMeasure('degree', True)
+    fb.graphMeasure('closeness', True)
+    fb.graphMeasure('eigenvector', True)
     from thesis import logger   
     logger.info("# Średni wsp. gronowania: " + str(fb.centrality['avg_clustering'])) 
     logger.info("# Średnia najkrótsza ścieżka: " + str(fb.centrality['avg_shortest_path'] ))
@@ -91,7 +100,8 @@ if __name__ == '__main__':
     experimentOne()
     
     from thesis import experiment
-#    experiment.karateClub()
+    # uruchomienie pozostałych eksperymentów
+    experiment.karateClub()
     experiment.sixtyOne()
 
 
