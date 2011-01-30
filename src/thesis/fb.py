@@ -45,6 +45,7 @@ class Facebooker:
         from urllib2 import urlopen
         from xml.dom import minidom
         
+        logger.debug("Fetching facebook graph")
         friends = loads(urlopen('https://graph.facebook.com/me/friends?access_token='+TOKEN).read())
     
         for friend in friends['data']:
@@ -76,6 +77,7 @@ class Facebooker:
         for node in self.graph:
             self.labels[node] = i
             i += 1 
+        logger.info("########################## FACEBOOK EXPERIMENT ########################")
         logger.debug("Sieć załadowana, krawędzi: %d, węzłów: %d" % (self.graph.number_of_edges(), self.graph.number_of_nodes()))
     
     def draw(self, filename = "fb.png"):
@@ -169,6 +171,8 @@ class Facebooker:
         nx.draw_networkx_nodes(self.graph, pos, size = 4, with_labels=False, node_color=measureValues.values(), cmap=plt.cm.get_cmap('Spectral'))
         nx.draw_networkx_labels(self.graph, pos, font_size = 10, labels = self.labels)
         plt.colorbar(orientation="horizontal", fraction = 0.04, pad = 0.01, aspect = 16)
+        import config
+        filename = config.PLOT_OUT_DIR+filename
         plt.savefig(filename)
         
             
@@ -217,6 +221,8 @@ class Facebooker:
         nx.draw_networkx_nodes(self.graph, pos, size = 4, node_color=colorList, with_labels=False)
         nx.draw_networkx_labels(self.graph, pos, font_size = 10, labels = self.labels)
         
+        import config
+        filename = config.PLOT_OUT_DIR+filename
         plt.savefig(filename)
         
     

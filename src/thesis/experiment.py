@@ -34,7 +34,7 @@ class Experiment:
         @param testingDataPath: ścieżka do pliku z testowymi danymi o głosowaniu
         @type testingDataPath: text
         """
-        
+        logger.info("################### WYZNACZANIE KLIK ZLOSLIWYCH GLOSUJACYCH ######################")
         self.testingDataPath = testingDataPath
         self.dm = sna.DataMaker(self.testingDataPath)
         self.gm = sna.GraphMaker(self.testingDataPath)

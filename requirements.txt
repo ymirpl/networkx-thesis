@@ -1,6 +1,6 @@
 networkx>=1.4
 numpy
-Gnuplot.py
+gnuplot-py
 simplejson
-urllib2
+urllib3
 matplotlib>=0.99

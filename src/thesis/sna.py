@@ -294,6 +294,9 @@ class Cliquer(object):
                 colorList[self.graph.nodes().index(n)] = nodeList.index(nbunch)
         import matplotlib.pyplot as plt
         pos = nx.graphviz_layout(self.graph, prog='neato')
+        
+        plt.figure()
+        plt.axis('off')
         nx.draw(self.graph, pos, node_color=colorList, with_labels=False)
         if filename:
             plt.savefig(filename)

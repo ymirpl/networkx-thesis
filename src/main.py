@@ -96,7 +96,8 @@ def fbExperiment():
 
 
 if __name__ == '__main__':
-    fbExperiment()
+    
+#    fbExperiment()
     
     from thesis import experiment
     # uruchomienie pozostałych eksperymentów

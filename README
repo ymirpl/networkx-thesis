@@ -9,6 +9,7 @@ Uwaga, wykonanie eksperymentów może potrwać nawet kilka-kilkanaście godzin (
 Wymagania:
 gnuplot
 python >=2.6
+
 Paczki pythona:
 networkx>=1.4
 numpy
@@ -16,6 +17,23 @@ gnuplot-py
 simplejson
 urllib3
 matplotlib>=0.99
+
+
+Paczki mogą być zainstalowane przy pomocy narzędzia Pip poleceniem:
+pip install -r requirements.txt
+
+Przed uruchomieniem można ustalić konfigurację:
+w pliku src/logging.conf w sekcji:
+
+[handler_fileHandler]
+class=FileHandler
+level=INFO
+formatter=simpleFormatter
+args=("log.txt",)
+
+w miejsce 'log.txt' wpisujemy ścieżkę i nazwę pliku w którym będą zapisane wyniki działania programu. 
+
+W pliku src/config.py 
 
 Uruchamianie:
 Z katalogu ./src
