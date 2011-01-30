@@ -97,12 +97,15 @@ def fbExperiment():
 
 if __name__ == '__main__':
     fbExperiment()
-    experimentOne()
     
     from thesis import experiment
     # uruchomienie pozostałych eksperymentów
     experiment.karateClub()
     experiment.sixtyOne()
+    
+    experimentOne()
+    
+
 
 
 

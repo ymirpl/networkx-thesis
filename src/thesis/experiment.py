@@ -135,7 +135,7 @@ class Experiment:
             popRate = len(suspects)/self.vertexNo * 100.0
             suspectsRate = matchCount/len(suspects) * 100.0
             
-            logger.info("%d, %f, %f" % (i, matchRate, popRate)) # liczba grup, procent wykrytych, procent podejrzewanje populacji
+            logger.info("%d ; %f ; %f" % (i, matchRate, popRate)) # liczba grup, procent wykrytych, procent podejrzewanje populacji
         
         return (matchRate, popRate, suspectsRate)
             
@@ -278,7 +278,7 @@ def sixtyOne(sliceLevels = [3]):
         suspects_no = len(suspects)
         
         logger.info("############### EKSPERYMENT THESIXTYONE  ##################")
-        logger.info("# O przynależność do kliki jest podejrzanch %d użytkowników, co stanowi  %f\% całej populacji." % (suspects_no, (suspects_no / nodesNo ) * 100.0) )
+        logger.info("# O przynależność do kliki jest podejrzanch %d użytkowników, co stanowi  %f procent całej populacji." % (suspects_no, (suspects_no / nodesNo ) * 100.0) )
         logger.info("# Identyfikatory podjerzanych użytkowników: ")
         logger.info(suspects)
         

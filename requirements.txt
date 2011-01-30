@@ -1,0 +1,6 @@
+networkx>=1.4
+numpy
+Gnuplot.py
+simplejson
+urllib2
+matplotlib>=0.99

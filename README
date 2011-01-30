@@ -1,21 +1,25 @@
-Marcin Mincer, Marcin
+Politechnika Warszawska
 Praca inżynierska: Metody analityczne w sieciach socjalnych
+Marcin Mincer, IAiIS
 Opiekun: prof. dr hab. Ewa Niewiadomska-Szynkiewicz
 
 Moduł "Facebook" oraz moduł "Wykrywanie klik złośliwych głosujących". 
+Uwaga, wykonanie eksperymentów może potrwać nawet kilka-kilkanaście godzin (w zależności od maszyny).
 
 Wymagania:
 gnuplot
 python >=2.6
-networkx >=1.4
+Paczki pythona:
+networkx>=1.4
 numpy
-Gnuplot.py
+gnuplot-py
 simplejson
-urllib2
-xml
-matplotlib >=0.99
+urllib3
+matplotlib>=0.99
 
 Uruchamianie:
 Z katalogu ./src
 > python main.py
+Może być koniecznie ustawienie ścieżek do plików z danymi oraz ścieżek
+do miejsc służących do zapisania plików z wynikami. 
 
