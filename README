@@ -22,6 +22,10 @@ matplotlib>=0.99
 Paczki mogą być zainstalowane przy pomocy narzędzia Pip poleceniem:
 pip install -r requirements.txt
 
+Pakie Pip może być zainstalowy poprzez rozpakowanie dołączonego
+archiwum i wykonanie polecenia:
+python setup.py install 
+
 Przed uruchomieniem można ustalić konfigurację:
 w pliku src/logging.conf w sekcji:
 
@@ -33,11 +37,12 @@ args=("log.txt",)
 
 w miejsce 'log.txt' wpisujemy ścieżkę i nazwę pliku w którym będą zapisane wyniki działania programu. 
 
-W pliku src/config.py 
+W pliku src/config.py można zmienić dwa parametry:
+SIXTYONE_SOURCE_FILE = "voting_ring.txt" -- scieżka do pliku z danymio 
+głosowaniach pobranego z portalu thesixtyone.com 
+PLOT_OUT_DIR = "plots/" -- katalog (musi istnieć), gdzie będą zapisywane wynikowe wykresy
 
 Uruchamianie:
 Z katalogu ./src
 > python main.py
-Może być koniecznie ustawienie ścieżek do plików z danymi oraz ścieżek
-do miejsc służących do zapisania plików z wynikami. 
 

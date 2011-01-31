@@ -299,6 +299,8 @@ class Cliquer(object):
         plt.axis('off')
         nx.draw(self.graph, pos, node_color=colorList, with_labels=False)
         if filename:
+            import config
+            filename = config.PLOT_OUT_DIR+filename
             plt.savefig(filename)
         else:
             plt.show()

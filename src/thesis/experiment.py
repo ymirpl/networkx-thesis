@@ -97,7 +97,7 @@ class Experiment:
         
         # wyznaczanie średnich arytmetycznych
         tuple = (float(matchRate/float(runsNo)), float(popRate / float(runsNo)), float(suspectsRate / float(runsNo)), float(near100Rate / float(runsNo))*100.0)
-        logger.info("# Po  % d uruchomieniach (procent wykrytych; procent populacji podjerzewany; procent faktycznych wśród podejrzewanych; procent podejść, gdzie wykryto powyżej 90%" % runsNo)
+        logger.info("# Po  %d uruchomieniach (procent wykrytych; procent populacji podjerzewany; procent faktycznych wśród podejrzewanych; procent podejść, gdzie wykryto powyżej 90 procent" % runsNo)
         logger.info(tuple)
         logger.info("# Dla parametrów generatora: ")
         logger.info(self.paramsDict)
@@ -141,7 +141,7 @@ class Experiment:
             
             
     
-    def iterateParam(self, minValue = 10, maxValue = 25, step = 5, param = "target_size", hardGroupsNo = 0, runsNo = 100):
+    def iterateParam(self, minValue = 10, maxValue = 25, step = 5, param = "target_size", hardGroupsNo = 2, runsNo = 100):
         '''
         Służy do przeprowadzania eksperytmentu polegającego na ocenie jakości działania metody przy zmieniającym się jednym parametrze generatora. 
         
@@ -169,7 +169,7 @@ class Experiment:
         
         
         while self.paramsDict[param] <= maxValue:
-            logger.info("Will iterate over %s : now it's %d:" % (param, self.paramsDict[param]))
+            logger.info("# Będzie zmieniany parametr %s : teraz wynosi %d:" % (param, self.paramsDict[param]))
             tuple = self.compute(hardGroupsNo = hardGroupsNo, runsNo = runsNo)
             xaxis.append(self.paramsDict[param]) 
             self.paramsDict[param] += step
@@ -230,6 +230,8 @@ class Experiment:
         g('set yrange [ 0 : ' + repr(max_y+10) + ' ]')
         g.plot(suspects, population, suspectsR, near100)
         #g.plot(suspects, population, suspectsR)
+        import config
+        file_title = config.PLOT_OUT_DIR+file_title
         g.hardcopy(file_title + '.eps', eps=True)
         
 def karateClub():
@@ -264,7 +266,8 @@ def sixtyOne(sliceLevels = [3]):
     @param sliceLevels: lista poziomów odcięcia, z jakimi ma być uruchomiony algorytm
     @return: Obraz PNG w systemie plików, lista podejrzanych w pliku dziennika
     """
-    gm = sna.GraphMaker("/home/ymir/eclipse/networkx-thesis/voting_ring.txt")
+    import config
+    gm = sna.GraphMaker(config.SIXTYONE_SOURCE_FILE)
     gm.makeGraph()
     
     
